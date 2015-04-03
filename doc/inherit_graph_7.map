@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title="STL class. " alt="" coords="5,57,109,84"/>
+<area shape="rect" id="node2" title="STL class. " alt="" coords="166,19,274,45"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="158,95,282,121"/>
+<area shape="rect" id="node3" href="$structwamp_1_1error_1_1_logic.html" title="Exception thrown when a pre&#45;condition is not met. " alt="" coords="348,5,479,32"/>
+<area shape="rect" id="node5" href="$structwamp_1_1error_1_1_access.html" title="Exception type thrown when accessing a Variant as an invalid type. " alt="" coords="342,56,485,83"/>
+<area shape="rect" id="node6" href="$structwamp_1_1error_1_1_conversion.html" title="Exception type thrown when converting a Variant to an invalid type. " alt="" coords="331,107,496,133"/>
+<area shape="rect" id="node7" href="$structwamp_1_1error_1_1_decode.html" title="Exception type thrown when Codec deserialization fails. " alt="" coords="341,157,485,184"/>
+</map>
