@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_i.html#index_i"><span>i</span></a></li>
       <li><a href="functions_j.html#index_j"><span>j</span></a></li>
+      <li><a href="functions_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_m.html#index_m"><span>m</span></a></li>
       <li><a href="functions_n.html#index_n"><span>n</span></a></li>
@@ -157,15 +158,17 @@ $(document).ready(function(){initNavTree('functions_e.html','');});
 , <a class="el" href="structwamp_1_1_codec_3_01_codec_id_1_1msgpack_01_4.html#ac62b79f603a0bbbade5b6958af59f404">wamp::Codec&lt; CodecId::msgpack &gt;</a>
 </li>
 <li>enroll()
-: <a class="el" href="classwamp_1_1_client.html#ad4219045bc2502a6d806cecfde4b6990">wamp::Client</a>
-, <a class="el" href="classwamp_1_1_coro_client.html#afd875890dd80c76b562d2612f10f450f">wamp::CoroClient&lt; TBase &gt;</a>
-, <a class="el" href="classwamp_1_1_coro_errc_client.html#a2a468de4b2e1d9e75f812b4170533df3">wamp::CoroErrcClient&lt; TBase &gt;</a>
+: <a class="el" href="classwamp_1_1_coro_session.html#afa07700254e432589ebceed8c7d115ed">wamp::CoroSession&lt; TBase &gt;</a>
+, <a class="el" href="classwamp_1_1_session.html#aa3c9f8d59c824acce455979ba2229e96">wamp::Session</a>
 </li>
 <li>equivalent()
 : <a class="el" href="classwamp_1_1_protocol_category.html#ad0a053bff935d859d511de20f12e5296">wamp::ProtocolCategory</a>
 , <a class="el" href="classwamp_1_1_rawsock_category.html#a1241dfc9795337e998fc1620ac3231d8">wamp::RawsockCategory</a>
+, <a class="el" href="classwamp_1_1_session_category.html#af7f8bfcc45a6889b2f9baef38fb0f1fb">wamp::SessionCategory</a>
 , <a class="el" href="classwamp_1_1_transport_category.html#a65b0c789f029e8094595a59f42388907">wamp::TransportCategory</a>
-, <a class="el" href="classwamp_1_1_wamp_category.html#a618c7134d7a60c46bb97657965be2677">wamp::WampCategory</a>
+</li>
+<li>Error()
+: <a class="el" href="classwamp_1_1_error.html#ac09fafea3f6a4fe1acccee3c1698f5af">wamp::Error</a>
 </li>
 <li>errorCode()
 : <a class="el" href="classwamp_1_1_async_result.html#a391c086c51f4c174c33f907d3ac50713">wamp::AsyncResult&lt; T &gt;</a>
@@ -180,13 +183,20 @@ $(document).ready(function(){initNavTree('functions_e.html','');});
 , <a class="el" href="classwamp_1_1_tcp_connector.html#a81b91b62fcc2f44cd384e881d24915f3">wamp::TcpConnector</a>
 , <a class="el" href="classwamp_1_1_uds_connector.html#a3021db55f5c2ce25356e733e9b67c521">wamp::UdsConnector</a>
 </li>
+<li>Event()
+: <a class="el" href="classwamp_1_1_event.html#a5f9899105672da449507ce5ef92d7c52">wamp::Event</a>
+</li>
+<li>EventSlot
+: <a class="el" href="classwamp_1_1_coro_session.html#a4d0c20f3fcd2bd98a18a0f7b0733a6ea">wamp::CoroSession&lt; TBase &gt;</a>
+, <a class="el" href="classwamp_1_1_session.html#adf30356c95f167648645c3c9f1b637af">wamp::Session</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 4 2015 16:24:47 for CppWAMP by
+    <li class="footer">Generated on Wed Apr 15 2015 19:06:23 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

@@ -151,7 +151,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9fc18c8bea4b4f23622add400880b453"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classwamp_1_1_connector.html#a71ed161f97ca2300f2e97e8ce9ab211b">Connector::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_uds_connector.html#a9fc18c8bea4b4f23622add400880b453">clone</a> () const override</td></tr>
 <tr class="memdesc:a9fc18c8bea4b4f23622add400880b453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a deep copy of this <a class="el" href="classwamp_1_1_connector.html" title="Abstract base class for establishing client transport endpoints. ">Connector</a> object.  <a href="#a9fc18c8bea4b4f23622add400880b453">More...</a><br /></td></tr>
 <tr class="separator:a9fc18c8bea4b4f23622add400880b453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3021db55f5c2ce25356e733e9b67c521"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_uds_connector.html#a3021db55f5c2ce25356e733e9b67c521">establish</a> (<a class="el" href="classwamp_1_1_connector.html#a99fbea57ea1714631524570297afa771">Handler</a> handler) override</td></tr>
+<tr class="memitem:a3021db55f5c2ce25356e733e9b67c521"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_uds_connector.html#a3021db55f5c2ce25356e733e9b67c521">establish</a> (<a class="el" href="classwamp_1_1_connector.html#a8fd7ad7538e14ce708616c29eba319a4">Handler</a> handler) override</td></tr>
 <tr class="memdesc:a3021db55f5c2ce25356e733e9b67c521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts establishing a transport connection.  <a href="#a3021db55f5c2ce25356e733e9b67c521">More...</a><br /></td></tr>
 <tr class="separator:a3021db55f5c2ce25356e733e9b67c521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff9e1c1e6a7431387b00f71f7a16ce4a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_uds_connector.html#aff9e1c1e6a7431387b00f71f7a16ce4a">cancel</a> () override</td></tr>
@@ -165,9 +165,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:afe8fdc3c9ae4b93aa79746b12817fecf inherit pub_methods_classwamp_1_1_connector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#afe8fdc3c9ae4b93aa79746b12817fecf">More...</a><br /></td></tr>
 <tr class="separator:afe8fdc3c9ae4b93aa79746b12817fecf inherit pub_methods_classwamp_1_1_connector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_types_classwamp_1_1_connector"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classwamp_1_1_connector')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classwamp_1_1_connector.html">wamp::Connector</a></td></tr>
-<tr class="memitem:a99fbea57ea1714631524570297afa771 inherit pro_types_classwamp_1_1_connector"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_connector.html#a99fbea57ea1714631524570297afa771">Handler</a> = std::function&lt; void(std::error_code ec, internal::ClientImplBase::Ptr)&gt;</td></tr>
-<tr class="memdesc:a99fbea57ea1714631524570297afa771 inherit pro_types_classwamp_1_1_connector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous handler function type called by <a class="el" href="classwamp_1_1_connector.html#afad9b108d3e7f58fef4e0492ff96e964" title="Starts establishing a transport connection. ">Connector::establish</a>.  <a href="#a99fbea57ea1714631524570297afa771">More...</a><br /></td></tr>
-<tr class="separator:a99fbea57ea1714631524570297afa771 inherit pro_types_classwamp_1_1_connector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd7ad7538e14ce708616c29eba319a4 inherit pro_types_classwamp_1_1_connector"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_connector.html#a8fd7ad7538e14ce708616c29eba319a4">Handler</a> = std::function&lt; void(std::error_code, std::shared_ptr&lt; internal::ClientInterface &gt;)&gt;</td></tr>
+<tr class="memdesc:a8fd7ad7538e14ce708616c29eba319a4 inherit pro_types_classwamp_1_1_connector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous handler function type called by <a class="el" href="classwamp_1_1_connector.html#afad9b108d3e7f58fef4e0492ff96e964" title="Starts establishing a transport connection. ">Connector::establish</a>.  <a href="#a8fd7ad7538e14ce708616c29eba319a4">More...</a><br /></td></tr>
+<tr class="separator:a8fd7ad7538e14ce708616c29eba319a4 inherit pro_types_classwamp_1_1_connector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Establishes a client connection over a Unix domain raw socket. </p>
@@ -273,7 +273,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void wamp::UdsConnector::establish </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwamp_1_1_connector.html#a99fbea57ea1714631524570297afa771">Handler</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classwamp_1_1_connector.html#a8fd7ad7538e14ce708616c29eba319a4">Handler</a>&#160;</td>
           <td class="paramname"><em>handler</em></td><td>)</td>
           <td></td>
         </tr>
@@ -329,7 +329,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_uds_connector.html">UdsConnector</a></li>
-    <li class="footer">Generated on Sat Apr 4 2015 16:24:47 for CppWAMP by
+    <li class="footer">Generated on Wed Apr 15 2015 19:06:22 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

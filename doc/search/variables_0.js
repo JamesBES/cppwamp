@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['list',['list',['../structwamp_1_1_args.html#a1a3d41e214ef1e5af2101e8fa65079d2',1,'wamp::Args']]]
+  ['major',['major',['../structwamp_1_1_version.html#ac3fb1d70eaa1cd4c4016014cde70f9b0',1,'wamp::Version']]],
+  ['minor',['minor',['../structwamp_1_1_version.html#ae9aa1fc01b1b9d285bce0ff271c13609',1,'wamp::Version']]]
 ];

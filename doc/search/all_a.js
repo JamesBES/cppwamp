@@ -9,5 +9,6 @@ var searchData=
   ['kb_5f4',['kB_4',['../namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa8383e4e8f8e6f97da2665c52a0b31440',1,'wamp']]],
   ['kb_5f512',['kB_512',['../namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa14a233b47cc592c5ca2e0c8f9a491819',1,'wamp']]],
   ['kb_5f64',['kB_64',['../namespacewamp.html#a1750e952cec62e645c6b1c918c06993fad79bc0f95213a9b2d654ac146dff2811',1,'wamp']]],
-  ['kb_5f8',['kB_8',['../namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa0df6f473c642920931b17d3866531994',1,'wamp']]]
+  ['kb_5f8',['kB_8',['../namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa0df6f473c642920931b17d3866531994',1,'wamp']]],
+  ['kwargs',['kwargs',['../classwamp_1_1_payload.html#a042a7127142904afe8356b7983ed3ba6',1,'wamp::Payload::kwargs() const &amp;'],['../classwamp_1_1_payload.html#ae8088e81ae02babaed8ce1c672cd931e',1,'wamp::Payload::kwargs()&amp;&amp;']]]
 ];

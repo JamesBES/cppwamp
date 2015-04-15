@@ -1,10 +1,10 @@
 var wampdefs_8hpp =
 [
-    [ "SessionId", "wampdefs_8hpp.html#a9e80b96024342dcf5744f89ceacb2e66", null ],
-    [ "RequestId", "wampdefs_8hpp.html#a683218a8ce0b52b4e9adee37cf13e272", null ],
-    [ "SubscriptionId", "wampdefs_8hpp.html#abd0322a7009f24fccaefffe4940d5185", null ],
-    [ "PublicationId", "wampdefs_8hpp.html#a9e2e2100de68aebca360208c46a62192", null ],
-    [ "RegistrationId", "wampdefs_8hpp.html#a9f1aab23f870b5e4d57538b9106c450d", null ],
+    [ "SessionId", "wampdefs_8hpp.html#a8949d385f548e570ad954089b7439dc1", null ],
+    [ "RequestId", "wampdefs_8hpp.html#ad69525a134cfe3de73c79af0e80f2ff2", null ],
+    [ "SubscriptionId", "wampdefs_8hpp.html#a15249f3ad90f2f5fa5d30317c84fbce8", null ],
+    [ "PublicationId", "wampdefs_8hpp.html#af1108039d1eea74def74485afcd801d5", null ],
+    [ "RegistrationId", "wampdefs_8hpp.html#a2a11e7b619d74f499adf34837731877b", null ],
     [ "SessionState", "wampdefs_8hpp.html#a53ba5f85cd0d02bf363dfec7da1b339f", [
       [ "disconnected", "wampdefs_8hpp.html#a53ba5f85cd0d02bf363dfec7da1b339fa3a561116f0c9675a3c83d21fa365050d", null ],
       [ "connecting", "wampdefs_8hpp.html#a53ba5f85cd0d02bf363dfec7da1b339fa9a27316fbc5ef38b2a19c202dbdc29b7", null ],

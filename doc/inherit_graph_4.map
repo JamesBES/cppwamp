@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structwamp_1_1_codec_3_01_codec_id_1_1msgpack_01_4.html" title="Codec specialization for Msgpack serialization. " alt="" coords="6,5,170,46"/>
+<area shape="rect" id="node1" href="$classwamp_1_1_connector.html" title="Abstract base class for establishing client transport endpoints. " alt="" coords="5,81,131,108"/>
+<area shape="rect" id="node2" href="$classwamp_1_1legacy_1_1_tcp_connector.html" title="Establishes a client connection, over TCP raw socket, to non&#45;conformant routers. " alt="" coords="179,5,373,32"/>
+<area shape="rect" id="node3" href="$classwamp_1_1legacy_1_1_uds_connector.html" title="Establishes a client connection, over a Unix domain raw socket, to non&#45;conformant routers..." alt="" coords="179,56,373,83"/>
+<area shape="rect" id="node4" href="$classwamp_1_1_tcp_connector.html" title="Establishes a client connection over TCP raw socket. " alt="" coords="203,107,349,133"/>
+<area shape="rect" id="node5" href="$classwamp_1_1_uds_connector.html" title="Establishes a client connection over a Unix domain raw socket. " alt="" coords="201,157,351,184"/>
 </map>

@@ -121,57 +121,55 @@ $(document).ready(function(){initNavTree('callee_8hpp_source.html','');});
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;../args.hpp&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../asyncresult.hpp&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;../variant.hpp&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>wamp</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>internal</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span>Callee</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">using</span> Ptr               = std::shared_ptr&lt;Callee&gt;;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">using</span> WeakPtr           = std::weak_ptr&lt;Callee&gt;;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacewamp.html#a9f1aab23f870b5e4d57538b9106c450d">RegistrationId</a>    = uint64_t;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacewamp.html#a683218a8ce0b52b4e9adee37cf13e272">RequestId</a>         = uint64_t;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">using</span> UnregisterHandler = AsyncHandler&lt;bool&gt;;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> ~Callee() {}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> unregister(<a class="code" href="namespacewamp.html#a9f1aab23f870b5e4d57538b9106c450d">RegistrationId</a> regId) = 0;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> unregister(<a class="code" href="namespacewamp.html#a9f1aab23f870b5e4d57538b9106c450d">RegistrationId</a> regId,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                            UnregisterHandler handler) = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> yield(<a class="code" href="namespacewamp.html#a683218a8ce0b52b4e9adee37cf13e272">RequestId</a> reqId) = 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> yield(<a class="code" href="namespacewamp.html#a683218a8ce0b52b4e9adee37cf13e272">RequestId</a> reqId, Args&amp;&amp; args) = 0;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> fail(<a class="code" href="namespacewamp.html#a683218a8ce0b52b4e9adee37cf13e272">RequestId</a> reqId, <a class="code" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbab45cffe084dd3d20d928bee85e7b0f21">std::string</a>&amp;&amp; reason, <a class="code" href="namespacewamp.html#a0bc7bf8714c7de555c2fb308561b563d">Object</a>&amp;&amp; details,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                      Args&amp;&amp; args) = 0;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;../asyncresult.hpp&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../dialoguedata.hpp&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;../sessiondata.hpp&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;../variant.hpp&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>wamp</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>internal</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span>Callee</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">using</span> Ptr               = std::shared_ptr&lt;Callee&gt;;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">using</span> WeakPtr           = std::weak_ptr&lt;Callee&gt;;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacewamp.html#a2a11e7b619d74f499adf34837731877b">RegistrationId</a>    = uint64_t;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacewamp.html#ad69525a134cfe3de73c79af0e80f2ff2">RequestId</a>         = uint64_t;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">using</span> UnregisterHandler = AsyncHandler&lt;bool&gt;;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> ~Callee() {}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> unregister(<a class="code" href="namespacewamp.html#a2a11e7b619d74f499adf34837731877b">RegistrationId</a> regId) = 0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> unregister(<a class="code" href="namespacewamp.html#a2a11e7b619d74f499adf34837731877b">RegistrationId</a> regId,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                            UnregisterHandler handler) = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> yield(<a class="code" href="namespacewamp.html#ad69525a134cfe3de73c79af0e80f2ff2">RequestId</a> reqId, <a class="code" href="classwamp_1_1_result.html">wamp::Result</a>&amp;&amp; result) = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> yield(<a class="code" href="namespacewamp.html#ad69525a134cfe3de73c79af0e80f2ff2">RequestId</a> reqId, <a class="code" href="classwamp_1_1_error.html">wamp::Error</a>&amp;&amp; failure) = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// namespace internal</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace internal</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace wamp</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namespace wamp</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif // CPPWAMP_INTERNAL_CALLEE_HPP</span></div>
-<div class="ttc" id="namespacewamp_html_a683218a8ce0b52b4e9adee37cf13e272"><div class="ttname"><a href="namespacewamp.html#a683218a8ce0b52b4e9adee37cf13e272">wamp::RequestId</a></div><div class="ttdeci">uint64_t RequestId</div><div class="ttdoc">Ephemeral ID associated with a WAMP request. </div><div class="ttdef"><b>Definition:</b> wampdefs.hpp:22</div></div>
-<div class="ttc" id="namespacewamp_html_a0bc7bf8714c7de555c2fb308561b563d"><div class="ttname"><a href="namespacewamp.html#a0bc7bf8714c7de555c2fb308561b563d">wamp::Object</a></div><div class="ttdeci">Variant::Object Object</div><div class="ttdoc">Alias for Variant::Object. </div><div class="ttdef"><b>Definition:</b> variant.hpp:472</div></div>
-<div class="ttc" id="namespacewamp_html_a4d04d75506649324abb78e785749ccdbab45cffe084dd3d20d928bee85e7b0f21"><div class="ttname"><a href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbab45cffe084dd3d20d928bee85e7b0f21">wamp::TypeId::string</a></div><div class="ttdoc">For Variant::String. </div></div>
-<div class="ttc" id="namespacewamp_html_a9f1aab23f870b5e4d57538b9106c450d"><div class="ttname"><a href="namespacewamp.html#a9f1aab23f870b5e4d57538b9106c450d">wamp::RegistrationId</a></div><div class="ttdeci">uint64_t RegistrationId</div><div class="ttdoc">Ephemeral ID associated with an RPC registration. </div><div class="ttdef"><b>Definition:</b> wampdefs.hpp:25</div></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif // CPPWAMP_INTERNAL_CALLEE_HPP</span></div>
+<div class="ttc" id="namespacewamp_html_ad69525a134cfe3de73c79af0e80f2ff2"><div class="ttname"><a href="namespacewamp.html#ad69525a134cfe3de73c79af0e80f2ff2">wamp::RequestId</a></div><div class="ttdeci">int64_t RequestId</div><div class="ttdoc">Ephemeral ID associated with a WAMP request. </div><div class="ttdef"><b>Definition:</b> wampdefs.hpp:22</div></div>
+<div class="ttc" id="namespacewamp_html_a2a11e7b619d74f499adf34837731877b"><div class="ttname"><a href="namespacewamp.html#a2a11e7b619d74f499adf34837731877b">wamp::RegistrationId</a></div><div class="ttdeci">int64_t RegistrationId</div><div class="ttdoc">Ephemeral ID associated with an RPC registration. </div><div class="ttdef"><b>Definition:</b> wampdefs.hpp:25</div></div>
+<div class="ttc" id="classwamp_1_1_result_html"><div class="ttname"><a href="classwamp_1_1_result.html">wamp::Result</a></div><div class="ttdoc">Contains a remote procedure result yielded by a callee or received by a caller. </div><div class="ttdef"><b>Definition:</b> sessiondata.hpp:265</div></div>
+<div class="ttc" id="classwamp_1_1_error_html"><div class="ttname"><a href="classwamp_1_1_error.html">wamp::Error</a></div><div class="ttdoc">Provides the reason URI, options, and payload arguments contained within WAMP ERROR messages...</div><div class="ttdef"><b>Definition:</b> dialoguedata.hpp:48</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb7245a6f5714b15c73ba62cf32a25df.html">cppwamp</a></li><li class="navelem"><a class="el" href="dir_6a7aca854c9e23f638e2a4e6e00d5fbc.html">internal</a></li><li class="navelem"><b>callee.hpp</b></li>
-    <li class="footer">Generated on Sat Apr 4 2015 16:24:46 for CppWAMP by
+    <li class="footer">Generated on Wed Apr 15 2015 19:06:22 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

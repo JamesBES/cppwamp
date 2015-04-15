@@ -9,7 +9,7 @@ var searchData=
   ['badschema',['badSchema',['../namespacewamp.html#a19ce4bc9c1e5512cec6ba323c4d324d0a3b2142dd13569c21d672bb57b522b590',1,'wamp']]],
   ['badserializer',['badSerializer',['../namespacewamp.html#aa0bf722cbe7ad04d49ad94b6ec440541aa5e02f2492945f6f4616d60c7bf0f441',1,'wamp']]],
   ['badtxlength',['badTxLength',['../namespacewamp.html#a7a09562b29d4b6e42e37be77ec31829aab9c1fb72d859b4927608fb262096783a',1,'wamp']]],
-  ['base',['Base',['../classwamp_1_1_coro_client.html#a936c9d42e89af8057e61ba48ca097e47',1,'wamp::CoroClient::Base()'],['../classwamp_1_1_coro_errc_client.html#ad0e088047716dc22dd231d3b3f067581',1,'wamp::CoroErrcClient::Base()']]],
+  ['base',['Base',['../classwamp_1_1_coro_session.html#ad7e10655b79c56d5a0171eee638d4ccc',1,'wamp::CoroSession']]],
   ['bool',['Bool',['../classwamp_1_1_variant.html#ac118672044461eefb7b39bb783a588c7',1,'wamp::Variant::Bool()'],['../namespacewamp.html#a624ca6bf7b1ae409dbd5aee00638e335',1,'wamp::Bool()']]],
   ['boolean',['boolean',['../namespacewamp.html#a4d04d75506649324abb78e785749ccdba84e2c64f38f78ba3ea5c905ab5a2da27',1,'wamp']]],
   ['boundtypeforid',['BoundTypeForId',['../classwamp_1_1_variant.html#aa6575175ecc11672c02b83d1070ded64',1,'wamp::Variant']]]

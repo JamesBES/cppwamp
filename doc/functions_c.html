@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_i.html#index_i"><span>i</span></a></li>
       <li><a href="functions_j.html#index_j"><span>j</span></a></li>
+      <li><a href="functions_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_m.html#index_m"><span>m</span></a></li>
       <li><a href="functions_n.html#index_n"><span>n</span></a></li>
@@ -146,12 +147,18 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>call()
-: <a class="el" href="classwamp_1_1_client.html#a3fd2964c657191576dd086e7606e105d">wamp::Client</a>
-, <a class="el" href="classwamp_1_1_coro_client.html#ae92a877774cbbb22a6c7e1768cfb4548">wamp::CoroClient&lt; TBase &gt;</a>
-, <a class="el" href="classwamp_1_1_coro_errc_client.html#a6f4a0e41dfa2867724beb7b0470520bc">wamp::CoroErrcClient&lt; TBase &gt;</a>
+: <a class="el" href="classwamp_1_1_coro_session.html#a27e1d340844ae71b9ffa0fb51591317a">wamp::CoroSession&lt; TBase &gt;</a>
+, <a class="el" href="classwamp_1_1_session.html#a2a20e24d47e9f5426d0aba152a7c1f09">wamp::Session</a>
 </li>
 <li>calleeHasExpired()
 : <a class="el" href="classwamp_1_1_invocation.html#ae7a07a0c044ced14174ce64e57950df7">wamp::Invocation</a>
+</li>
+<li>caller()
+: <a class="el" href="classwamp_1_1_invocation.html#a748bbba1670cb739f1a88c6fda685083">wamp::Invocation</a>
+</li>
+<li>CallSlot
+: <a class="el" href="classwamp_1_1_coro_session.html#aa570173f0eb7dc034c1a55a980dadf75">wamp::CoroSession&lt; TBase &gt;</a>
+, <a class="el" href="classwamp_1_1_session.html#ab97649367b6ca3c4b3b2371d012e7829">wamp::Session</a>
 </li>
 <li>cancel()
 : <a class="el" href="classwamp_1_1_connector.html#a335a3e568dad14cea05b450a96cc1280">wamp::Connector</a>
@@ -174,9 +181,8 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="classwamp_1_1_uds_connector.html#a9fc18c8bea4b4f23622add400880b453">wamp::UdsConnector</a>
 </li>
 <li>connect()
-: <a class="el" href="classwamp_1_1_client.html#a7815d65254f9053a6840a744ee0fff45">wamp::Client</a>
-, <a class="el" href="classwamp_1_1_coro_client.html#a32b8073ca8b9f2027ea35b535054f7e0">wamp::CoroClient&lt; TBase &gt;</a>
-, <a class="el" href="classwamp_1_1_coro_errc_client.html#a6b4e6e6e62b0745487c05236af344996">wamp::CoroErrcClient&lt; TBase &gt;</a>
+: <a class="el" href="classwamp_1_1_coro_session.html#a990f68df80c36d848879b63a3d86b39d">wamp::CoroSession&lt; TBase &gt;</a>
+, <a class="el" href="classwamp_1_1_session.html#afe59c413ba03dcb6734c01f7d669b0d9">wamp::Session</a>
 </li>
 <li>convertsTo()
 : <a class="el" href="classwamp_1_1_variant.html#af4273a4d4ab0b1aa2c21e49f91657c25">wamp::Variant</a>
@@ -184,13 +190,15 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <li>convertsToTuple()
 : <a class="el" href="classwamp_1_1_variant.html#acd16cb1a34e74a5d6012891c9a5c637f">wamp::Variant</a>
 </li>
+<li>convertTo()
+: <a class="el" href="classwamp_1_1_payload.html#a537796f95a35da8c1b0e356c34275d38">wamp::Payload&lt; TDerived &gt;</a>
+</li>
 <li>create()
-: <a class="el" href="classwamp_1_1_client.html#ab9c616c521dd75be78a6a6fcaa1db54a">wamp::Client</a>
-, <a class="el" href="classwamp_1_1_coro_client.html#ab0dc583eb215eccb1d7432bdc7485e3d">wamp::CoroClient&lt; TBase &gt;</a>
-, <a class="el" href="classwamp_1_1_coro_errc_client.html#abb41adc59cf787e2227189a7cab78b84">wamp::CoroErrcClient&lt; TBase &gt;</a>
-, <a class="el" href="classwamp_1_1legacy_1_1_tcp_connector.html#acb5518a68a14b00c51fe1300cb077b8c">wamp::legacy::TcpConnector</a>
+: <a class="el" href="classwamp_1_1_coro_session.html#aca47333aa30e3c5ce5c448b1ff4012b4">wamp::CoroSession&lt; TBase &gt;</a>
+, <a class="el" href="classwamp_1_1legacy_1_1_tcp_connector.html#a1740daebb7ab29abd362fe4565282ecb">wamp::legacy::TcpConnector</a>
 , <a class="el" href="classwamp_1_1legacy_1_1_uds_connector.html#a437b0858fae09d764327c7e83f0f4fae">wamp::legacy::UdsConnector</a>
-, <a class="el" href="classwamp_1_1_tcp_connector.html#a4ab245c38b629f9b48744ef29e28203d">wamp::TcpConnector</a>
+, <a class="el" href="classwamp_1_1_session.html#a6192ca68b5face2427df094f879afe21">wamp::Session</a>
+, <a class="el" href="classwamp_1_1_tcp_connector.html#a88d94fad5a06e3c41d2043dd28b6829b">wamp::TcpConnector</a>
 , <a class="el" href="classwamp_1_1_uds_connector.html#ae5ae4e8f35d52d832cfaeacdb4b7c3f3">wamp::UdsConnector</a>
 </li>
 </ul>
@@ -199,7 +207,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 4 2015 16:24:47 for CppWAMP by
+    <li class="footer">Generated on Wed Apr 15 2015 19:06:23 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

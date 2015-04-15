@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['yieldcontext',['YieldContext',['../classwamp_1_1_coro_client.html#a6693072b7983aacf99e5d395ed2fd672',1,'wamp::CoroClient::YieldContext()'],['../classwamp_1_1_coro_errc_client.html#ad78273d980b8dcb66a192627cb9588b8',1,'wamp::CoroErrcClient::YieldContext()']]]
+  ['valuetype',['ValueType',['../classwamp_1_1_async_result.html#a35781c5a640113d817f3773b83dfd6a7',1,'wamp::AsyncResult']]],
+  ['valuetypeof',['ValueTypeOf',['../classwamp_1_1_options.html#a429eb613b4733526ce000d5a53723e5f',1,'wamp::Options::ValueTypeOf()'],['../classwamp_1_1_variant.html#a4071b8481ffe76d6d11101ee2e0c72de',1,'wamp::Variant::ValueTypeOf()']]]
 ];

@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_i.html#index_i"><span>i</span></a></li>
       <li><a href="functions_j.html#index_j"><span>j</span></a></li>
+      <li><a href="functions_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_m.html#index_m"><span>m</span></a></li>
       <li><a href="functions_n.html#index_n"><span>n</span></a></li>
@@ -145,32 +146,48 @@ $(document).ready(function(){initNavTree('functions_p.html','');});
 <div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
-<li>PairInitializerList
-: <a class="el" href="structwamp_1_1_args.html#a5c794876b5ae635d725168300be7d439">wamp::Args</a>
+<li>parts()
+: <a class="el" href="structwamp_1_1_version.html#a7b730829003b7d360a42b5e7598203eb">wamp::Version</a>
 </li>
-<li>peerInfo()
-: <a class="el" href="classwamp_1_1_client.html#a235601858116a47b3e314bcc25df7547">wamp::Client</a>
+<li>patch
+: <a class="el" href="structwamp_1_1_version.html#a12b6a0d021cd7e35b34f8d492a97d53e">wamp::Version</a>
+</li>
+<li>Payload()
+: <a class="el" href="classwamp_1_1_payload.html#a544f1051651dfab9ab5b66e2e10d8da2">wamp::Payload&lt; TDerived &gt;</a>
 </li>
 <li>procedure()
-: <a class="el" href="classwamp_1_1_registration.html#a22fcde35546c1a4ea66ff9c0b869504a">wamp::Registration</a>
+: <a class="el" href="classwamp_1_1_invocation.html#abdd45e1d5cdd67140f84c59391145f29">wamp::Invocation</a>
+</li>
+<li>Procedure()
+: <a class="el" href="classwamp_1_1_procedure.html#a1584cf1e29b654f52d2f24bdbca6bbec">wamp::Procedure</a>
+</li>
+<li>procedure()
+: <a class="el" href="classwamp_1_1_registration.html#a001a8b044a4004b62a13737976f9cf3a">wamp::Registration</a>
 </li>
 <li>protocolCategory()
 : <a class="el" href="classwamp_1_1_protocol_category.html#a80e1773cb22d9971926637abc116eb1d">wamp::ProtocolCategory</a>
 </li>
 <li>Ptr
-: <a class="el" href="classwamp_1_1_client.html#a77025dd6b8fcf7a0115c0dc59c4519d6">wamp::Client</a>
-, <a class="el" href="classwamp_1_1_connector.html#a71ed161f97ca2300f2e97e8ce9ab211b">wamp::Connector</a>
-, <a class="el" href="classwamp_1_1_coro_client.html#a5e272bda6acf7f97ee74b3d9ed5b4471">wamp::CoroClient&lt; TBase &gt;</a>
-, <a class="el" href="classwamp_1_1_coro_errc_client.html#a1885e2d89147cb9200875ff088dfe7ac">wamp::CoroErrcClient&lt; TBase &gt;</a>
+: <a class="el" href="classwamp_1_1_connector.html#a71ed161f97ca2300f2e97e8ce9ab211b">wamp::Connector</a>
+, <a class="el" href="classwamp_1_1_coro_session.html#a8b91b9a8096b99f2a95a2815d66b5ee5">wamp::CoroSession&lt; TBase &gt;</a>
 , <a class="el" href="classwamp_1_1legacy_1_1_tcp_connector.html#a1aa25e4ba9856edc7141a9be9f4facb1">wamp::legacy::TcpConnector</a>
 , <a class="el" href="classwamp_1_1legacy_1_1_uds_connector.html#a50f590f35a22aeb0c8d901acd41d60a0">wamp::legacy::UdsConnector</a>
+, <a class="el" href="classwamp_1_1_session.html#a3c66ba85a4fa50f8b85b15ba0c672384">wamp::Session</a>
 , <a class="el" href="classwamp_1_1_tcp_connector.html#afd5f8d39c212b58b919a4906f37851a1">wamp::TcpConnector</a>
 , <a class="el" href="classwamp_1_1_uds_connector.html#a7bf0c5158847989dce1ee66eaf302f21">wamp::UdsConnector</a>
 </li>
+<li>Pub()
+: <a class="el" href="classwamp_1_1_pub.html#a580a0e4fabca08dc14fa97e14d0c76fe">wamp::Pub</a>
+</li>
+<li>pubId()
+: <a class="el" href="classwamp_1_1_event.html#ac064a5b71b077c701d481624b7c56b1e">wamp::Event</a>
+</li>
 <li>publish()
-: <a class="el" href="classwamp_1_1_client.html#a9d93b45873f9ec043af8b9da4fbb0227">wamp::Client</a>
-, <a class="el" href="classwamp_1_1_coro_client.html#a759d57acad57cd97979a54694633c5e2">wamp::CoroClient&lt; TBase &gt;</a>
-, <a class="el" href="classwamp_1_1_coro_errc_client.html#a53db536345254787569b560b8faaf0f8">wamp::CoroErrcClient&lt; TBase &gt;</a>
+: <a class="el" href="classwamp_1_1_coro_session.html#ae2a3c8801c1b2464ca98d9f4b0a4c77e">wamp::CoroSession&lt; TBase &gt;</a>
+, <a class="el" href="classwamp_1_1_session.html#a335a1650356141253b9ca4719e66f3c8">wamp::Session</a>
+</li>
+<li>publisher()
+: <a class="el" href="classwamp_1_1_event.html#a19a996dac138a44bf2c0233e71cbacbf">wamp::Event</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -178,7 +195,7 @@ $(document).ready(function(){initNavTree('functions_p.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 4 2015 16:24:47 for CppWAMP by
+    <li class="footer">Generated on Wed Apr 15 2015 19:06:23 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

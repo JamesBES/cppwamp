@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['msgpack',['Msgpack',['../namespacewamp.html#a2a7f5176e365339b2e6683a1a0bacfe1',1,'wamp']]]
+  ['loghandler',['LogHandler',['../classwamp_1_1_session.html#aab56766974c059f2d5eab9194dddf6dc',1,'wamp::Session']]]
 ];

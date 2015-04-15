@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('structwamp_1_1_unmarshall.html','');})
 <p>Utility class used to split <a class="el" href="namespacewamp.html#a355f6175e9ae713577192bf2665bc030">Array</a> elements into separate arguments to be passed to a function.  
  <a href="structwamp_1_1_unmarshall.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="args_8hpp_source.html">cppwamp/args.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="payload_8hpp_source.html">cppwamp/payload.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -135,9 +135,9 @@ Static Public Member Functions</h2></td></tr>
 struct wamp::Unmarshall&lt; TArgs &gt;</h3>
 
 <p>Utility class used to split <a class="el" href="namespacewamp.html#a355f6175e9ae713577192bf2665bc030">Array</a> elements into separate arguments to be passed to a function. </p>
-<p>This class is used internally by <a class="el" href="classwamp_1_1_client.html" title="Asynchronous API used by a client peer in WAMP applications. ">Client</a> to invoke <a class="el" href="_event_slot.html#StaticEventSlot">StaticEventSlot</a> and <a class="el" href="_call_slot.html#StaticCallSlot">StaticCallSlot</a> targets. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>This class is used internally by <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a> to invoke event slots and call slots taking extra, statically-typed parameters. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TArgs</td><td>List of argument types to which the Array elements will be split and converted. </td></tr>
+    <tr><td class="paramname">TArgs</td><td>List of target argument types to which the Array elements will be split and converted. </td></tr>
   </table>
   </dd>
 </dl>
@@ -270,8 +270,8 @@ template&lt;typename TFunction , typename... TPreargs&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>cppwamp/<a class="el" href="args_8hpp_source.html">args.hpp</a></li>
-<li>cppwamp/internal/args.ipp</li>
+<li>cppwamp/<a class="el" href="payload_8hpp_source.html">payload.hpp</a></li>
+<li>cppwamp/internal/payload.ipp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -279,7 +279,7 @@ template&lt;typename TFunction , typename... TPreargs&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="structwamp_1_1_unmarshall.html">Unmarshall</a></li>
-    <li class="footer">Generated on Sat Apr 4 2015 16:24:47 for CppWAMP by
+    <li class="footer">Generated on Wed Apr 15 2015 19:06:22 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

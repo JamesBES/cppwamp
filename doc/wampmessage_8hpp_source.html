@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('wampmessage_8hpp_source.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">static</span> WampMessage parse(<a class="code" href="namespacewamp.html#a355f6175e9ae713577192bf2665bc030">Array</a>&amp;&amp; fields, std::error_code&amp; ec)</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="namespacewamp.html#a19ce4bc9c1e5512cec6ba323c4d324d0">ProtocolErrc</a> errc = <a class="code" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a260ca9dd8a4577fc00b7bd5810298076">ProtocolErrc::success</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="namespacewamp.html#a19ce4bc9c1e5512cec6ba323c4d324d0">ProtocolErrc</a> errc = <a class="code" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a260ca9dd8a4577fc00b7bd5810298076">ProtocolErrc::success</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        WampMsgType type = WampMsgType::none;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span> (fields.empty() || !fields.at(0).is&lt;<a class="code" href="namespacewamp.html#a57f6163452dce1ca97a8a75dfc894d09">Int</a>&gt;())</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            errc = <a class="code" href="namespacewamp.html#a19ce4bc9c1e5512cec6ba323c4d324d0a3b2142dd13569c21d672bb57b522b590">ProtocolErrc::badSchema</a>;</div>
@@ -194,17 +194,17 @@ $(document).ready(function(){initNavTree('wampmessage_8hpp_source.html','');});
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    T to(<span class="keywordtype">size_t</span> index)<span class="keyword"> const </span>{<span class="keywordflow">return</span> fields.at(index).to&lt;T&gt;();}</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="namespacewamp.html#a683218a8ce0b52b4e9adee37cf13e272">RequestId</a> requestId()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="namespacewamp.html#ad69525a134cfe3de73c79af0e80f2ff2">RequestId</a> requestId()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="namespacewamp.html#a683218a8ce0b52b4e9adee37cf13e272">RequestId</a> <span class="keywordtype">id</span> = 0;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="namespacewamp.html#ad69525a134cfe3de73c79af0e80f2ff2">RequestId</a> <span class="keywordtype">id</span> = 0;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span> (type != WampMsgType::error)</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keyword">auto</span> idPos = traits().idPosition;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">if</span> (idPos != 0)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordtype">id</span> = fields.at(idPos).to&lt;<a class="code" href="namespacewamp.html#a683218a8ce0b52b4e9adee37cf13e272">RequestId</a>&gt;();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordtype">id</span> = fields.at(idPos).to&lt;<a class="code" href="namespacewamp.html#ad69525a134cfe3de73c79af0e80f2ff2">RequestId</a>&gt;();</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordtype">id</span> = fields.at(2).to&lt;<a class="code" href="namespacewamp.html#a683218a8ce0b52b4e9adee37cf13e272">RequestId</a>&gt;();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordtype">id</span> = fields.at(2).to&lt;<a class="code" href="namespacewamp.html#ad69525a134cfe3de73c79af0e80f2ff2">RequestId</a>&gt;();</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">return</span> id;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
@@ -226,19 +226,19 @@ $(document).ready(function(){initNavTree('wampmessage_8hpp_source.html','');});
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;} <span class="comment">// namespace wamp</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif // CPPWAMP_INTERNAL_WAMPMESSAGE_HPP</span></div>
-<div class="ttc" id="namespacewamp_html_a683218a8ce0b52b4e9adee37cf13e272"><div class="ttname"><a href="namespacewamp.html#a683218a8ce0b52b4e9adee37cf13e272">wamp::RequestId</a></div><div class="ttdeci">uint64_t RequestId</div><div class="ttdoc">Ephemeral ID associated with a WAMP request. </div><div class="ttdef"><b>Definition:</b> wampdefs.hpp:22</div></div>
+<div class="ttc" id="namespacewamp_html_ad69525a134cfe3de73c79af0e80f2ff2"><div class="ttname"><a href="namespacewamp.html#ad69525a134cfe3de73c79af0e80f2ff2">wamp::RequestId</a></div><div class="ttdeci">int64_t RequestId</div><div class="ttdoc">Ephemeral ID associated with a WAMP request. </div><div class="ttdef"><b>Definition:</b> wampdefs.hpp:22</div></div>
 <div class="ttc" id="namespacewamp_html_a19ce4bc9c1e5512cec6ba323c4d324d0"><div class="ttname"><a href="namespacewamp.html#a19ce4bc9c1e5512cec6ba323c4d324d0">wamp::ProtocolErrc</a></div><div class="ttdeci">ProtocolErrc</div><div class="ttdoc">Error code values used with the ProtocolCategory error category. </div><div class="ttdef"><b>Definition:</b> error.hpp:192</div></div>
 <div class="ttc" id="namespacewamp_html_a19ce4bc9c1e5512cec6ba323c4d324d0a3b2142dd13569c21d672bb57b522b590"><div class="ttname"><a href="namespacewamp.html#a19ce4bc9c1e5512cec6ba323c4d324d0a3b2142dd13569c21d672bb57b522b590">wamp::ProtocolErrc::badSchema</a></div><div class="ttdoc">Invalid WAMP message schema. </div></div>
-<div class="ttc" id="namespacewamp_html_a355f6175e9ae713577192bf2665bc030"><div class="ttname"><a href="namespacewamp.html#a355f6175e9ae713577192bf2665bc030">wamp::Array</a></div><div class="ttdeci">Variant::Array Array</div><div class="ttdoc">Alias for Variant::Array. </div><div class="ttdef"><b>Definition:</b> variant.hpp:471</div></div>
-<div class="ttc" id="namespacewamp_html_a57f6163452dce1ca97a8a75dfc894d09"><div class="ttname"><a href="namespacewamp.html#a57f6163452dce1ca97a8a75dfc894d09">wamp::Int</a></div><div class="ttdeci">Variant::Int Int</div><div class="ttdoc">Alias for Variant::Int. </div><div class="ttdef"><b>Definition:</b> variant.hpp:467</div></div>
-<div class="ttc" id="namespacewamp_html_a273c9ee23a2795f59543c60fb68fc083a260ca9dd8a4577fc00b7bd5810298076"><div class="ttname"><a href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a260ca9dd8a4577fc00b7bd5810298076">wamp::WampErrc::success</a></div><div class="ttdoc">Operation successful. </div></div>
+<div class="ttc" id="namespacewamp_html_a355f6175e9ae713577192bf2665bc030"><div class="ttname"><a href="namespacewamp.html#a355f6175e9ae713577192bf2665bc030">wamp::Array</a></div><div class="ttdeci">Variant::Array Array</div><div class="ttdoc">Alias for Variant::Array. </div><div class="ttdef"><b>Definition:</b> variant.hpp:502</div></div>
+<div class="ttc" id="namespacewamp_html_a57f6163452dce1ca97a8a75dfc894d09"><div class="ttname"><a href="namespacewamp.html#a57f6163452dce1ca97a8a75dfc894d09">wamp::Int</a></div><div class="ttdeci">Variant::Int Int</div><div class="ttdoc">Alias for Variant::Int. </div><div class="ttdef"><b>Definition:</b> variant.hpp:498</div></div>
+<div class="ttc" id="namespacewamp_html_a9ecf2a0b15a4d67bb0cd1928b4056d46a260ca9dd8a4577fc00b7bd5810298076"><div class="ttname"><a href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a260ca9dd8a4577fc00b7bd5810298076">wamp::SessionErrc::success</a></div><div class="ttdoc">Operation successful. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb7245a6f5714b15c73ba62cf32a25df.html">cppwamp</a></li><li class="navelem"><a class="el" href="dir_6a7aca854c9e23f638e2a4e6e00d5fbc.html">internal</a></li><li class="navelem"><b>wampmessage.hpp</b></li>
-    <li class="footer">Generated on Sat Apr 4 2015 16:24:46 for CppWAMP by
+    <li class="footer">Generated on Wed Apr 15 2015 19:06:22 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

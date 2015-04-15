@@ -125,19 +125,13 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespacewamp_1_1error"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace containing exception types thrown by the CppWAMP library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacewamp_1_1legacy"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp_1_1legacy.html">legacy</a></td></tr>
-<tr class="memdesc:namespacewamp_1_1legacy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains interim <a class="el" href="classwamp_1_1_connector.html" title="Abstract base class for establishing client transport endpoints. ">Connector</a> types for connecting to routers that do not supporting handshaking on raw socket transports. <br /></td></tr>
+<tr class="memdesc:namespacewamp_1_1legacy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains interim <a class="el" href="classwamp_1_1_connector.html" title="Abstract base class for establishing client transport endpoints. ">Connector</a> types for connecting to routers that do not yet supporting handshaking on raw socket transports. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwamp_1_1_args.html">Args</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bundles variants into positional and/or keyword arguments.  <a href="structwamp_1_1_args.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_async_result.html">AsyncResult</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value type that combines an asynchronous result with an error code.  <a href="classwamp_1_1_async_result.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_client.html">Client</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous API used by a <em>client</em> peer in WAMP applications.  <a href="classwamp_1_1_client.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:classwamp_1_1_codec"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#classwamp_1_1_codec">Codec</a></td></tr>
 <tr class="memdesc:classwamp_1_1_codec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty default implementation of the <a class="el" href="namespacewamp.html#classwamp_1_1_codec" title="Empty default implementation of the Codec template. ">Codec</a> template.  <a href="namespacewamp.html#classwamp_1_1_codec">More...</a><br /></td></tr>
@@ -151,11 +145,14 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_connector.html">Connector</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for establishing client transport endpoints.  <a href="classwamp_1_1_connector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_client.html">CoroClient</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coroutine API used by a <em>client</em> peer in WAMP applications.  <a href="classwamp_1_1_coro_client.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html">CoroSession</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coroutine API used by a <em>client</em> peer in WAMP applications.  <a href="classwamp_1_1_coro_session.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_errc_client.html">CoroErrcClient</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternate coroutine API used by a <em>client</em> peer in WAMP applications.  <a href="classwamp_1_1_coro_errc_client.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_error.html">Error</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the <em>reason</em> URI, options, and payload arguments contained within WAMP ERROR messages.  <a href="classwamp_1_1_error.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_event.html">Event</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a published event.  <a href="classwamp_1_1_event.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_invocation.html">Invocation</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the means for returning a <code>YIELD</code> or <code>ERROR</code> result back to the RPC caller.  <a href="classwamp_1_1_invocation.html#details">More...</a><br /></td></tr>
@@ -163,20 +160,56 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwamp_1_1_null.html">Null</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type used to represent a null or empty <a class="el" href="classwamp_1_1_variant.html" title="Discriminated union container that represents a JSON value. ">Variant</a> value.  <a href="structwamp_1_1_null.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_options.html">Options</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a collection of WAMP options or details.  <a href="classwamp_1_1_options.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_payload.html">Payload</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains a payload of positional and keyword arguments exchanged with a WAMP peer.  <a href="classwamp_1_1_payload.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_procedure.html">Procedure</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procedure URI and other options passed to <a class="el" href="classwamp_1_1_session.html#aa3c9f8d59c824acce455979ba2229e96" title="Registers a WAMP remote procedure call. ">Session::enroll</a>.  <a href="classwamp_1_1_procedure.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_protocol_category.html">ProtocolCategory</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::error_category used for reporting protocol errors related to invalid WAMP messages.  <a href="classwamp_1_1_protocol_category.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_pub.html">Pub</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the topic URI, options, and payload passed to <a class="el" href="classwamp_1_1_session.html#a335a1650356141253b9ca4719e66f3c8" title="Publishes an event. ">Session::publish</a>.  <a href="classwamp_1_1_pub.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_rawsock_category.html">RawsockCategory</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::error_category used for reporting errors specific to raw socket transports.  <a href="classwamp_1_1_rawsock_category.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_realm.html">Realm</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realm URI and other options passed to <a class="el" href="classwamp_1_1_session.html#a3119d4f363c42b72f4198db8298112ca" title="Asynchronously attempts to join the given WAMP realm. ">Session::join</a>.  <a href="classwamp_1_1_realm.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_reason.html">Reason</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the <em>reason</em> URI and other options contained within <code>GOODBYE</code> messages.  <a href="classwamp_1_1_reason.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_registration.html">Registration</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference-counting handle used to manage the lifetime of an RPC registration.  <a href="classwamp_1_1_registration.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages the lifetime of an RPC registration.  <a href="classwamp_1_1_registration.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_result.html">Result</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains a remote procedure result yielded by a <em>callee</em> or received by a <em>caller</em>.  <a href="classwamp_1_1_result.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_rpc.html">Rpc</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the procedure URI, options, and payload passed to <a class="el" href="classwamp_1_1_session.html#a2a20e24d47e9f5426d0aba152a7c1f09" title="Calls a remote procedure. ">Session::call</a>.  <a href="classwamp_1_1_rpc.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html">Session</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous session API used by a <em>client</em> peer in WAMP applications.  <a href="classwamp_1_1_session.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session_category.html">SessionCategory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::error_category used for reporting errors at the WAMP session layer.  <a href="classwamp_1_1_session_category.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session_info.html">SessionInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a> information returned by <a class="el" href="classwamp_1_1_session.html#a3119d4f363c42b72f4198db8298112ca" title="Asynchronously attempts to join the given WAMP realm. ">Session::join</a>.  <a href="classwamp_1_1_session_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_subscription.html">Subscription</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference-counting handle used to manage the lifetime of a pub/sub event subscription.  <a href="classwamp_1_1_subscription.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages the lifetime of a pub/sub event subscription.  <a href="classwamp_1_1_subscription.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_tcp_connector.html">TcpConnector</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establishes a client connection over TCP raw socket.  <a href="classwamp_1_1_tcp_connector.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_topic.html">Topic</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Topic URI and other options passed to <a class="el" href="classwamp_1_1_session.html#a9070e65515a06935d0a96b283e7ee9c6" title="Subscribes to WAMP pub/sub events having the given topic. ">Session::subscribe</a>.  <a href="classwamp_1_1_topic.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_transport_category.html">TransportCategory</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::error_category used for reporting errors at the transport layer.  <a href="classwamp_1_1_transport_category.html#details">More...</a><br /></td></tr>
@@ -190,18 +223,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html">Variant</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discriminated union container that represents a JSON value.  <a href="classwamp_1_1_variant.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwamp_1_1_version.html">Version</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bundles the major, minor, and patch version numbers.  <a href="structwamp_1_1_version.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:classwamp_1_1_visitor"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#classwamp_1_1_visitor">Visitor</a></td></tr>
 <tr class="memdesc:classwamp_1_1_visitor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience base class used to meet the result type requirements of a <a class="el" href="_visitor_concept.html#StaticVisitor">StaticVisitor</a>.  <a href="namespacewamp.html#classwamp_1_1_visitor">More...</a><br /></td></tr>
 <tr class="separator:classwamp_1_1_visitor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_wamp_category.html">WampCategory</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::error_category used for reporting errors at the WAMP layer.  <a href="classwamp_1_1_wamp_category.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structwamp_1_1_with"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#structwamp_1_1_with">With</a></td></tr>
-<tr class="memdesc:structwamp_1_1_with"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tag type used to distinguish <a class="el" href="structwamp_1_1_args.html" title="Bundles variants into positional and/or keyword arguments. ">Args</a> constructor overloads.  <a href="namespacewamp.html#structwamp_1_1_with">More...</a><br /></td></tr>
-<tr class="separator:structwamp_1_1_with"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structwamp_1_1_with_pairs"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#structwamp_1_1_with_pairs">WithPairs</a></td></tr>
-<tr class="memdesc:structwamp_1_1_with_pairs"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tag type used to distinguish <a class="el" href="structwamp_1_1_args.html" title="Bundles variants into positional and/or keyword arguments. ">Args</a> constructor overloads.  <a href="namespacewamp.html#structwamp_1_1_with_pairs">More...</a><br /></td></tr>
-<tr class="separator:structwamp_1_1_with_pairs"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -227,26 +254,26 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a2a7f5176e365339b2e6683a1a0bacfe1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a2a7f5176e365339b2e6683a1a0bacfe1">Msgpack</a> = <a class="el" href="namespacewamp.html#classwamp_1_1_codec">Codec</a>&lt; <a class="el" href="namespacewamp.html#a60f47e3fdd75d3c6d54af0c6717427a3ac40d516627022a54003ac2b74a82688a">CodecId::msgpack</a> &gt;</td></tr>
 <tr class="memdesc:a2a7f5176e365339b2e6683a1a0bacfe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenient shorthand for the Msgpack codec.  <a href="#a2a7f5176e365339b2e6683a1a0bacfe1">More...</a><br /></td></tr>
 <tr class="separator:a2a7f5176e365339b2e6683a1a0bacfe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e80b96024342dcf5744f89ceacb2e66"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e80b96024342dcf5744f89ceacb2e66"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a9e80b96024342dcf5744f89ceacb2e66">SessionId</a> = uint64_t</td></tr>
-<tr class="memdesc:a9e80b96024342dcf5744f89ceacb2e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ephemeral ID associated with a WAMP session. <br /></td></tr>
-<tr class="separator:a9e80b96024342dcf5744f89ceacb2e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a683218a8ce0b52b4e9adee37cf13e272"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a683218a8ce0b52b4e9adee37cf13e272"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a683218a8ce0b52b4e9adee37cf13e272">RequestId</a> = uint64_t</td></tr>
-<tr class="memdesc:a683218a8ce0b52b4e9adee37cf13e272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ephemeral ID associated with a WAMP request. <br /></td></tr>
-<tr class="separator:a683218a8ce0b52b4e9adee37cf13e272"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd0322a7009f24fccaefffe4940d5185"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd0322a7009f24fccaefffe4940d5185"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#abd0322a7009f24fccaefffe4940d5185">SubscriptionId</a> = uint64_t</td></tr>
-<tr class="memdesc:abd0322a7009f24fccaefffe4940d5185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ephemeral ID associated with an topic subscription. <br /></td></tr>
-<tr class="separator:abd0322a7009f24fccaefffe4940d5185"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e2e2100de68aebca360208c46a62192"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e2e2100de68aebca360208c46a62192"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a9e2e2100de68aebca360208c46a62192">PublicationId</a> = uint64_t</td></tr>
-<tr class="memdesc:a9e2e2100de68aebca360208c46a62192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ephemeral ID associated with an event publication. <br /></td></tr>
-<tr class="separator:a9e2e2100de68aebca360208c46a62192"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f1aab23f870b5e4d57538b9106c450d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f1aab23f870b5e4d57538b9106c450d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a9f1aab23f870b5e4d57538b9106c450d">RegistrationId</a> = uint64_t</td></tr>
-<tr class="memdesc:a9f1aab23f870b5e4d57538b9106c450d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ephemeral ID associated with an RPC registration. <br /></td></tr>
-<tr class="separator:a9f1aab23f870b5e4d57538b9106c450d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8949d385f548e570ad954089b7439dc1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8949d385f548e570ad954089b7439dc1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a8949d385f548e570ad954089b7439dc1">SessionId</a> = int64_t</td></tr>
+<tr class="memdesc:a8949d385f548e570ad954089b7439dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ephemeral ID associated with a WAMP session. <br /></td></tr>
+<tr class="separator:a8949d385f548e570ad954089b7439dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69525a134cfe3de73c79af0e80f2ff2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad69525a134cfe3de73c79af0e80f2ff2"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#ad69525a134cfe3de73c79af0e80f2ff2">RequestId</a> = int64_t</td></tr>
+<tr class="memdesc:ad69525a134cfe3de73c79af0e80f2ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ephemeral ID associated with a WAMP request. <br /></td></tr>
+<tr class="separator:ad69525a134cfe3de73c79af0e80f2ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15249f3ad90f2f5fa5d30317c84fbce8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15249f3ad90f2f5fa5d30317c84fbce8"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a15249f3ad90f2f5fa5d30317c84fbce8">SubscriptionId</a> = int64_t</td></tr>
+<tr class="memdesc:a15249f3ad90f2f5fa5d30317c84fbce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ephemeral ID associated with an topic subscription. <br /></td></tr>
+<tr class="separator:a15249f3ad90f2f5fa5d30317c84fbce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1108039d1eea74def74485afcd801d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1108039d1eea74def74485afcd801d5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#af1108039d1eea74def74485afcd801d5">PublicationId</a> = int64_t</td></tr>
+<tr class="memdesc:af1108039d1eea74def74485afcd801d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ephemeral ID associated with an event publication. <br /></td></tr>
+<tr class="separator:af1108039d1eea74def74485afcd801d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a11e7b619d74f499adf34837731877b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a11e7b619d74f499adf34837731877b"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a2a11e7b619d74f499adf34837731877b">RegistrationId</a> = int64_t</td></tr>
+<tr class="memdesc:a2a11e7b619d74f499adf34837731877b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ephemeral ID associated with an RPC registration. <br /></td></tr>
+<tr class="separator:a2a11e7b619d74f499adf34837731877b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Variant bound types redeclared in namespace for convenience:</div></td></tr>
 <tr class="memitem:a624ca6bf7b1ae409dbd5aee00638e335"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a624ca6bf7b1ae409dbd5aee00638e335"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a624ca6bf7b1ae409dbd5aee00638e335">Bool</a> = <a class="el" href="classwamp_1_1_variant.html#ac118672044461eefb7b39bb783a588c7">Variant::Bool</a></td></tr>
@@ -292,58 +319,58 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a60f47e3fdd75d3c6d54af0c6717427a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer type used to identify a codec.  <a href="namespacewamp.html#a60f47e3fdd75d3c6d54af0c6717427a3">More...</a><br /></td></tr>
 <tr class="separator:a60f47e3fdd75d3c6d54af0c6717427a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a273c9ee23a2795f59543c60fb68fc083"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083">WampErrc</a> { <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a260ca9dd8a4577fc00b7bd5810298076">WampErrc::success</a> = 0, 
+<tr class="memitem:a9ecf2a0b15a4d67bb0cd1928b4056d46"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46">SessionErrc</a> { <br />
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a260ca9dd8a4577fc00b7bd5810298076">SessionErrc::success</a> = 0, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a6398ee39c528ff4737ae63947d85d0a4">WampErrc::sessionEnded</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a6398ee39c528ff4737ae63947d85d0a4">SessionErrc::sessionEnded</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a31d993ba59164643e0e2159e32b63216">WampErrc::sessionEndedByPeer</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a31d993ba59164643e0e2159e32b63216">SessionErrc::sessionEndedByPeer</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083ae55e2d2dad2f8cb947d320333e4fd018">WampErrc::allTransportsFailed</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ae55e2d2dad2f8cb947d320333e4fd018">SessionErrc::allTransportsFailed</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083aa75d537e41b81dbfe97193fbc3c1a31c">WampErrc::joinError</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46aa75d537e41b81dbfe97193fbc3c1a31c">SessionErrc::joinError</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a829ceab85261d613afb28a51c65891fc">WampErrc::publishError</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a829ceab85261d613afb28a51c65891fc">SessionErrc::publishError</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a696e8572fae9cf279b6ae706bb198067">WampErrc::subscribeError</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a696e8572fae9cf279b6ae706bb198067">SessionErrc::subscribeError</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a0af961c159db3c2e12ecefdcdd067f5d">WampErrc::unsubscribeError</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a0af961c159db3c2e12ecefdcdd067f5d">SessionErrc::unsubscribeError</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a5df9f1bf5e3db9c58bf704975f5b910b">WampErrc::registerError</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a5df9f1bf5e3db9c58bf704975f5b910b">SessionErrc::registerError</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a46b3700b2b31b8385fe1d8ee86467afd">WampErrc::unregisterError</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a46b3700b2b31b8385fe1d8ee86467afd">SessionErrc::unregisterError</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083aef60a5ac24513b778c5cbf1c19849ade">WampErrc::callError</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46aef60a5ac24513b778c5cbf1c19849ade">SessionErrc::callError</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a2bea66a21ec3d2c8e0f5e53525b8ef7d">WampErrc::invalidUri</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a2bea66a21ec3d2c8e0f5e53525b8ef7d">SessionErrc::invalidUri</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a2be9ffd8006ede69e1a0d3e504095d14">WampErrc::noSuchProcedure</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a2be9ffd8006ede69e1a0d3e504095d14">SessionErrc::noSuchProcedure</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a357062fb324f21ba4ec07cdc0af68164">WampErrc::procedureAlreadyExists</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a357062fb324f21ba4ec07cdc0af68164">SessionErrc::procedureAlreadyExists</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083ac76490ae5599680eded015233639c5d2">WampErrc::noSuchRegistration</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ac76490ae5599680eded015233639c5d2">SessionErrc::noSuchRegistration</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083ac2887dee431a49d9f0ae352716e50de6">WampErrc::noSuchSubscription</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ac2887dee431a49d9f0ae352716e50de6">SessionErrc::noSuchSubscription</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083ac37ace0e876e37d499a382934104b9eb">WampErrc::invalidArgument</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ac37ace0e876e37d499a382934104b9eb">SessionErrc::invalidArgument</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a4e0fa97322f86ae1189c874d9627e843">WampErrc::systemShutdown</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a4e0fa97322f86ae1189c874d9627e843">SessionErrc::systemShutdown</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a99e3020a29f7fdcf1d466029c15f96db">WampErrc::closeRealm</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a99e3020a29f7fdcf1d466029c15f96db">SessionErrc::closeRealm</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a9c34b6023aecaad53774bb3c621510d7">WampErrc::goodbyeAndOut</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a9c34b6023aecaad53774bb3c621510d7">SessionErrc::goodbyeAndOut</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083afd6ddc515a5476fed223435c88a937b1">WampErrc::notAuthorized</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46afd6ddc515a5476fed223435c88a937b1">SessionErrc::notAuthorized</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a23326a67dfb49576ae6d7f0ed9d124eb">WampErrc::authorizationFailed</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a23326a67dfb49576ae6d7f0ed9d124eb">SessionErrc::authorizationFailed</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a1f7f92026f85b91bf2c50b57390b12a6">WampErrc::noSuchRealm</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a1f7f92026f85b91bf2c50b57390b12a6">SessionErrc::noSuchRealm</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083ae36499a907b854bc2d653d1a28d48490">WampErrc::noSuchRole</a>
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ae36499a907b854bc2d653d1a28d48490">SessionErrc::noSuchRole</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a273c9ee23a2795f59543c60fb68fc083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error code values used with the WampCategory error category.  <a href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083">More...</a><br /></td></tr>
-<tr class="separator:a273c9ee23a2795f59543c60fb68fc083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a9ecf2a0b15a4d67bb0cd1928b4056d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error code values used with the SessionCategory error category.  <a href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46">More...</a><br /></td></tr>
+<tr class="separator:a9ecf2a0b15a4d67bb0cd1928b4056d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19ce4bc9c1e5512cec6ba323c4d324d0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a19ce4bc9c1e5512cec6ba323c4d324d0">ProtocolErrc</a> { <br />
 &#160;&#160;<a class="el" href="namespacewamp.html#a19ce4bc9c1e5512cec6ba323c4d324d0a260ca9dd8a4577fc00b7bd5810298076">ProtocolErrc::success</a> = 0, 
 <br />
@@ -467,12 +494,6 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:abf7a48288ad6003f0d18a4cdeeae6ccd"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacewamp.html#structwamp_1_1_with">With</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#abf7a48288ad6003f0d18a4cdeeae6ccd">with</a> {}</td></tr>
-<tr class="memdesc:abf7a48288ad6003f0d18a4cdeeae6ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant tag object used to distinguish <a class="el" href="structwamp_1_1_args.html" title="Bundles variants into positional and/or keyword arguments. ">Args</a> constructor overloads.  <a href="#abf7a48288ad6003f0d18a4cdeeae6ccd">More...</a><br /></td></tr>
-<tr class="separator:abf7a48288ad6003f0d18a4cdeeae6ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad97e328ecd5e7ff5bbfdfc4be9cef272"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacewamp.html#structwamp_1_1_with_pairs">WithPairs</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#ad97e328ecd5e7ff5bbfdfc4be9cef272">withPairs</a> {}</td></tr>
-<tr class="memdesc:ad97e328ecd5e7ff5bbfdfc4be9cef272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant tag object used to distinguish <a class="el" href="structwamp_1_1_args.html" title="Bundles variants into positional and/or keyword arguments. ">Args</a> constructor overloads.  <a href="#ad97e328ecd5e7ff5bbfdfc4be9cef272">More...</a><br /></td></tr>
-<tr class="separator:ad97e328ecd5e7ff5bbfdfc4be9cef272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30e2886a93141924f9643770b4f01eef"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structwamp_1_1_null.html">Null</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a30e2886a93141924f9643770b4f01eef">null</a></td></tr>
 <tr class="memdesc:a30e2886a93141924f9643770b4f01eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant <a class="el" href="structwamp_1_1_null.html" title="Type used to represent a null or empty Variant value. ">Null</a> object that can be assigned to, or compared with a <a class="el" href="classwamp_1_1_variant.html" title="Discriminated union container that represents a JSON value. ">Variant</a>.  <a href="#a30e2886a93141924f9643770b4f01eef">More...</a><br /></td></tr>
 <tr class="separator:a30e2886a93141924f9643770b4f01eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -522,34 +543,6 @@ Result</td>
 The return type for all of the visitor's dispatch functions. </td></tr>
 </table>
 
-</div>
-</div>
-<a name="structwamp_1_1_with" id="structwamp_1_1_with"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct wamp::With</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"><p>Tag type used to distinguish <a class="el" href="structwamp_1_1_args.html" title="Bundles variants into positional and/or keyword arguments. ">Args</a> constructor overloads. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacewamp.html#abf7a48288ad6003f0d18a4cdeeae6ccd" title="Constant tag object used to distinguish Args constructor overloads. ">wamp::with</a> </dd></dl>
-</div>
-</div>
-</div>
-<a name="structwamp_1_1_with_pairs" id="structwamp_1_1_with_pairs"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct wamp::WithPairs</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"><p>Tag type used to distinguish <a class="el" href="structwamp_1_1_args.html" title="Bundles variants into positional and/or keyword arguments. ">Args</a> constructor overloads. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacewamp.html#ad97e328ecd5e7ff5bbfdfc4be9cef272" title="Constant tag object used to distinguish Args constructor overloads. ">wamp::withPairs</a> </dd></dl>
-</div>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -702,7 +695,7 @@ template&lt;typename TVisitor &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083"></a>
+<a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -710,7 +703,7 @@ template&lt;typename TVisitor &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083">wamp::WampErrc</a></td>
+          <td class="memname">enum <a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46">wamp::SessionErrc</a></td>
         </tr>
       </table>
   </td>
@@ -720,7 +713,7 @@ template&lt;typename TVisitor &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Error code values used with the <a class="el" href="classwamp_1_1_wamp_category.html" title="std::error_category used for reporting errors at the WAMP layer. ">WampCategory</a> error category. </p>
+<p><a class="el" href="classwamp_1_1_error.html" title="Provides the reason URI, options, and payload arguments contained within WAMP ERROR messages...">Error</a> code values used with the <a class="el" href="classwamp_1_1_session_category.html" title="std::error_category used for reporting errors at the WAMP session layer. ">SessionCategory</a> error category. </p>
 <p>The equivalencies between these codes are as follows:</p>
 <table class="doxtable">
 <tr>
@@ -743,76 +736,76 @@ template&lt;typename TVisitor &gt; </div>
 <td>make_error_code(invalidArgument) </td><td>callError </td></tr>
 </table>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083a260ca9dd8a4577fc00b7bd5810298076"></a>success&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46a260ca9dd8a4577fc00b7bd5810298076"></a>success&#160;</td><td class="fielddoc">
 <p>Operation successful. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083a6398ee39c528ff4737ae63947d85d0a4"></a>sessionEnded&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46a6398ee39c528ff4737ae63947d85d0a4"></a>sessionEnded&#160;</td><td class="fielddoc">
 <p>Operation aborted; session ended by this peer. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083a31d993ba59164643e0e2159e32b63216"></a>sessionEndedByPeer&#160;</td><td class="fielddoc">
-<p>Session ended by other peer. </p>
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46a31d993ba59164643e0e2159e32b63216"></a>sessionEndedByPeer&#160;</td><td class="fielddoc">
+<p><a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a> ended by other peer. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083ae55e2d2dad2f8cb947d320333e4fd018"></a>allTransportsFailed&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46ae55e2d2dad2f8cb947d320333e4fd018"></a>allTransportsFailed&#160;</td><td class="fielddoc">
 <p>All transports failed during connection. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083aa75d537e41b81dbfe97193fbc3c1a31c"></a>joinError&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46aa75d537e41b81dbfe97193fbc3c1a31c"></a>joinError&#160;</td><td class="fielddoc">
 <p>Join error reported by router. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083a829ceab85261d613afb28a51c65891fc"></a>publishError&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46a829ceab85261d613afb28a51c65891fc"></a>publishError&#160;</td><td class="fielddoc">
 <p>Publish error reported by broker. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083a696e8572fae9cf279b6ae706bb198067"></a>subscribeError&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46a696e8572fae9cf279b6ae706bb198067"></a>subscribeError&#160;</td><td class="fielddoc">
 <p>Subscribe error reported by broker. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083a0af961c159db3c2e12ecefdcdd067f5d"></a>unsubscribeError&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46a0af961c159db3c2e12ecefdcdd067f5d"></a>unsubscribeError&#160;</td><td class="fielddoc">
 <p>Unsubscribe error reported by broker. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083a5df9f1bf5e3db9c58bf704975f5b910b"></a>registerError&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46a5df9f1bf5e3db9c58bf704975f5b910b"></a>registerError&#160;</td><td class="fielddoc">
 <p>Register error reported by dealer. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083a46b3700b2b31b8385fe1d8ee86467afd"></a>unregisterError&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46a46b3700b2b31b8385fe1d8ee86467afd"></a>unregisterError&#160;</td><td class="fielddoc">
 <p>Unregister error reported by dealer. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083aef60a5ac24513b778c5cbf1c19849ade"></a>callError&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46aef60a5ac24513b778c5cbf1c19849ade"></a>callError&#160;</td><td class="fielddoc">
 <p>Call error reported by callee or dealer. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083a2bea66a21ec3d2c8e0f5e53525b8ef7d"></a>invalidUri&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46a2bea66a21ec3d2c8e0f5e53525b8ef7d"></a>invalidUri&#160;</td><td class="fielddoc">
 <p>An invalid WAMP URI was provided. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083a2be9ffd8006ede69e1a0d3e504095d14"></a>noSuchProcedure&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46a2be9ffd8006ede69e1a0d3e504095d14"></a>noSuchProcedure&#160;</td><td class="fielddoc">
 <p>No procedure was registered under the given URI. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083a357062fb324f21ba4ec07cdc0af68164"></a>procedureAlreadyExists&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46a357062fb324f21ba4ec07cdc0af68164"></a>procedureAlreadyExists&#160;</td><td class="fielddoc">
 <p>A procedure with the given URI is already registered. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083ac76490ae5599680eded015233639c5d2"></a>noSuchRegistration&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46ac76490ae5599680eded015233639c5d2"></a>noSuchRegistration&#160;</td><td class="fielddoc">
 <p>Could not unregister; the given registration is not active. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083ac2887dee431a49d9f0ae352716e50de6"></a>noSuchSubscription&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46ac2887dee431a49d9f0ae352716e50de6"></a>noSuchSubscription&#160;</td><td class="fielddoc">
 <p>Could not unsubscribe; the given subscription is not active. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083ac37ace0e876e37d499a382934104b9eb"></a>invalidArgument&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46ac37ace0e876e37d499a382934104b9eb"></a>invalidArgument&#160;</td><td class="fielddoc">
 <p>The given argument types/values are not acceptable to the called procedure. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083a4e0fa97322f86ae1189c874d9627e843"></a>systemShutdown&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46a4e0fa97322f86ae1189c874d9627e843"></a>systemShutdown&#160;</td><td class="fielddoc">
 <p>The other peer is shutting down. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083a99e3020a29f7fdcf1d466029c15f96db"></a>closeRealm&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46a99e3020a29f7fdcf1d466029c15f96db"></a>closeRealm&#160;</td><td class="fielddoc">
 <p>The other peer is leaving the realm. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083a9c34b6023aecaad53774bb3c621510d7"></a>goodbyeAndOut&#160;</td><td class="fielddoc">
-<p>Session ended successfully. </p>
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46a9c34b6023aecaad53774bb3c621510d7"></a>goodbyeAndOut&#160;</td><td class="fielddoc">
+<p><a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a> ended successfully. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083afd6ddc515a5476fed223435c88a937b1"></a>notAuthorized&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46afd6ddc515a5476fed223435c88a937b1"></a>notAuthorized&#160;</td><td class="fielddoc">
 <p>This peer is not authorized to perform the operation. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083a23326a67dfb49576ae6d7f0ed9d124eb"></a>authorizationFailed&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46a23326a67dfb49576ae6d7f0ed9d124eb"></a>authorizationFailed&#160;</td><td class="fielddoc">
 <p>The authorization operation failed. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083a1f7f92026f85b91bf2c50b57390b12a6"></a>noSuchRealm&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46a1f7f92026f85b91bf2c50b57390b12a6"></a>noSuchRealm&#160;</td><td class="fielddoc">
 <p>Attempt to join non-existent realm. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a273c9ee23a2795f59543c60fb68fc083ae36499a907b854bc2d653d1a28d48490"></a>noSuchRole&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9ecf2a0b15a4d67bb0cd1928b4056d46ae36499a907b854bc2d653d1a28d48490"></a>noSuchRole&#160;</td><td class="fielddoc">
 <p>Attempt to authenticate under unsupported role. </p>
 </td></tr>
 </table>
@@ -837,13 +830,13 @@ template&lt;typename TVisitor &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Error code values used with the <a class="el" href="classwamp_1_1_protocol_category.html" title="std::error_category used for reporting protocol errors related to invalid WAMP messages. ">ProtocolCategory</a> error category. </p>
+<p><a class="el" href="classwamp_1_1_error.html" title="Provides the reason URI, options, and payload arguments contained within WAMP ERROR messages...">Error</a> code values used with the <a class="el" href="classwamp_1_1_protocol_category.html" title="std::error_category used for reporting protocol errors related to invalid WAMP messages. ">ProtocolCategory</a> error category. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a19ce4bc9c1e5512cec6ba323c4d324d0a260ca9dd8a4577fc00b7bd5810298076"></a>success&#160;</td><td class="fielddoc">
 <p>Operation successful. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a19ce4bc9c1e5512cec6ba323c4d324d0ad964fd778dc00a01e79c21066e53a6fe"></a>badDecode&#160;</td><td class="fielddoc">
-<p>Error decoding WAMP message payload. </p>
+<p><a class="el" href="classwamp_1_1_error.html" title="Provides the reason URI, options, and payload arguments contained within WAMP ERROR messages...">Error</a> decoding WAMP message payload. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a19ce4bc9c1e5512cec6ba323c4d324d0a3b2142dd13569c21d672bb57b522b590"></a>badSchema&#160;</td><td class="fielddoc">
 <p>Invalid WAMP message schema. </p>
@@ -876,7 +869,7 @@ template&lt;typename TVisitor &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Error code values used with the <a class="el" href="classwamp_1_1_transport_category.html" title="std::error_category used for reporting errors at the transport layer. ">TransportCategory</a> error category. </p>
+<p><a class="el" href="classwamp_1_1_error.html" title="Provides the reason URI, options, and payload arguments contained within WAMP ERROR messages...">Error</a> code values used with the <a class="el" href="classwamp_1_1_transport_category.html" title="std::error_category used for reporting errors at the transport layer. ">TransportCategory</a> error category. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a7a09562b29d4b6e42e37be77ec31829aa260ca9dd8a4577fc00b7bd5810298076"></a>success&#160;</td><td class="fielddoc">
 <p>Operation successful. </p>
@@ -915,7 +908,7 @@ template&lt;typename TVisitor &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Error code values used with the <a class="el" href="classwamp_1_1_rawsock_category.html" title="std::error_category used for reporting errors specific to raw socket transports. ">RawsockCategory</a> error category. </p>
+<p><a class="el" href="classwamp_1_1_error.html" title="Provides the reason URI, options, and payload arguments contained within WAMP ERROR messages...">Error</a> code values used with the <a class="el" href="classwamp_1_1_rawsock_category.html" title="std::error_category used for reporting errors specific to raw socket transports. ">RawsockCategory</a> error category. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aa0bf722cbe7ad04d49ad94b6ec440541a260ca9dd8a4577fc00b7bd5810298076"></a>success&#160;</td><td class="fielddoc">
 <p>Operation succesful. </p>
@@ -1108,7 +1101,7 @@ template&lt;typename TVisitor &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a7d4959789208a8d271ce220b13d7e863"></a>
+<a class="anchor" id="ab841099244f0d337575b5a19898929f0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1116,7 +1109,7 @@ template&lt;typename TVisitor &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool wamp::lookupWampErrorUri </td>
+          <td class="memname"><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46">SessionErrc</a> wamp::lookupWampErrorUri </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>uri</em>, </td>
@@ -1124,8 +1117,8 @@ template&lt;typename TVisitor &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">WampErrc &amp;&#160;</td>
-          <td class="paramname"><em>errc</em>&#160;</td>
+          <td class="paramtype">SessionErrc&#160;</td>
+          <td class="paramname"><em>fallback</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1139,11 +1132,11 @@ template&lt;typename TVisitor &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if a matching WampErrc enumerator was found. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if a matching SessionErrc enumerator was found. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uri</td><td>The URI to search under. </td></tr>
-    <tr><td class="paramname">errc</td><td>Out parameter to contain the result, if found. </td></tr>
+    <tr><td class="paramname">fallback</td><td>Defaul value to used if the URI was not found. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1151,34 +1144,6 @@ template&lt;typename TVisitor &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="abf7a48288ad6003f0d18a4cdeeae6ccd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="namespacewamp.html#structwamp_1_1_with">With</a> wamp::with {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constant tag object used to distinguish <a class="el" href="structwamp_1_1_args.html" title="Bundles variants into positional and/or keyword arguments. ">Args</a> constructor overloads. </p>
-
-</div>
-</div>
-<a class="anchor" id="ad97e328ecd5e7ff5bbfdfc4be9cef272"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="namespacewamp.html#structwamp_1_1_with_pairs">WithPairs</a> wamp::withPairs {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constant tag object used to distinguish <a class="el" href="structwamp_1_1_args.html" title="Bundles variants into positional and/or keyword arguments. ">Args</a> constructor overloads. </p>
-
-</div>
-</div>
 <a class="anchor" id="a30e2886a93141924f9643770b4f01eef"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1199,7 +1164,7 @@ template&lt;typename TVisitor &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li>
-    <li class="footer">Generated on Sat Apr 4 2015 16:24:46 for CppWAMP by
+    <li class="footer">Generated on Wed Apr 15 2015 19:06:22 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['map',['map',['../structwamp_1_1_args.html#ab40ac28a24ebba1372fceabaae58f287',1,'wamp::Args']]]
+  ['null',['null',['../namespacewamp.html#a30e2886a93141924f9643770b4f01eef',1,'wamp']]]
 ];

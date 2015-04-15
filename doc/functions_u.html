@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_i.html#index_i"><span>i</span></a></li>
       <li><a href="functions_j.html#index_j"><span>j</span></a></li>
+      <li><a href="functions_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_m.html#index_m"><span>m</span></a></li>
       <li><a href="functions_n.html#index_n"><span>n</span></a></li>
@@ -149,26 +150,28 @@ $(document).ready(function(){initNavTree('functions_u.html','');});
 : <a class="el" href="classwamp_1_1_variant.html#ad26ea60ba0c4928876fbceee817db58e">wamp::Variant</a>
 </li>
 <li>unregister()
-: <a class="el" href="classwamp_1_1_client.html#a49aef057769fdada2333206e5676d400">wamp::Client</a>
-, <a class="el" href="classwamp_1_1_coro_client.html#a658d287bc02035d114872ae348572308">wamp::CoroClient&lt; TBase &gt;</a>
-, <a class="el" href="classwamp_1_1_coro_errc_client.html#a4c44e1a3a686acaf68b01f41e4bdab26">wamp::CoroErrcClient&lt; TBase &gt;</a>
-, <a class="el" href="classwamp_1_1_registration.html#a48f38d96023dfc668eef37c780cf72fc">wamp::Registration</a>
-</li>
-<li>UnregisterHandler
-: <a class="el" href="classwamp_1_1_registration.html#a4a41fd35c8c905ad6f0ada78bf732a8f">wamp::Registration</a>
+: <a class="el" href="classwamp_1_1_coro_session.html#a6bb4c69aaff718f55f39ff3371331b13">wamp::CoroSession&lt; TBase &gt;</a>
+, <a class="el" href="classwamp_1_1_registration.html#aa1e453169aadaba1f03830edba98d929">wamp::Registration</a>
+, <a class="el" href="classwamp_1_1_session.html#a2792cd0006ef8a9ae3b58fe215bbc8d4">wamp::Session</a>
 </li>
 <li>unsubscribe()
-: <a class="el" href="classwamp_1_1_client.html#adc5c3ccbba8a6c4b7e49cb6fb1cad67a">wamp::Client</a>
-, <a class="el" href="classwamp_1_1_coro_client.html#aa201879591a829b6df1992e2a9dbd339">wamp::CoroClient&lt; TBase &gt;</a>
-, <a class="el" href="classwamp_1_1_coro_errc_client.html#a951c717ecea6b192a67597f3b498c68e">wamp::CoroErrcClient&lt; TBase &gt;</a>
-, <a class="el" href="classwamp_1_1_subscription.html#ae62998e80950769bff6189d07b8f9f9c">wamp::Subscription</a>
+: <a class="el" href="classwamp_1_1_coro_session.html#ad1f969249f146c729bd67fc995aa0fe9">wamp::CoroSession&lt; TBase &gt;</a>
+, <a class="el" href="classwamp_1_1_session.html#a6a46facac5b39b8689563246a660fc18">wamp::Session</a>
+, <a class="el" href="classwamp_1_1_subscription.html#a6e7a6632ac12dca7d4f58cb79230ed40">wamp::Subscription</a>
 </li>
-<li>UnsubscribeHandler
-: <a class="el" href="classwamp_1_1_subscription.html#a80cbcf265ec3261058f27fce9ea44050">wamp::Subscription</a>
+<li>uri()
+: <a class="el" href="classwamp_1_1_procedure.html#a381ffa8c69ae6c7385d4d3578f2c451a">wamp::Procedure</a>
+, <a class="el" href="classwamp_1_1_realm.html#a53f0c8599441d93b4b7fac485ab91573">wamp::Realm</a>
+, <a class="el" href="classwamp_1_1_reason.html#a61452fff69390ef3e3f5984ac7fa0ba1">wamp::Reason</a>
+, <a class="el" href="classwamp_1_1_topic.html#a4a2f9fa3eff928bb1a930f95a970e9c4">wamp::Topic</a>
 </li>
-<li>useCount()
-: <a class="el" href="classwamp_1_1_registration.html#a42f80f344349569babde72c8ebcebf71">wamp::Registration</a>
-, <a class="el" href="classwamp_1_1_subscription.html#aa2cdf995965735601cdf8893b325b5ed">wamp::Subscription</a>
+<li>usingPrefixMatch()
+: <a class="el" href="classwamp_1_1_procedure.html#afd0ed38ec069ee3895b6a614b2483985">wamp::Procedure</a>
+, <a class="el" href="classwamp_1_1_topic.html#abad0c9c710c90e0646af2561206c9d41">wamp::Topic</a>
+</li>
+<li>usingWildcardMatch()
+: <a class="el" href="classwamp_1_1_procedure.html#a028570b136e2d2d689bc8a6e810f4bf7">wamp::Procedure</a>
+, <a class="el" href="classwamp_1_1_topic.html#ae8507b1a124f5d170dcf9689367efaab">wamp::Topic</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -176,7 +179,7 @@ $(document).ready(function(){initNavTree('functions_u.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 4 2015 16:24:47 for CppWAMP by
+    <li class="footer">Generated on Wed Apr 15 2015 19:06:23 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

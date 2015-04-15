@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classwamp_1_1_subscription.html" title="Reference&#45;counting handle used to manage the lifetime of a pub/sub event subscription. " alt="" coords="6,5,143,32"/>
+<area shape="rect" id="node1" href="$classwamp_1_1_options.html" title="wamp::Options\&lt; Topic \&gt;" alt="" coords="6,5,173,32"/>
+<area shape="rect" id="node2" href="$classwamp_1_1_topic.html" title="Topic URI and other options passed to Session::subscribe. " alt="" coords="222,5,319,32"/>
 </map>

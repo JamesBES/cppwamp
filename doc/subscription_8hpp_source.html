@@ -124,75 +124,76 @@ $(document).ready(function(){initNavTree('subscription_8hpp_source.html','');});
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="asyncresult_8hpp.html">asyncresult.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="wampdefs_8hpp.html">wampdefs.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>wamp</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// Forward declarations</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>internal</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>, <span class="keyword">typename</span>&gt; <span class="keyword">class </span>ClientImpl;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">class </span>SubscriptionBase;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classwamp_1_1_subscription.html">   72</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwamp_1_1_subscription.html">Subscription</a></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classwamp_1_1_subscription.html#a80cbcf265ec3261058f27fce9ea44050">   76</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classwamp_1_1_subscription.html#a80cbcf265ec3261058f27fce9ea44050">UnsubscribeHandler</a> = <a class="code" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler&lt;bool&gt;</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classwamp_1_1_subscription.html#a704c923fca50df2cd3c46d0bcac9aca2">Subscription</a>();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">explicit</span> <span class="keyword">operator</span> bool() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">const</span> <a class="code" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbab45cffe084dd3d20d928bee85e7b0f21">std::string</a>&amp; <a class="code" href="classwamp_1_1_subscription.html#a59e475dd6cc343468d57e5ca3c1d6725">topic</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="namespacewamp.html#abd0322a7009f24fccaefffe4940d5185">SubscriptionId</a> <a class="code" href="classwamp_1_1_subscription.html#a9a17713df53370215d11e02bedcc5e76">id</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="classwamp_1_1_subscription.html#aa2cdf995965735601cdf8893b325b5ed">useCount</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sessiondata_8hpp.html">sessiondata.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="wampdefs_8hpp.html">wampdefs.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;./internal/passkey.hpp&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>wamp</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// Forward declaration</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>internal { <span class="keyword">class </span>Subscriber; }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classwamp_1_1_subscription.html">   83</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwamp_1_1_subscription.html">Subscription</a></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">using</span> Ptr     = std::shared_ptr&lt;Subscription&gt;;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">using</span> WeakPtr = std::weak_ptr&lt;Subscription&gt;;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classwamp_1_1_subscription.html#a92069b43835d0f72a5a54748ba03a954">~Subscription</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">const</span> <a class="code" href="classwamp_1_1_topic.html">Topic</a>&amp; <a class="code" href="classwamp_1_1_subscription.html#ad94a2ea97dbb01ae17ad4aaadf58bcfd">topic</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwamp_1_1_subscription.html#a6e7a6632ac12dca7d4f58cb79230ed40">unsubscribe</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="namespacewamp.html#a15249f3ad90f2f5fa5d30317c84fbce8">SubscriptionId</a> <a class="code" href="classwamp_1_1_subscription.html#a9a17713df53370215d11e02bedcc5e76">id</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwamp_1_1_subscription.html#a6e7a6632ac12dca7d4f58cb79230ed40">unsubscribe</a>(<a class="code" href="classwamp_1_1_subscription.html#a80cbcf265ec3261058f27fce9ea44050">UnsubscribeHandler</a> handler);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="classwamp_1_1_subscription.html#a704c923fca50df2cd3c46d0bcac9aca2">Subscription</a>(std::shared_ptr&lt;internal::SubscriptionBase&gt; impl);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwamp_1_1_subscription.html#a6e7a6632ac12dca7d4f58cb79230ed40">unsubscribe</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwamp_1_1_subscription.html#a6e7a6632ac12dca7d4f58cb79230ed40">unsubscribe</a>(<a class="code" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler&lt;bool&gt;</a> handler);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    std::shared_ptr&lt;internal::SubscriptionBase&gt; impl_;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classwamp_1_1_client.html">Client</a>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>, <span class="keyword">typename</span>&gt; <span class="keyword">friend</span> <span class="keyword">class </span>internal::ClientImpl;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;} <span class="comment">// namespace wamp</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#ifndef CPPWAMP_COMPILED_LIB</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#include &quot;internal/subscription.ipp&quot;</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif // CPPWAMP_SUBSCRIPTION_HPP</span></div>
-<div class="ttc" id="classwamp_1_1_subscription_html_a80cbcf265ec3261058f27fce9ea44050"><div class="ttname"><a href="classwamp_1_1_subscription.html#a80cbcf265ec3261058f27fce9ea44050">wamp::Subscription::UnsubscribeHandler</a></div><div class="ttdeci">AsyncHandler&lt; bool &gt; UnsubscribeHandler</div><div class="ttdoc">Asyncronous completion handler type used for unsubscribing. </div><div class="ttdef"><b>Definition:</b> subscription.hpp:76</div></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">using</span> SubscriberPtr = std::weak_ptr&lt;internal::Subscriber&gt;;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="classwamp_1_1_subscription.html">Subscription</a>(SubscriberPtr subscriber, <a class="code" href="classwamp_1_1_topic.html">Topic</a>&amp;&amp; topic);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    SubscriberPtr subscriber_;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="classwamp_1_1_topic.html">Topic</a> topic_;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="namespacewamp.html#a15249f3ad90f2f5fa5d30317c84fbce8">SubscriptionId</a> id_ = -1;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// Internal use only</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> invoke(<a class="code" href="classwamp_1_1_event.html">Event</a>&amp;&amp; event, internal::PassKey) = 0;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> setId(<a class="code" href="namespacewamp.html#a15249f3ad90f2f5fa5d30317c84fbce8">SubscriptionId</a> <span class="keywordtype">id</span>, internal::PassKey);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;} <span class="comment">// namespace wamp</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#ifndef CPPWAMP_COMPILED_LIB</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#include &quot;internal/subscription.ipp&quot;</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif // CPPWAMP_SUBSCRIPTION_HPP</span></div>
 <div class="ttc" id="namespacewamp_html_a02848951b67353c0c0fb2e7fdb9a1019"><div class="ttname"><a href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">wamp::AsyncHandler</a></div><div class="ttdeci">std::function&lt; void(AsyncResult&lt; T &gt;)&gt; AsyncHandler</div><div class="ttdoc">Type alias for a handler taking an AsyncResult<T> parameter. </div><div class="ttdef"><b>Definition:</b> asyncresult.hpp:88</div></div>
 <div class="ttc" id="asyncresult_8hpp_html"><div class="ttname"><a href="asyncresult_8hpp.html">asyncresult.hpp</a></div><div class="ttdoc">Contains facilities for reporting results and errors back to asynchronous handlers. </div></div>
-<div class="ttc" id="classwamp_1_1_subscription_html_a704c923fca50df2cd3c46d0bcac9aca2"><div class="ttname"><a href="classwamp_1_1_subscription.html#a704c923fca50df2cd3c46d0bcac9aca2">wamp::Subscription::Subscription</a></div><div class="ttdeci">Subscription()</div><div class="ttdoc">Default constructor. </div><div class="ttdef"><b>Definition:</b> subscription.ipp:19</div></div>
-<div class="ttc" id="classwamp_1_1_subscription_html_a59e475dd6cc343468d57e5ca3c1d6725"><div class="ttname"><a href="classwamp_1_1_subscription.html#a59e475dd6cc343468d57e5ca3c1d6725">wamp::Subscription::topic</a></div><div class="ttdeci">const std::string &amp; topic() const </div><div class="ttdoc">Returns the topic URI associated with this subscription. </div><div class="ttdef"><b>Definition:</b> subscription.ipp:30</div></div>
-<div class="ttc" id="namespacewamp_html_a4d04d75506649324abb78e785749ccdbab45cffe084dd3d20d928bee85e7b0f21"><div class="ttname"><a href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbab45cffe084dd3d20d928bee85e7b0f21">wamp::TypeId::string</a></div><div class="ttdoc">For Variant::String. </div></div>
-<div class="ttc" id="classwamp_1_1_client_html"><div class="ttname"><a href="classwamp_1_1_client.html">wamp::Client</a></div><div class="ttdoc">Asynchronous API used by a client peer in WAMP applications. </div><div class="ttdef"><b>Definition:</b> client.hpp:78</div></div>
-<div class="ttc" id="classwamp_1_1_subscription_html"><div class="ttname"><a href="classwamp_1_1_subscription.html">wamp::Subscription</a></div><div class="ttdoc">Reference-counting handle used to manage the lifetime of a pub/sub event subscription. </div><div class="ttdef"><b>Definition:</b> subscription.hpp:72</div></div>
-<div class="ttc" id="classwamp_1_1_subscription_html_a6e7a6632ac12dca7d4f58cb79230ed40"><div class="ttname"><a href="classwamp_1_1_subscription.html#a6e7a6632ac12dca7d4f58cb79230ed40">wamp::Subscription::unsubscribe</a></div><div class="ttdeci">void unsubscribe()</div><div class="ttdoc">Explicitly unsubscribes the topic. </div><div class="ttdef"><b>Definition:</b> subscription.ipp:53</div></div>
+<div class="ttc" id="classwamp_1_1_event_html"><div class="ttname"><a href="classwamp_1_1_event.html">wamp::Event</a></div><div class="ttdoc">Represents a published event. </div><div class="ttdef"><b>Definition:</b> sessiondata.hpp:159</div></div>
+<div class="ttc" id="sessiondata_8hpp_html"><div class="ttname"><a href="sessiondata_8hpp.html">sessiondata.hpp</a></div><div class="ttdoc">Contains declarations for data types exchanged via the client session interfaces. ...</div></div>
+<div class="ttc" id="classwamp_1_1_subscription_html_ad94a2ea97dbb01ae17ad4aaadf58bcfd"><div class="ttname"><a href="classwamp_1_1_subscription.html#ad94a2ea97dbb01ae17ad4aaadf58bcfd">wamp::Subscription::topic</a></div><div class="ttdeci">const Topic &amp; topic() const </div><div class="ttdoc">Obtains the topic information associated with this subscription. </div><div class="ttdef"><b>Definition:</b> subscription.ipp:19</div></div>
+<div class="ttc" id="classwamp_1_1_subscription_html"><div class="ttname"><a href="classwamp_1_1_subscription.html">wamp::Subscription</a></div><div class="ttdoc">Manages the lifetime of a pub/sub event subscription. </div><div class="ttdef"><b>Definition:</b> subscription.hpp:83</div></div>
+<div class="ttc" id="classwamp_1_1_subscription_html_a6e7a6632ac12dca7d4f58cb79230ed40"><div class="ttname"><a href="classwamp_1_1_subscription.html#a6e7a6632ac12dca7d4f58cb79230ed40">wamp::Subscription::unsubscribe</a></div><div class="ttdeci">void unsubscribe()</div><div class="ttdoc">Explicitly unsubscribes from the topic. </div><div class="ttdef"><b>Definition:</b> subscription.ipp:27</div></div>
 <div class="ttc" id="wampdefs_8hpp_html"><div class="ttname"><a href="wampdefs_8hpp.html">wampdefs.hpp</a></div><div class="ttdoc">Contains type definitions related to WAMP IDs and sessions. </div></div>
-<div class="ttc" id="classwamp_1_1_subscription_html_a9a17713df53370215d11e02bedcc5e76"><div class="ttname"><a href="classwamp_1_1_subscription.html#a9a17713df53370215d11e02bedcc5e76">wamp::Subscription::id</a></div><div class="ttdeci">SubscriptionId id() const </div><div class="ttdoc">Returns the ID number of this subscription. </div><div class="ttdef"><b>Definition:</b> subscription.ipp:38</div></div>
-<div class="ttc" id="classwamp_1_1_subscription_html_aa2cdf995965735601cdf8893b325b5ed"><div class="ttname"><a href="classwamp_1_1_subscription.html#aa2cdf995965735601cdf8893b325b5ed">wamp::Subscription::useCount</a></div><div class="ttdeci">long useCount() const </div><div class="ttdoc">Returns the number of Subscription handles managing the same subscription as this one does...</div><div class="ttdef"><b>Definition:</b> subscription.ipp:44</div></div>
-<div class="ttc" id="namespacewamp_html_abd0322a7009f24fccaefffe4940d5185"><div class="ttname"><a href="namespacewamp.html#abd0322a7009f24fccaefffe4940d5185">wamp::SubscriptionId</a></div><div class="ttdeci">uint64_t SubscriptionId</div><div class="ttdoc">Ephemeral ID associated with an topic subscription. </div><div class="ttdef"><b>Definition:</b> wampdefs.hpp:23</div></div>
+<div class="ttc" id="classwamp_1_1_subscription_html_a9a17713df53370215d11e02bedcc5e76"><div class="ttname"><a href="classwamp_1_1_subscription.html#a9a17713df53370215d11e02bedcc5e76">wamp::Subscription::id</a></div><div class="ttdeci">SubscriptionId id() const </div><div class="ttdoc">Obtains the ID number of this subscription. </div><div class="ttdef"><b>Definition:</b> subscription.ipp:22</div></div>
+<div class="ttc" id="classwamp_1_1_topic_html"><div class="ttname"><a href="classwamp_1_1_topic.html">wamp::Topic</a></div><div class="ttdoc">Topic URI and other options passed to Session::subscribe. </div><div class="ttdef"><b>Definition:</b> sessiondata.hpp:100</div></div>
+<div class="ttc" id="namespacewamp_html_a15249f3ad90f2f5fa5d30317c84fbce8"><div class="ttname"><a href="namespacewamp.html#a15249f3ad90f2f5fa5d30317c84fbce8">wamp::SubscriptionId</a></div><div class="ttdeci">int64_t SubscriptionId</div><div class="ttdoc">Ephemeral ID associated with an topic subscription. </div><div class="ttdef"><b>Definition:</b> wampdefs.hpp:23</div></div>
+<div class="ttc" id="classwamp_1_1_subscription_html_a92069b43835d0f72a5a54748ba03a954"><div class="ttname"><a href="classwamp_1_1_subscription.html#a92069b43835d0f72a5a54748ba03a954">wamp::Subscription::~Subscription</a></div><div class="ttdeci">virtual ~Subscription()</div><div class="ttdoc">Automatically unsubscribes from the topic. </div><div class="ttdef"><b>Definition:</b> subscription.ipp:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb7245a6f5714b15c73ba62cf32a25df.html">cppwamp</a></li><li class="navelem"><a class="el" href="subscription_8hpp.html">subscription.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 4 2015 16:24:46 for CppWAMP by
+    <li class="footer">Generated on Wed Apr 15 2015 19:06:22 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

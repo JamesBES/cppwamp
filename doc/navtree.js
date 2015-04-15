@@ -5,7 +5,8 @@ var NAVTREE =
     [ "Architectural Overview", "_architecture.html", [
       [ "Layers", "_architecture.html#Layers", null ],
       [ "Client API", "_architecture.html#Client_API", null ],
-      [ "Subscriptions and Registrations", "_architecture.html#Subs_and_Regs", null ],
+      [ "Subscriptions", "_architecture.html#Subriptions", null ],
+      [ "Registrations", "_architecture.html#Registrations", null ],
       [ "WAMP Sessions and Messaging", "_architecture.html#Messaging", null ],
       [ "Transport Establishment", "_architecture.html#Transport_Establishment", null ]
     ] ],
@@ -46,8 +47,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_architecture.html",
-"classwamp_1_1_variant.html#aeb9cf7f4f7d60917cdb1a3c61cb85597",
-"subscriber_8hpp_source.html"
+"classwamp_1_1_variant.html#a2bfafa83b1ed04fdaa70c14a4d3cae78",
+"precompiled_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -125,14 +125,14 @@ $(document).ready(function(){initNavTree('error_8hpp.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1error_1_1_wamp.html">wamp::error::Wamp</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">General purpose runtime exception that wraps a std::error_code.  <a href="classwamp_1_1error_1_1_wamp.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1error_1_1_failure.html">wamp::error::Failure</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">General purpose runtime exception that wraps a std::error_code.  <a href="classwamp_1_1error_1_1_failure.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwamp_1_1error_1_1_logic.html">wamp::error::Logic</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception thrown when a pre-condition is not met.  <a href="structwamp_1_1error_1_1_logic.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_wamp_category.html">wamp::WampCategory</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::error_category used for reporting errors at the WAMP layer.  <a href="classwamp_1_1_wamp_category.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session_category.html">wamp::SessionCategory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::error_category used for reporting errors at the WAMP session layer.  <a href="classwamp_1_1_session_category.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_protocol_category.html">wamp::ProtocolCategory</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::error_category used for reporting protocol errors related to invalid WAMP messages.  <a href="classwamp_1_1_protocol_category.html#details">More...</a><br /></td></tr>
@@ -164,58 +164,58 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a273c9ee23a2795f59543c60fb68fc083"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083">wamp::WampErrc</a> { <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a260ca9dd8a4577fc00b7bd5810298076">wamp::WampErrc::success</a> = 0, 
+<tr class="memitem:a9ecf2a0b15a4d67bb0cd1928b4056d46"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46">wamp::SessionErrc</a> { <br />
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a260ca9dd8a4577fc00b7bd5810298076">wamp::SessionErrc::success</a> = 0, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a6398ee39c528ff4737ae63947d85d0a4">wamp::WampErrc::sessionEnded</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a6398ee39c528ff4737ae63947d85d0a4">wamp::SessionErrc::sessionEnded</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a31d993ba59164643e0e2159e32b63216">wamp::WampErrc::sessionEndedByPeer</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a31d993ba59164643e0e2159e32b63216">wamp::SessionErrc::sessionEndedByPeer</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083ae55e2d2dad2f8cb947d320333e4fd018">wamp::WampErrc::allTransportsFailed</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ae55e2d2dad2f8cb947d320333e4fd018">wamp::SessionErrc::allTransportsFailed</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083aa75d537e41b81dbfe97193fbc3c1a31c">wamp::WampErrc::joinError</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46aa75d537e41b81dbfe97193fbc3c1a31c">wamp::SessionErrc::joinError</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a829ceab85261d613afb28a51c65891fc">wamp::WampErrc::publishError</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a829ceab85261d613afb28a51c65891fc">wamp::SessionErrc::publishError</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a696e8572fae9cf279b6ae706bb198067">wamp::WampErrc::subscribeError</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a696e8572fae9cf279b6ae706bb198067">wamp::SessionErrc::subscribeError</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a0af961c159db3c2e12ecefdcdd067f5d">wamp::WampErrc::unsubscribeError</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a0af961c159db3c2e12ecefdcdd067f5d">wamp::SessionErrc::unsubscribeError</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a5df9f1bf5e3db9c58bf704975f5b910b">wamp::WampErrc::registerError</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a5df9f1bf5e3db9c58bf704975f5b910b">wamp::SessionErrc::registerError</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a46b3700b2b31b8385fe1d8ee86467afd">wamp::WampErrc::unregisterError</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a46b3700b2b31b8385fe1d8ee86467afd">wamp::SessionErrc::unregisterError</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083aef60a5ac24513b778c5cbf1c19849ade">wamp::WampErrc::callError</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46aef60a5ac24513b778c5cbf1c19849ade">wamp::SessionErrc::callError</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a2bea66a21ec3d2c8e0f5e53525b8ef7d">wamp::WampErrc::invalidUri</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a2bea66a21ec3d2c8e0f5e53525b8ef7d">wamp::SessionErrc::invalidUri</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a2be9ffd8006ede69e1a0d3e504095d14">wamp::WampErrc::noSuchProcedure</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a2be9ffd8006ede69e1a0d3e504095d14">wamp::SessionErrc::noSuchProcedure</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a357062fb324f21ba4ec07cdc0af68164">wamp::WampErrc::procedureAlreadyExists</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a357062fb324f21ba4ec07cdc0af68164">wamp::SessionErrc::procedureAlreadyExists</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083ac76490ae5599680eded015233639c5d2">wamp::WampErrc::noSuchRegistration</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ac76490ae5599680eded015233639c5d2">wamp::SessionErrc::noSuchRegistration</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083ac2887dee431a49d9f0ae352716e50de6">wamp::WampErrc::noSuchSubscription</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ac2887dee431a49d9f0ae352716e50de6">wamp::SessionErrc::noSuchSubscription</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083ac37ace0e876e37d499a382934104b9eb">wamp::WampErrc::invalidArgument</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ac37ace0e876e37d499a382934104b9eb">wamp::SessionErrc::invalidArgument</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a4e0fa97322f86ae1189c874d9627e843">wamp::WampErrc::systemShutdown</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a4e0fa97322f86ae1189c874d9627e843">wamp::SessionErrc::systemShutdown</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a99e3020a29f7fdcf1d466029c15f96db">wamp::WampErrc::closeRealm</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a99e3020a29f7fdcf1d466029c15f96db">wamp::SessionErrc::closeRealm</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a9c34b6023aecaad53774bb3c621510d7">wamp::WampErrc::goodbyeAndOut</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a9c34b6023aecaad53774bb3c621510d7">wamp::SessionErrc::goodbyeAndOut</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083afd6ddc515a5476fed223435c88a937b1">wamp::WampErrc::notAuthorized</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46afd6ddc515a5476fed223435c88a937b1">wamp::SessionErrc::notAuthorized</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a23326a67dfb49576ae6d7f0ed9d124eb">wamp::WampErrc::authorizationFailed</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a23326a67dfb49576ae6d7f0ed9d124eb">wamp::SessionErrc::authorizationFailed</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083a1f7f92026f85b91bf2c50b57390b12a6">wamp::WampErrc::noSuchRealm</a>, 
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a1f7f92026f85b91bf2c50b57390b12a6">wamp::SessionErrc::noSuchRealm</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083ae36499a907b854bc2d653d1a28d48490">wamp::WampErrc::noSuchRole</a>
+&#160;&#160;<a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ae36499a907b854bc2d653d1a28d48490">wamp::SessionErrc::noSuchRole</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a273c9ee23a2795f59543c60fb68fc083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error code values used with the WampCategory error category.  <a href="namespacewamp.html#a273c9ee23a2795f59543c60fb68fc083">More...</a><br /></td></tr>
-<tr class="separator:a273c9ee23a2795f59543c60fb68fc083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a9ecf2a0b15a4d67bb0cd1928b4056d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error code values used with the SessionCategory error category.  <a href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46">More...</a><br /></td></tr>
+<tr class="separator:a9ecf2a0b15a4d67bb0cd1928b4056d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19ce4bc9c1e5512cec6ba323c4d324d0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a19ce4bc9c1e5512cec6ba323c4d324d0">wamp::ProtocolErrc</a> { <br />
 &#160;&#160;<a class="el" href="namespacewamp.html#a19ce4bc9c1e5512cec6ba323c4d324d0a260ca9dd8a4577fc00b7bd5810298076">wamp::ProtocolErrc::success</a> = 0, 
 <br />
@@ -331,7 +331,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb7245a6f5714b15c73ba62cf32a25df.html">cppwamp</a></li><li class="navelem"><a class="el" href="error_8hpp.html">error.hpp</a></li>
-    <li class="footer">Generated on Sat Apr 4 2015 16:24:46 for CppWAMP by
+    <li class="footer">Generated on Wed Apr 15 2015 19:06:22 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

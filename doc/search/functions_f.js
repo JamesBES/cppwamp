@@ -1,10 +1,16 @@
 var searchData=
 [
-  ['to',['to',['../structwamp_1_1_args.html#aedb3b0bc3726fde59ada733f2ab41bc0',1,'wamp::Args::to()'],['../classwamp_1_1_variant.html#a45ff15afa122815243e6802dd8053f74',1,'wamp::Variant::to() const '],['../classwamp_1_1_variant.html#ac5b25ab48d6adbd7e4aea2f1cc227c4e',1,'wamp::Variant::to(T &amp;value) const ']]],
-  ['toarray',['toArray',['../classwamp_1_1_variant.html#a851e0865da7c3f73a534770a4972c3ef',1,'wamp::Variant']]],
-  ['topic',['topic',['../classwamp_1_1_subscription.html#a59e475dd6cc343468d57e5ca3c1d6725',1,'wamp::Subscription']]],
-  ['totuple',['toTuple',['../classwamp_1_1_variant.html#ae1db051019da4f25e9628e9028e01a28',1,'wamp::Variant']]],
-  ['transportcategory',['transportCategory',['../classwamp_1_1_transport_category.html#a29c137d9301ef5b16089fc95fd2dd316',1,'wamp::TransportCategory']]],
-  ['typeid',['typeId',['../classwamp_1_1_variant.html#a244f1c4a5dd8d835f3d1359f06ba154c',1,'wamp::Variant']]],
-  ['typenameof',['typeNameOf',['../classwamp_1_1_variant.html#aeb9cf7f4f7d60917cdb1a3c61cb85597',1,'wamp::Variant::typeNameOf(const Variant &amp;v)'],['../classwamp_1_1_variant.html#a9f1fa8cdb5e1bd7f4ea9a359e0213439',1,'wamp::Variant::typeNameOf()']]]
+  ['sessioninfo',['SessionInfo',['../classwamp_1_1_session_info.html#a04ff5ad3ec107fa8a7474063bb9e914e',1,'wamp::SessionInfo']]],
+  ['seterror',['setError',['../classwamp_1_1_async_result.html#a5f0f0f6b8334de7a49483aff8523ef94',1,'wamp::AsyncResult::setError(std::error_code ec)'],['../classwamp_1_1_async_result.html#a9e7eb7f772df159246a3c43f29544776',1,'wamp::AsyncResult::setError(std::error_code ec, std::string info)']]],
+  ['settracehandler',['setTraceHandler',['../classwamp_1_1_session.html#a8ecf51b461ff093aedc9ed32c9adfc6a',1,'wamp::Session']]],
+  ['setvalue',['setValue',['../classwamp_1_1_async_result.html#a2c70f0237f36cbd802827eb3686674c1',1,'wamp::AsyncResult']]],
+  ['setwarninghandler',['setWarningHandler',['../classwamp_1_1_session.html#a3af4c171dc1d0cb7b412adbd702528db',1,'wamp::Session']]],
+  ['size',['size',['../classwamp_1_1_variant.html#a933022eb0992b0a90134aa5e638b88e6',1,'wamp::Variant']]],
+  ['state',['state',['../classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd',1,'wamp::Session']]],
+  ['subid',['subId',['../classwamp_1_1_event.html#aaca8763e97de0173bc160df589b67d21',1,'wamp::Event']]],
+  ['subscribe',['subscribe',['../classwamp_1_1_coro_session.html#a6b9375297bd6b4df195d91dfe4ce85d8',1,'wamp::CoroSession::subscribe(Topic topic, EventSlot slot, YieldContext&lt; H &gt; yield, std::error_code *ec=nullptr)'],['../classwamp_1_1_coro_session.html#a7b0e508f517d1bb1462b664fe6ad1a64',1,'wamp::CoroSession::subscribe(Topic topic, TEventSlot &amp;&amp;slot, YieldContext&lt; H &gt; yield, std::error_code *ec=nullptr)'],['../classwamp_1_1_session.html#a9070e65515a06935d0a96b283e7ee9c6',1,'wamp::Session::subscribe(Topic topic, EventSlot slot, AsyncHandler&lt; Subscription::Ptr &gt; handler)'],['../classwamp_1_1_session.html#a12f430f3e28222f0225d96c73e54c3d9',1,'wamp::Session::subscribe(Topic topic, TEventSlot &amp;&amp;slot, AsyncHandler&lt; Subscription::Ptr &gt; handler)']]],
+  ['supportsfeatures',['supportsFeatures',['../classwamp_1_1_session_info.html#a09e9fbfc60c209a7eaa0325752306829',1,'wamp::SessionInfo']]],
+  ['supportsroles',['supportsRoles',['../classwamp_1_1_session_info.html#ad5a07091e51e229bd83e65aacd70e8a5',1,'wamp::SessionInfo']]],
+  ['suspend',['suspend',['../classwamp_1_1_coro_session.html#aa5c4f6558294892add45382eb3349698',1,'wamp::CoroSession']]],
+  ['swap',['swap',['../classwamp_1_1_variant.html#a4df88b7efc0481c6911610b0717a614b',1,'wamp::Variant::swap(Variant &amp;other) noexcept'],['../classwamp_1_1_variant.html#a8b074c49dc9f46ba152f5670508ba6b6',1,'wamp::Variant::swap(Variant &amp;v, Variant &amp;w) noexcept']]]
 ];

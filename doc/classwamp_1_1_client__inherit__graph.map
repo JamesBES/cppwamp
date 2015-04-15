@@ -1,4 +1,0 @@
-<map id="wamp::Client" name="wamp::Client">
-<area shape="rect" id="node2" href="$classwamp_1_1_coro_client.html" title="Coroutine API used by a client peer in WAMP applications. " alt="" coords="5,88,195,115"/>
-<area shape="rect" id="node3" href="$classwamp_1_1_coro_errc_client.html" title="Alternate coroutine API used by a client peer in WAMP applications. " alt="" coords="219,81,369,122"/>
-</map>
