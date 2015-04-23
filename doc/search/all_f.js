@@ -12,7 +12,7 @@ var searchData=
   ['payload_3c_20result_20_3e',['Payload&lt; Result &gt;',['../classwamp_1_1_payload.html',1,'wamp']]],
   ['payload_3c_20rpc_20_3e',['Payload&lt; Rpc &gt;',['../classwamp_1_1_payload.html',1,'wamp']]],
   ['procedure',['Procedure',['../classwamp_1_1_procedure.html',1,'wamp']]],
-  ['procedure',['procedure',['../classwamp_1_1_registration.html#a001a8b044a4004b62a13737976f9cf3a',1,'wamp::Registration::procedure()'],['../classwamp_1_1_invocation.html#abdd45e1d5cdd67140f84c59391145f29',1,'wamp::Invocation::procedure()'],['../classwamp_1_1_procedure.html#a1584cf1e29b654f52d2f24bdbca6bbec',1,'wamp::Procedure::Procedure()']]],
+  ['procedure',['procedure',['../classwamp_1_1_invocation.html#abdd45e1d5cdd67140f84c59391145f29',1,'wamp::Invocation::procedure()'],['../classwamp_1_1_procedure.html#a1584cf1e29b654f52d2f24bdbca6bbec',1,'wamp::Procedure::Procedure()']]],
   ['procedurealreadyexists',['procedureAlreadyExists',['../namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a357062fb324f21ba4ec07cdc0af68164',1,'wamp']]],
   ['protocolcategory',['protocolCategory',['../classwamp_1_1_protocol_category.html#a80e1773cb22d9971926637abc116eb1d',1,'wamp::ProtocolCategory']]],
   ['protocolcategory',['ProtocolCategory',['../classwamp_1_1_protocol_category.html',1,'wamp']]],

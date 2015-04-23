@@ -110,117 +110,41 @@ $(document).ready(function(){initNavTree('classwamp_1_1_registration.html','');}
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classwamp_1_1_registration-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">wamp::Registration Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">wamp::Registration Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Manages the lifetime of an RPC registration.  
+<p>Represents a remote procedure registration.  
  <a href="classwamp_1_1_registration.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="registration_8hpp_source.html">cppwamp/registration.hpp</a>&gt;</code></p>
-
-<p>Inherited by wamp::internal::DynamicRegistration, and wamp::internal::StaticRegistration&lt; TParams &gt;.</p>
+<div class="dynheader">
+Inheritance diagram for wamp::Registration:</div>
+<div class="dyncontent">
+<div class="center"><img src="classwamp_1_1_registration__inherit__graph.png" border="0" usemap="#wamp_1_1_registration_inherit__map" alt="Inheritance graph"/></div>
+<map name="wamp_1_1_registration_inherit__map" id="wamp_1_1_registration_inherit__map">
+<area shape="rect" id="node2" href="classwamp_1_1_scoped_registration.html" title="Limits a Registration&#39;s lifetime to a particular scope. " alt="" coords="5,80,184,107"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a939753effabc976be4b6ec574dfb9268"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_registration.html#a939753effabc976be4b6ec574dfb9268">~Registration</a> ()</td></tr>
-<tr class="memdesc:a939753effabc976be4b6ec574dfb9268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatically unregisters the RPC.  <a href="#a939753effabc976be4b6ec574dfb9268">More...</a><br /></td></tr>
-<tr class="separator:a939753effabc976be4b6ec574dfb9268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a001a8b044a4004b62a13737976f9cf3a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classwamp_1_1_procedure.html">Procedure</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_registration.html#a001a8b044a4004b62a13737976f9cf3a">procedure</a> () const </td></tr>
-<tr class="memdesc:a001a8b044a4004b62a13737976f9cf3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the procedure information associated with this registration.  <a href="#a001a8b044a4004b62a13737976f9cf3a">More...</a><br /></td></tr>
-<tr class="separator:a001a8b044a4004b62a13737976f9cf3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ab8fcfdede8796bda00da601f03f5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4ab8fcfdede8796bda00da601f03f5d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_registration.html#ae4ab8fcfdede8796bda00da601f03f5d">Registration</a> ()</td></tr>
+<tr class="memdesc:ae4ab8fcfdede8796bda00da601f03f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:ae4ab8fcfdede8796bda00da601f03f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad14937f8ac715b62ae4f7723d8fab1ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewamp.html#a2a11e7b619d74f499adf34837731877b">RegistrationId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_registration.html#ad14937f8ac715b62ae4f7723d8fab1ac">id</a> () const </td></tr>
 <tr class="memdesc:ad14937f8ac715b62ae4f7723d8fab1ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the ID number of this registration.  <a href="#ad14937f8ac715b62ae4f7723d8fab1ac">More...</a><br /></td></tr>
 <tr class="separator:ad14937f8ac715b62ae4f7723d8fab1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48f38d96023dfc668eef37c780cf72fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_registration.html#a48f38d96023dfc668eef37c780cf72fc">unregister</a> ()</td></tr>
-<tr class="memdesc:a48f38d96023dfc668eef37c780cf72fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly unregisters the RPC.  <a href="#a48f38d96023dfc668eef37c780cf72fc">More...</a><br /></td></tr>
-<tr class="separator:a48f38d96023dfc668eef37c780cf72fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1e453169aadaba1f03830edba98d929"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_registration.html#aa1e453169aadaba1f03830edba98d929">unregister</a> (<a class="el" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt; bool &gt; handler)</td></tr>
-<tr class="memdesc:aa1e453169aadaba1f03830edba98d929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronously unregisters the RPC, waiting for an acknowledgement from the dealer.  <a href="#aa1e453169aadaba1f03830edba98d929">More...</a><br /></td></tr>
-<tr class="separator:aa1e453169aadaba1f03830edba98d929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac368f4d84fb3901e64b629c9303145ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_registration.html#ac368f4d84fb3901e64b629c9303145ce">unregister</a> () const </td></tr>
+<tr class="memdesc:ac368f4d84fb3901e64b629c9303145ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters the RPC.  <a href="#ac368f4d84fb3901e64b629c9303145ce">More...</a><br /></td></tr>
+<tr class="separator:ac368f4d84fb3901e64b629c9303145ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Manages the lifetime of an RPC registration. </p>
-<p><a class="el" href="classwamp_1_1_registration.html" title="Manages the lifetime of an RPC registration. ">Registration</a> objects are returned by the <code>enroll</code> member functions of the <em><a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a></em> family of classes. These objects are used internally by <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a> to dispatch remote procedure calls to a registered <em>event slot</em>.</p>
-<p><a class="el" href="classwamp_1_1_registration.html" title="Manages the lifetime of an RPC registration. ">Registration</a> objects are returned via reference-counting shared pointers. When the reference count reaches zero, the procedure is automatically unregistered. This reference counting scheme is provided to help automate the lifetime management of RPC registrations using RAII techniques.</p>
-<p>Here's an example illustrating how shared pointers can be used to manage the lifetime of a registration:</p>
-<div class="fragment"><div class="line"><span class="keyword">struct </span>Delegate</div>
-<div class="line">{</div>
-<div class="line">    <span class="keywordtype">void</span> rpc(Invocation inv);</div>
-<div class="line"></div>
-<div class="line">    Registration::Ptr reg;</div>
-<div class="line">}</div>
-<div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> main()</div>
-<div class="line">{</div>
-<div class="line">    boost::asio::io_service iosvc;</div>
-<div class="line">    boost::asio::spawn(iosvc, [&amp;](boost::asio::yield_context yield)</div>
-<div class="line">    {</div>
-<div class="line">        <span class="keyword">auto</span> session = <a class="code" href="classwamp_1_1_coro_session.html#aca47333aa30e3c5ce5c448b1ff4012b4">CoroSession&lt;&gt;::create</a>(connectorList);</div>
-<div class="line">        session-&gt;connect(yield);</div>
-<div class="line">        session-&gt;join(<span class="stringliteral">&quot;somerealm&quot;</span>, yield);</div>
-<div class="line"></div>
-<div class="line">        {</div>
-<div class="line">            <span class="keyword">using</span> std::placeholders;</div>
-<div class="line">            Delegate delegate;</div>
-<div class="line">            delegate.reg = session-&gt;enroll(</div>
-<div class="line">                            <span class="stringliteral">&quot;procedure&quot;</span>,</div>
-<div class="line">                            std::bind(&amp;Delegate::rpc, delegate, _1),</div>
-<div class="line">                            yield);</div>
-<div class="line"></div>
-<div class="line">        }  <span class="comment">// When the &#39;delegate&#39; object leaves this scope, the Registration</span></div>
-<div class="line">           <span class="comment">// shared pointer reference count drops to zero. This will</span></div>
-<div class="line">           <span class="comment">// automatically unregister the registration, thereby avoiding</span></div>
-<div class="line">           <span class="comment">// further member function calls on the deleted &#39;delegate&#39; object.</span></div>
-<div class="line">    });</div>
-<div class="line">    iosvc.run();</div>
-<div class="line">}</div>
-</div><!-- fragment --><p>Registrations can also be manually unregistered via <a class="el" href="classwamp_1_1_registration.html#a48f38d96023dfc668eef37c780cf72fc" title="Explicitly unregisters the RPC. ">Registration::unregister</a>.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_session.html#aa3c9f8d59c824acce455979ba2229e96" title="Registers a WAMP remote procedure call. ">Session::enroll</a>, <a class="el" href="classwamp_1_1_coro_session.html#afa07700254e432589ebceed8c7d115ed" title="Registers a WAMP remote procedure call. ">CoroSession::enroll</a> </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a939753effabc976be4b6ec574dfb9268"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">wamp::Registration::~Registration </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Automatically unregisters the RPC. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a001a8b044a4004b62a13737976f9cf3a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classwamp_1_1_procedure.html">Procedure</a> &amp; wamp::Registration::procedure </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Obtains the procedure information associated with this registration. </p>
-
-</div>
-</div>
+<div class="textblock"><p>Represents a remote procedure registration. </p>
+<p>A <a class="el" href="classwamp_1_1_registration.html" title="Represents a remote procedure registration. ">Registration</a> is a lightweight object returned by the <code>enroll</code> member functions of the <em><a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a></em> family of classes. This objects allows users to unregister the RPC registration.</p>
+<p>It is always safe to unregister via a <a class="el" href="classwamp_1_1_registration.html" title="Represents a remote procedure registration. ">Registration</a> object. If the <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a> or the registration no longer exists, an unregister operation effectively does nothing.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_scoped_registration.html" title="Limits a Registration&#39;s lifetime to a particular scope. ">ScopedRegistration</a>, <a class="el" href="classwamp_1_1_session.html#a04846bb5a40a74a0fe8cd37e3d0102c0" title="Registers a WAMP remote procedure call. ">Session::enroll</a>, <a class="el" href="classwamp_1_1_coro_session.html#a6081368ea20971cd258ece70f3ca6b28" title="Registers a WAMP remote procedure call. ">CoroSession::enroll</a> </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ad14937f8ac715b62ae4f7723d8fab1ac"></a>
 <div class="memitem">
 <div class="memproto">
@@ -238,7 +162,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a48f38d96023dfc668eef37c780cf72fc"></a>
+<a class="anchor" id="ac368f4d84fb3901e64b629c9303145ce"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -246,32 +170,12 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void wamp::Registration::unregister </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Explicitly unregisters the RPC. </p>
-<dl class="section note"><dt>Note</dt><dd>Duplicate unregistrations are safely ignored. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aa1e453169aadaba1f03830edba98d929"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wamp::Registration::unregister </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Asynchronously unregisters the RPC, waiting for an acknowledgement from the dealer. </p>
-<p>Equivalent to <a class="el" href="classwamp_1_1_session.html#a229eeb7b15e6f5c51fc6cca7614a06b8" title="Unregisters a remote procedure call and waits for router acknowledgement. ">Session::unregister(Registration::Ptr, AsyncHandler&lt;bool&gt;)</a>. </p><dl class="section note"><dt>Note</dt><dd>Duplicate unregistrations are safely ignored. </dd></dl>
+<p>Unregisters the RPC. </p>
 
 </div>
 </div>
@@ -285,7 +189,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_registration.html">Registration</a></li>
-    <li class="footer">Generated on Wed Apr 15 2015 19:06:22 for CppWAMP by
+    <li class="footer">Generated on Thu Apr 23 2015 00:52:06 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

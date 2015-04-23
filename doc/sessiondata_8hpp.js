@@ -8,5 +8,6 @@ var sessiondata_8hpp =
     [ "Procedure", "classwamp_1_1_procedure.html", "classwamp_1_1_procedure" ],
     [ "Rpc", "classwamp_1_1_rpc.html", "classwamp_1_1_rpc" ],
     [ "Result", "classwamp_1_1_result.html", "classwamp_1_1_result" ],
+    [ "Outcome", "classwamp_1_1_outcome.html", "classwamp_1_1_outcome" ],
     [ "Invocation", "classwamp_1_1_invocation.html", "classwamp_1_1_invocation" ]
 ];

@@ -16,6 +16,7 @@ var hierarchy =
       [ "wamp::SessionCategory", "classwamp_1_1_session_category.html", null ],
       [ "wamp::TransportCategory", "classwamp_1_1_transport_category.html", null ]
     ] ],
+    [ "wamp::EventUnpacker< TSlot, TArgs >", "classwamp_1_1_event_unpacker.html", null ],
     [ "std::exception", null, [
       [ "std::logic_error", null, [
         [ "wamp::error::Logic", "structwamp_1_1error_1_1_logic.html", null ]
@@ -26,6 +27,7 @@ var hierarchy =
         [ "wamp::error::Decode", "structwamp_1_1error_1_1_decode.html", null ]
       ] ]
     ] ],
+    [ "wamp::InvocationUnpacker< TSlot, TArgs >", "classwamp_1_1_invocation_unpacker.html", null ],
     [ "wamp::Null", "structwamp_1_1_null.html", null ],
     [ "wamp::Options< TDerived >", "classwamp_1_1_options.html", null ],
     [ "wamp::Options< Error >", "classwamp_1_1_options.html", [
@@ -61,6 +63,7 @@ var hierarchy =
     [ "wamp::Options< Topic >", "classwamp_1_1_options.html", [
       [ "wamp::Topic", "classwamp_1_1_topic.html", null ]
     ] ],
+    [ "wamp::Outcome", "classwamp_1_1_outcome.html", null ],
     [ "wamp::Payload< TDerived >", "classwamp_1_1_payload.html", null ],
     [ "wamp::Payload< Error >", "classwamp_1_1_payload.html", [
       [ "wamp::Error", "classwamp_1_1_error.html", null ]
@@ -80,15 +83,18 @@ var hierarchy =
     [ "wamp::Payload< Rpc >", "classwamp_1_1_payload.html", [
       [ "wamp::Rpc", "classwamp_1_1_rpc.html", null ]
     ] ],
-    [ "wamp::Registration", "classwamp_1_1_registration.html", null ],
+    [ "wamp::Registration", "classwamp_1_1_registration.html", [
+      [ "wamp::ScopedRegistration", "classwamp_1_1_scoped_registration.html", null ]
+    ] ],
     [ "wamp::Session", "classwamp_1_1_session.html", [
       [ "wamp::CoroSession< TBase >", "classwamp_1_1_coro_session.html", null ]
     ] ],
-    [ "wamp::Subscription", "classwamp_1_1_subscription.html", null ],
+    [ "wamp::Subscription", "classwamp_1_1_subscription.html", [
+      [ "wamp::ScopedSubscription", "classwamp_1_1_scoped_subscription.html", null ]
+    ] ],
     [ "std::system_error", null, [
       [ "wamp::error::Failure", "classwamp_1_1error_1_1_failure.html", null ]
     ] ],
-    [ "wamp::Unmarshall< TArgs >", "structwamp_1_1_unmarshall.html", null ],
     [ "wamp::Variant", "classwamp_1_1_variant.html", null ],
     [ "wamp::Version", "structwamp_1_1_version.html", null ],
     [ "wamp::Visitor< TResult >", "namespacewamp.html#classwamp_1_1_visitor", null ],

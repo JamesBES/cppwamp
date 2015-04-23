@@ -114,7 +114,8 @@ $(document).ready(function(){initNavTree('sessiondata_8hpp.html','');});
 
 <p>Contains declarations for data types exchanged via the client session interfaces.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;initializer_list&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;initializer_list&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -137,7 +138,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a> information returned by <a class="el" href="classwamp_1_1_session.html#a3119d4f363c42b72f4198db8298112ca" title="Asynchronously attempts to join the given WAMP realm. ">Session::join</a>.  <a href="classwamp_1_1_session_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_topic.html">wamp::Topic</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Topic URI and other options passed to <a class="el" href="classwamp_1_1_session.html#a9070e65515a06935d0a96b283e7ee9c6" title="Subscribes to WAMP pub/sub events having the given topic. ">Session::subscribe</a>.  <a href="classwamp_1_1_topic.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Topic URI and other options passed to <a class="el" href="classwamp_1_1_session.html#a93b8686842db786a7d065c601f75cb5a" title="Subscribes to WAMP pub/sub events having the given topic. ">Session::subscribe</a>.  <a href="classwamp_1_1_topic.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_pub.html">wamp::Pub</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the topic URI, options, and payload passed to <a class="el" href="classwamp_1_1_session.html#a335a1650356141253b9ca4719e66f3c8" title="Publishes an event. ">Session::publish</a>.  <a href="classwamp_1_1_pub.html#details">More...</a><br /></td></tr>
@@ -146,7 +147,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a published event.  <a href="classwamp_1_1_event.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_procedure.html">wamp::Procedure</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procedure URI and other options passed to <a class="el" href="classwamp_1_1_session.html#aa3c9f8d59c824acce455979ba2229e96" title="Registers a WAMP remote procedure call. ">Session::enroll</a>.  <a href="classwamp_1_1_procedure.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procedure URI and other options passed to <a class="el" href="classwamp_1_1_session.html#a04846bb5a40a74a0fe8cd37e3d0102c0" title="Registers a WAMP remote procedure call. ">Session::enroll</a>.  <a href="classwamp_1_1_procedure.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_rpc.html">wamp::Rpc</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the procedure URI, options, and payload passed to <a class="el" href="classwamp_1_1_session.html#a2a20e24d47e9f5426d0aba152a7c1f09" title="Calls a remote procedure. ">Session::call</a>.  <a href="classwamp_1_1_rpc.html#details">More...</a><br /></td></tr>
@@ -154,8 +155,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_result.html">wamp::Result</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains a remote procedure result yielded by a <em>callee</em> or received by a <em>caller</em>.  <a href="classwamp_1_1_result.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_outcome.html">wamp::Outcome</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the outcome of an RPC invocation.  <a href="classwamp_1_1_outcome.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_invocation.html">wamp::Invocation</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the means for returning a <code>YIELD</code> or <code>ERROR</code> result back to the RPC caller.  <a href="classwamp_1_1_invocation.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains payload arguments and other details related to a remote procedure call invocation.  <a href="classwamp_1_1_invocation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -172,7 +176,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb7245a6f5714b15c73ba62cf32a25df.html">cppwamp</a></li><li class="navelem"><a class="el" href="sessiondata_8hpp.html">sessiondata.hpp</a></li>
-    <li class="footer">Generated on Wed Apr 15 2015 19:06:22 for CppWAMP by
+    <li class="footer">Generated on Thu Apr 23 2015 00:52:06 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

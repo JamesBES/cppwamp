@@ -82,6 +82,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
+      <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
       <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
@@ -152,6 +154,10 @@ $(document).ready(function(){initNavTree('functions_func_o.html','');});
 : <a class="el" href="structwamp_1_1_null.html#a5de600a77507df6c22fb64d104033eaa">wamp::Null</a>
 , <a class="el" href="classwamp_1_1_variant.html#a5fc2e1a7b97acc9831a37207f961fcb5">wamp::Variant</a>
 </li>
+<li>operator()()
+: <a class="el" href="classwamp_1_1_event_unpacker.html#a33fd0686bddb67200cfa1e9386043aed">wamp::EventUnpacker&lt; TSlot, TArgs &gt;</a>
+, <a class="el" href="classwamp_1_1_invocation_unpacker.html#ac451d3563d8c683c7cc89d97dd4b6319">wamp::InvocationUnpacker&lt; TSlot, TArgs &gt;</a>
+</li>
 <li>operator&lt;()
 : <a class="el" href="structwamp_1_1_null.html#ad0e81aa1fed05c95242bbf348bb592d2">wamp::Null</a>
 , <a class="el" href="classwamp_1_1_variant.html#a1273dabeabca3e118752a602da1d1229">wamp::Variant</a>
@@ -160,15 +166,18 @@ $(document).ready(function(){initNavTree('functions_func_o.html','');});
 : <a class="el" href="structwamp_1_1_null.html#a1639612e5bad0867cb2dc71afeed2958">wamp::Null</a>
 </li>
 <li>operator=()
-: <a class="el" href="classwamp_1_1_variant.html#aca43995146234f31ae89ba1f9a52ace0">wamp::Variant</a>
+: <a class="el" href="classwamp_1_1_outcome.html#a77c0404f4d8d524c620fcce12456bfb7">wamp::Outcome</a>
+, <a class="el" href="classwamp_1_1_scoped_registration.html#a4935da677a2750ac4178028be5ae3299">wamp::ScopedRegistration</a>
+, <a class="el" href="classwamp_1_1_scoped_subscription.html#ae197d5075125d1f703fe313cf6797b89">wamp::ScopedSubscription</a>
+, <a class="el" href="classwamp_1_1_variant.html#adc98466cbb06acccca9d6f80eb5e5ea0">wamp::Variant</a>
 </li>
 <li>operator==()
 : <a class="el" href="structwamp_1_1_null.html#a4d2ba576db0e9ab38e0703506fd12307">wamp::Null</a>
-, <a class="el" href="classwamp_1_1_variant.html#a3f016f49e292719af26419fa2ae9326e">wamp::Variant</a>
+, <a class="el" href="classwamp_1_1_variant.html#aecc96126d9141b274a960a3c0be61377">wamp::Variant</a>
 </li>
 <li>operator[]()
-: <a class="el" href="classwamp_1_1_payload.html#acfe07124df9886b4594dc38c64f85a68">wamp::Payload&lt; TDerived &gt;</a>
-, <a class="el" href="classwamp_1_1_variant.html#a1ba405c49c7f0dd966f66e26e7c6f38c">wamp::Variant</a>
+: <a class="el" href="classwamp_1_1_payload.html#ae74a4a6c80165d0aec24ce4528b73f1d">wamp::Payload&lt; TDerived &gt;</a>
+, <a class="el" href="classwamp_1_1_variant.html#a52c83ebc4ce202e56b97b9ae9a5ae91b">wamp::Variant</a>
 </li>
 <li>optionByKey()
 : <a class="el" href="classwamp_1_1_options.html#a32523c88d7eec9bb7857609fe16eee48">wamp::Options&lt; TDerived &gt;</a>
@@ -182,13 +191,16 @@ $(document).ready(function(){initNavTree('functions_func_o.html','');});
 <li>Options()
 : <a class="el" href="classwamp_1_1_options.html#a9da9392ba9ecdc6e37adbdd400b457f6">wamp::Options&lt; TDerived &gt;</a>
 </li>
+<li>Outcome()
+: <a class="el" href="classwamp_1_1_outcome.html#a1dc8b65087df373fc3f573b3eaaaa080">wamp::Outcome</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 15 2015 19:06:23 for CppWAMP by
+    <li class="footer">Generated on Thu Apr 23 2015 00:52:07 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

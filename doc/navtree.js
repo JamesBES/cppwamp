@@ -4,11 +4,26 @@ var NAVTREE =
     [ "Concepts", "_concepts.html", "_concepts" ],
     [ "Architectural Overview", "_architecture.html", [
       [ "Layers", "_architecture.html#Layers", null ],
-      [ "Client API", "_architecture.html#Client_API", null ],
-      [ "Subscriptions", "_architecture.html#Subriptions", null ],
-      [ "Registrations", "_architecture.html#Registrations", null ],
-      [ "WAMP Sessions and Messaging", "_architecture.html#Messaging", null ],
-      [ "Transport Establishment", "_architecture.html#Transport_Establishment", null ]
+      [ "Client API", "_architecture.html#Client_API_UML", null ],
+      [ "Subscriptions", "_architecture.html#Subriptions_UML", null ],
+      [ "Registrations", "_architecture.html#Registrations_UML", null ],
+      [ "WAMP Sessions and Messaging", "_architecture.html#Messaging_UML", null ],
+      [ "Transport Establishment", "_architecture.html#Transport_Establishment_UML", null ]
+    ] ],
+    [ "Registrations", "_registrations.html", [
+      [ "Call Slots", "_registrations.html#CallSlots", null ],
+      [ "Unpacked Call Slots", "_registrations.html#UnpackedCallSlots", null ],
+      [ "RPC Outcomes", "_registrations.html#RpcOutcomes", [
+        [ "Result Outcomes", "_registrations.html#ResultOutcomes", null ],
+        [ "Error Outcomes", "_registrations.html#ErrorOutcomes", null ],
+        [ "Deferred Outcomes", "_registrations.html#DeferredOutcomes", null ]
+      ] ],
+      [ "Scoped Registrations", "_registrations.html#ScopedRegistrations", null ]
+    ] ],
+    [ "Subscriptions", "_subscriptions.html", [
+      [ "Event Slots", "_subscriptions.html#EventSlots", null ],
+      [ "Unpacked Event Slots", "_subscriptions.html#UnpackedEventSlots", null ],
+      [ "Scoped Subscriptions", "_subscriptions.html#ScopedSubscriptions", null ]
     ] ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
@@ -30,6 +45,8 @@ var NAVTREE =
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Enumerator", "functions_eval.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -47,8 +64,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_architecture.html",
-"classwamp_1_1_variant.html#a2bfafa83b1ed04fdaa70c14a4d3cae78",
-"precompiled_8hpp_source.html"
+"classwamp_1_1_session_info.html",
+"functions_s.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

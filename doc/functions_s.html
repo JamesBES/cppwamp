@@ -82,6 +82,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
+      <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
       <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
@@ -146,6 +148,12 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>ScopedRegistration()
+: <a class="el" href="classwamp_1_1_scoped_registration.html#a0be54481c4657e3d455be38939e22333">wamp::ScopedRegistration</a>
+</li>
+<li>ScopedSubscription()
+: <a class="el" href="classwamp_1_1_scoped_subscription.html#a755ee029b0e296e661621954a4ba8d98">wamp::ScopedSubscription</a>
+</li>
 <li>SessionInfo()
 : <a class="el" href="classwamp_1_1_session_info.html#a04ff5ad3ec107fa8a7474063bb9e914e">wamp::SessionInfo</a>
 </li>
@@ -167,14 +175,16 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>SizeType
 : <a class="el" href="classwamp_1_1_variant.html#a7ce1c7dfb499f9b69ce1e4d39283c6c8">wamp::Variant</a>
 </li>
+<li>Slot
+: <a class="el" href="classwamp_1_1_event_unpacker.html#a3ad028eb12df816594d8ccd20b241fb4">wamp::EventUnpacker&lt; TSlot, TArgs &gt;</a>
+, <a class="el" href="classwamp_1_1_invocation_unpacker.html#aa5987f958634e94ca6f78c36ad4b3d84">wamp::InvocationUnpacker&lt; TSlot, TArgs &gt;</a>
+</li>
 <li>State
 : <a class="el" href="classwamp_1_1_coro_session.html#a9b61c79d0942fa90bdd903d36c23edbe">wamp::CoroSession&lt; TBase &gt;</a>
+, <a class="el" href="classwamp_1_1_session.html#aa1bf736849a6e4c72f67a49ac5278547">wamp::Session</a>
 </li>
 <li>state()
 : <a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd">wamp::Session</a>
-</li>
-<li>State
-: <a class="el" href="classwamp_1_1_session.html#aa1bf736849a6e4c72f67a49ac5278547">wamp::Session</a>
 </li>
 <li>String
 : <a class="el" href="classwamp_1_1_variant.html#aa1deb141006ecd77a8983a82f8aae7cb">wamp::Variant</a>
@@ -183,8 +193,11 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="classwamp_1_1_event.html#aaca8763e97de0173bc160df589b67d21">wamp::Event</a>
 </li>
 <li>subscribe()
-: <a class="el" href="classwamp_1_1_coro_session.html#a7b0e508f517d1bb1462b664fe6ad1a64">wamp::CoroSession&lt; TBase &gt;</a>
-, <a class="el" href="classwamp_1_1_session.html#a12f430f3e28222f0225d96c73e54c3d9">wamp::Session</a>
+: <a class="el" href="classwamp_1_1_coro_session.html#a01d2464a4133cb4ae711ed3cc3f3dd84">wamp::CoroSession&lt; TBase &gt;</a>
+, <a class="el" href="classwamp_1_1_session.html#a93b8686842db786a7d065c601f75cb5a">wamp::Session</a>
+</li>
+<li>Subscription()
+: <a class="el" href="classwamp_1_1_subscription.html#a704c923fca50df2cd3c46d0bcac9aca2">wamp::Subscription</a>
 </li>
 <li>supportsFeatures()
 : <a class="el" href="classwamp_1_1_session_info.html#a09e9fbfc60c209a7eaa0325752306829">wamp::SessionInfo</a>
@@ -196,7 +209,7 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="classwamp_1_1_coro_session.html#aa5c4f6558294892add45382eb3349698">wamp::CoroSession&lt; TBase &gt;</a>
 </li>
 <li>swap()
-: <a class="el" href="classwamp_1_1_variant.html#a4df88b7efc0481c6911610b0717a614b">wamp::Variant</a>
+: <a class="el" href="classwamp_1_1_variant.html#a8b074c49dc9f46ba152f5670508ba6b6">wamp::Variant</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -204,7 +217,7 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 15 2015 19:06:23 for CppWAMP by
+    <li class="footer">Generated on Thu Apr 23 2015 00:52:07 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

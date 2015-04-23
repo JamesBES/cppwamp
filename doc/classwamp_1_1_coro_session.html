@@ -141,9 +141,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:a4d0c20f3fcd2bd98a18a0f7b0733a6ea"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html#a4d0c20f3fcd2bd98a18a0f7b0733a6ea">EventSlot</a> = std::function&lt; void(<a class="el" href="classwamp_1_1_event.html">Event</a>)&gt;</td></tr>
 <tr class="memdesc:a4d0c20f3fcd2bd98a18a0f7b0733a6ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function type for handling pub/sub events.  <a href="#a4d0c20f3fcd2bd98a18a0f7b0733a6ea">More...</a><br /></td></tr>
 <tr class="separator:a4d0c20f3fcd2bd98a18a0f7b0733a6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa570173f0eb7dc034c1a55a980dadf75"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html#aa570173f0eb7dc034c1a55a980dadf75">CallSlot</a> = std::function&lt; void(<a class="el" href="classwamp_1_1_invocation.html">Invocation</a>)&gt;</td></tr>
-<tr class="memdesc:aa570173f0eb7dc034c1a55a980dadf75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function type for handling remote procedure calls.  <a href="#aa570173f0eb7dc034c1a55a980dadf75">More...</a><br /></td></tr>
-<tr class="separator:aa570173f0eb7dc034c1a55a980dadf75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a4a90d9dd691e93d2e952d608b87f94"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html#a7a4a90d9dd691e93d2e952d608b87f94">CallSlot</a> = std::function&lt; <a class="el" href="classwamp_1_1_outcome.html">Outcome</a>(<a class="el" href="classwamp_1_1_invocation.html">Invocation</a>)&gt;</td></tr>
+<tr class="memdesc:a7a4a90d9dd691e93d2e952d608b87f94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function type for handling remote procedure calls.  <a href="#a7a4a90d9dd691e93d2e952d608b87f94">More...</a><br /></td></tr>
+<tr class="separator:a7a4a90d9dd691e93d2e952d608b87f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25431b1d9c64c90d4b3bb58546f2d5aa"><td class="memTemplParams" colspan="2">template&lt;typename TSpawnHandler &gt; </td></tr>
 <tr class="memitem:a25431b1d9c64c90d4b3bb58546f2d5aa"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html#a25431b1d9c64c90d4b3bb58546f2d5aa">YieldContext</a> = boost::asio::basic_yield_context&lt; TSpawnHandler &gt;</td></tr>
 <tr class="memdesc:a25431b1d9c64c90d4b3bb58546f2d5aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yield context type used by the boost::asio::spawn handler.  <a href="#a25431b1d9c64c90d4b3bb58546f2d5aa">More...</a><br /></td></tr>
@@ -161,9 +161,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:adf30356c95f167648645c3c9f1b637af inherit pub_types_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#adf30356c95f167648645c3c9f1b637af">EventSlot</a> = std::function&lt; void(<a class="el" href="classwamp_1_1_event.html">Event</a>)&gt;</td></tr>
 <tr class="memdesc:adf30356c95f167648645c3c9f1b637af inherit pub_types_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function type for handling pub/sub events.  <a href="#adf30356c95f167648645c3c9f1b637af">More...</a><br /></td></tr>
 <tr class="separator:adf30356c95f167648645c3c9f1b637af inherit pub_types_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab97649367b6ca3c4b3b2371d012e7829 inherit pub_types_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#ab97649367b6ca3c4b3b2371d012e7829">CallSlot</a> = std::function&lt; void(<a class="el" href="classwamp_1_1_invocation.html">Invocation</a>)&gt;</td></tr>
-<tr class="memdesc:ab97649367b6ca3c4b3b2371d012e7829 inherit pub_types_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function type for handling remote procedure calls.  <a href="#ab97649367b6ca3c4b3b2371d012e7829">More...</a><br /></td></tr>
-<tr class="separator:ab97649367b6ca3c4b3b2371d012e7829 inherit pub_types_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30a80c4099f013b1eca280b2a9d476dc inherit pub_types_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#a30a80c4099f013b1eca280b2a9d476dc">CallSlot</a> = std::function&lt; <a class="el" href="classwamp_1_1_outcome.html">Outcome</a>(<a class="el" href="classwamp_1_1_invocation.html">Invocation</a>)&gt;</td></tr>
+<tr class="memdesc:a30a80c4099f013b1eca280b2a9d476dc inherit pub_types_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function type for handling remote procedure calls.  <a href="#a30a80c4099f013b1eca280b2a9d476dc">More...</a><br /></td></tr>
+<tr class="separator:a30a80c4099f013b1eca280b2a9d476dc inherit pub_types_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -181,35 +181,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:abf37a305151b2d6e94332a40f5279a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Leaves the WAMP session.  <a href="#abf37a305151b2d6e94332a40f5279a79">More...</a><br /></td></tr>
 <tr class="separator:abf37a305151b2d6e94332a40f5279a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Pub/Sub</div></td></tr>
-<tr class="memitem:a6b9375297bd6b4df195d91dfe4ce85d8"><td class="memTemplParams" colspan="2">template&lt;typename H &gt; </td></tr>
-<tr class="memitem:a6b9375297bd6b4df195d91dfe4ce85d8"><td class="memTemplItemLeft" align="right" valign="top">Subscription::Ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html#a6b9375297bd6b4df195d91dfe4ce85d8">subscribe</a> (<a class="el" href="classwamp_1_1_topic.html">Topic</a> topic, <a class="el" href="classwamp_1_1_coro_session.html#a4d0c20f3fcd2bd98a18a0f7b0733a6ea">EventSlot</a> slot, <a class="el" href="classwamp_1_1_coro_session.html#a25431b1d9c64c90d4b3bb58546f2d5aa">YieldContext</a>&lt; H &gt; yield, std::error_code *ec=nullptr)</td></tr>
-<tr class="memdesc:a6b9375297bd6b4df195d91dfe4ce85d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribes to WAMP pub/sub events having the given topic.  <a href="#a6b9375297bd6b4df195d91dfe4ce85d8">More...</a><br /></td></tr>
-<tr class="separator:a6b9375297bd6b4df195d91dfe4ce85d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b0e508f517d1bb1462b664fe6ad1a64"><td class="memTemplParams" colspan="2">template&lt;typename THead , typename... TTail, typename TEventSlot , typename H &gt; </td></tr>
-<tr class="memitem:a7b0e508f517d1bb1462b664fe6ad1a64"><td class="memTemplItemLeft" align="right" valign="top">Subscription::Ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html#a7b0e508f517d1bb1462b664fe6ad1a64">subscribe</a> (<a class="el" href="classwamp_1_1_topic.html">Topic</a> topic, TEventSlot &amp;&amp;slot, <a class="el" href="classwamp_1_1_coro_session.html#a25431b1d9c64c90d4b3bb58546f2d5aa">YieldContext</a>&lt; H &gt; yield, std::error_code *ec=nullptr)</td></tr>
-<tr class="memdesc:a7b0e508f517d1bb1462b664fe6ad1a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribes to WAMP pub/sub events having the given topic.  <a href="#a7b0e508f517d1bb1462b664fe6ad1a64">More...</a><br /></td></tr>
-<tr class="separator:a7b0e508f517d1bb1462b664fe6ad1a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1f969249f146c729bd67fc995aa0fe9"><td class="memTemplParams" colspan="2">template&lt;typename H &gt; </td></tr>
-<tr class="memitem:ad1f969249f146c729bd67fc995aa0fe9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html#ad1f969249f146c729bd67fc995aa0fe9">unsubscribe</a> (Subscription::Ptr sub, <a class="el" href="classwamp_1_1_coro_session.html#a25431b1d9c64c90d4b3bb58546f2d5aa">YieldContext</a>&lt; H &gt; yield, std::error_code *ec=nullptr)</td></tr>
-<tr class="memdesc:ad1f969249f146c729bd67fc995aa0fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribes a subscription to a topic and waits for router acknowledgement if necessary.  <a href="#ad1f969249f146c729bd67fc995aa0fe9">More...</a><br /></td></tr>
-<tr class="separator:ad1f969249f146c729bd67fc995aa0fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01d2464a4133cb4ae711ed3cc3f3dd84"><td class="memTemplParams" colspan="2">template&lt;typename H &gt; </td></tr>
+<tr class="memitem:a01d2464a4133cb4ae711ed3cc3f3dd84"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_subscription.html">Subscription</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html#a01d2464a4133cb4ae711ed3cc3f3dd84">subscribe</a> (<a class="el" href="classwamp_1_1_topic.html">Topic</a> topic, <a class="el" href="classwamp_1_1_coro_session.html#a4d0c20f3fcd2bd98a18a0f7b0733a6ea">EventSlot</a> slot, <a class="el" href="classwamp_1_1_coro_session.html#a25431b1d9c64c90d4b3bb58546f2d5aa">YieldContext</a>&lt; H &gt; yield, std::error_code *ec=nullptr)</td></tr>
+<tr class="memdesc:a01d2464a4133cb4ae711ed3cc3f3dd84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribes to WAMP pub/sub events having the given topic.  <a href="#a01d2464a4133cb4ae711ed3cc3f3dd84">More...</a><br /></td></tr>
+<tr class="separator:a01d2464a4133cb4ae711ed3cc3f3dd84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74e3dccd6a2c154a2ceb437553d9aaa"><td class="memTemplParams" colspan="2">template&lt;typename H &gt; </td></tr>
+<tr class="memitem:aa74e3dccd6a2c154a2ceb437553d9aaa"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html#aa74e3dccd6a2c154a2ceb437553d9aaa">unsubscribe</a> (const <a class="el" href="classwamp_1_1_subscription.html">Subscription</a> &amp;sub, <a class="el" href="classwamp_1_1_coro_session.html#a25431b1d9c64c90d4b3bb58546f2d5aa">YieldContext</a>&lt; H &gt; yield, std::error_code *ec=nullptr)</td></tr>
+<tr class="memdesc:aa74e3dccd6a2c154a2ceb437553d9aaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribes a subscription to a topic and waits for router acknowledgement if necessary.  <a href="#aa74e3dccd6a2c154a2ceb437553d9aaa">More...</a><br /></td></tr>
+<tr class="separator:aa74e3dccd6a2c154a2ceb437553d9aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2a3c8801c1b2464ca98d9f4b0a4c77e"><td class="memTemplParams" colspan="2">template&lt;typename H &gt; </td></tr>
 <tr class="memitem:ae2a3c8801c1b2464ca98d9f4b0a4c77e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacewamp.html#af1108039d1eea74def74485afcd801d5">PublicationId</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html#ae2a3c8801c1b2464ca98d9f4b0a4c77e">publish</a> (<a class="el" href="classwamp_1_1_pub.html">Pub</a> pub, <a class="el" href="classwamp_1_1_coro_session.html#a25431b1d9c64c90d4b3bb58546f2d5aa">YieldContext</a>&lt; H &gt; yield, std::error_code *ec=nullptr)</td></tr>
 <tr class="memdesc:ae2a3c8801c1b2464ca98d9f4b0a4c77e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes an event and waits for an acknowledgement from the router.  <a href="#ae2a3c8801c1b2464ca98d9f4b0a4c77e">More...</a><br /></td></tr>
 <tr class="separator:ae2a3c8801c1b2464ca98d9f4b0a4c77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Remote Procedures</div></td></tr>
-<tr class="memitem:afa07700254e432589ebceed8c7d115ed"><td class="memTemplParams" colspan="2">template&lt;typename H &gt; </td></tr>
-<tr class="memitem:afa07700254e432589ebceed8c7d115ed"><td class="memTemplItemLeft" align="right" valign="top">Registration::Ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html#afa07700254e432589ebceed8c7d115ed">enroll</a> (<a class="el" href="classwamp_1_1_procedure.html">Procedure</a> procedure, <a class="el" href="classwamp_1_1_coro_session.html#aa570173f0eb7dc034c1a55a980dadf75">CallSlot</a> slot, <a class="el" href="classwamp_1_1_coro_session.html#a25431b1d9c64c90d4b3bb58546f2d5aa">YieldContext</a>&lt; H &gt; yield, std::error_code *ec=nullptr)</td></tr>
-<tr class="memdesc:afa07700254e432589ebceed8c7d115ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a WAMP remote procedure call.  <a href="#afa07700254e432589ebceed8c7d115ed">More...</a><br /></td></tr>
-<tr class="separator:afa07700254e432589ebceed8c7d115ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a759936b94525994503f36f54c2e0ad5e"><td class="memTemplParams" colspan="2">template&lt;typename THead , typename... TTail, typename TCallSlot , typename H &gt; </td></tr>
-<tr class="memitem:a759936b94525994503f36f54c2e0ad5e"><td class="memTemplItemLeft" align="right" valign="top">Registration::Ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html#a759936b94525994503f36f54c2e0ad5e">enroll</a> (<a class="el" href="classwamp_1_1_procedure.html">Procedure</a> procedure, TCallSlot &amp;&amp;slot, <a class="el" href="classwamp_1_1_coro_session.html#a25431b1d9c64c90d4b3bb58546f2d5aa">YieldContext</a>&lt; H &gt; yield, std::error_code *ec=nullptr)</td></tr>
-<tr class="memdesc:a759936b94525994503f36f54c2e0ad5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a WAMP remote procedure call.  <a href="#a759936b94525994503f36f54c2e0ad5e">More...</a><br /></td></tr>
-<tr class="separator:a759936b94525994503f36f54c2e0ad5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bb4c69aaff718f55f39ff3371331b13"><td class="memTemplParams" colspan="2">template&lt;typename H &gt; </td></tr>
-<tr class="memitem:a6bb4c69aaff718f55f39ff3371331b13"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html#a6bb4c69aaff718f55f39ff3371331b13">unregister</a> (Registration::Ptr reg, <a class="el" href="classwamp_1_1_coro_session.html#a25431b1d9c64c90d4b3bb58546f2d5aa">YieldContext</a>&lt; H &gt; yield, std::error_code *ec=nullptr)</td></tr>
-<tr class="memdesc:a6bb4c69aaff718f55f39ff3371331b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters a remote procedure call.  <a href="#a6bb4c69aaff718f55f39ff3371331b13">More...</a><br /></td></tr>
-<tr class="separator:a6bb4c69aaff718f55f39ff3371331b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6081368ea20971cd258ece70f3ca6b28"><td class="memTemplParams" colspan="2">template&lt;typename H &gt; </td></tr>
+<tr class="memitem:a6081368ea20971cd258ece70f3ca6b28"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_registration.html">Registration</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html#a6081368ea20971cd258ece70f3ca6b28">enroll</a> (<a class="el" href="classwamp_1_1_procedure.html">Procedure</a> procedure, <a class="el" href="classwamp_1_1_coro_session.html#a7a4a90d9dd691e93d2e952d608b87f94">CallSlot</a> slot, <a class="el" href="classwamp_1_1_coro_session.html#a25431b1d9c64c90d4b3bb58546f2d5aa">YieldContext</a>&lt; H &gt; yield, std::error_code *ec=nullptr)</td></tr>
+<tr class="memdesc:a6081368ea20971cd258ece70f3ca6b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a WAMP remote procedure call.  <a href="#a6081368ea20971cd258ece70f3ca6b28">More...</a><br /></td></tr>
+<tr class="separator:a6081368ea20971cd258ece70f3ca6b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5466f61a07bdc723c8ae2a91ea0a50dc"><td class="memTemplParams" colspan="2">template&lt;typename H &gt; </td></tr>
+<tr class="memitem:a5466f61a07bdc723c8ae2a91ea0a50dc"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html#a5466f61a07bdc723c8ae2a91ea0a50dc">unregister</a> (const <a class="el" href="classwamp_1_1_registration.html">Registration</a> &amp;reg, <a class="el" href="classwamp_1_1_coro_session.html#a25431b1d9c64c90d4b3bb58546f2d5aa">YieldContext</a>&lt; H &gt; yield, std::error_code *ec=nullptr)</td></tr>
+<tr class="memdesc:a5466f61a07bdc723c8ae2a91ea0a50dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters a remote procedure call.  <a href="#a5466f61a07bdc723c8ae2a91ea0a50dc">More...</a><br /></td></tr>
+<tr class="separator:a5466f61a07bdc723c8ae2a91ea0a50dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27e1d340844ae71b9ffa0fb51591317a"><td class="memTemplParams" colspan="2">template&lt;typename H &gt; </td></tr>
 <tr class="memitem:a27e1d340844ae71b9ffa0fb51591317a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_result.html">Result</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_coro_session.html#a27e1d340844ae71b9ffa0fb51591317a">call</a> (<a class="el" href="classwamp_1_1_rpc.html">Rpc</a> rpc, <a class="el" href="classwamp_1_1_coro_session.html#a25431b1d9c64c90d4b3bb58546f2d5aa">YieldContext</a>&lt; H &gt; yield, std::error_code *ec=nullptr)</td></tr>
 <tr class="memdesc:a27e1d340844ae71b9ffa0fb51591317a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a remote procedure.  <a href="#a27e1d340844ae71b9ffa0fb51591317a">More...</a><br /></td></tr>
@@ -257,38 +249,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad4543cb4140512fc529ee552924cc0f5 inherit pub_methods_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#ad4543cb4140512fc529ee552924cc0f5">reset</a> ()</td></tr>
 <tr class="memdesc:ad4543cb4140512fc529ee552924cc0f5 inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates the transport connection between the client and router.  <a href="#ad4543cb4140512fc529ee552924cc0f5">More...</a><br /></td></tr>
 <tr class="separator:ad4543cb4140512fc529ee552924cc0f5 inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9070e65515a06935d0a96b283e7ee9c6 inherit pub_methods_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#a9070e65515a06935d0a96b283e7ee9c6">subscribe</a> (<a class="el" href="classwamp_1_1_topic.html">Topic</a> topic, <a class="el" href="classwamp_1_1_session.html#adf30356c95f167648645c3c9f1b637af">EventSlot</a> slot, <a class="el" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt; Subscription::Ptr &gt; handler)</td></tr>
-<tr class="memdesc:a9070e65515a06935d0a96b283e7ee9c6 inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribes to WAMP pub/sub events having the given topic.  <a href="#a9070e65515a06935d0a96b283e7ee9c6">More...</a><br /></td></tr>
-<tr class="separator:a9070e65515a06935d0a96b283e7ee9c6 inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12f430f3e28222f0225d96c73e54c3d9 inherit pub_methods_classwamp_1_1_session"><td class="memTemplParams" colspan="2">template&lt;typename THead , typename... TTail, typename TEventSlot &gt; </td></tr>
-<tr class="memitem:a12f430f3e28222f0225d96c73e54c3d9 inherit pub_methods_classwamp_1_1_session"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#a12f430f3e28222f0225d96c73e54c3d9">subscribe</a> (<a class="el" href="classwamp_1_1_topic.html">Topic</a> topic, TEventSlot &amp;&amp;slot, <a class="el" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt; Subscription::Ptr &gt; handler)</td></tr>
-<tr class="memdesc:a12f430f3e28222f0225d96c73e54c3d9 inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribes to WAMP pub/sub events having the given topic.  <a href="#a12f430f3e28222f0225d96c73e54c3d9">More...</a><br /></td></tr>
-<tr class="separator:a12f430f3e28222f0225d96c73e54c3d9 inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a46facac5b39b8689563246a660fc18 inherit pub_methods_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#a6a46facac5b39b8689563246a660fc18">unsubscribe</a> (Subscription::Ptr sub)</td></tr>
-<tr class="memdesc:a6a46facac5b39b8689563246a660fc18 inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribes a subscription to a topic.  <a href="#a6a46facac5b39b8689563246a660fc18">More...</a><br /></td></tr>
-<tr class="separator:a6a46facac5b39b8689563246a660fc18 inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad43ba41a0e28e650823a043c172ea9af inherit pub_methods_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#ad43ba41a0e28e650823a043c172ea9af">unsubscribe</a> (Subscription::Ptr sub, <a class="el" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt; bool &gt; handler)</td></tr>
-<tr class="memdesc:ad43ba41a0e28e650823a043c172ea9af inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribes a subscription to a topic and waits for router acknowledgement, if necessary.  <a href="#ad43ba41a0e28e650823a043c172ea9af">More...</a><br /></td></tr>
-<tr class="separator:ad43ba41a0e28e650823a043c172ea9af inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b8686842db786a7d065c601f75cb5a inherit pub_methods_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#a93b8686842db786a7d065c601f75cb5a">subscribe</a> (<a class="el" href="classwamp_1_1_topic.html">Topic</a> topic, <a class="el" href="classwamp_1_1_session.html#adf30356c95f167648645c3c9f1b637af">EventSlot</a> slot, <a class="el" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt; <a class="el" href="classwamp_1_1_subscription.html">Subscription</a> &gt; handler)</td></tr>
+<tr class="memdesc:a93b8686842db786a7d065c601f75cb5a inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribes to WAMP pub/sub events having the given topic.  <a href="#a93b8686842db786a7d065c601f75cb5a">More...</a><br /></td></tr>
+<tr class="separator:a93b8686842db786a7d065c601f75cb5a inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9d6644ee5a18645526aaf368c3b9b00 inherit pub_methods_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#ac9d6644ee5a18645526aaf368c3b9b00">unsubscribe</a> (const <a class="el" href="classwamp_1_1_subscription.html">Subscription</a> &amp;sub)</td></tr>
+<tr class="memdesc:ac9d6644ee5a18645526aaf368c3b9b00 inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribes a subscription to a topic.  <a href="#ac9d6644ee5a18645526aaf368c3b9b00">More...</a><br /></td></tr>
+<tr class="separator:ac9d6644ee5a18645526aaf368c3b9b00 inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00af03279815405dd6ea953336c5b12 inherit pub_methods_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#ad00af03279815405dd6ea953336c5b12">unsubscribe</a> (const <a class="el" href="classwamp_1_1_subscription.html">Subscription</a> &amp;sub, <a class="el" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt; bool &gt; handler)</td></tr>
+<tr class="memdesc:ad00af03279815405dd6ea953336c5b12 inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribes a subscription to a topic and waits for router acknowledgement, if necessary.  <a href="#ad00af03279815405dd6ea953336c5b12">More...</a><br /></td></tr>
+<tr class="separator:ad00af03279815405dd6ea953336c5b12 inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a335a1650356141253b9ca4719e66f3c8 inherit pub_methods_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#a335a1650356141253b9ca4719e66f3c8">publish</a> (<a class="el" href="classwamp_1_1_pub.html">Pub</a> pub)</td></tr>
 <tr class="memdesc:a335a1650356141253b9ca4719e66f3c8 inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes an event.  <a href="#a335a1650356141253b9ca4719e66f3c8">More...</a><br /></td></tr>
 <tr class="separator:a335a1650356141253b9ca4719e66f3c8 inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab936f9e943d8590962e3ec2c6d65e892 inherit pub_methods_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#ab936f9e943d8590962e3ec2c6d65e892">publish</a> (<a class="el" href="classwamp_1_1_pub.html">Pub</a> pub, <a class="el" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt; <a class="el" href="namespacewamp.html#af1108039d1eea74def74485afcd801d5">PublicationId</a> &gt; handler)</td></tr>
 <tr class="memdesc:ab936f9e943d8590962e3ec2c6d65e892 inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes an event and waits for an acknowledgement from the router.  <a href="#ab936f9e943d8590962e3ec2c6d65e892">More...</a><br /></td></tr>
 <tr class="separator:ab936f9e943d8590962e3ec2c6d65e892 inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3c9f8d59c824acce455979ba2229e96 inherit pub_methods_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#aa3c9f8d59c824acce455979ba2229e96">enroll</a> (<a class="el" href="classwamp_1_1_procedure.html">Procedure</a> procedure, <a class="el" href="classwamp_1_1_session.html#ab97649367b6ca3c4b3b2371d012e7829">CallSlot</a> slot, <a class="el" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt; Registration::Ptr &gt; handler)</td></tr>
-<tr class="memdesc:aa3c9f8d59c824acce455979ba2229e96 inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a WAMP remote procedure call.  <a href="#aa3c9f8d59c824acce455979ba2229e96">More...</a><br /></td></tr>
-<tr class="separator:aa3c9f8d59c824acce455979ba2229e96 inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c63112a98ad2fd1244b186bb18a37fe inherit pub_methods_classwamp_1_1_session"><td class="memTemplParams" colspan="2">template&lt;typename THead , typename... TTail, typename TCallSlot &gt; </td></tr>
-<tr class="memitem:a5c63112a98ad2fd1244b186bb18a37fe inherit pub_methods_classwamp_1_1_session"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#a5c63112a98ad2fd1244b186bb18a37fe">enroll</a> (<a class="el" href="classwamp_1_1_procedure.html">Procedure</a> procedure, TCallSlot &amp;&amp;slot, <a class="el" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt; Registration::Ptr &gt; handler)</td></tr>
-<tr class="memdesc:a5c63112a98ad2fd1244b186bb18a37fe inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a WAMP remote procedure call.  <a href="#a5c63112a98ad2fd1244b186bb18a37fe">More...</a><br /></td></tr>
-<tr class="separator:a5c63112a98ad2fd1244b186bb18a37fe inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2792cd0006ef8a9ae3b58fe215bbc8d4 inherit pub_methods_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#a2792cd0006ef8a9ae3b58fe215bbc8d4">unregister</a> (Registration::Ptr reg)</td></tr>
-<tr class="memdesc:a2792cd0006ef8a9ae3b58fe215bbc8d4 inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters a remote procedure call.  <a href="#a2792cd0006ef8a9ae3b58fe215bbc8d4">More...</a><br /></td></tr>
-<tr class="separator:a2792cd0006ef8a9ae3b58fe215bbc8d4 inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a229eeb7b15e6f5c51fc6cca7614a06b8 inherit pub_methods_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#a229eeb7b15e6f5c51fc6cca7614a06b8">unregister</a> (Registration::Ptr reg, <a class="el" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt; bool &gt; handler)</td></tr>
-<tr class="memdesc:a229eeb7b15e6f5c51fc6cca7614a06b8 inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters a remote procedure call and waits for router acknowledgement.  <a href="#a229eeb7b15e6f5c51fc6cca7614a06b8">More...</a><br /></td></tr>
-<tr class="separator:a229eeb7b15e6f5c51fc6cca7614a06b8 inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04846bb5a40a74a0fe8cd37e3d0102c0 inherit pub_methods_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#a04846bb5a40a74a0fe8cd37e3d0102c0">enroll</a> (<a class="el" href="classwamp_1_1_procedure.html">Procedure</a> procedure, <a class="el" href="classwamp_1_1_session.html#a30a80c4099f013b1eca280b2a9d476dc">CallSlot</a> slot, <a class="el" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt; <a class="el" href="classwamp_1_1_registration.html">Registration</a> &gt; handler)</td></tr>
+<tr class="memdesc:a04846bb5a40a74a0fe8cd37e3d0102c0 inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a WAMP remote procedure call.  <a href="#a04846bb5a40a74a0fe8cd37e3d0102c0">More...</a><br /></td></tr>
+<tr class="separator:a04846bb5a40a74a0fe8cd37e3d0102c0 inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbbeaa2ab9e196898da5ebc9fdb3f161 inherit pub_methods_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#abbbeaa2ab9e196898da5ebc9fdb3f161">unregister</a> (const <a class="el" href="classwamp_1_1_registration.html">Registration</a> &amp;reg)</td></tr>
+<tr class="memdesc:abbbeaa2ab9e196898da5ebc9fdb3f161 inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters a remote procedure call.  <a href="#abbbeaa2ab9e196898da5ebc9fdb3f161">More...</a><br /></td></tr>
+<tr class="separator:abbbeaa2ab9e196898da5ebc9fdb3f161 inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d339f98287ffd56c51ac115c8599a1 inherit pub_methods_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#a16d339f98287ffd56c51ac115c8599a1">unregister</a> (const <a class="el" href="classwamp_1_1_registration.html">Registration</a> &amp;reg, <a class="el" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt; bool &gt; handler)</td></tr>
+<tr class="memdesc:a16d339f98287ffd56c51ac115c8599a1 inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters a remote procedure call and waits for router acknowledgement.  <a href="#a16d339f98287ffd56c51ac115c8599a1">More...</a><br /></td></tr>
+<tr class="separator:a16d339f98287ffd56c51ac115c8599a1 inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a20e24d47e9f5426d0aba152a7c1f09 inherit pub_methods_classwamp_1_1_session"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_session.html#a2a20e24d47e9f5426d0aba152a7c1f09">call</a> (<a class="el" href="classwamp_1_1_rpc.html">Rpc</a> procedure, <a class="el" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt; <a class="el" href="classwamp_1_1_result.html">Result</a> &gt; handler)</td></tr>
 <tr class="memdesc:a2a20e24d47e9f5426d0aba152a7c1f09 inherit pub_methods_classwamp_1_1_session"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls a remote procedure.  <a href="#a2a20e24d47e9f5426d0aba152a7c1f09">More...</a><br /></td></tr>
 <tr class="separator:a2a20e24d47e9f5426d0aba152a7c1f09 inherit pub_methods_classwamp_1_1_session"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -348,8 +332,9 @@ class wamp::CoroSession&lt; TBase &gt;</h3>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a>, <a class="el" href="classwamp_1_1_registration.html" title="Manages the lifetime of an RPC registration. ">Registration</a>, <a class="el" href="classwamp_1_1_subscription.html" title="Manages the lifetime of a pub/sub event subscription. ">Subscription</a>. </dd></dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a>, <a class="el" href="classwamp_1_1_registration.html" title="Represents a remote procedure registration. ">Registration</a>, <a class="el" href="classwamp_1_1_subscription.html" title="Represents a pub/sub event subscription. ">Subscription</a>. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2chat_2main_8cpp-example.html#_a2">examples/chat/main.cpp</a>.</dd>
+</dl></div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a8b91b9a8096b99f2a95a2815d66b5ee5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -414,14 +399,14 @@ template&lt;typename TBase = Session&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa570173f0eb7dc034c1a55a980dadf75"></a>
+<a class="anchor" id="a7a4a90d9dd691e93d2e952d608b87f94"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TBase = Session&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classwamp_1_1_coro_session.html">wamp::CoroSession</a>&lt; TBase &gt;::<a class="el" href="classwamp_1_1_coro_session.html#aa570173f0eb7dc034c1a55a980dadf75">CallSlot</a> =  std::function&lt;void (<a class="el" href="classwamp_1_1_invocation.html">Invocation</a>)&gt;</td>
+          <td class="memname">using <a class="el" href="classwamp_1_1_coro_session.html">wamp::CoroSession</a>&lt; TBase &gt;::<a class="el" href="classwamp_1_1_coro_session.html#a7a4a90d9dd691e93d2e952d608b87f94">CallSlot</a> =  std::function&lt;<a class="el" href="classwamp_1_1_outcome.html">Outcome</a> (<a class="el" href="classwamp_1_1_invocation.html">Invocation</a>)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -482,8 +467,7 @@ template&lt;typename B &gt; </div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2chat_2main_8cpp-example.html#a0">examples/chat/main.cpp</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a class="anchor" id="a7c48ffc9e539c8e9bd9d248c8afda98d"></a>
@@ -711,7 +695,7 @@ template&lt;typename H &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a6b9375297bd6b4df195d91dfe4ce85d8"></a>
+<a class="anchor" id="a01d2464a4133cb4ae711ed3cc3f3dd84"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -720,7 +704,7 @@ template&lt;typename B &gt; </div>
 template&lt;typename H &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Subscription::Ptr <a class="el" href="classwamp_1_1_coro_session.html">wamp::CoroSession</a>&lt; B &gt;::subscribe </td>
+          <td class="memname"><a class="el" href="classwamp_1_1_subscription.html">Subscription</a> <a class="el" href="classwamp_1_1_coro_session.html">wamp::CoroSession</a>&lt; B &gt;::subscribe </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwamp_1_1_topic.html">Topic</a>&#160;</td>
           <td class="paramname"><em>topic</em>, </td>
@@ -752,14 +736,8 @@ template&lt;typename H &gt; </div>
 </div><div class="memdoc">
 
 <p>Subscribes to WAMP pub/sub events having the given topic. </p>
-<p>A <em>slot</em> is a function that is called in response to a <em>signal</em> (the signal being the event topic in this case). The term <em>slot</em>, borrowed from <a href="http://doc.qt.io/qt-5/signalsandslots.html">Qt's signals and slots</a>, is used to distinguish these handlers from asynchronous operation handlers.</p>
-<p>For this <code>subscribe</code> overload, the event slot must be a <em>callable target</em> with the following signature:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>(Event)</div>
-</div><!-- fragment --><p>where:</p><ul>
-<li><em>callable target</em> is a free function, bound member function, function object, lambda function, etc., and,</li>
-<li><code><a class="el" href="classwamp_1_1_event.html" title="Represents a published event. ">Event</a></code> is an object containing information related to the publication</li>
-</ul>
-<dl class="section return"><dt>Returns</dt><dd>A <code>std::shared_ptr</code> to a <a class="el" href="classwamp_1_1_subscription.html" title="Manages the lifetime of a pub/sub event subscription. ">Subscription</a> object, therafter used to manage the subscription's lifetime. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_subscriptions.html">Subscriptions</a></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classwamp_1_1_subscription.html" title="Represents a pub/sub event subscription. ">Subscription</a> object, therafter used to manage the subscription's lifetime. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> == <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </dd></dl>
 <dl class="section user"><dt>Error Codes</dt><dd><ul>
 <li><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a696e8572fae9cf279b6ae706bb198067" title="Subscribe error reported by broker. ">SessionErrc::subscribeError</a> if the router replied with an <code>ERROR</code> response.</li>
@@ -785,103 +763,7 @@ template&lt;typename H &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7b0e508f517d1bb1462b664fe6ad1a64"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename B &gt; </div>
-<div class="memtemplate">
-template&lt;typename THead , typename... TTail, typename TEventSlot , typename H &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">Subscription::Ptr <a class="el" href="classwamp_1_1_coro_session.html">wamp::CoroSession</a>&lt; B &gt;::subscribe </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classwamp_1_1_topic.html">Topic</a>&#160;</td>
-          <td class="paramname"><em>topic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TEventSlot &amp;&amp;&#160;</td>
-          <td class="paramname"><em>slot</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classwamp_1_1_coro_session.html#a25431b1d9c64c90d4b3bb58546f2d5aa">YieldContext</a>&lt; H &gt;&#160;</td>
-          <td class="paramname"><em>yield</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::error_code *&#160;</td>
-          <td class="paramname"><em>ec</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Subscribes to WAMP pub/sub events having the given topic. </p>
-<p>This overload is used to register an <em>event slot</em> that takes additional, statically-typed payload arguments.</p>
-<p>A <em>slot</em> is a function that is called in response to a <em>signal</em> (the signal being the event topic in this case). The term <em>slot</em>, borrowed from <a href="http://doc.qt.io/qt-5/signalsandslots.html">Qt's signals and slots</a>, is used to distinguish the event handler from asynchronous operation handlers.</p>
-<p>For this <code>subscribe</code> overload, an event slot must be a <em>callable target</em> with the following signature: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>(Event, THead, TTail...)</div>
-</div><!-- fragment --><p> where</p><ul>
-<li><em>callable target</em> is a free function, bound member function, function object, lambda function, etc.,</li>
-<li><code><a class="el" href="classwamp_1_1_event.html" title="Represents a published event. ">Event</a></code> is an object containing information related to the publication,</li>
-<li><code>THead</code> is the first template parameter passed to <a class="el" href="classwamp_1_1_session.html#a9070e65515a06935d0a96b283e7ee9c6" title="Subscribes to WAMP pub/sub events having the given topic. ">Session::subscribe</a>, and,</li>
-<li><code>TTail</code> is zero or more additional template parameters that were passed to <a class="el" href="classwamp_1_1_session.html#a9070e65515a06935d0a96b283e7ee9c6" title="Subscribes to WAMP pub/sub events having the given topic. ">Session::subscribe</a>.</li>
-</ul>
-<p>Examples of compliant slots are: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> onSensorSampled(Event event, <span class="keywordtype">float</span> value) { ... }</div>
-<div class="line"><span class="comment">//                           THead^^^^^</span></div>
-<div class="line"></div>
-<div class="line"><span class="keywordtype">void</span> onPurchase(Event event, <a class="code" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbab45cffe084dd3d20d928bee85e7b0f21">std::string</a> item, <span class="keywordtype">int</span> cost, <span class="keywordtype">int</span> qty) { ... }</div>
-<div class="line"><span class="comment">//                                  ^          ^           ^</span></div>
-<div class="line"><span class="comment">//                                THead        |---TTail---|</span></div>
-</div><!-- fragment --><p>The above slots are registered as follows: </p><div class="fragment"><div class="line">session-&gt;subscribe&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;sensorSampled&quot;</span>, &amp;onSensorSampled, handler);</div>
-<div class="line"></div>
-<div class="line">session-&gt;subscribe&lt;<a class="code" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbab45cffe084dd3d20d928bee85e7b0f21">std::string</a>, int, <span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;itemPurchased&quot;</span>, &amp;onPurchase,</div>
-<div class="line">                                          handler);</div>
-</div><!-- fragment --><p>where <code>handler</code> is the asynchronous handler (or coroutine yield context) for the <b>subscribe operation itself</b>.</p>
-<p>Whenever a <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a> dispatches an event to the above slots, it automatically unmarshalls the event payload positional arguments, and passes them to the slots' argument list. If <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a> cannot convert the event payload arguments to their target types, it issues a warning that can be captured via <a class="el" href="classwamp_1_1_session.html#a3af4c171dc1d0cb7b412adbd702528db" title="Sets the log handler for warnings. ">Session::setWarningHandler</a>.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">THead</td><td>The first parameter type that the slot function expects after the <a class="el" href="classwamp_1_1_event.html" title="Represents a published event. ">Event</a> parameter. </td></tr>
-    <tr><td class="paramname">TTail</td><td>List of additional parameter types, following THead, that the slot function expects after the <a class="el" href="classwamp_1_1_event.html" title="Represents a published event. ">Event</a> parameter. </td></tr>
-    <tr><td class="paramname">TEventSlot</td><td>Callable target type of the slot. Must be move-assignable to <code>std::function&lt;<a class="el" href="classwamp_1_1_event.html" title="Represents a published event. ">Event</a>, THead, TTail...&gt;</code>. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A <code>std::shared_ptr</code> to a <a class="el" href="classwamp_1_1_subscription.html" title="Manages the lifetime of a pub/sub event subscription. ">Subscription</a> object, therafter used to manage the subscription's lifetime. </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> == <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </dd></dl>
-<dl class="section user"><dt>Error Codes</dt><dd><ul>
-<li><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a696e8572fae9cf279b6ae706bb198067" title="Subscribe error reported by broker. ">SessionErrc::subscribeError</a> if the router replied with an <code>ERROR</code> response.</li>
-<li>Some other <code>std::error_code</code> for protocol and transport errors. </li>
-</ul>
-</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_logic.html" title="Exception thrown when a pre-condition is not met. ">error::Logic</a></td><td>if <code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> != <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </td></tr>
-    <tr><td class="paramname"><a class="el" href="classwamp_1_1error_1_1_failure.html" title="General purpose runtime exception that wraps a std::error_code. ">error::Failure</a></td><td>with an error code if a runtime error occured and the <code>ec</code> parameter is null. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">topic</td><td>Details on the topic to subscribe to. </td></tr>
-    <tr><td class="paramname">slot</td><td>Universal reference to a callable target to invoke when a matching event is received. </td></tr>
-    <tr><td class="paramname">yield</td><td>Represents the current coroutine. </td></tr>
-    <tr><td class="paramname">ec</td><td>Pointer to an optional error code to set instead of throwing an exception upon failure. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ad1f969249f146c729bd67fc995aa0fe9"></a>
+<a class="anchor" id="aa74e3dccd6a2c154a2ceb437553d9aaa"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -892,7 +774,7 @@ template&lt;typename H &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classwamp_1_1_coro_session.html">wamp::CoroSession</a>&lt; B &gt;::unsubscribe </td>
           <td>(</td>
-          <td class="paramtype">Subscription::Ptr&#160;</td>
+          <td class="paramtype">const <a class="el" href="classwamp_1_1_subscription.html">Subscription</a> &amp;&#160;</td>
           <td class="paramname"><em>sub</em>, </td>
         </tr>
         <tr>
@@ -916,8 +798,9 @@ template&lt;typename H &gt; </div>
 </div><div class="memdoc">
 
 <p>Unsubscribes a subscription to a topic and waits for router acknowledgement if necessary. </p>
-<p>If there are other local subscriptions on this session remaining for the same topic, then the session does not send an <code>UNSUBSCRIBE</code> message to the router. </p><dl class="section return"><dt>Returns</dt><dd><code>false</code> if the subscription was already removed, <code>true</code> otherwise. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Duplicate unsubscribes using the same <a class="el" href="classwamp_1_1_subscription.html" title="Manages the lifetime of a pub/sub event subscription. ">Subscription</a> handle are safely ignored. </dd></dl>
+<p>If there are other local subscriptions on this session remaining for the same topic, then the session does not send an <code>UNSUBSCRIBE</code> message to the router. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_subscription.html" title="Represents a pub/sub event subscription. ">Subscription</a>, <a class="el" href="classwamp_1_1_scoped_subscription.html" title="Limits a Subscription&#39;s lifetime to a particular scope. ">ScopedSubscription</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>false</code> if the subscription was already removed, <code>true</code> otherwise. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Duplicate unsubscribes using the same <a class="el" href="classwamp_1_1_subscription.html" title="Represents a pub/sub event subscription. ">Subscription</a> handle are safely ignored. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> == <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </dd></dl>
 <dl class="section user"><dt>Error Codes</dt><dd><ul>
 <li><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a6398ee39c528ff4737ae63947d85d0a4" title="Operation aborted; session ended by this peer. ">SessionErrc::sessionEnded</a> if the operation was aborted.</li>
@@ -999,7 +882,7 @@ template&lt;typename H &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="afa07700254e432589ebceed8c7d115ed"></a>
+<a class="anchor" id="a6081368ea20971cd258ece70f3ca6b28"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1008,7 +891,7 @@ template&lt;typename B &gt; </div>
 template&lt;typename H &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Registration::Ptr <a class="el" href="classwamp_1_1_coro_session.html">wamp::CoroSession</a>&lt; B &gt;::enroll </td>
+          <td class="memname"><a class="el" href="classwamp_1_1_registration.html">Registration</a> <a class="el" href="classwamp_1_1_coro_session.html">wamp::CoroSession</a>&lt; B &gt;::enroll </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwamp_1_1_procedure.html">Procedure</a>&#160;</td>
           <td class="paramname"><em>procedure</em>, </td>
@@ -1016,7 +899,7 @@ template&lt;typename H &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwamp_1_1_coro_session.html#aa570173f0eb7dc034c1a55a980dadf75">CallSlot</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classwamp_1_1_coro_session.html#a7a4a90d9dd691e93d2e952d608b87f94">CallSlot</a>&#160;</td>
           <td class="paramname"><em>slot</em>, </td>
         </tr>
         <tr>
@@ -1040,14 +923,8 @@ template&lt;typename H &gt; </div>
 </div><div class="memdoc">
 
 <p>Registers a WAMP remote procedure call. </p>
-<p>A <em>slot</em> is a function that is called in response to a <em>signal</em> (the signal being the call invocation in this case). The term <em>slot</em>, borrowed from <a href="http://doc.qt.io/qt-5/signalsandslots.html">Qt's signals and slots</a>, is used to distinguish the call handler from asynchronous operation handlers.</p>
-<p>For this <code>enroll</code> overload, the call slot must be a <em>callable target</em> with the following signature:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>(Invocation)</div>
-</div><!-- fragment --><p>where:</p><ul>
-<li><em>callable target</em> is a free function, bound member function, function object, lambda function, etc., and,</li>
-<li><code><a class="el" href="classwamp_1_1_invocation.html" title="Provides the means for returning a YIELD or ERROR result back to the RPC caller. ">Invocation</a></code> is an object containing information related to the invocation</li>
-</ul>
-<dl class="section return"><dt>Returns</dt><dd>A <code>shared_ptr</code> to a <a class="el" href="classwamp_1_1_registration.html" title="Manages the lifetime of an RPC registration. ">Registration</a> handle, therafter used to manage the registration's lifetime. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_registrations.html">Registrations</a></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classwamp_1_1_registration.html" title="Represents a remote procedure registration. ">Registration</a> object, therafter used to manage the registration's lifetime. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function was named <code>enroll</code> because <code>register</code> is a reserved C++ keyword. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> == <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </dd></dl>
 <dl class="section user"><dt>Error Codes</dt><dd><ul>
@@ -1075,104 +952,7 @@ template&lt;typename H &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a759936b94525994503f36f54c2e0ad5e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename B &gt; </div>
-<div class="memtemplate">
-template&lt;typename THead , typename... TTail, typename TCallSlot , typename H &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">Registration::Ptr <a class="el" href="classwamp_1_1_coro_session.html">wamp::CoroSession</a>&lt; B &gt;::enroll </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classwamp_1_1_procedure.html">Procedure</a>&#160;</td>
-          <td class="paramname"><em>procedure</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TCallSlot &amp;&amp;&#160;</td>
-          <td class="paramname"><em>slot</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classwamp_1_1_coro_session.html#a25431b1d9c64c90d4b3bb58546f2d5aa">YieldContext</a>&lt; H &gt;&#160;</td>
-          <td class="paramname"><em>yield</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::error_code *&#160;</td>
-          <td class="paramname"><em>ec</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Registers a WAMP remote procedure call. </p>
-<p>This overload is used to register a <em>call slot</em> that takes additional, statically-typed payload arguments.</p>
-<p>A <em>slot</em> is a function that is called in response to a <em>signal</em> (the signal being the call invocation in this case). The term <em>slot</em>, borrowed from <a href="http://doc.qt.io/qt-5/signalsandslots.html">Qt's signals and slots</a>, is used to distinguish the call handler from asynchronous operation handlers.</p>
-<p>For this <code>enroll</code> overload, an event slot must be a <em>callable target</em> with the following signature: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>(Invocation, THead, TTail...)</div>
-</div><!-- fragment --><p> where</p><ul>
-<li><em>callable target</em> is a free function, bound member function, function object, lambda function, etc,</li>
-<li><code><a class="el" href="classwamp_1_1_invocation.html" title="Provides the means for returning a YIELD or ERROR result back to the RPC caller. ">Invocation</a></code> is an object containing information related to the invocation,</li>
-<li><code>THead</code> is the first template parameter passed to <a class="el" href="classwamp_1_1_session.html#aa3c9f8d59c824acce455979ba2229e96" title="Registers a WAMP remote procedure call. ">Session::enroll</a>, and,</li>
-<li><code>TTail</code> is zero or more additional template parameters that were passed to <a class="el" href="classwamp_1_1_session.html#aa3c9f8d59c824acce455979ba2229e96" title="Registers a WAMP remote procedure call. ">Session::enroll</a>.</li>
-</ul>
-<p>Examples of compliant slots are: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> setSpeed(Invocation inv, <span class="keywordtype">float</span> speed) { ... }</div>
-<div class="line"><span class="comment">//                       THead^^^^^</span></div>
-<div class="line"></div>
-<div class="line"><span class="keywordtype">void</span> purchase(Invocation inv, <a class="code" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbab45cffe084dd3d20d928bee85e7b0f21">std::string</a> item, <span class="keywordtype">int</span> cost, <span class="keywordtype">int</span> qty) { ... }</div>
-<div class="line"><span class="comment">//                                   ^          ^           ^</span></div>
-<div class="line"><span class="comment">//                                 THead        |---TTail---|</span></div>
-</div><!-- fragment --><p>The above slots are registered as follows: </p><div class="fragment"><div class="line">session-&gt;enroll&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;setSpeed&quot;</span>, &amp;setSpeed, handler);</div>
-<div class="line"></div>
-<div class="line">session-&gt;enroll&lt;<a class="code" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbab45cffe084dd3d20d928bee85e7b0f21">std::string</a>, int, <span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;purchase&quot;</span>, &amp;purchase, handler);</div>
-</div><!-- fragment --><p>where <code>handler</code> is the asynchronous handler (or coroutine yield context) for the <b>enroll operation itself</b>.</p>
-<p>Whenever a <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a> dispatches a remote procedure call to the above slots, it automatically unmarshalls the invocation payload positional arguments, and passes them to the slots' argument list. If <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a> cannot convert the invocation payload arguments to their target types, it automatically sends an <code>ERROR</code> reply back to the router.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">THead</td><td>The first parameter type that the slot function expects after the <a class="el" href="classwamp_1_1_event.html" title="Represents a published event. ">Event</a> parameter. </td></tr>
-    <tr><td class="paramname">TTail</td><td>List of additional parameter types, following THead, that the slot function expects after the <a class="el" href="classwamp_1_1_event.html" title="Represents a published event. ">Event</a> parameter. </td></tr>
-    <tr><td class="paramname">TCallSlot</td><td>Callable target type of the slot. Must be move-assignable to <code>std::function&lt;<a class="el" href="classwamp_1_1_invocation.html" title="Provides the means for returning a YIELD or ERROR result back to the RPC caller. ">Invocation</a>, THead, TTail...&gt;</code>. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A <code>shared_ptr</code> to a <a class="el" href="classwamp_1_1_registration.html" title="Manages the lifetime of an RPC registration. ">Registration</a> handle, therafter used to manage the registration's lifetime. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function was named <code>enroll</code> because <code>register</code> is a reserved C++ keyword. </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> == <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </dd></dl>
-<dl class="section user"><dt>Error Codes</dt><dd><ul>
-<li><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a357062fb324f21ba4ec07cdc0af68164" title="A procedure with the given URI is already registered. ">SessionErrc::procedureAlreadyExists</a> if the router reports that the procedure has already been registered for this realm.</li>
-<li><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a5df9f1bf5e3db9c58bf704975f5b910b" title="Register error reported by dealer. ">SessionErrc::registerError</a> if the router reports some other error.</li>
-<li>Some other <code>std::error_code</code> for protocol and transport errors. </li>
-</ul>
-</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_logic.html" title="Exception thrown when a pre-condition is not met. ">error::Logic</a></td><td>if <code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> != <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </td></tr>
-    <tr><td class="paramname"><a class="el" href="classwamp_1_1error_1_1_failure.html" title="General purpose runtime exception that wraps a std::error_code. ">error::Failure</a></td><td>with an error code if a runtime error occured and the <code>ec</code> parameter is null. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">procedure</td><td>The procedure URI to register. </td></tr>
-    <tr><td class="paramname">slot</td><td>Callable target to invoke when a matching RPC invocation is received. </td></tr>
-    <tr><td class="paramname">yield</td><td>Represents the current coroutine. </td></tr>
-    <tr><td class="paramname">ec</td><td>Optional pointer to an error code to set, instead of throwing an exception upon failure. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a6bb4c69aaff718f55f39ff3371331b13"></a>
+<a class="anchor" id="a5466f61a07bdc723c8ae2a91ea0a50dc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1183,7 +963,7 @@ template&lt;typename H &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classwamp_1_1_coro_session.html">wamp::CoroSession</a>&lt; B &gt;::unregister </td>
           <td>(</td>
-          <td class="paramtype">Registration::Ptr&#160;</td>
+          <td class="paramtype">const <a class="el" href="classwamp_1_1_registration.html">Registration</a> &amp;&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
         </tr>
         <tr>
@@ -1207,8 +987,9 @@ template&lt;typename H &gt; </div>
 </div><div class="memdoc">
 
 <p>Unregisters a remote procedure call. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_registration.html" title="Represents a remote procedure registration. ">Registration</a>, <a class="el" href="classwamp_1_1_scoped_registration.html" title="Limits a Registration&#39;s lifetime to a particular scope. ">ScopedRegistration</a> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><code>false</code> if the registration was already removed, <code>true</code> otherwise. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Duplicate unregistrations using the same <a class="el" href="classwamp_1_1_registration.html" title="Manages the lifetime of an RPC registration. ">Registration</a> handle are safely ignored. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Duplicate unregistrations using the same <a class="el" href="classwamp_1_1_registration.html" title="Represents a remote procedure registration. ">Registration</a> handle are safely ignored. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> == <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </dd></dl>
 <dl class="section user"><dt>Error Codes</dt><dd><ul>
 <li><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a6398ee39c528ff4737ae63947d85d0a4" title="Operation aborted; session ended by this peer. ">SessionErrc::sessionEnded</a> if the operation was aborted.</li>
@@ -1363,7 +1144,7 @@ template&lt;typename TBase = Session&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_coro_session.html">CoroSession</a></li>
-    <li class="footer">Generated on Wed Apr 15 2015 19:06:22 for CppWAMP by
+    <li class="footer">Generated on Thu Apr 23 2015 00:52:06 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

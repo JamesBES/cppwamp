@@ -11,5 +11,6 @@ var searchData=
   ['options_3c_20result_20_3e',['Options&lt; Result &gt;',['../classwamp_1_1_options.html',1,'wamp']]],
   ['options_3c_20rpc_20_3e',['Options&lt; Rpc &gt;',['../classwamp_1_1_options.html',1,'wamp']]],
   ['options_3c_20sessioninfo_20_3e',['Options&lt; SessionInfo &gt;',['../classwamp_1_1_options.html',1,'wamp']]],
-  ['options_3c_20topic_20_3e',['Options&lt; Topic &gt;',['../classwamp_1_1_options.html',1,'wamp']]]
+  ['options_3c_20topic_20_3e',['Options&lt; Topic &gt;',['../classwamp_1_1_options.html',1,'wamp']]],
+  ['outcome',['Outcome',['../classwamp_1_1_outcome.html',1,'wamp']]]
 ];

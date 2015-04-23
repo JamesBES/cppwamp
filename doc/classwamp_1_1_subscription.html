@@ -110,117 +110,41 @@ $(document).ready(function(){initNavTree('classwamp_1_1_subscription.html','');}
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classwamp_1_1_subscription-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">wamp::Subscription Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">wamp::Subscription Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Manages the lifetime of a pub/sub event subscription.  
+<p>Represents a pub/sub event subscription.  
  <a href="classwamp_1_1_subscription.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="subscription_8hpp_source.html">cppwamp/subscription.hpp</a>&gt;</code></p>
-
-<p>Inherited by wamp::internal::DynamicSubscription, and wamp::internal::StaticSubscription&lt; TParams &gt;.</p>
+<div class="dynheader">
+Inheritance diagram for wamp::Subscription:</div>
+<div class="dyncontent">
+<div class="center"><img src="classwamp_1_1_subscription__inherit__graph.png" border="0" usemap="#wamp_1_1_subscription_inherit__map" alt="Inheritance graph"/></div>
+<map name="wamp_1_1_subscription_inherit__map" id="wamp_1_1_subscription_inherit__map">
+<area shape="rect" id="node2" href="classwamp_1_1_scoped_subscription.html" title="Limits a Subscription&#39;s lifetime to a particular scope. " alt="" coords="5,80,187,107"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a92069b43835d0f72a5a54748ba03a954"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_subscription.html#a92069b43835d0f72a5a54748ba03a954">~Subscription</a> ()</td></tr>
-<tr class="memdesc:a92069b43835d0f72a5a54748ba03a954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatically unsubscribes from the topic.  <a href="#a92069b43835d0f72a5a54748ba03a954">More...</a><br /></td></tr>
-<tr class="separator:a92069b43835d0f72a5a54748ba03a954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad94a2ea97dbb01ae17ad4aaadf58bcfd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classwamp_1_1_topic.html">Topic</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_subscription.html#ad94a2ea97dbb01ae17ad4aaadf58bcfd">topic</a> () const </td></tr>
-<tr class="memdesc:ad94a2ea97dbb01ae17ad4aaadf58bcfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the topic information associated with this subscription.  <a href="#ad94a2ea97dbb01ae17ad4aaadf58bcfd">More...</a><br /></td></tr>
-<tr class="separator:ad94a2ea97dbb01ae17ad4aaadf58bcfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a704c923fca50df2cd3c46d0bcac9aca2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a704c923fca50df2cd3c46d0bcac9aca2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_subscription.html#a704c923fca50df2cd3c46d0bcac9aca2">Subscription</a> ()</td></tr>
+<tr class="memdesc:a704c923fca50df2cd3c46d0bcac9aca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:a704c923fca50df2cd3c46d0bcac9aca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a17713df53370215d11e02bedcc5e76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewamp.html#a15249f3ad90f2f5fa5d30317c84fbce8">SubscriptionId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_subscription.html#a9a17713df53370215d11e02bedcc5e76">id</a> () const </td></tr>
 <tr class="memdesc:a9a17713df53370215d11e02bedcc5e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the ID number of this subscription.  <a href="#a9a17713df53370215d11e02bedcc5e76">More...</a><br /></td></tr>
 <tr class="separator:a9a17713df53370215d11e02bedcc5e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e7a6632ac12dca7d4f58cb79230ed40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_subscription.html#a6e7a6632ac12dca7d4f58cb79230ed40">unsubscribe</a> ()</td></tr>
-<tr class="memdesc:a6e7a6632ac12dca7d4f58cb79230ed40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly unsubscribes from the topic.  <a href="#a6e7a6632ac12dca7d4f58cb79230ed40">More...</a><br /></td></tr>
-<tr class="separator:a6e7a6632ac12dca7d4f58cb79230ed40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acde812e09434d10612601030c533cff3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_subscription.html#acde812e09434d10612601030c533cff3">unsubscribe</a> (<a class="el" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt; bool &gt; handler)</td></tr>
-<tr class="memdesc:acde812e09434d10612601030c533cff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronously unsubscribes from the topic, waiting for an acknowledgement from the broker.  <a href="#acde812e09434d10612601030c533cff3">More...</a><br /></td></tr>
-<tr class="separator:acde812e09434d10612601030c533cff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4811c3ab7771aab0e0ab0614bc437de2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_subscription.html#a4811c3ab7771aab0e0ab0614bc437de2">unsubscribe</a> () const </td></tr>
+<tr class="memdesc:a4811c3ab7771aab0e0ab0614bc437de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribes from the topic.  <a href="#a4811c3ab7771aab0e0ab0614bc437de2">More...</a><br /></td></tr>
+<tr class="separator:a4811c3ab7771aab0e0ab0614bc437de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Manages the lifetime of a pub/sub event subscription. </p>
-<p><a class="el" href="classwamp_1_1_subscription.html" title="Manages the lifetime of a pub/sub event subscription. ">Subscription</a> objects are returned by the <code>subscribe</code> member functions of the <em><a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a></em> family of classes. These objects are used internally by <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a> to dispatch pub/sub events to a registered <em>event slot</em>.</p>
-<p><a class="el" href="classwamp_1_1_subscription.html" title="Manages the lifetime of a pub/sub event subscription. ">Subscription</a> objects are returned via reference-counting shared pointers. When the reference count reaches zero, the topic is automatically unsubscribed. This reference counting scheme is provided to help automate the lifetime management of topic subscriptions using RAII techniques.</p>
-<p>Here's an example illustrating how shared pointers can be used to manage the lifetime of a <a class="el" href="classwamp_1_1_subscription.html" title="Manages the lifetime of a pub/sub event subscription. ">Subscription</a>:</p>
-<div class="fragment"><div class="line"><span class="keyword">struct </span>Observer</div>
-<div class="line">{</div>
-<div class="line">    <span class="keywordtype">void</span> onEvent(Event event);</div>
-<div class="line"></div>
-<div class="line">    Subscription::Ptr sub;</div>
-<div class="line">}</div>
-<div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> main()</div>
-<div class="line">{</div>
-<div class="line">    boost::asio::io_service iosvc;</div>
-<div class="line">    boost::asio::spawn(iosvc, [&amp;](boost::asio::yield_context yield)</div>
-<div class="line">    {</div>
-<div class="line">        <span class="keyword">auto</span> session = <a class="code" href="classwamp_1_1_coro_session.html#aca47333aa30e3c5ce5c448b1ff4012b4">CoroSession&lt;&gt;::create</a>(connectorList);</div>
-<div class="line">        session-&gt;connect(yield);</div>
-<div class="line">        session-&gt;join(<span class="stringliteral">&quot;somerealm&quot;</span>, yield);</div>
-<div class="line"></div>
-<div class="line">        {</div>
-<div class="line">            <span class="keyword">using</span> std::placeholders;</div>
-<div class="line">            Observer observer;</div>
-<div class="line">            observer.sub = session-&gt;subscribe(</div>
-<div class="line">                            <span class="stringliteral">&quot;topic&quot;</span>,</div>
-<div class="line">                            std::bind(&amp;Observer::onEvent, observer, _1),</div>
-<div class="line">                            yield);</div>
-<div class="line"></div>
-<div class="line">        }  <span class="comment">// When the &#39;observer&#39; object leaves this scope, the Subscription</span></div>
-<div class="line">           <span class="comment">// shared pointer reference count drops to zero. This will</span></div>
-<div class="line">           <span class="comment">// automatically unsubscribe the subscription, thereby avoiding</span></div>
-<div class="line">           <span class="comment">// further member function calls on the deleted &#39;observer&#39; object.</span></div>
-<div class="line">    });</div>
-<div class="line">    iosvc.run();</div>
-<div class="line">}</div>
-</div><!-- fragment --><p>Subscriptions can also be manually unsubscribed via <a class="el" href="classwamp_1_1_subscription.html#a6e7a6632ac12dca7d4f58cb79230ed40" title="Explicitly unsubscribes from the topic. ">Subscription::unsubscribe</a>.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_session.html#a9070e65515a06935d0a96b283e7ee9c6" title="Subscribes to WAMP pub/sub events having the given topic. ">Session::subscribe</a>, <a class="el" href="classwamp_1_1_coro_session.html#a6b9375297bd6b4df195d91dfe4ce85d8" title="Subscribes to WAMP pub/sub events having the given topic. ">CoroSession::subscribe</a> </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a92069b43835d0f72a5a54748ba03a954"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">wamp::Subscription::~Subscription </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Automatically unsubscribes from the topic. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad94a2ea97dbb01ae17ad4aaadf58bcfd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classwamp_1_1_topic.html">Topic</a> &amp; wamp::Subscription::topic </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Obtains the topic information associated with this subscription. </p>
-
-</div>
-</div>
+<div class="textblock"><p>Represents a pub/sub event subscription. </p>
+<p>A <a class="el" href="classwamp_1_1_subscription.html" title="Represents a pub/sub event subscription. ">Subscription</a> is a lightweight object returned by the <code>subscribe</code> member functions of the <em><a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a></em> family of classes. This objects allows users to unsubscribe the subscription.</p>
+<p>It is always safe to unsubscribe via a <a class="el" href="classwamp_1_1_subscription.html" title="Represents a pub/sub event subscription. ">Subscription</a> object. If the <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a> or the subscription no longer exists, an unsubscribe operation effectively does nothing.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_scoped_subscription.html" title="Limits a Subscription&#39;s lifetime to a particular scope. ">ScopedSubscription</a>, <a class="el" href="classwamp_1_1_session.html#a93b8686842db786a7d065c601f75cb5a" title="Subscribes to WAMP pub/sub events having the given topic. ">Session::subscribe</a>, <a class="el" href="classwamp_1_1_coro_session.html#a01d2464a4133cb4ae711ed3cc3f3dd84" title="Subscribes to WAMP pub/sub events having the given topic. ">CoroSession::subscribe</a> </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a9a17713df53370215d11e02bedcc5e76"></a>
 <div class="memitem">
 <div class="memproto">
@@ -238,7 +162,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6e7a6632ac12dca7d4f58cb79230ed40"></a>
+<a class="anchor" id="a4811c3ab7771aab0e0ab0614bc437de2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -246,32 +170,12 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void wamp::Subscription::unsubscribe </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Explicitly unsubscribes from the topic. </p>
-<dl class="section note"><dt>Note</dt><dd>Duplicate unsubscriptions are safely ignored. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="acde812e09434d10612601030c533cff3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wamp::Subscription::unsubscribe </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Asynchronously unsubscribes from the topic, waiting for an acknowledgement from the broker. </p>
-<p>Equivalent to <a class="el" href="classwamp_1_1_session.html#ad43ba41a0e28e650823a043c172ea9af" title="Unsubscribes a subscription to a topic and waits for router acknowledgement, if necessary. ">Session::unsubscribe(Subscription::Ptr, AsyncHandler&lt;bool&gt;)</a>. </p><dl class="section note"><dt>Note</dt><dd>Duplicate unsubscriptions are safely ignored. </dd></dl>
+<p>Unsubscribes from the topic. </p>
 
 </div>
 </div>
@@ -285,7 +189,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_subscription.html">Subscription</a></li>
-    <li class="footer">Generated on Wed Apr 15 2015 19:06:22 for CppWAMP by
+    <li class="footer">Generated on Thu Apr 23 2015 00:52:06 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>
