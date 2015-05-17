@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['real',['Real',['../classwamp_1_1_variant.html#abc9ecd6b5a19982f7a59d7614e63e746',1,'wamp::Variant::Real()'],['../namespacewamp.html#a51c17993d0685236f3fc9628beabe5b5',1,'wamp::Real()']]],
-  ['registrationid',['RegistrationId',['../namespacewamp.html#a2a11e7b619d74f499adf34837731877b',1,'wamp']]],
-  ['requestid',['RequestId',['../namespacewamp.html#ad69525a134cfe3de73c79af0e80f2ff2',1,'wamp']]],
-  ['result',['Result',['../namespacewamp.html#ac5bb22f55faabf451dd06dab64f1f46b',1,'wamp::Visitor']]],
-  ['resulttypeof',['ResultTypeOf',['../namespacewamp.html#a54e57e1339f1a4493a723b743ba428df',1,'wamp']]],
-  ['roleset',['RoleSet',['../classwamp_1_1_session_info.html#a78582b06d59ef79c48f82ea8b5e6b2b8',1,'wamp::SessionInfo']]]
+  ['sessionid',['SessionId',['../namespacewamp.html#a8949d385f548e570ad954089b7439dc1',1,'wamp']]],
+  ['sizetype',['SizeType',['../classwamp_1_1_variant.html#a7ce1c7dfb499f9b69ce1e4d39283c6c8',1,'wamp::Variant']]],
+  ['slot',['Slot',['../classwamp_1_1_event_unpacker.html#a3ad028eb12df816594d8ccd20b241fb4',1,'wamp::EventUnpacker::Slot()'],['../classwamp_1_1_invocation_unpacker.html#aa5987f958634e94ca6f78c36ad4b3d84',1,'wamp::InvocationUnpacker::Slot()']]],
+  ['state',['State',['../classwamp_1_1_coro_session.html#a9b61c79d0942fa90bdd903d36c23edbe',1,'wamp::CoroSession::State()'],['../classwamp_1_1_session.html#aa1bf736849a6e4c72f67a49ac5278547',1,'wamp::Session::State()']]],
+  ['string',['String',['../classwamp_1_1_variant.html#aa1deb141006ecd77a8983a82f8aae7cb',1,'wamp::Variant::String()'],['../namespacewamp.html#a64c1fe17c6b0a5254f7bc3a3459f1839',1,'wamp::String()']]],
+  ['subscriptionid',['SubscriptionId',['../namespacewamp.html#a15249f3ad90f2f5fa5d30317c84fbce8',1,'wamp']]]
 ];

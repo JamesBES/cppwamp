@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['udsconnector',['UdsConnector',['../classwamp_1_1legacy_1_1_uds_connector.html',1,'wamp::legacy']]],
-  ['udsconnector',['UdsConnector',['../classwamp_1_1_uds_connector.html',1,'wamp']]],
-  ['udsconnector_2ehpp',['udsconnector.hpp',['../udsconnector_8hpp.html',1,'']]],
-  ['uint',['UInt',['../classwamp_1_1_variant.html#ad26ea60ba0c4928876fbceee817db58e',1,'wamp::Variant::UInt()'],['../namespacewamp.html#a4d04d75506649324abb78e785749ccdba1277b8d5127d0eced2e9d3b99a3a7079',1,'wamp::uint()'],['../namespacewamp.html#a1017594b200792a23e13d8765b2a5040',1,'wamp::UInt()']]],
+  ['uds_2ehpp',['uds.hpp',['../uds_8hpp.html',1,'']]],
+  ['udspath',['UdsPath',['../classwamp_1_1_uds_path.html',1,'wamp']]],
+  ['udspath',['UdsPath',['../classwamp_1_1_uds_path.html#a79e9ea0e5c6001f3848b224493bbe802',1,'wamp::UdsPath']]],
+  ['uint',['UInt',['../classwamp_1_1_variant.html#ad26ea60ba0c4928876fbceee817db58e',1,'wamp::Variant::UInt()'],['../namespacewamp.html#a1017594b200792a23e13d8765b2a5040',1,'wamp::UInt()'],['../namespacewamp.html#a4d04d75506649324abb78e785749ccdba1277b8d5127d0eced2e9d3b99a3a7079',1,'wamp::uint()']]],
   ['unexpectedmsg',['unexpectedMsg',['../namespacewamp.html#a19ce4bc9c1e5512cec6ba323c4d324d0a310cdeee6d2ef9c459c211b39a06d465',1,'wamp']]],
-  ['unpackedevent',['unpackedEvent',['../classwamp_1_1_event_unpacker.html#a056ef192b6c2997a0ff2fd50af5fdc37',1,'wamp::EventUnpacker']]],
-  ['unpackedrpc',['unpackedRpc',['../classwamp_1_1_invocation_unpacker.html#a7fbbad6e63f504c7706df06bab4276e1',1,'wamp::InvocationUnpacker']]],
+  ['unpackedevent',['unpackedEvent',['../classwamp_1_1_event_unpacker.html#acd803b2f9e7799a3c4279fe37c2ada5b',1,'wamp::EventUnpacker']]],
+  ['unpackedrpc',['unpackedRpc',['../classwamp_1_1_invocation_unpacker.html#a3fae9c987f4fcc7bbd277f7f1fea3f26',1,'wamp::InvocationUnpacker']]],
   ['unpacker_2ehpp',['unpacker.hpp',['../unpacker_8hpp.html',1,'']]],
   ['unregister',['unregister',['../classwamp_1_1_coro_session.html#a5466f61a07bdc723c8ae2a91ea0a50dc',1,'wamp::CoroSession::unregister()'],['../classwamp_1_1_registration.html#ac368f4d84fb3901e64b629c9303145ce',1,'wamp::Registration::unregister()'],['../classwamp_1_1_session.html#abbbeaa2ab9e196898da5ebc9fdb3f161',1,'wamp::Session::unregister(const Registration &amp;reg)'],['../classwamp_1_1_session.html#a16d339f98287ffd56c51ac115c8599a1',1,'wamp::Session::unregister(const Registration &amp;reg, AsyncHandler&lt; bool &gt; handler)']]],
   ['unregistererror',['unregisterError',['../namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a46b3700b2b31b8385fe1d8ee86467afd',1,'wamp']]],

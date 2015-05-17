@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('legacyasioendpoint_8hpp_source.html','
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../asiodefs.hpp&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../rawsockdefs.hpp&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../rawsockoptions.hpp&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;asioendpoint.hpp&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;legacyasiotransport.hpp&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;rawsockhandshake.hpp&quot;</span></div>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('legacyasioendpoint_8hpp_source.html','
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">using</span> Establisher = TEstablisher;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    LegacyAsioEndpoint(Establisher&amp;&amp; est, <a class="code" href="namespacewamp.html#a60f47e3fdd75d3c6d54af0c6717427a3">CodecId</a> codecId,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    LegacyAsioEndpoint(Establisher&amp;&amp; est, <span class="keywordtype">int</span> codecId,</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                       <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">RawsockMaxLength</a> maxLength)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        : Base(std::move(est)),</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;          codecId_(codecId),</div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('legacyasioendpoint_8hpp_source.html','
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">using</span> Base = AsioEndpoint&lt;TEstablisher, LegacyAsioTransport&gt;;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="namespacewamp.html#a60f47e3fdd75d3c6d54af0c6717427a3">CodecId</a> codecId_;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">int</span> codecId_;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">RawsockMaxLength</a> maxLength_;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
@@ -172,15 +172,14 @@ $(document).ready(function(){initNavTree('legacyasioendpoint_8hpp_source.html','
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// namespace wamp</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif // CPPWAMP_INTERNAL_LEGACYASIOENDPOINT_HPP</span></div>
-<div class="ttc" id="namespacewamp_html_a60f47e3fdd75d3c6d54af0c6717427a3"><div class="ttname"><a href="namespacewamp.html#a60f47e3fdd75d3c6d54af0c6717427a3">wamp::CodecId</a></div><div class="ttdeci">CodecId</div><div class="ttdoc">Integer type used to identify a codec. </div><div class="ttdef"><b>Definition:</b> codec.hpp:25</div></div>
-<div class="ttc" id="namespacewamp_html_a1750e952cec62e645c6b1c918c06993f"><div class="ttname"><a href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">wamp::RawsockMaxLength</a></div><div class="ttdeci">RawsockMaxLength</div><div class="ttdoc">Enumerators used to establish the maximum length of messages that a raw socket transport can receive...</div><div class="ttdef"><b>Definition:</b> rawsockdefs.hpp:24</div></div>
+<div class="ttc" id="namespacewamp_html_a1750e952cec62e645c6b1c918c06993f"><div class="ttname"><a href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">wamp::RawsockMaxLength</a></div><div class="ttdeci">RawsockMaxLength</div><div class="ttdoc">Enumerators used to specify the maximum length of messages that a raw socket transport can receive...</div><div class="ttdef"><b>Definition:</b> rawsockoptions.hpp:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb7245a6f5714b15c73ba62cf32a25df.html">cppwamp</a></li><li class="navelem"><a class="el" href="dir_6a7aca854c9e23f638e2a4e6e00d5fbc.html">internal</a></li><li class="navelem"><b>legacyasioendpoint.hpp</b></li>
-    <li class="footer">Generated on Thu Apr 23 2015 00:52:06 for CppWAMP by
+    <li class="footer">Generated on Sun May 17 2015 16:02:35 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

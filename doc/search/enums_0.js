@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['codecid',['CodecId',['../namespacewamp.html#a60f47e3fdd75d3c6d54af0c6717427a3',1,'wamp']]]
+  ['protocolerrc',['ProtocolErrc',['../namespacewamp.html#a19ce4bc9c1e5512cec6ba323c4d324d0',1,'wamp']]]
 ];

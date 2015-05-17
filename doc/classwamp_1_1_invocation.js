@@ -7,6 +7,6 @@ var classwamp_1_1_invocation =
     [ "caller", "classwamp_1_1_invocation.html#a748bbba1670cb739f1a88c6fda685083", null ],
     [ "trustLevel", "classwamp_1_1_invocation.html#a7ae3ae1f39529a94400a8323595eec80", null ],
     [ "procedure", "classwamp_1_1_invocation.html#abdd45e1d5cdd67140f84c59391145f29", null ],
-    [ "yield", "classwamp_1_1_invocation.html#a6ded7990b1fcd950ed0076172d776def", null ],
-    [ "yield", "classwamp_1_1_invocation.html#a38ee486db87ee72059d5c26903513b9e", null ]
+    [ "yield", "classwamp_1_1_invocation.html#a63fa8db1f88bd3181ff0d8c8f2f0e9fb", null ],
+    [ "yield", "classwamp_1_1_invocation.html#a7b0ea0d72f1a81e99d2fc411dab40e3a", null ]
 ];

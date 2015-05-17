@@ -7,7 +7,7 @@ var searchData=
   ['nosuchrole',['noSuchRole',['../namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ae36499a907b854bc2d653d1a28d48490',1,'wamp']]],
   ['nosuchsubscription',['noSuchSubscription',['../namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ac2887dee431a49d9f0ae352716e50de6',1,'wamp']]],
   ['notauthorized',['notAuthorized',['../namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46afd6ddc515a5476fed223435c88a937b1',1,'wamp']]],
-  ['null',['Null',['../classwamp_1_1_variant.html#acd0066bf3596791c15fee54d00ab5cf7',1,'wamp::Variant::Null()'],['../namespacewamp.html#a30e2886a93141924f9643770b4f01eef',1,'wamp::null()'],['../namespacewamp.html#a4d04d75506649324abb78e785749ccdba37a6259cc0c1dae299a7866489dff0bd',1,'wamp::null()']]],
+  ['null',['Null',['../classwamp_1_1_variant.html#acd0066bf3596791c15fee54d00ab5cf7',1,'wamp::Variant::Null()'],['../structwamp_1_1_null.html#a71e0cd3b556780d275041da4b43276da',1,'wamp::Null::Null()'],['../namespacewamp.html#a30e2886a93141924f9643770b4f01eef',1,'wamp::null()'],['../namespacewamp.html#a4d04d75506649324abb78e785749ccdba37a6259cc0c1dae299a7866489dff0bd',1,'wamp::null()']]],
   ['null',['Null',['../structwamp_1_1_null.html',1,'wamp']]],
   ['null_2ehpp',['null.hpp',['../null_8hpp.html',1,'']]]
 ];

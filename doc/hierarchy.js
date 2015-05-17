@@ -1,15 +1,7 @@
 var hierarchy =
 [
     [ "wamp::AsyncResult< T >", "classwamp_1_1_async_result.html", null ],
-    [ "wamp::Codec< id >", "namespacewamp.html#classwamp_1_1_codec", null ],
-    [ "wamp::Codec< CodecId::json >", "classwamp_1_1_codec_3_01_codec_id_1_1json_01_4.html", null ],
-    [ "wamp::Codec< CodecId::msgpack >", "structwamp_1_1_codec_3_01_codec_id_1_1msgpack_01_4.html", null ],
-    [ "wamp::Connector", "classwamp_1_1_connector.html", [
-      [ "wamp::legacy::TcpConnector", "classwamp_1_1legacy_1_1_tcp_connector.html", null ],
-      [ "wamp::legacy::UdsConnector", "classwamp_1_1legacy_1_1_uds_connector.html", null ],
-      [ "wamp::TcpConnector", "classwamp_1_1_tcp_connector.html", null ],
-      [ "wamp::UdsConnector", "classwamp_1_1_uds_connector.html", null ]
-    ] ],
+    [ "wamp::Connector", "classwamp_1_1_connector.html", null ],
     [ "std::error_category", null, [
       [ "wamp::ProtocolCategory", "classwamp_1_1_protocol_category.html", null ],
       [ "wamp::RawsockCategory", "classwamp_1_1_rawsock_category.html", null ],
@@ -28,6 +20,8 @@ var hierarchy =
       ] ]
     ] ],
     [ "wamp::InvocationUnpacker< TSlot, TArgs >", "classwamp_1_1_invocation_unpacker.html", null ],
+    [ "wamp::Json", "classwamp_1_1_json.html", null ],
+    [ "wamp::Msgpack", "classwamp_1_1_msgpack.html", null ],
     [ "wamp::Null", "structwamp_1_1_null.html", null ],
     [ "wamp::Options< TDerived >", "classwamp_1_1_options.html", null ],
     [ "wamp::Options< Error >", "classwamp_1_1_options.html", [
@@ -82,6 +76,17 @@ var hierarchy =
     ] ],
     [ "wamp::Payload< Rpc >", "classwamp_1_1_payload.html", [
       [ "wamp::Rpc", "classwamp_1_1_rpc.html", null ]
+    ] ],
+    [ "wamp::RawsockOptions< TDerived, TProtocol >", "classwamp_1_1_rawsock_options.html", [
+      [ "wamp::IpOptions< TDerived, TProtocol >", "classwamp_1_1_ip_options.html", null ]
+    ] ],
+    [ "wamp::RawsockOptions< TcpHost, boost::asio::ip::tcp >", "classwamp_1_1_rawsock_options.html", [
+      [ "wamp::IpOptions< TcpHost, boost::asio::ip::tcp >", "classwamp_1_1_ip_options.html", [
+        [ "wamp::TcpHost", "classwamp_1_1_tcp_host.html", null ]
+      ] ]
+    ] ],
+    [ "wamp::RawsockOptions< UdsPath, boost::asio::local::stream_protocol >", "classwamp_1_1_rawsock_options.html", [
+      [ "wamp::UdsPath", "classwamp_1_1_uds_path.html", null ]
     ] ],
     [ "wamp::Registration", "classwamp_1_1_registration.html", [
       [ "wamp::ScopedRegistration", "classwamp_1_1_scoped_registration.html", null ]

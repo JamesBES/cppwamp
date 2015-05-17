@@ -130,39 +130,42 @@ $(document).ready(function(){initNavTree('null_8hpp_source.html','');});
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structwamp_1_1_null.html">   36</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwamp_1_1_null.html">Null</a></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structwamp_1_1_null.html#a4d2ba576db0e9ab38e0703506fd12307">operator==</a>(<a class="code" href="structwamp_1_1_null.html">Null</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structwamp_1_1_null.html#a71e0cd3b556780d275041da4b43276da">   39</a></span>&#160;    constexpr <a class="code" href="structwamp_1_1_null.html#a71e0cd3b556780d275041da4b43276da">Null</a>() {}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structwamp_1_1_null.html#a5de600a77507df6c22fb64d104033eaa">operator!=</a>(<a class="code" href="structwamp_1_1_null.html">Null</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structwamp_1_1_null.html#a4d2ba576db0e9ab38e0703506fd12307">operator==</a>(<a class="code" href="structwamp_1_1_null.html">Null</a>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structwamp_1_1_null.html#ad0e81aa1fed05c95242bbf348bb592d2">operator&lt;</a>(<a class="code" href="structwamp_1_1_null.html">Null</a>)  <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;std::ostream&amp; operator&lt;&lt;(std::ostream&amp; out, <a class="code" href="structwamp_1_1_null.html">Null</a>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespacewamp.html#a30e2886a93141924f9643770b4f01eef">   59</a></span>&#160;constexpr <a class="code" href="structwamp_1_1_null.html">Null</a> <a class="code" href="namespacewamp.html#a30e2886a93141924f9643770b4f01eef">null</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// namespace wamp</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structwamp_1_1_null.html#a5de600a77507df6c22fb64d104033eaa">operator!=</a>(<a class="code" href="structwamp_1_1_null.html">Null</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structwamp_1_1_null.html#ad0e81aa1fed05c95242bbf348bb592d2">operator&lt;</a>(<a class="code" href="structwamp_1_1_null.html">Null</a>)  <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;std::ostream&amp; operator&lt;&lt;(std::ostream&amp; out, Null);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="namespacewamp.html#a30e2886a93141924f9643770b4f01eef">   62</a></span>&#160;constexpr <a class="code" href="structwamp_1_1_null.html">Null</a> <a class="code" href="namespacewamp.html#a30e2886a93141924f9643770b4f01eef">null</a>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#include &quot;internal/null.ipp&quot;</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif // CPPWAMP_NULL_HPP</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;} <span class="comment">// namespace wamp</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#include &quot;internal/null.ipp&quot;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif // CPPWAMP_NULL_HPP</span></div>
+<div class="ttc" id="structwamp_1_1_null_html_a71e0cd3b556780d275041da4b43276da"><div class="ttname"><a href="structwamp_1_1_null.html#a71e0cd3b556780d275041da4b43276da">wamp::Null::Null</a></div><div class="ttdeci">constexpr Null()</div><div class="ttdoc">Default constructor. For instantiating const object. </div><div class="ttdef"><b>Definition:</b> null.hpp:39</div></div>
 <div class="ttc" id="structwamp_1_1_null_html_a5de600a77507df6c22fb64d104033eaa"><div class="ttname"><a href="structwamp_1_1_null.html#a5de600a77507df6c22fb64d104033eaa">wamp::Null::operator!=</a></div><div class="ttdeci">bool operator!=(Null) const </div><div class="ttdoc">Compares two Null objects for inequality. </div><div class="ttdef"><b>Definition:</b> null.ipp:13</div></div>
 <div class="ttc" id="structwamp_1_1_null_html_ad0e81aa1fed05c95242bbf348bb592d2"><div class="ttname"><a href="structwamp_1_1_null.html#ad0e81aa1fed05c95242bbf348bb592d2">wamp::Null::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(Null) const </div><div class="ttdoc">Performs less-than comparison on two Null objects. </div><div class="ttdef"><b>Definition:</b> null.ipp:15</div></div>
 <div class="ttc" id="structwamp_1_1_null_html_a4d2ba576db0e9ab38e0703506fd12307"><div class="ttname"><a href="structwamp_1_1_null.html#a4d2ba576db0e9ab38e0703506fd12307">wamp::Null::operator==</a></div><div class="ttdeci">bool operator==(Null) const </div><div class="ttdoc">Compares two Null objects for equality. </div><div class="ttdef"><b>Definition:</b> null.ipp:11</div></div>
 <div class="ttc" id="structwamp_1_1_null_html"><div class="ttname"><a href="structwamp_1_1_null.html">wamp::Null</a></div><div class="ttdoc">Type used to represent a null or empty Variant value. </div><div class="ttdef"><b>Definition:</b> null.hpp:36</div></div>
-<div class="ttc" id="namespacewamp_html_a30e2886a93141924f9643770b4f01eef"><div class="ttname"><a href="namespacewamp.html#a30e2886a93141924f9643770b4f01eef">wamp::null</a></div><div class="ttdeci">constexpr Null null</div><div class="ttdoc">Constant Null object that can be assigned to, or compared with a Variant. </div><div class="ttdef"><b>Definition:</b> null.hpp:59</div></div>
+<div class="ttc" id="namespacewamp_html_a30e2886a93141924f9643770b4f01eef"><div class="ttname"><a href="namespacewamp.html#a30e2886a93141924f9643770b4f01eef">wamp::null</a></div><div class="ttdeci">constexpr Null null</div><div class="ttdoc">Constant Null object that can be assigned to, or compared with a Variant. </div><div class="ttdef"><b>Definition:</b> null.hpp:62</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb7245a6f5714b15c73ba62cf32a25df.html">cppwamp</a></li><li class="navelem"><a class="el" href="null_8hpp.html">null.hpp</a></li>
-    <li class="footer">Generated on Thu Apr 23 2015 00:52:06 for CppWAMP by
+    <li class="footer">Generated on Sun May 17 2015 16:02:35 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

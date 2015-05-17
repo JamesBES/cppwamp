@@ -1,19 +1,14 @@
 var searchData=
 [
-  ['scopedregistration',['ScopedRegistration',['../classwamp_1_1_scoped_registration.html#a0be54481c4657e3d455be38939e22333',1,'wamp::ScopedRegistration::ScopedRegistration()'],['../classwamp_1_1_scoped_registration.html#a5d24c222e594e8bf74c9471e8039d509',1,'wamp::ScopedRegistration::ScopedRegistration(ScopedRegistration &amp;&amp;other)'],['../classwamp_1_1_scoped_registration.html#a9f0d393de4575cc5aff377cc28989454',1,'wamp::ScopedRegistration::ScopedRegistration(Registration registration)'],['../classwamp_1_1_scoped_registration.html#af1f85d84ba7b81362806aecdf202da80',1,'wamp::ScopedRegistration::ScopedRegistration(const ScopedRegistration &amp;)=delete']]],
-  ['scopedsubscription',['ScopedSubscription',['../classwamp_1_1_scoped_subscription.html#aca269d2530fea2a1a87c545f1f4f0912',1,'wamp::ScopedSubscription::ScopedSubscription()'],['../classwamp_1_1_scoped_subscription.html#a8f4fe82e8d3ef5d252d1632c524a433c',1,'wamp::ScopedSubscription::ScopedSubscription(ScopedSubscription &amp;&amp;other)'],['../classwamp_1_1_scoped_subscription.html#ae49a851f421e31ffefe83de5e1817466',1,'wamp::ScopedSubscription::ScopedSubscription(Subscription subscription)'],['../classwamp_1_1_scoped_subscription.html#a755ee029b0e296e661621954a4ba8d98',1,'wamp::ScopedSubscription::ScopedSubscription(const ScopedSubscription &amp;)=delete']]],
-  ['sessioninfo',['SessionInfo',['../classwamp_1_1_session_info.html#a04ff5ad3ec107fa8a7474063bb9e914e',1,'wamp::SessionInfo']]],
-  ['seterror',['setError',['../classwamp_1_1_async_result.html#a5f0f0f6b8334de7a49483aff8523ef94',1,'wamp::AsyncResult::setError(std::error_code ec)'],['../classwamp_1_1_async_result.html#a9e7eb7f772df159246a3c43f29544776',1,'wamp::AsyncResult::setError(std::error_code ec, std::string info)']]],
-  ['settracehandler',['setTraceHandler',['../classwamp_1_1_session.html#a8ecf51b461ff093aedc9ed32c9adfc6a',1,'wamp::Session']]],
-  ['setvalue',['setValue',['../classwamp_1_1_async_result.html#a2c70f0237f36cbd802827eb3686674c1',1,'wamp::AsyncResult']]],
-  ['setwarninghandler',['setWarningHandler',['../classwamp_1_1_session.html#a3af4c171dc1d0cb7b412adbd702528db',1,'wamp::Session']]],
-  ['size',['size',['../classwamp_1_1_variant.html#a933022eb0992b0a90134aa5e638b88e6',1,'wamp::Variant']]],
-  ['state',['state',['../classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd',1,'wamp::Session']]],
-  ['subid',['subId',['../classwamp_1_1_event.html#aaca8763e97de0173bc160df589b67d21',1,'wamp::Event']]],
-  ['subscribe',['subscribe',['../classwamp_1_1_coro_session.html#a01d2464a4133cb4ae711ed3cc3f3dd84',1,'wamp::CoroSession::subscribe()'],['../classwamp_1_1_session.html#a93b8686842db786a7d065c601f75cb5a',1,'wamp::Session::subscribe()']]],
-  ['subscription',['Subscription',['../classwamp_1_1_subscription.html#a704c923fca50df2cd3c46d0bcac9aca2',1,'wamp::Subscription']]],
-  ['supportsfeatures',['supportsFeatures',['../classwamp_1_1_session_info.html#a09e9fbfc60c209a7eaa0325752306829',1,'wamp::SessionInfo']]],
-  ['supportsroles',['supportsRoles',['../classwamp_1_1_session_info.html#ad5a07091e51e229bd83e65aacd70e8a5',1,'wamp::SessionInfo']]],
-  ['suspend',['suspend',['../classwamp_1_1_coro_session.html#aa5c4f6558294892add45382eb3349698',1,'wamp::CoroSession']]],
-  ['swap',['swap',['../classwamp_1_1_variant.html#a4df88b7efc0481c6911610b0717a614b',1,'wamp::Variant::swap(Variant &amp;other) noexcept'],['../classwamp_1_1_variant.html#a8b074c49dc9f46ba152f5670508ba6b6',1,'wamp::Variant::swap(Variant &amp;v, Variant &amp;w) noexcept']]]
+  ['raise',['raise',['../structwamp_1_1error_1_1_logic.html#aa5a9827d96ee0fbad6e2ca37a7c9c2c5',1,'wamp::error::Logic']]],
+  ['rawsockcategory',['rawsockCategory',['../classwamp_1_1_rawsock_category.html#acb688588ef774edf4166c2cbbdab900d',1,'wamp::RawsockCategory']]],
+  ['realm',['Realm',['../classwamp_1_1_realm.html#ae783d284d4b49a24c6c7a66fd93f6841',1,'wamp::Realm::Realm()'],['../classwamp_1_1_session_info.html#a4cc1eeba2b811883b14212a3c3ea9221',1,'wamp::SessionInfo::realm()']]],
+  ['reason',['reason',['../classwamp_1_1_error.html#a4b1fa7a46c28e8236bf203c452190a8a',1,'wamp::Error::reason()'],['../classwamp_1_1_reason.html#a50f1208e1ac2e22fa796181df1bd72e9',1,'wamp::Reason::Reason()']]],
+  ['registration',['Registration',['../classwamp_1_1_registration.html#ae4ab8fcfdede8796bda00da601f03f5d',1,'wamp::Registration']]],
+  ['release',['release',['../classwamp_1_1_scoped_registration.html#a9acfe839a97aa0f0044297bb7dffda42',1,'wamp::ScopedRegistration::release()'],['../classwamp_1_1_scoped_subscription.html#a5d484bd0a4a79e5b5649f8b3de367638',1,'wamp::ScopedSubscription::release()']]],
+  ['requestid',['requestId',['../classwamp_1_1_result.html#aad0ab9837ecf66255d3518d88d849ea5',1,'wamp::Result::requestId()'],['../classwamp_1_1_invocation.html#a85efbc1438b871c9aef8f9bf163fa6cf',1,'wamp::Invocation::requestId()']]],
+  ['reset',['reset',['../classwamp_1_1_coro_session.html#ad385f323461e7fde0c02fb9bc94ab0a4',1,'wamp::CoroSession::reset()'],['../classwamp_1_1_session.html#ad4543cb4140512fc529ee552924cc0f5',1,'wamp::Session::reset()']]],
+  ['result',['Result',['../classwamp_1_1_result.html#a9de832a74df11267d13b2ede152414e1',1,'wamp::Result::Result()'],['../classwamp_1_1_result.html#ab3380b52e44b647b69aed6921be977e4',1,'wamp::Result::Result(std::initializer_list&lt; Variant &gt; list)']]],
+  ['roles',['roles',['../classwamp_1_1_session.html#a8346a5d297ac34ea4be66293317848c9',1,'wamp::Session::roles()'],['../classwamp_1_1_session_info.html#a5bb012467068a679dec81cf4f45b0b6f',1,'wamp::SessionInfo::roles()']]],
+  ['rpc',['Rpc',['../classwamp_1_1_rpc.html#a12e3fe28afcae3bfb1f79852d6e5b439',1,'wamp::Rpc']]]
 ];

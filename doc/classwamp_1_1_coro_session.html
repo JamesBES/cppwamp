@@ -333,7 +333,7 @@ class wamp::CoroSession&lt; TBase &gt;</h3>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a>, <a class="el" href="classwamp_1_1_registration.html" title="Represents a remote procedure registration. ">Registration</a>, <a class="el" href="classwamp_1_1_subscription.html" title="Represents a pub/sub event subscription. ">Subscription</a>. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2chat_2main_8cpp-example.html#_a2">examples/chat/main.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2chat_2main_8cpp-example.html#_a0">examples/chat/main.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a8b91b9a8096b99f2a95a2815d66b5ee5"></a>
 <div class="memitem">
@@ -801,7 +801,9 @@ template&lt;typename H &gt; </div>
 <p>If there are other local subscriptions on this session remaining for the same topic, then the session does not send an <code>UNSUBSCRIBE</code> message to the router. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_subscription.html" title="Represents a pub/sub event subscription. ">Subscription</a>, <a class="el" href="classwamp_1_1_scoped_subscription.html" title="Limits a Subscription&#39;s lifetime to a particular scope. ">ScopedSubscription</a> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><code>false</code> if the subscription was already removed, <code>true</code> otherwise. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Duplicate unsubscribes using the same <a class="el" href="classwamp_1_1_subscription.html" title="Represents a pub/sub event subscription. ">Subscription</a> handle are safely ignored. </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> == <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><code>!!sub == true</code> </dd>
+<dd>
+<code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> == <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </dd></dl>
 <dl class="section user"><dt>Error Codes</dt><dd><ul>
 <li><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a6398ee39c528ff4737ae63947d85d0a4" title="Operation aborted; session ended by this peer. ">SessionErrc::sessionEnded</a> if the operation was aborted.</li>
 <li><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a31d993ba59164643e0e2159e32b63216" title="Session ended by other peer. ">SessionErrc::sessionEndedByPeer</a> if the session was ended by the peer.</li>
@@ -812,6 +814,7 @@ template&lt;typename H &gt; </div>
 </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_logic.html" title="Exception thrown when a pre-condition is not met. ">error::Logic</a></td><td>if the given subscription is empty </td></tr>
     <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_logic.html" title="Exception thrown when a pre-condition is not met. ">error::Logic</a></td><td>if <code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> != <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </td></tr>
     <tr><td class="paramname"><a class="el" href="classwamp_1_1error_1_1_failure.html" title="General purpose runtime exception that wraps a std::error_code. ">error::Failure</a></td><td>with an error code if a runtime error occured and the <code>ec</code> parameter is null. </td></tr>
   </table>
@@ -990,7 +993,9 @@ template&lt;typename H &gt; </div>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_registration.html" title="Represents a remote procedure registration. ">Registration</a>, <a class="el" href="classwamp_1_1_scoped_registration.html" title="Limits a Registration&#39;s lifetime to a particular scope. ">ScopedRegistration</a> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><code>false</code> if the registration was already removed, <code>true</code> otherwise. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Duplicate unregistrations using the same <a class="el" href="classwamp_1_1_registration.html" title="Represents a remote procedure registration. ">Registration</a> handle are safely ignored. </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> == <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><code>!!reg == true</code> </dd>
+<dd>
+<code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> == <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </dd></dl>
 <dl class="section user"><dt>Error Codes</dt><dd><ul>
 <li><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a6398ee39c528ff4737ae63947d85d0a4" title="Operation aborted; session ended by this peer. ">SessionErrc::sessionEnded</a> if the operation was aborted.</li>
 <li><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a31d993ba59164643e0e2159e32b63216" title="Session ended by other peer. ">SessionErrc::sessionEndedByPeer</a> if the session was ended by the peer.</li>
@@ -1001,6 +1006,7 @@ template&lt;typename H &gt; </div>
 </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_logic.html" title="Exception thrown when a pre-condition is not met. ">error::Logic</a></td><td>if the given registration is empty </td></tr>
     <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_logic.html" title="Exception thrown when a pre-condition is not met. ">error::Logic</a></td><td>if <code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> != <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </td></tr>
     <tr><td class="paramname"><a class="el" href="classwamp_1_1error_1_1_failure.html" title="General purpose runtime exception that wraps a std::error_code. ">error::Failure</a></td><td>with an error code if a runtime error occured and the <code>ec</code> parameter is null. </td></tr>
   </table>
@@ -1144,7 +1150,7 @@ template&lt;typename TBase = Session&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_coro_session.html">CoroSession</a></li>
-    <li class="footer">Generated on Thu Apr 23 2015 00:52:06 for CppWAMP by
+    <li class="footer">Generated on Sun May 17 2015 16:02:35 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

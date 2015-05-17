@@ -131,7 +131,7 @@ Call Slots</h1>
 </ul>
 <h1><a class="anchor" id="UnpackedCallSlots"></a>
 Unpacked Call Slots</h1>
-<p>An <em>unpacked call slot</em> represents an RPC handler that expects one or more payload arguments having specific, static types. The <a class="el" href="classwamp_1_1_invocation_unpacker.html#a7fbbad6e63f504c7706df06bab4276e1">wamp::unpackedRpc</a> function can be used when registering such call slots. It takes an unpacked call slot, and converts it into a regular event slot that can be passed to <a class="el" href="classwamp_1_1_session.html#a04846bb5a40a74a0fe8cd37e3d0102c0" title="Registers a WAMP remote procedure call. ">wamp::Session::enroll</a>.</p>
+<p>An <em>unpacked call slot</em> represents an RPC handler that expects one or more payload arguments having specific, static types. The <a class="el" href="classwamp_1_1_invocation_unpacker.html#a3fae9c987f4fcc7bbd277f7f1fea3f26">wamp::unpackedRpc</a> function can be used when registering such call slots. It takes an unpacked call slot, and converts it into a regular event slot that can be passed to <a class="el" href="classwamp_1_1_session.html#a04846bb5a40a74a0fe8cd37e3d0102c0" title="Registers a WAMP remote procedure call. ">wamp::Session::enroll</a>.</p>
 <p><code>wamp::unpackedRpc</code> expects a call slot with the following signature:</p>
 <div class="fragment"><div class="line"><a class="code" href="classwamp_1_1_outcome.html">wamp::Outcome</a> <span class="keyword">function</span>(<a class="code" href="classwamp_1_1_invocation.html">wamp::Invocation</a>, TArgs...)</div>
 </div><!-- fragment --><p> where</p><ul>
@@ -201,7 +201,7 @@ Error Outcomes</h2>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Thrown exception types other than <a class="el" href="classwamp_1_1_error.html" title="Provides the reason URI, options, and payload arguments contained within WAMP ERROR messages...">wamp::Error</a> are <em>not</em> handled by the library, and will result in the exception being rethrown by <code>boost::asio::io_service::run</code>.</dd></dl>
 <h2><a class="anchor" id="DeferredOutcomes"></a>
 Deferred Outcomes</h2>
-<p>A <em>deferred</em> outcome means that the call slot does not return anything, and that measures will be taken by the callee to manually yield a <code>Result</code> or <code>Error</code> object back to the caller (via <a class="el" href="classwamp_1_1_invocation.html#a6ded7990b1fcd950ed0076172d776def" title="Manually sends a YIELD result back to the callee. ">wamp::Invocation::yield</a>). This can be useful when the call result can only be determined in a different asynchronous context.</p>
+<p>A <em>deferred</em> outcome means that the call slot does not return anything, and that measures will be taken by the callee to manually yield a <code>Result</code> or <code>Error</code> object back to the caller (via <a class="el" href="classwamp_1_1_invocation.html#a63fa8db1f88bd3181ff0d8c8f2f0e9fb" title="Manually sends a YIELD result back to the callee. ">wamp::Invocation::yield</a>). This can be useful when the call result can only be determined in a different asynchronous context.</p>
 <p>Example: </p><div class="fragment"><div class="line">Outcome Client::addPerson(Invocation inv, <a class="code" href="namespacewamp.html#a0bc7bf8714c7de555c2fb308561b563d">Object</a> person)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// We need to issue another RPC to the database service before we can</span></div>
@@ -260,7 +260,7 @@ Scoped Registrations</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 23 2015 00:52:06 for CppWAMP by
+    <li class="footer">Generated on Sun May 17 2015 16:02:35 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

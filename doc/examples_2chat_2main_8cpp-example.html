@@ -112,15 +112,8 @@ $(document).ready(function(){initNavTree('examples_2chat_2main_8cpp-example.html
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="corosession_8hpp.html">cppwamp/corosession.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="json_8hpp.html">cppwamp/json.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="tcp_8hpp.html">cppwamp/tcp.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="unpacker_8hpp.html">cppwamp/unpacker.hpp</a>&gt;</span></div>
-<div class="line"></div>
-<div class="line"><span class="preprocessor">#ifdef CPPWAMP_USE_LEGACY_CONNECTORS</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="legacytcpconnector_8hpp.html">cppwamp/legacytcpconnector.hpp</a>&gt;</span></div>
-<div class="line"><span class="keyword">using</span> <a name="_a0"></a><a class="code" href="classwamp_1_1legacy_1_1_tcp_connector.html">wamp::legacy::TcpConnector</a>;</div>
-<div class="line"><span class="preprocessor">#else</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="tcpconnector_8hpp.html">cppwamp/tcpconnector.hpp</a>&gt;</span></div>
-<div class="line"><span class="keyword">using</span> <a name="_a1"></a><a class="code" href="classwamp_1_1_tcp_connector.html">wamp::TcpConnector</a>;</div>
-<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"></div>
 <div class="line"><span class="keyword">const</span> std::string realm = <span class="stringliteral">&quot;cppwamp.demo.chat&quot;</span>;</div>
 <div class="line"><span class="keyword">const</span> std::string address = <span class="stringliteral">&quot;localhost&quot;</span>;</div>
@@ -135,19 +128,19 @@ $(document).ready(function(){initNavTree('examples_2chat_2main_8cpp-example.html
 <div class="line">    <span class="keywordtype">void</span> start(<a class="code" href="namespacewamp.html#af5e518db13376e7a5f5cf73a3c5d2414">wamp::ConnectorList</a> connectors, Yield yield)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keyword">using namespace </span>wamp;</div>
-<div class="line">        session_ = <a name="_a2"></a><a class="code" href="classwamp_1_1_coro_session.html">CoroSession&lt;&gt;::create</a>(connectors);</div>
+<div class="line">        session_ = <a name="_a0"></a><a class="code" href="classwamp_1_1_coro_session.html">CoroSession&lt;&gt;::create</a>(connectors);</div>
 <div class="line"></div>
 <div class="line">        <span class="keyword">auto</span> index = session_-&gt;connect(yield);</div>
 <div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;Chat service connected on transport #&quot;</span></div>
 <div class="line">                  &lt;&lt; (index + 1) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"></div>
-<div class="line">        <span class="keyword">auto</span> info = session_-&gt;join(<a name="_a3"></a><a class="code" href="classwamp_1_1_realm.html">Realm</a>(realm), yield);</div>
+<div class="line">        <span class="keyword">auto</span> info = session_-&gt;join(<a name="_a1"></a><a class="code" href="classwamp_1_1_realm.html">Realm</a>(realm), yield);</div>
 <div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;Chat service joined, session ID = &quot;</span> &lt;&lt; info.id() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"></div>
 <div class="line">        <span class="keyword">using namespace </span>std::placeholders;</div>
 <div class="line"></div>
 <div class="line">        registration_ = session_-&gt;enroll(</div>
-<div class="line">            <a name="_a4"></a><a class="code" href="classwamp_1_1_procedure.html">Procedure</a>(<span class="stringliteral">&quot;say&quot;</span>),</div>
+<div class="line">            <a name="_a2"></a><a class="code" href="classwamp_1_1_procedure.html">Procedure</a>(<span class="stringliteral">&quot;say&quot;</span>),</div>
 <div class="line">            unpackedRpc&lt;std::string, std::string&gt;(std::bind(&amp;ChatService::say,</div>
 <div class="line">                                                            <span class="keyword">this</span>, _1, _2, _3)),</div>
 <div class="line">            yield</div>
@@ -157,20 +150,20 @@ $(document).ready(function(){initNavTree('examples_2chat_2main_8cpp-example.html
 <div class="line">    <span class="keywordtype">void</span> quit(Yield yield)</div>
 <div class="line">    {</div>
 <div class="line">        registration_.unregister();</div>
-<div class="line">        session_-&gt;leave(<a name="_a5"></a><a class="code" href="classwamp_1_1_reason.html">wamp::Reason</a>(), yield);</div>
+<div class="line">        session_-&gt;leave(<a name="_a3"></a><a class="code" href="classwamp_1_1_reason.html">wamp::Reason</a>(), yield);</div>
 <div class="line">        session_-&gt;disconnect();</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line"><span class="keyword">private</span>:</div>
-<div class="line">    <a name="_a6"></a><a class="code" href="classwamp_1_1_outcome.html">wamp::Outcome</a> say(<a name="_a7"></a><a class="code" href="classwamp_1_1_invocation.html">wamp::Invocation</a>, std::string user, std::string message)</div>
+<div class="line">    <a name="_a4"></a><a class="code" href="classwamp_1_1_outcome.html">wamp::Outcome</a> say(<a name="_a5"></a><a class="code" href="classwamp_1_1_invocation.html">wamp::Invocation</a>, std::string user, std::string message)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="comment">// Rebroadcast message to all subscribers</span></div>
-<div class="line">        session_-&gt;publish( <a name="_a8"></a><a class="code" href="classwamp_1_1_pub.html">wamp::Pub</a>(<span class="stringliteral">&quot;said&quot;</span>).withArgs({user, message}) );</div>
+<div class="line">        session_-&gt;publish( <a name="_a6"></a><a class="code" href="classwamp_1_1_pub.html">wamp::Pub</a>(<span class="stringliteral">&quot;said&quot;</span>).withArgs({user, message}) );</div>
 <div class="line">        <span class="keywordflow">return</span> {};</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <a class="code" href="classwamp_1_1_coro_session.html#a8b91b9a8096b99f2a95a2815d66b5ee5">wamp::CoroSession&lt;&gt;::Ptr</a> session_;</div>
-<div class="line">    <a name="_a9"></a><a class="code" href="classwamp_1_1_scoped_registration.html">wamp::ScopedRegistration</a> registration_;</div>
+<div class="line">    <a name="_a7"></a><a class="code" href="classwamp_1_1_scoped_registration.html">wamp::ScopedRegistration</a> registration_;</div>
 <div class="line">};</div>
 <div class="line"></div>
 <div class="line"></div>
@@ -195,7 +188,7 @@ $(document).ready(function(){initNavTree('examples_2chat_2main_8cpp-example.html
 <div class="line"></div>
 <div class="line">        <span class="keyword">using namespace </span>std::placeholders;</div>
 <div class="line">        subscription_ = session_-&gt;subscribe(</div>
-<div class="line">                <a name="_a10"></a><a class="code" href="classwamp_1_1_topic.html">Topic</a>(<span class="stringliteral">&quot;said&quot;</span>),</div>
+<div class="line">                <a name="_a8"></a><a class="code" href="classwamp_1_1_topic.html">Topic</a>(<span class="stringliteral">&quot;said&quot;</span>),</div>
 <div class="line">                unpackedEvent&lt;std::string, std::string&gt;(</div>
 <div class="line">                                std::bind(&amp;ChatClient::said, <span class="keyword">this</span>, _1, _2, _3)),</div>
 <div class="line">                yield);</div>
@@ -211,11 +204,11 @@ $(document).ready(function(){initNavTree('examples_2chat_2main_8cpp-example.html
 <div class="line">    <span class="keywordtype">void</span> say(<span class="keyword">const</span> std::string&amp; message, Yield yield)</div>
 <div class="line">    {</div>
 <div class="line">        std::cout &lt;&lt; user_ &lt;&lt; <span class="stringliteral">&quot; says \&quot;&quot;</span> &lt;&lt; message &lt;&lt; <span class="stringliteral">&quot;\&quot;\n&quot;</span>;</div>
-<div class="line">        session_-&gt;call(<a name="_a11"></a><a class="code" href="classwamp_1_1_rpc.html">wamp::Rpc</a>(<span class="stringliteral">&quot;say&quot;</span>).withArgs({user_, message}), yield);</div>
+<div class="line">        session_-&gt;call(<a name="_a9"></a><a class="code" href="classwamp_1_1_rpc.html">wamp::Rpc</a>(<span class="stringliteral">&quot;say&quot;</span>).withArgs({user_, message}), yield);</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line"><span class="keyword">private</span>:</div>
-<div class="line">    <span class="keywordtype">void</span> said(<a name="_a12"></a><a class="code" href="classwamp_1_1_event.html">wamp::Event</a>, std::string from, std::string message)</div>
+<div class="line">    <span class="keywordtype">void</span> said(<a name="_a10"></a><a class="code" href="classwamp_1_1_event.html">wamp::Event</a>, std::string from, std::string message)</div>
 <div class="line">    {</div>
 <div class="line">        std::cout &lt;&lt; user_ &lt;&lt; <span class="stringliteral">&quot; received message from &quot;</span> &lt;&lt; from &lt;&lt; <span class="stringliteral">&quot;: \&quot;&quot;</span></div>
 <div class="line">                  &lt;&lt; message &lt;&lt; <span class="stringliteral">&quot;\&quot;\n&quot;</span>;</div>
@@ -223,7 +216,7 @@ $(document).ready(function(){initNavTree('examples_2chat_2main_8cpp-example.html
 <div class="line"></div>
 <div class="line">    std::string user_;</div>
 <div class="line">    <a class="code" href="classwamp_1_1_coro_session.html#a8b91b9a8096b99f2a95a2815d66b5ee5">wamp::CoroSession&lt;&gt;::Ptr</a> session_;</div>
-<div class="line">    <a name="_a13"></a><a class="code" href="classwamp_1_1_scoped_subscription.html">wamp::ScopedSubscription</a> subscription_;</div>
+<div class="line">    <a name="_a11"></a><a class="code" href="classwamp_1_1_scoped_subscription.html">wamp::ScopedSubscription</a> subscription_;</div>
 <div class="line">};</div>
 <div class="line"></div>
 <div class="line"></div>
@@ -231,8 +224,14 @@ $(document).ready(function(){initNavTree('examples_2chat_2main_8cpp-example.html
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
 <div class="line">    <a class="code" href="namespacewamp.html#a3126cf65d90c21604e550580ee984cfb">wamp::AsioService</a> iosvc;</div>
-<div class="line">    <span class="keyword">auto</span> tcp = TcpConnector::create(iosvc, <span class="stringliteral">&quot;localhost&quot;</span>, 12345,</div>
-<div class="line">                                    <a name="a14"></a><a class="code" href="classwamp_1_1_codec_3_01_codec_id_1_1json_01_4.html#a25bda7031f5f99632640429f3b3979d0">wamp::Json::id</a>());</div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#ifdef CPPWAMP_USE_LEGACY_CONNECTORS</span></div>
+<div class="line">    <span class="keyword">auto</span> tcp = wamp::legacyConnector&lt;wamp::Json&gt;( iosvc,</div>
+<div class="line">            <a name="_a12"></a><a class="code" href="classwamp_1_1_tcp_host.html">wamp::TcpHost</a>(<span class="stringliteral">&quot;localhost&quot;</span>, 12345) );</div>
+<div class="line"><span class="preprocessor">#else</span></div>
+<div class="line">    <span class="keyword">auto</span> tcp = wamp::connector&lt;wamp::Json&gt;( iosvc,</div>
+<div class="line">                                            <a class="code" href="classwamp_1_1_tcp_host.html">wamp::TcpHost</a>(<span class="stringliteral">&quot;localhost&quot;</span>, 12345) );</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Normally, the service and client instances would be in separate programs.</span></div>
 <div class="line">    <span class="comment">// We run them all here in the same coroutine for demonstration purposes.</span></div>
@@ -267,7 +266,7 @@ $(document).ready(function(){initNavTree('examples_2chat_2main_8cpp-example.html
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 23 2015 00:52:06 for CppWAMP by
+    <li class="footer">Generated on Sun May 17 2015 16:02:35 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

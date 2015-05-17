@@ -763,6 +763,13 @@ Static Public Member Functions</h2></td></tr>
 <p>Unsubscribes a subscription to a topic. </p>
 <p>This function can be safely called during any session state. If the subscription is no longer applicable, then the unsubscribe operation will effectively do nothing. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_subscription.html" title="Represents a pub/sub event subscription. ">Subscription</a>, <a class="el" href="classwamp_1_1_scoped_subscription.html" title="Limits a Subscription&#39;s lifetime to a particular scope. ">ScopedSubscription</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Duplicate unsubscribes using the same <a class="el" href="classwamp_1_1_subscription.html" title="Represents a pub/sub event subscription. ">Subscription</a> object are safely ignored. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><code>!!sub == true</code> </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_logic.html" title="Exception thrown when a pre-condition is not met. ">error::Logic</a></td><td>if the given subscription is empty </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sub</td><td>The subscription to unsubscribe from. </td></tr>
@@ -800,7 +807,9 @@ Static Public Member Functions</h2></td></tr>
 <p>If there are other local subscriptions on this session remaining for the same topic, then the session does not send an <code>UNSUBSCRIBE</code> message to the router. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_subscription.html" title="Represents a pub/sub event subscription. ">Subscription</a>, <a class="el" href="classwamp_1_1_scoped_subscription.html" title="Limits a Subscription&#39;s lifetime to a particular scope. ">ScopedSubscription</a> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><code>false</code> if the subscription was already removed, <code>true</code> otherwise. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Duplicate unsubscribes using the same <a class="el" href="classwamp_1_1_subscription.html" title="Represents a pub/sub event subscription. ">Subscription</a> handle are safely ignored. </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> == <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><code>!!sub == true</code> </dd>
+<dd>
+<code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> == <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </dd></dl>
 <dl class="section user"><dt>Error Codes</dt><dd><ul>
 <li><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a6398ee39c528ff4737ae63947d85d0a4" title="Operation aborted; session ended by this peer. ">SessionErrc::sessionEnded</a> if the operation was aborted.</li>
 <li><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a31d993ba59164643e0e2159e32b63216" title="Session ended by other peer. ">SessionErrc::sessionEndedByPeer</a> if the session was ended by the peer.</li>
@@ -811,6 +820,7 @@ Static Public Member Functions</h2></td></tr>
 </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_logic.html" title="Exception thrown when a pre-condition is not met. ">error::Logic</a></td><td>if the given subscription is empty </td></tr>
     <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_logic.html" title="Exception thrown when a pre-condition is not met. ">error::Logic</a></td><td>if <code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> != <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </td></tr>
   </table>
   </dd>
@@ -973,6 +983,13 @@ Static Public Member Functions</h2></td></tr>
 <p>Unregisters a remote procedure call. </p>
 <p>This function can be safely called during any session state. If the registration is no longer applicable, then the unregister operation will effectively do nothing. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_registration.html" title="Represents a remote procedure registration. ">Registration</a>, <a class="el" href="classwamp_1_1_scoped_registration.html" title="Limits a Registration&#39;s lifetime to a particular scope. ">ScopedRegistration</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Duplicate unregistrations using the same <a class="el" href="classwamp_1_1_registration.html" title="Represents a remote procedure registration. ">Registration</a> handle are safely ignored. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><code>!!reg == true</code> </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_logic.html" title="Exception thrown when a pre-condition is not met. ">error::Logic</a></td><td>if the given registration is empty </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">reg</td><td>The RPC registration to unregister. </td></tr>
@@ -1010,7 +1027,9 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_registration.html" title="Represents a remote procedure registration. ">Registration</a>, <a class="el" href="classwamp_1_1_scoped_registration.html" title="Limits a Registration&#39;s lifetime to a particular scope. ">ScopedRegistration</a> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><code>false</code> if the registration was already removed, <code>true</code> otherwise. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Duplicate unregistrations using the same <a class="el" href="classwamp_1_1_registration.html" title="Represents a remote procedure registration. ">Registration</a> handle are safely ignored. </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> == <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><code>!!reg == true</code> </dd>
+<dd>
+<code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> == <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </dd></dl>
 <dl class="section user"><dt>Error Codes</dt><dd><ul>
 <li><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a6398ee39c528ff4737ae63947d85d0a4" title="Operation aborted; session ended by this peer. ">SessionErrc::sessionEnded</a> if the operation was aborted.</li>
 <li><a class="el" href="namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a31d993ba59164643e0e2159e32b63216" title="Session ended by other peer. ">SessionErrc::sessionEndedByPeer</a> if the session was ended by the peer.</li>
@@ -1021,6 +1040,7 @@ Static Public Member Functions</h2></td></tr>
 </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_logic.html" title="Exception thrown when a pre-condition is not met. ">error::Logic</a></td><td>if the given registration is empty </td></tr>
     <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_logic.html" title="Exception thrown when a pre-condition is not met. ">error::Logic</a></td><td>if <code>this-&gt;<a class="el" href="classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd" title="Returns the current state of the session. ">state()</a> != <a class="el" href="namespacewamp.html#a53ba5f85cd0d02bf363dfec7da1b339faa533b26cba9a7c8d891c962473f49ec0" title="WAMP session is established. ">SessionState::established</a></code> </td></tr>
   </table>
   </dd>
@@ -1097,7 +1117,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_session.html">Session</a></li>
-    <li class="footer">Generated on Thu Apr 23 2015 00:52:06 for CppWAMP by
+    <li class="footer">Generated on Sun May 17 2015 16:02:35 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

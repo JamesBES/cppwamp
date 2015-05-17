@@ -1,9 +1,13 @@
 var searchData=
 [
-  ['scopedregistration',['ScopedRegistration',['../classwamp_1_1_scoped_registration.html',1,'wamp']]],
-  ['scopedsubscription',['ScopedSubscription',['../classwamp_1_1_scoped_subscription.html',1,'wamp']]],
-  ['session',['Session',['../classwamp_1_1_session.html',1,'wamp']]],
-  ['sessioncategory',['SessionCategory',['../classwamp_1_1_session_category.html',1,'wamp']]],
-  ['sessioninfo',['SessionInfo',['../classwamp_1_1_session_info.html',1,'wamp']]],
-  ['subscription',['Subscription',['../classwamp_1_1_subscription.html',1,'wamp']]]
+  ['payload',['Payload',['../classwamp_1_1_payload.html',1,'wamp']]],
+  ['payload_3c_20error_20_3e',['Payload&lt; Error &gt;',['../classwamp_1_1_payload.html',1,'wamp']]],
+  ['payload_3c_20event_20_3e',['Payload&lt; Event &gt;',['../classwamp_1_1_payload.html',1,'wamp']]],
+  ['payload_3c_20invocation_20_3e',['Payload&lt; Invocation &gt;',['../classwamp_1_1_payload.html',1,'wamp']]],
+  ['payload_3c_20pub_20_3e',['Payload&lt; Pub &gt;',['../classwamp_1_1_payload.html',1,'wamp']]],
+  ['payload_3c_20result_20_3e',['Payload&lt; Result &gt;',['../classwamp_1_1_payload.html',1,'wamp']]],
+  ['payload_3c_20rpc_20_3e',['Payload&lt; Rpc &gt;',['../classwamp_1_1_payload.html',1,'wamp']]],
+  ['procedure',['Procedure',['../classwamp_1_1_procedure.html',1,'wamp']]],
+  ['protocolcategory',['ProtocolCategory',['../classwamp_1_1_protocol_category.html',1,'wamp']]],
+  ['pub',['Pub',['../classwamp_1_1_pub.html',1,'wamp']]]
 ];

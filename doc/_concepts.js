@@ -5,7 +5,7 @@ var _concepts =
       [ "BinaryVisitor", "_visitor_concept.html#BinaryVisitor", null ],
       [ "OperandVisitor", "_visitor_concept.html#OperandVisitor", null ]
     ] ],
-    [ "Serializer", "_serializer.html", null ],
+    [ "Codec", "_codec.html", null ],
     [ "TransportBuffer", "_transport_buffer.html", null ],
     [ "Transport", "_transport.html", null ],
     [ "Establisher", "_establisher.html", null ]

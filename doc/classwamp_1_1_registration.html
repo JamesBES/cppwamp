@@ -128,10 +128,12 @@ Inheritance diagram for wamp::Registration:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae4ab8fcfdede8796bda00da601f03f5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4ab8fcfdede8796bda00da601f03f5d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_registration.html#ae4ab8fcfdede8796bda00da601f03f5d">Registration</a> ()</td></tr>
-<tr class="memdesc:ae4ab8fcfdede8796bda00da601f03f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="memitem:ae4ab8fcfdede8796bda00da601f03f5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_registration.html#ae4ab8fcfdede8796bda00da601f03f5d">Registration</a> ()</td></tr>
+<tr class="memdesc:ae4ab8fcfdede8796bda00da601f03f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty registration.  <a href="#ae4ab8fcfdede8796bda00da601f03f5d">More...</a><br /></td></tr>
 <tr class="separator:ae4ab8fcfdede8796bda00da601f03f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18cb2cec3d9c7697792611d914b45ea2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_registration.html#a18cb2cec3d9c7697792611d914b45ea2">operator bool</a> () const </td></tr>
+<tr class="memdesc:a18cb2cec3d9c7697792611d914b45ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false if the registration is empty.  <a href="#a18cb2cec3d9c7697792611d914b45ea2">More...</a><br /></td></tr>
+<tr class="separator:a18cb2cec3d9c7697792611d914b45ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad14937f8ac715b62ae4f7723d8fab1ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewamp.html#a2a11e7b619d74f499adf34837731877b">RegistrationId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_registration.html#ad14937f8ac715b62ae4f7723d8fab1ac">id</a> () const </td></tr>
 <tr class="memdesc:ad14937f8ac715b62ae4f7723d8fab1ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the ID number of this registration.  <a href="#ad14937f8ac715b62ae4f7723d8fab1ac">More...</a><br /></td></tr>
 <tr class="separator:ad14937f8ac715b62ae4f7723d8fab1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,7 +146,51 @@ Public Member Functions</h2></td></tr>
 <p>A <a class="el" href="classwamp_1_1_registration.html" title="Represents a remote procedure registration. ">Registration</a> is a lightweight object returned by the <code>enroll</code> member functions of the <em><a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a></em> family of classes. This objects allows users to unregister the RPC registration.</p>
 <p>It is always safe to unregister via a <a class="el" href="classwamp_1_1_registration.html" title="Represents a remote procedure registration. ">Registration</a> object. If the <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a> or the registration no longer exists, an unregister operation effectively does nothing.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_scoped_registration.html" title="Limits a Registration&#39;s lifetime to a particular scope. ">ScopedRegistration</a>, <a class="el" href="classwamp_1_1_session.html#a04846bb5a40a74a0fe8cd37e3d0102c0" title="Registers a WAMP remote procedure call. ">Session::enroll</a>, <a class="el" href="classwamp_1_1_coro_session.html#a6081368ea20971cd258ece70f3ca6b28" title="Registers a WAMP remote procedure call. ">CoroSession::enroll</a> </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ae4ab8fcfdede8796bda00da601f03f5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wamp::Registration::Registration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs an empty registration. </p>
+<dl class="section post"><dt>Postcondition</dt><dd><code>!!(*this) == false</code> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a18cb2cec3d9c7697792611d914b45ea2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wamp::Registration::operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns false if the registration is empty. </p>
+
+</div>
+</div>
 <a class="anchor" id="ad14937f8ac715b62ae4f7723d8fab1ac"></a>
 <div class="memitem">
 <div class="memproto">
@@ -189,7 +235,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_registration.html">Registration</a></li>
-    <li class="footer">Generated on Thu Apr 23 2015 00:52:06 for CppWAMP by
+    <li class="footer">Generated on Sun May 17 2015 16:02:35 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

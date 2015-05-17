@@ -1,0 +1,4 @@
+<map id="wamp::TcpHost" name="wamp::TcpHost">
+<area shape="rect" id="node2" href="$classwamp_1_1_ip_options.html" title="wamp::IpOptions\&lt; TcpHost,\l boost::asio::ip::tcp \&gt;" alt="" coords="5,110,192,151"/>
+<area shape="rect" id="node3" href="$classwamp_1_1_rawsock_options.html" title="wamp::RawsockOptions\l\&lt; TcpHost, boost::asio\l::ip::tcp \&gt;" alt="" coords="16,5,180,61"/>
+</map>

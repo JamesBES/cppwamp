@@ -141,17 +141,18 @@ Public Member Functions</h2></td></tr>
 Related Functions</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>(Note that these are not member functions.) </p>
 </td></tr>
-<tr class="memitem:a7fbbad6e63f504c7706df06bab4276e1"><td class="memTemplParams" colspan="2">template&lt;typename... TArgs, typename TSlot &gt; </td></tr>
-<tr class="memitem:a7fbbad6e63f504c7706df06bab4276e1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_invocation_unpacker.html">InvocationUnpacker</a>&lt; TSlot, <br class="typebreak" />
-TArgs...&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_invocation_unpacker.html#a7fbbad6e63f504c7706df06bab4276e1">unpackedRpc</a> (TSlot &amp;&amp;slot)</td></tr>
-<tr class="separator:a7fbbad6e63f504c7706df06bab4276e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fae9c987f4fcc7bbd277f7f1fea3f26"><td class="memTemplParams" colspan="2">template&lt;typename... TArgs, typename TSlot &gt; </td></tr>
+<tr class="memitem:a3fae9c987f4fcc7bbd277f7f1fea3f26"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_invocation_unpacker.html">InvocationUnpacker</a><br class="typebreak" />
+&lt; <a class="el" href="namespacewamp.html#afb68057439fa3d32bb02ac8d707206fc">DecayedSlot</a>&lt; TSlot &gt;<br class="typebreak" />
+, TArgs...&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_invocation_unpacker.html#a3fae9c987f4fcc7bbd277f7f1fea3f26">unpackedRpc</a> (TSlot &amp;&amp;slot)</td></tr>
+<tr class="separator:a3fae9c987f4fcc7bbd277f7f1fea3f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TSlot, typename... TArgs&gt;<br />
 class wamp::InvocationUnpacker&lt; TSlot, TArgs &gt;</h3>
 
 <p>Wrapper around a call slot which automatically unpacks positional payload arguments. </p>
-<p>The <a class="el" href="classwamp_1_1_invocation_unpacker.html#a7fbbad6e63f504c7706df06bab4276e1">wamp::unpackedRpc</a> convenience function should be used to construct instances of <a class="el" href="classwamp_1_1_invocation_unpacker.html" title="Wrapper around a call slot which automatically unpacks positional payload arguments. ">InvocationUnpacker</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_invocation_unpacker.html#a7fbbad6e63f504c7706df06bab4276e1">wamp::unpackedRpc</a> </dd>
+<p>The <a class="el" href="classwamp_1_1_invocation_unpacker.html#a3fae9c987f4fcc7bbd277f7f1fea3f26">wamp::unpackedRpc</a> convenience function should be used to construct instances of <a class="el" href="classwamp_1_1_invocation_unpacker.html" title="Wrapper around a call slot which automatically unpacks positional payload arguments. ">InvocationUnpacker</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_invocation_unpacker.html#a3fae9c987f4fcc7bbd277f7f1fea3f26">wamp::unpackedRpc</a> </dd>
 <dd>
 <a class="el" href="_registrations.html#UnpackedCallSlots">Unpacked Call Slots</a> </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -213,7 +214,7 @@ template&lt;typename S , typename... A&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a class="anchor" id="a7fbbad6e63f504c7706df06bab4276e1"></a>
+<a class="anchor" id="a3fae9c987f4fcc7bbd277f7f1fea3f26"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -223,7 +224,7 @@ template&lt;typename... TArgs, typename TSlot &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwamp_1_1_invocation_unpacker.html">InvocationUnpacker</a>&lt; TSlot, TArgs...&gt; unpackedRpc </td>
+          <td class="memname"><a class="el" href="classwamp_1_1_invocation_unpacker.html">InvocationUnpacker</a>&lt; <a class="el" href="namespacewamp.html#afb68057439fa3d32bb02ac8d707206fc">DecayedSlot</a>&lt; TSlot &gt;, TArgs...&gt; unpackedRpc </td>
           <td>(</td>
           <td class="paramtype">TSlot &amp;&amp;&#160;</td>
           <td class="paramname"><em>slot</em></td><td>)</td>
@@ -258,7 +259,7 @@ template&lt;typename... TArgs, typename TSlot &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_invocation_unpacker.html">InvocationUnpacker</a></li>
-    <li class="footer">Generated on Thu Apr 23 2015 00:52:06 for CppWAMP by
+    <li class="footer">Generated on Sun May 17 2015 16:02:35 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>
