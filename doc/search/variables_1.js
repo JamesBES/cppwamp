@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['major',['major',['../structwamp_1_1_version.html#ac3fb1d70eaa1cd4c4016014cde70f9b0',1,'wamp::Version']]],
-  ['minor',['minor',['../structwamp_1_1_version.html#ae9aa1fc01b1b9d285bce0ff271c13609',1,'wamp::Version']]]
+  ['defaultmaxrxlength',['defaultMaxRxLength',['../classwamp_1_1_rawsock_options.html#a528ca6db51244cf1c97d06618a7726b3',1,'wamp::RawsockOptions']]]
 ];

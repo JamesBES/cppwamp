@@ -12,7 +12,11 @@ var searchData=
   ['ipoptions',['IpOptions',['../classwamp_1_1_ip_options.html',1,'wamp']]],
   ['ipoptions_3c_20tcphost_2c_20boost_3a_3aasio_3a_3aip_3a_3atcp_20_3e',['IpOptions&lt; TcpHost, boost::asio::ip::tcp &gt;',['../classwamp_1_1_ip_options.html',1,'wamp']]],
   ['is',['is',['../classwamp_1_1_variant.html#a2bfafa83b1ed04fdaa70c14a4d3cae78',1,'wamp::Variant::is() const '],['../classwamp_1_1_variant.html#a2bfafa83b1ed04fdaa70c14a4d3cae78',1,'wamp::Variant::is() const ']]],
-  ['isnumber',['isNumber',['../classwamp_1_1_variant.html#a75676feccd7b98a16059410737f29fb0',1,'wamp::Variant']]],
+  ['isbool',['isBool',['../namespacewamp.html#a211d07a7169feb6b6e9cd351bf378841',1,'wamp']]],
+  ['isnumber',['isNumber',['../classwamp_1_1_variant.html#a75676feccd7b98a16059410737f29fb0',1,'wamp::Variant::isNumber()'],['../namespacewamp.html#a0f60ee29904aa30973713672aa3fc37b',1,'wamp::isNumber()']]],
   ['isprogressive',['isProgressive',['../classwamp_1_1_invocation.html#a53c434ddd87bdf988f68b30f2a2d343c',1,'wamp::Invocation']]],
-  ['isscalar',['isScalar',['../classwamp_1_1_variant.html#ab1e5fc1e9d53ea3d670327696cde0d2e',1,'wamp::Variant']]]
+  ['issametype',['isSameType',['../namespacewamp.html#a26df4a87f37269f63b6e8ccd15e13937',1,'wamp']]],
+  ['isscalar',['isScalar',['../classwamp_1_1_variant.html#ab1e5fc1e9d53ea3d670327696cde0d2e',1,'wamp::Variant']]],
+  ['issignedinteger',['isSignedInteger',['../namespacewamp.html#a951e81963d0cf4855d8930833b907782',1,'wamp']]],
+  ['isunsignedinteger',['isUnsignedInteger',['../namespacewamp.html#a14c38865623683d342e8cc3a4671c940',1,'wamp']]]
 ];

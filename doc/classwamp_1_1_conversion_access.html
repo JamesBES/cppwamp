@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>CppWAMP: cppwamp/varianttuple.hpp File Reference</title>
+<title>CppWAMP: wamp::ConversionAccess Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -47,8 +47,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -70,8 +70,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -86,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('varianttuple_8hpp.html','');});
+$(document).ready(function(){initNavTree('classwamp_1_1_conversion_access.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -105,35 +107,30 @@ $(document).ready(function(){initNavTree('varianttuple_8hpp.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="classwamp_1_1_conversion_access-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">varianttuple.hpp File Reference</div>  </div>
+<div class="title">wamp::ConversionAccess Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Provides operators allowing Variant to interact with std::tuple.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;tuple&gt;</code><br />
-<code>#include &quot;<a class="el" href="variant_8hpp_source.html">variant.hpp</a>&quot;</code><br />
-<code>#include &quot;internal/varianttuple.ipp&quot;</code><br />
-</div>
-<p><a href="varianttuple_8hpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacewamp"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html">wamp</a></td></tr>
-<tr class="memdesc:namespacewamp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace for all identifiers defined by the CppWAMP library. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
+<p>Helper class used to gain access to private conversion member functions.  
+ <a href="classwamp_1_1_conversion_access.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="conversion_8hpp_source.html">cppwamp/conversion.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides operators allowing Variant to interact with std::tuple. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Helper class used to gain access to private conversion member functions. </p>
+<p>If you make your conversion member functions private, then you must grant friendship to the <a class="el" href="classwamp_1_1_conversion_access.html" title="Helper class used to gain access to private conversion member functions. ">ConversionAccess</a> class. Other than granting friendship, users should not have to use this class. </p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>cppwamp/<a class="el" href="conversion_8hpp_source.html">conversion.hpp</a></li>
+<li>cppwamp/internal/conversion.ipp</li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_bb7245a6f5714b15c73ba62cf32a25df.html">cppwamp</a></li><li class="navelem"><a class="el" href="varianttuple_8hpp.html">varianttuple.hpp</a></li>
-    <li class="footer">Generated on Sun May 17 2015 16:02:35 for CppWAMP by
+    <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_conversion_access.html">ConversionAccess</a></li>
+    <li class="footer">Generated on Thu May 28 2015 22:54:21 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

@@ -8,7 +8,7 @@ var searchData=
   ['settracehandler',['setTraceHandler',['../classwamp_1_1_session.html#a8ecf51b461ff093aedc9ed32c9adfc6a',1,'wamp::Session']]],
   ['setvalue',['setValue',['../classwamp_1_1_async_result.html#a2c70f0237f36cbd802827eb3686674c1',1,'wamp::AsyncResult']]],
   ['setwarninghandler',['setWarningHandler',['../classwamp_1_1_session.html#a3af4c171dc1d0cb7b412adbd702528db',1,'wamp::Session']]],
-  ['size',['size',['../classwamp_1_1_variant.html#a933022eb0992b0a90134aa5e638b88e6',1,'wamp::Variant']]],
+  ['size',['size',['../classwamp_1_1_to_variant_converter.html#a504da7c2ed0dc87d5484b39ceeb79d69',1,'wamp::ToVariantConverter::size()'],['../classwamp_1_1_from_variant_converter.html#ae4bddb05e8e85f56dfca4340918b5a03',1,'wamp::FromVariantConverter::size() const '],['../classwamp_1_1_from_variant_converter.html#aa6f71e3292baf08e39ff8a7db85eab5c',1,'wamp::FromVariantConverter::size(SizeType &amp;n)'],['../classwamp_1_1_variant.html#a933022eb0992b0a90134aa5e638b88e6',1,'wamp::Variant::size()']]],
   ['state',['state',['../classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd',1,'wamp::Session']]],
   ['subid',['subId',['../classwamp_1_1_event.html#aaca8763e97de0173bc160df589b67d21',1,'wamp::Event']]],
   ['subscribe',['subscribe',['../classwamp_1_1_coro_session.html#a01d2464a4133cb4ae711ed3cc3f3dd84',1,'wamp::CoroSession::subscribe()'],['../classwamp_1_1_session.html#a93b8686842db786a7d065c601f75cb5a',1,'wamp::Session::subscribe()']]],

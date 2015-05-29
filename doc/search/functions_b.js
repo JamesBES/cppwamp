@@ -5,7 +5,5 @@ var searchData=
   ['makemessage',['makeMessage',['../classwamp_1_1error_1_1_failure.html#a094d2a9ed82b0641ccd0b44253052e78',1,'wamp::error::Failure::makeMessage(std::error_code ec)'],['../classwamp_1_1error_1_1_failure.html#a188be124f792f240206ca5b26ccddc92',1,'wamp::error::Failure::makeMessage(std::error_code ec, const std::string &amp;info)']]],
   ['maxrxlength',['maxRxLength',['../classwamp_1_1_rawsock_options.html#ad6cf673447d89d58152704c713dc8eaf',1,'wamp::RawsockOptions']]],
   ['message',['message',['../classwamp_1_1_session_category.html#afde32ea8aed87fe52f3019d253dabd1d',1,'wamp::SessionCategory::message()'],['../classwamp_1_1_protocol_category.html#a5f5f5a6eecbf746974539f3b525b6ecb',1,'wamp::ProtocolCategory::message()'],['../classwamp_1_1_transport_category.html#aad7c5e892cc5f11c84b9c78f5c396135',1,'wamp::TransportCategory::message()'],['../classwamp_1_1_rawsock_category.html#a3541fb6085686fe283c8394dcc02db65',1,'wamp::RawsockCategory::message()']]],
-  ['moveargs',['moveArgs',['../classwamp_1_1_payload.html#a5ae9f7a1c4fdfa3287ab647b0272d43f',1,'wamp::Payload']]],
-  ['movekwargs',['moveKwargs',['../classwamp_1_1_payload.html#a6d2f81f6cc6d08061aa39da944f11157',1,'wamp::Payload']]],
   ['moveto',['moveTo',['../classwamp_1_1_payload.html#a086dc47ad6612cb7fad51d971c279e70',1,'wamp::Payload']]]
 ];

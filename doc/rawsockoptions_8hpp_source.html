@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('rawsockoptions_8hpp_source.html','');}
 <div class="title">rawsockoptions.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*------------------------------------------------------------------------------</span></div>
+<a href="rawsockoptions_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">                Copyright Butterfly Energy Systems 2014-2015.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">           Distributed under the Boost Software License, Version 1.0.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">              (See accompanying file LICENSE_1_0.txt or copy at</span></div>
@@ -118,122 +118,125 @@ $(document).ready(function(){initNavTree('rawsockoptions_8hpp_source.html','');}
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef CPPWAMP_RAWSOCKOPTIONS_HPP</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define CPPWAMP_RAWSOCKOPTIONS_HPP</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="asiodefs_8hpp.html">asiodefs.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;./internal/socketoptions.hpp&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>wamp</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>internal</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TRawsockOptions, <span class="keyword">typename</span> TSocket&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">void</span> applyRawsockOptions(<span class="keyword">const</span> TRawsockOptions&amp; options, TSocket&amp; socket);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;} <span class="comment">// namespace internal</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="asiodefs_8hpp.html">asiodefs.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;./internal/socketoptions.hpp&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>wamp</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>internal</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">   30</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">RawsockMaxLength</a></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa23ccc75192d274e4baa1390df758b7a9">B_512</a>,  </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa95820889c57ed2e14f37a3d40b04d3eb">kB_1</a>,   </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993faedc30900c1b9071feb2b244109a8c25b">kB_2</a>,   </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa8383e4e8f8e6f97da2665c52a0b31440">kB_4</a>,   </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa0df6f473c642920931b17d3866531994">kB_8</a>,   </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa23606eba3869aa06ec21f65a6af4f9f9">kB_16</a>,  </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa8ac627000912010efd3beece803acb81">kB_32</a>,  </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fad79bc0f95213a9b2d654ac146dff2811">kB_64</a>,  </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa186d40edc766c000a01178d48d5cbe37">kB_128</a>, </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993faad8383143d8cf1211f5563836fd49633">kB_256</a>, </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa14a233b47cc592c5ca2e0c8f9a491819">kB_512</a>, </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa7e97e2cb92202bee510f8f60c8a1731f">MB_1</a>,   </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa068279e2835919ba1c26a15639f88417">MB_2</a>,   </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa2f62273b1b6d374490403fa82249244c">MB_4</a>,   </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa36fbb1a264212a9d7d50718ab388cdae">MB_8</a>,   </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fab6907cabd72d2874a3bfbfce2f61ba42">MB_16</a>   </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TDerived, <span class="keyword">typename</span> TProtocol&gt;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classwamp_1_1_rawsock_options.html">   61</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwamp_1_1_rawsock_options.html">RawsockOptions</a></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classwamp_1_1_rawsock_options.html#a528ca6db51244cf1c97d06618a7726b3">   65</a></span>&#160;    <span class="keyword">static</span> constexpr <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">RawsockMaxLength</a> <a class="code" href="classwamp_1_1_rawsock_options.html#a528ca6db51244cf1c97d06618a7726b3">defaultMaxRxLength</a> =</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fab6907cabd72d2874a3bfbfce2f61ba42">RawsockMaxLength::MB_16</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#ae4f90ba6c7734f7b975c7e9d9e7f080c">withMaxRxLength</a>(<a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">RawsockMaxLength</a> length);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#a5b81decf4e4d586ef1714f6f1040913e">withBroadcast</a>(<span class="keywordtype">bool</span> enabled = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#ac3d0eeca4045b001a68260beee811fe5">withDebug</a>(<span class="keywordtype">bool</span> enabled = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#a134b9d626938b65985b9cef8cbb70f75">withDoNotRoute</a>(<span class="keywordtype">bool</span> enabled = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#a79aec70499fb5ba1e401b77ea437b3a5">withKeepAlive</a>(<span class="keywordtype">bool</span> enabled = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#ad6f05464952e5dcb5eadf1a8a34c68ba">withLinger</a>(<span class="keywordtype">bool</span> enabled, <span class="keywordtype">int</span> timeout);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#a85396e00cace0b320744bee13f422e8e">withReceiveBufferSize</a>(<span class="keywordtype">int</span> size);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#af50b34bd8adf134cdebce49936bf3e11">withReceiveLowWatermark</a>(<span class="keywordtype">int</span> size);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#a9ccbb215cb42496a571aa425da7a9ceb">withReuseAddress</a>(<span class="keywordtype">bool</span> enabled = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#af18453c321c0154a901d46465828786c">withSendBufferSize</a>(<span class="keywordtype">int</span> size);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#a614909cb5b5cae01f807b06963cf8c89">withSendLowWatermark</a>(<span class="keywordtype">int</span> size);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">RawsockMaxLength</a> <a class="code" href="classwamp_1_1_rawsock_options.html#ad6cf673447d89d58152704c713dc8eaf">maxRxLength</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="classwamp_1_1_rawsock_options.html">RawsockOptions</a>();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TOption&gt;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    TDerived&amp; addOption(TOption&amp;&amp; opt)</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        socketOptions_.add(std::forward&lt;TOption&gt;(opt));</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>TDerived&amp;<span class="keyword">&gt;</span>(*this);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">RawsockMaxLength</a> maxRxLength_;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    internal::SocketOptionList&lt;TProtocol&gt; socketOptions_;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TRawsockOptions, <span class="keyword">typename</span> TSocket&gt;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">void</span> internal::applyRawsockOptions(<span class="keyword">const</span> TRawsockOptions&amp; options,</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                              TSocket&amp; socket);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TRawsockOptions, <span class="keyword">typename</span> TSocket&gt;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> applyRawsockOptions(<span class="keyword">const</span> TRawsockOptions&amp; options, TSocket&amp; socket);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <span class="comment">// namespace internal</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">   35</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">RawsockMaxLength</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa23ccc75192d274e4baa1390df758b7a9">B_512</a>,  </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa95820889c57ed2e14f37a3d40b04d3eb">kB_1</a>,   </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993faedc30900c1b9071feb2b244109a8c25b">kB_2</a>,   </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa8383e4e8f8e6f97da2665c52a0b31440">kB_4</a>,   </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa0df6f473c642920931b17d3866531994">kB_8</a>,   </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa23606eba3869aa06ec21f65a6af4f9f9">kB_16</a>,  </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa8ac627000912010efd3beece803acb81">kB_32</a>,  </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fad79bc0f95213a9b2d654ac146dff2811">kB_64</a>,  </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa186d40edc766c000a01178d48d5cbe37">kB_128</a>, </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993faad8383143d8cf1211f5563836fd49633">kB_256</a>, </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa14a233b47cc592c5ca2e0c8f9a491819">kB_512</a>, </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa7e97e2cb92202bee510f8f60c8a1731f">MB_1</a>,   </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa068279e2835919ba1c26a15639f88417">MB_2</a>,   </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa2f62273b1b6d374490403fa82249244c">MB_4</a>,   </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa36fbb1a264212a9d7d50718ab388cdae">MB_8</a>,   </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fab6907cabd72d2874a3bfbfce2f61ba42">MB_16</a>   </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TDerived, <span class="keyword">typename</span> TProtocol&gt;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classwamp_1_1_rawsock_options.html">   66</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwamp_1_1_rawsock_options.html">RawsockOptions</a></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classwamp_1_1_rawsock_options.html#a528ca6db51244cf1c97d06618a7726b3">   70</a></span>&#160;    <span class="keyword">static</span> constexpr <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">RawsockMaxLength</a> <a class="code" href="classwamp_1_1_rawsock_options.html#a528ca6db51244cf1c97d06618a7726b3">defaultMaxRxLength</a> =</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fab6907cabd72d2874a3bfbfce2f61ba42">RawsockMaxLength::MB_16</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#ae4f90ba6c7734f7b975c7e9d9e7f080c">withMaxRxLength</a>(<a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">RawsockMaxLength</a> length);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#a5b81decf4e4d586ef1714f6f1040913e">withBroadcast</a>(<span class="keywordtype">bool</span> enabled = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#ac3d0eeca4045b001a68260beee811fe5">withDebug</a>(<span class="keywordtype">bool</span> enabled = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#a134b9d626938b65985b9cef8cbb70f75">withDoNotRoute</a>(<span class="keywordtype">bool</span> enabled = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#a79aec70499fb5ba1e401b77ea437b3a5">withKeepAlive</a>(<span class="keywordtype">bool</span> enabled = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#ad6f05464952e5dcb5eadf1a8a34c68ba">withLinger</a>(<span class="keywordtype">bool</span> enabled, <span class="keywordtype">int</span> timeout);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#a85396e00cace0b320744bee13f422e8e">withReceiveBufferSize</a>(<span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#af50b34bd8adf134cdebce49936bf3e11">withReceiveLowWatermark</a>(<span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#a9ccbb215cb42496a571aa425da7a9ceb">withReuseAddress</a>(<span class="keywordtype">bool</span> enabled = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#af18453c321c0154a901d46465828786c">withSendBufferSize</a>(<span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_rawsock_options.html#a614909cb5b5cae01f807b06963cf8c89">withSendLowWatermark</a>(<span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">RawsockMaxLength</a> <a class="code" href="classwamp_1_1_rawsock_options.html#ad6cf673447d89d58152704c713dc8eaf">maxRxLength</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="classwamp_1_1_rawsock_options.html">RawsockOptions</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TOption&gt;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    TDerived&amp; addOption(TOption&amp;&amp; opt)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        socketOptions_.add(std::forward&lt;TOption&gt;(opt));</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>TDerived&amp;<span class="keyword">&gt;</span>(*this);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">RawsockMaxLength</a> maxRxLength_;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    internal::SocketOptionList&lt;TProtocol&gt; socketOptions_;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TDerived, <span class="keyword">typename</span> TProtocol&gt;</div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classwamp_1_1_ip_options.html">  130</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwamp_1_1_ip_options.html">IpOptions</a> : <span class="keyword">public</span> <a class="code" href="classwamp_1_1_rawsock_options.html">RawsockOptions</a>&lt;TDerived, TProtocol&gt;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_ip_options.html#a9dd95d4fe29464004580eca1287b44c4">withUnicastHops</a>(<span class="keywordtype">int</span> hops);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_ip_options.html#ad1652243ba97c5d2041bf2b2bc026653">withIpV6Only</a>(<span class="keywordtype">bool</span> enabled = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="classwamp_1_1_ip_options.html">IpOptions</a>();</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">using</span> <a class="code" href="classwamp_1_1_rawsock_options.html">Base</a> = <a class="code" href="classwamp_1_1_rawsock_options.html">RawsockOptions&lt;TDerived, TProtocol&gt;</a>;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;};</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TRawsockOptions, <span class="keyword">typename</span> TSocket&gt;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">void</span> internal::applyRawsockOptions(<span class="keyword">const</span> TRawsockOptions&amp; options,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                              TSocket&amp; socket);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;};</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TDerived, <span class="keyword">typename</span> TProtocol&gt;</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="classwamp_1_1_ip_options.html">  135</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwamp_1_1_ip_options.html">IpOptions</a> : <span class="keyword">public</span> <a class="code" href="classwamp_1_1_rawsock_options.html">RawsockOptions</a>&lt;TDerived, TProtocol&gt;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;{</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_ip_options.html#a9dd95d4fe29464004580eca1287b44c4">withUnicastHops</a>(<span class="keywordtype">int</span> hops);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    TDerived&amp; <a class="code" href="classwamp_1_1_ip_options.html#ad1652243ba97c5d2041bf2b2bc026653">withIpV6Only</a>(<span class="keywordtype">bool</span> enabled = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <a class="code" href="classwamp_1_1_ip_options.html">IpOptions</a>();</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;} <span class="comment">// namespace wamp</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#ifndef CPPWAMP_COMPILED_LIB</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#include &quot;./internal/rawsockoptions.hpp&quot;</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#endif // CPPWAMP_RAWSOCKOPTIONS_HPP</span></div>
-<div class="ttc" id="classwamp_1_1_rawsock_options_html_a528ca6db51244cf1c97d06618a7726b3"><div class="ttname"><a href="classwamp_1_1_rawsock_options.html#a528ca6db51244cf1c97d06618a7726b3">wamp::RawsockOptions::defaultMaxRxLength</a></div><div class="ttdeci">static constexpr RawsockMaxLength defaultMaxRxLength</div><div class="ttdoc">The default maximum length permitted for incoming messages. </div><div class="ttdef"><b>Definition:</b> rawsockoptions.hpp:65</div></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">using</span> <a class="code" href="classwamp_1_1_rawsock_options.html">Base</a> = <a class="code" href="classwamp_1_1_rawsock_options.html">RawsockOptions&lt;TDerived, TProtocol&gt;</a>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;};</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;} <span class="comment">// namespace wamp</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#ifndef CPPWAMP_COMPILED_LIB</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#include &quot;./internal/rawsockoptions.ipp&quot;</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#endif // CPPWAMP_RAWSOCKOPTIONS_HPP</span></div>
+<div class="ttc" id="classwamp_1_1_rawsock_options_html_a528ca6db51244cf1c97d06618a7726b3"><div class="ttname"><a href="classwamp_1_1_rawsock_options.html#a528ca6db51244cf1c97d06618a7726b3">wamp::RawsockOptions::defaultMaxRxLength</a></div><div class="ttdeci">static constexpr RawsockMaxLength defaultMaxRxLength</div><div class="ttdoc">The default maximum length permitted for incoming messages. </div><div class="ttdef"><b>Definition:</b> rawsockoptions.hpp:70</div></div>
 <div class="ttc" id="classwamp_1_1_rawsock_options_html_a134b9d626938b65985b9cef8cbb70f75"><div class="ttname"><a href="classwamp_1_1_rawsock_options.html#a134b9d626938b65985b9cef8cbb70f75">wamp::RawsockOptions::withDoNotRoute</a></div><div class="ttdeci">TDerived &amp; withDoNotRoute(bool enabled=true)</div><div class="ttdoc">Adds the SO_DONTROUTE socket option. </div><div class="ttdef"><b>Definition:</b> rawsockoptions.ipp:54</div></div>
 <div class="ttc" id="classwamp_1_1_rawsock_options_html_ad6cf673447d89d58152704c713dc8eaf"><div class="ttname"><a href="classwamp_1_1_rawsock_options.html#ad6cf673447d89d58152704c713dc8eaf">wamp::RawsockOptions::maxRxLength</a></div><div class="ttdeci">RawsockMaxLength maxRxLength() const </div><div class="ttdoc">Obtains the specified maximum incoming message length. </div><div class="ttdef"><b>Definition:</b> rawsockoptions.ipp:102</div></div>
 <div class="ttc" id="namespacewamp_html_a1750e952cec62e645c6b1c918c06993fa7e97e2cb92202bee510f8f60c8a1731f"><div class="ttname"><a href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa7e97e2cb92202bee510f8f60c8a1731f">wamp::RawsockMaxLength::MB_1</a></div><div class="ttdoc">1 megabyte </div></div>
@@ -245,14 +248,14 @@ $(document).ready(function(){initNavTree('rawsockoptions_8hpp_source.html','');}
 <div class="ttc" id="classwamp_1_1_rawsock_options_html_a85396e00cace0b320744bee13f422e8e"><div class="ttname"><a href="classwamp_1_1_rawsock_options.html#a85396e00cace0b320744bee13f422e8e">wamp::RawsockOptions::withReceiveBufferSize</a></div><div class="ttdeci">TDerived &amp; withReceiveBufferSize(int size)</div><div class="ttdoc">Adds the SO_RCVBUF socket option. </div><div class="ttdef"><b>Definition:</b> rawsockoptions.ipp:72</div></div>
 <div class="ttc" id="namespacewamp_html_a1750e952cec62e645c6b1c918c06993fa8ac627000912010efd3beece803acb81"><div class="ttname"><a href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa8ac627000912010efd3beece803acb81">wamp::RawsockMaxLength::kB_32</a></div><div class="ttdoc">32 kilobytes </div></div>
 <div class="ttc" id="classwamp_1_1_rawsock_options_html_af18453c321c0154a901d46465828786c"><div class="ttname"><a href="classwamp_1_1_rawsock_options.html#af18453c321c0154a901d46465828786c">wamp::RawsockOptions::withSendBufferSize</a></div><div class="ttdeci">TDerived &amp; withSendBufferSize(int size)</div><div class="ttdoc">Adds the SO_SNDBUF socket option. </div><div class="ttdef"><b>Definition:</b> rawsockoptions.ipp:90</div></div>
-<div class="ttc" id="classwamp_1_1_rawsock_options_html"><div class="ttname"><a href="classwamp_1_1_rawsock_options.html">wamp::RawsockOptions</a></div><div class="ttdoc">Base class containing general options for raw socket connections. </div><div class="ttdef"><b>Definition:</b> rawsockoptions.hpp:61</div></div>
+<div class="ttc" id="classwamp_1_1_rawsock_options_html"><div class="ttname"><a href="classwamp_1_1_rawsock_options.html">wamp::RawsockOptions</a></div><div class="ttdoc">Base class containing general options for raw socket connections. </div><div class="ttdef"><b>Definition:</b> rawsockoptions.hpp:66</div></div>
 <div class="ttc" id="namespacewamp_html_a1750e952cec62e645c6b1c918c06993fa0df6f473c642920931b17d3866531994"><div class="ttname"><a href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993fa0df6f473c642920931b17d3866531994">wamp::RawsockMaxLength::kB_8</a></div><div class="ttdoc">8 kilobytes </div></div>
 <div class="ttc" id="namespacewamp_html_a1750e952cec62e645c6b1c918c06993faedc30900c1b9071feb2b244109a8c25b"><div class="ttname"><a href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993faedc30900c1b9071feb2b244109a8c25b">wamp::RawsockMaxLength::kB_2</a></div><div class="ttdoc">2 kilobytes </div></div>
-<div class="ttc" id="namespacewamp_html_a1750e952cec62e645c6b1c918c06993f"><div class="ttname"><a href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">wamp::RawsockMaxLength</a></div><div class="ttdeci">RawsockMaxLength</div><div class="ttdoc">Enumerators used to specify the maximum length of messages that a raw socket transport can receive...</div><div class="ttdef"><b>Definition:</b> rawsockoptions.hpp:30</div></div>
+<div class="ttc" id="namespacewamp_html_a1750e952cec62e645c6b1c918c06993f"><div class="ttname"><a href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993f">wamp::RawsockMaxLength</a></div><div class="ttdeci">RawsockMaxLength</div><div class="ttdoc">Enumerators used to specify the maximum length of messages that a raw socket transport can receive...</div><div class="ttdef"><b>Definition:</b> rawsockoptions.hpp:35</div></div>
 <div class="ttc" id="classwamp_1_1_ip_options_html_a9dd95d4fe29464004580eca1287b44c4"><div class="ttname"><a href="classwamp_1_1_ip_options.html#a9dd95d4fe29464004580eca1287b44c4">wamp::IpOptions::withUnicastHops</a></div><div class="ttdeci">TDerived &amp; withUnicastHops(int hops)</div><div class="ttdoc">Adds the IP_UNICAST_TTL socket option. </div><div class="ttdef"><b>Definition:</b> rawsockoptions.ipp:110</div></div>
 <div class="ttc" id="classwamp_1_1_rawsock_options_html_ac3d0eeca4045b001a68260beee811fe5"><div class="ttname"><a href="classwamp_1_1_rawsock_options.html#ac3d0eeca4045b001a68260beee811fe5">wamp::RawsockOptions::withDebug</a></div><div class="ttdeci">TDerived &amp; withDebug(bool enabled=true)</div><div class="ttdoc">Adds the SO_DEBUG socket option. </div><div class="ttdef"><b>Definition:</b> rawsockoptions.ipp:48</div></div>
 <div class="ttc" id="classwamp_1_1_ip_options_html_ad1652243ba97c5d2041bf2b2bc026653"><div class="ttname"><a href="classwamp_1_1_ip_options.html#ad1652243ba97c5d2041bf2b2bc026653">wamp::IpOptions::withIpV6Only</a></div><div class="ttdeci">TDerived &amp; withIpV6Only(bool enabled=true)</div><div class="ttdoc">Adds the IP_V6ONLY socket option. </div><div class="ttdef"><b>Definition:</b> rawsockoptions.ipp:116</div></div>
-<div class="ttc" id="classwamp_1_1_ip_options_html"><div class="ttname"><a href="classwamp_1_1_ip_options.html">wamp::IpOptions</a></div><div class="ttdoc">Base class containing options for IP-based raw socket connections. </div><div class="ttdef"><b>Definition:</b> rawsockoptions.hpp:130</div></div>
+<div class="ttc" id="classwamp_1_1_ip_options_html"><div class="ttname"><a href="classwamp_1_1_ip_options.html">wamp::IpOptions</a></div><div class="ttdoc">Base class containing options for IP-based raw socket connections. </div><div class="ttdef"><b>Definition:</b> rawsockoptions.hpp:135</div></div>
 <div class="ttc" id="classwamp_1_1_rawsock_options_html_ae4f90ba6c7734f7b975c7e9d9e7f080c"><div class="ttname"><a href="classwamp_1_1_rawsock_options.html#ae4f90ba6c7734f7b975c7e9d9e7f080c">wamp::RawsockOptions::withMaxRxLength</a></div><div class="ttdeci">TDerived &amp; withMaxRxLength(RawsockMaxLength length)</div><div class="ttdoc">Specifies the maximum length permitted for incoming messages. </div><div class="ttdef"><b>Definition:</b> rawsockoptions.ipp:35</div></div>
 <div class="ttc" id="namespacewamp_html_a1750e952cec62e645c6b1c918c06993faad8383143d8cf1211f5563836fd49633"><div class="ttname"><a href="namespacewamp.html#a1750e952cec62e645c6b1c918c06993faad8383143d8cf1211f5563836fd49633">wamp::RawsockMaxLength::kB_256</a></div><div class="ttdoc">256 kilobytes </div></div>
 <div class="ttc" id="classwamp_1_1_rawsock_options_html_af50b34bd8adf134cdebce49936bf3e11"><div class="ttname"><a href="classwamp_1_1_rawsock_options.html#af50b34bd8adf134cdebce49936bf3e11">wamp::RawsockOptions::withReceiveLowWatermark</a></div><div class="ttdeci">TDerived &amp; withReceiveLowWatermark(int size)</div><div class="ttdoc">Adds the SO_RCVLOWAT socket option. </div><div class="ttdef"><b>Definition:</b> rawsockoptions.ipp:78</div></div>
@@ -273,8 +276,8 @@ $(document).ready(function(){initNavTree('rawsockoptions_8hpp_source.html','');}
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_bb7245a6f5714b15c73ba62cf32a25df.html">cppwamp</a></li><li class="navelem"><b>rawsockoptions.hpp</b></li>
-    <li class="footer">Generated on Sun May 17 2015 16:02:35 for CppWAMP by
+    <li class="navelem"><a class="el" href="dir_bb7245a6f5714b15c73ba62cf32a25df.html">cppwamp</a></li><li class="navelem"><a class="el" href="rawsockoptions_8hpp.html">rawsockoptions.hpp</a></li>
+    <li class="footer">Generated on Thu May 28 2015 22:54:21 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

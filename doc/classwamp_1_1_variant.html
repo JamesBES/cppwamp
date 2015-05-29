@@ -129,18 +129,18 @@ Public Types</h2></td></tr>
 <tr class="memdesc:a00d5b88d0391e06cb2c7e2d659f38edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Character type used by string variants.  <a href="#a00d5b88d0391e06cb2c7e2d659f38edf">More...</a><br /></td></tr>
 <tr class="separator:a00d5b88d0391e06cb2c7e2d659f38edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Metafunctions</div></td></tr>
-<tr class="memitem:a35eca45dc4120ced76645983c449bd3c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a35eca45dc4120ced76645983c449bd3c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a35eca45dc4120ced76645983c449bd3c">EnableIfValidArg</a> = typename std::enable_if&lt; ArgTraits&lt; T &gt;::isValid &gt;::type *</td></tr>
-<tr class="memdesc:a35eca45dc4120ced76645983c449bd3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metafunction used for enabling overloads on valid argument types.  <a href="#a35eca45dc4120ced76645983c449bd3c">More...</a><br /></td></tr>
-<tr class="separator:a35eca45dc4120ced76645983c449bd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6575175ecc11672c02b83d1070ded64"><td class="memTemplParams" colspan="2">template&lt;TypeId typeId&gt; </td></tr>
 <tr class="memitem:aa6575175ecc11672c02b83d1070ded64"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#aa6575175ecc11672c02b83d1070ded64">BoundTypeForId</a> = typename internal::FieldTypeForId&lt; <a class="el" href="classwamp_1_1_variant.html#a244f1c4a5dd8d835f3d1359f06ba154c">typeId</a> &gt;::Type</td></tr>
 <tr class="memdesc:aa6575175ecc11672c02b83d1070ded64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metafunction used to obtain the bound type associated with a particular <a class="el" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdb">TypeId</a>.  <a href="#aa6575175ecc11672c02b83d1070ded64">More...</a><br /></td></tr>
 <tr class="separator:aa6575175ecc11672c02b83d1070ded64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4071b8481ffe76d6d11101ee2e0c72de"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a4071b8481ffe76d6d11101ee2e0c72de"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a4071b8481ffe76d6d11101ee2e0c72de">ValueTypeOf</a> = typename std::decay&lt; T &gt;::type</td></tr>
-<tr class="memdesc:a4071b8481ffe76d6d11101ee2e0c72de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metafunction used to obtain the plain value type of a parameter passed by universal reference.  <a href="#a4071b8481ffe76d6d11101ee2e0c72de">More...</a><br /></td></tr>
-<tr class="separator:a4071b8481ffe76d6d11101ee2e0c72de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae568f0afe3833a473816ac0f7b05bb4a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae568f0afe3833a473816ac0f7b05bb4a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#ae568f0afe3833a473816ac0f7b05bb4a">EnableIfValidArg</a> = <a class="el" href="namespacewamp.html#a9806878793b2cdf53fe3a516b1a5bd69">EnableIf</a>&lt; ArgTraits&lt; <a class="el" href="namespacewamp.html#ac6726b115b9d7f02ee9d31fd10ffcbb2">ValueTypeOf</a>&lt; T &gt;&gt;::isValid &gt;</td></tr>
+<tr class="memdesc:ae568f0afe3833a473816ac0f7b05bb4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metafunction used for enabling overloads for valid argument types.  <a href="#ae568f0afe3833a473816ac0f7b05bb4a">More...</a><br /></td></tr>
+<tr class="separator:ae568f0afe3833a473816ac0f7b05bb4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe593a764c1228d73fca9de3497cc62"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0fe593a764c1228d73fca9de3497cc62"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a0fe593a764c1228d73fca9de3497cc62">DisableIfValidArg</a> = <a class="el" href="namespacewamp.html#a3688d950a7ec8a556ba83856a000b888">DisableIf</a>&lt; ArgTraits&lt; <a class="el" href="namespacewamp.html#ac6726b115b9d7f02ee9d31fd10ffcbb2">ValueTypeOf</a>&lt; T &gt;&gt;::isValid &gt;</td></tr>
+<tr class="memdesc:a0fe593a764c1228d73fca9de3497cc62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metafunction used for disabling overloads for valid argument types.  <a href="#a0fe593a764c1228d73fca9de3497cc62">More...</a><br /></td></tr>
+<tr class="separator:a0fe593a764c1228d73fca9de3497cc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Bound Types</div></td></tr>
 <tr class="memitem:acd0066bf3596791c15fee54d00ab5cf7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd0066bf3596791c15fee54d00ab5cf7"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#acd0066bf3596791c15fee54d00ab5cf7">Null</a> = ::<a class="el" href="structwamp_1_1_null.html">wamp::Null</a></td></tr>
@@ -177,37 +177,6 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Construction</div></td></tr>
-<tr class="memitem:ac6d459c867eaeb07b6b63874dfeef99b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#ac6d459c867eaeb07b6b63874dfeef99b">Variant</a> () noexcept</td></tr>
-<tr class="memdesc:ac6d459c867eaeb07b6b63874dfeef99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a null variant.  <a href="#ac6d459c867eaeb07b6b63874dfeef99b">More...</a><br /></td></tr>
-<tr class="separator:ac6d459c867eaeb07b6b63874dfeef99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adac01fe48476ed444088cf606d3507d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#adac01fe48476ed444088cf606d3507d4">Variant</a> (const <a class="el" href="classwamp_1_1_variant.html">Variant</a> &amp;other)</td></tr>
-<tr class="memdesc:adac01fe48476ed444088cf606d3507d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#adac01fe48476ed444088cf606d3507d4">More...</a><br /></td></tr>
-<tr class="separator:adac01fe48476ed444088cf606d3507d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cc80d1ded9191ee1322d837b6648776"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a0cc80d1ded9191ee1322d837b6648776">Variant</a> (<a class="el" href="classwamp_1_1_variant.html">Variant</a> &amp;&amp;other) noexcept</td></tr>
-<tr class="memdesc:a0cc80d1ded9191ee1322d837b6648776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="#a0cc80d1ded9191ee1322d837b6648776">More...</a><br /></td></tr>
-<tr class="separator:a0cc80d1ded9191ee1322d837b6648776"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a9c3c13e72f39c6147e00511021ff21"><td class="memTemplParams" colspan="2">template&lt;typename T , EnableIfValidArg&lt; T &gt;  = nullptr&gt; </td></tr>
-<tr class="memitem:a0a9c3c13e72f39c6147e00511021ff21"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a0a9c3c13e72f39c6147e00511021ff21">Variant</a> (T value)</td></tr>
-<tr class="memdesc:a0a9c3c13e72f39c6147e00511021ff21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting constructor taking an initial value.  <a href="#a0a9c3c13e72f39c6147e00511021ff21">More...</a><br /></td></tr>
-<tr class="separator:a0a9c3c13e72f39c6147e00511021ff21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8abe6b3d330343bf91bd0165889eed70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a8abe6b3d330343bf91bd0165889eed70">Variant</a> (<a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444">Array</a> <a class="el" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbaf1f713c9e000f5d3f280adbd124df4f5">array</a>)</td></tr>
-<tr class="memdesc:a8abe6b3d330343bf91bd0165889eed70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting constructor taking an initial Array value.  <a href="#a8abe6b3d330343bf91bd0165889eed70">More...</a><br /></td></tr>
-<tr class="separator:a8abe6b3d330343bf91bd0165889eed70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc13d445671e8d578c04b57bf689af60"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:acc13d445671e8d578c04b57bf689af60"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#acc13d445671e8d578c04b57bf689af60">Variant</a> (std::vector&lt; T &gt; vec)</td></tr>
-<tr class="memdesc:acc13d445671e8d578c04b57bf689af60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting constructor taking a <code>std::vector</code> of initial Array values.  <a href="#acc13d445671e8d578c04b57bf689af60">More...</a><br /></td></tr>
-<tr class="separator:acc13d445671e8d578c04b57bf689af60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f73821196c5b15eedd6c604a0d889f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a7f73821196c5b15eedd6c604a0d889f1">Variant</a> (<a class="el" href="classwamp_1_1_variant.html#aa9f3c1cf3c181d2db4b772e2b5e4db9d">Object</a> <a class="el" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbaa8cfde6331bd59eb2ac96f8911c4b666">object</a>)</td></tr>
-<tr class="memdesc:a7f73821196c5b15eedd6c604a0d889f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting constructor taking an initial Object value.  <a href="#a7f73821196c5b15eedd6c604a0d889f1">More...</a><br /></td></tr>
-<tr class="separator:a7f73821196c5b15eedd6c604a0d889f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6267a7d8bfa97c8e63e7219d2f9eab08"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a6267a7d8bfa97c8e63e7219d2f9eab08"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a6267a7d8bfa97c8e63e7219d2f9eab08">Variant</a> (std::map&lt; <a class="el" href="classwamp_1_1_variant.html#aa1deb141006ecd77a8983a82f8aae7cb">String</a>, T &gt; map)</td></tr>
-<tr class="memdesc:a6267a7d8bfa97c8e63e7219d2f9eab08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting constructor taking a <code>std::map</code> of key-value pairs.  <a href="#a6267a7d8bfa97c8e63e7219d2f9eab08">More...</a><br /></td></tr>
-<tr class="separator:a6267a7d8bfa97c8e63e7219d2f9eab08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4125c1842f8b88e0df2e06f6663f041d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a4125c1842f8b88e0df2e06f6663f041d">~Variant</a> ()</td></tr>
-<tr class="memdesc:a4125c1842f8b88e0df2e06f6663f041d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a4125c1842f8b88e0df2e06f6663f041d">More...</a><br /></td></tr>
-<tr class="separator:a4125c1842f8b88e0df2e06f6663f041d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Observers</div></td></tr>
 <tr class="memitem:a244f1c4a5dd8d835f3d1359f06ba154c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdb">TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a244f1c4a5dd8d835f3d1359f06ba154c">typeId</a> () const </td></tr>
 <tr class="memdesc:a244f1c4a5dd8d835f3d1359f06ba154c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the id of the variant's current dynamic type.  <a href="#a244f1c4a5dd8d835f3d1359f06ba154c">More...</a><br /></td></tr>
@@ -223,10 +192,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2bfafa83b1ed04fdaa70c14a4d3cae78"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a2bfafa83b1ed04fdaa70c14a4d3cae78">is</a> () const </td></tr>
 <tr class="memdesc:a2bfafa83b1ed04fdaa70c14a4d3cae78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>true</code> iff the variant's current dynamic type matches the given <code>id</code> template parameter.  <a href="#a2bfafa83b1ed04fdaa70c14a4d3cae78">More...</a><br /></td></tr>
 <tr class="separator:a2bfafa83b1ed04fdaa70c14a4d3cae78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4273a4d4ab0b1aa2c21e49f91657c25"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af4273a4d4ab0b1aa2c21e49f91657c25"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#af4273a4d4ab0b1aa2c21e49f91657c25">convertsTo</a> () const </td></tr>
-<tr class="memdesc:af4273a4d4ab0b1aa2c21e49f91657c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>true</code> iff the variant is currently convertible to the given type.  <a href="#af4273a4d4ab0b1aa2c21e49f91657c25">More...</a><br /></td></tr>
-<tr class="separator:af4273a4d4ab0b1aa2c21e49f91657c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45ff15afa122815243e6802dd8053f74"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a45ff15afa122815243e6802dd8053f74"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a45ff15afa122815243e6802dd8053f74">to</a> () const </td></tr>
 <tr class="memdesc:a45ff15afa122815243e6802dd8053f74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the variant's bound value to the given type.  <a href="#a45ff15afa122815243e6802dd8053f74">More...</a><br /></td></tr>
@@ -235,10 +200,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac5b25ab48d6adbd7e4aea2f1cc227c4e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#ac5b25ab48d6adbd7e4aea2f1cc227c4e">to</a> (T &amp;value) const </td></tr>
 <tr class="memdesc:ac5b25ab48d6adbd7e4aea2f1cc227c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the variant's bound value to the given type, and assigns the result to the given <code>value</code> reference.  <a href="#ac5b25ab48d6adbd7e4aea2f1cc227c4e">More...</a><br /></td></tr>
 <tr class="separator:ac5b25ab48d6adbd7e4aea2f1cc227c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38370cc68a9e0d7ed1c960bd0d875921"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a38370cc68a9e0d7ed1c960bd0d875921"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_variant.html#a4071b8481ffe76d6d11101ee2e0c72de">ValueTypeOf</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a38370cc68a9e0d7ed1c960bd0d875921">valueOr</a> (T &amp;&amp;fallback) const </td></tr>
-<tr class="memdesc:a38370cc68a9e0d7ed1c960bd0d875921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the variant's value converted to the given type, or the given fallback value if the variant is null.  <a href="#a38370cc68a9e0d7ed1c960bd0d875921">More...</a><br /></td></tr>
-<tr class="separator:a38370cc68a9e0d7ed1c960bd0d875921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10b9139aed1fbe61ba53fa49d13f3907"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a10b9139aed1fbe61ba53fa49d13f3907"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacewamp.html#ac6726b115b9d7f02ee9d31fd10ffcbb2">ValueTypeOf</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a10b9139aed1fbe61ba53fa49d13f3907">valueOr</a> (T &amp;&amp;fallback) const </td></tr>
+<tr class="memdesc:a10b9139aed1fbe61ba53fa49d13f3907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the variant's value converted to the given type, or the given fallback value if the variant is null.  <a href="#a10b9139aed1fbe61ba53fa49d13f3907">More...</a><br /></td></tr>
+<tr class="separator:a10b9139aed1fbe61ba53fa49d13f3907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a933022eb0992b0a90134aa5e638b88e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_variant.html#a7ce1c7dfb499f9b69ce1e4d39283c6c8">SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a933022eb0992b0a90134aa5e638b88e6">size</a> () const </td></tr>
 <tr class="memdesc:a933022eb0992b0a90134aa5e638b88e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements contained by the variant.  <a href="#a933022eb0992b0a90134aa5e638b88e6">More...</a><br /></td></tr>
 <tr class="separator:a933022eb0992b0a90134aa5e638b88e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -382,60 +347,6 @@ Related Functions</h2></td></tr>
 <tr class="memitem:ae0f419d494ecb0e80c34c3278778e291"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#ae0f419d494ecb0e80c34c3278778e291">operator!=</a> (<a class="el" href="classwamp_1_1_variant.html#a00d5b88d0391e06cb2c7e2d659f38edf">Variant::CharType</a> *str, const <a class="el" href="classwamp_1_1_variant.html">Variant</a> &amp;variant)</td></tr>
 <tr class="memdesc:ae0f419d494ecb0e80c34c3278778e291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a null-terminated mutable character array with a variant for inequality.  <a href="#ae0f419d494ecb0e80c34c3278778e291">More...</a><br /></td></tr>
 <tr class="separator:ae0f419d494ecb0e80c34c3278778e291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Non-member Tuple Operations (in varianttuple.hpp)</div></td></tr>
-<tr class="memitem:a851e0865da7c3f73a534770a4972c3ef"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:a851e0865da7c3f73a534770a4972c3ef"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444">Array</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a851e0865da7c3f73a534770a4972c3ef">toArray</a> (std::tuple&lt; Ts...&gt; tuple)</td></tr>
-<tr class="memdesc:a851e0865da7c3f73a534770a4972c3ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <code>std::tuple</code> to a <a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444" title="Dynamic array of variants. ">Variant::Array</a>.  <a href="#a851e0865da7c3f73a534770a4972c3ef">More...</a><br /></td></tr>
-<tr class="separator:a851e0865da7c3f73a534770a4972c3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1db051019da4f25e9628e9028e01a28"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:ae1db051019da4f25e9628e9028e01a28"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#ae1db051019da4f25e9628e9028e01a28">toTuple</a> (const <a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444">Array</a> &amp;<a class="el" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbaf1f713c9e000f5d3f280adbd124df4f5">array</a>, std::tuple&lt; Ts...&gt; &amp;tuple)</td></tr>
-<tr class="memdesc:ae1db051019da4f25e9628e9028e01a28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444" title="Dynamic array of variants. ">Variant::Array</a> to a <code>std::tuple</code>.  <a href="#ae1db051019da4f25e9628e9028e01a28">More...</a><br /></td></tr>
-<tr class="separator:ae1db051019da4f25e9628e9028e01a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd16cb1a34e74a5d6012891c9a5c637f"><td class="memTemplParams" colspan="2"><a class="anchor" id="acd16cb1a34e74a5d6012891c9a5c637f"></a>
-template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:acd16cb1a34e74a5d6012891c9a5c637f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#acd16cb1a34e74a5d6012891c9a5c637f">convertsToTuple</a> (const <a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444">Array</a> &amp;<a class="el" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbaf1f713c9e000f5d3f280adbd124df4f5">array</a>, const std::tuple&lt; Ts...&gt; &amp;tuple)</td></tr>
-<tr class="memdesc:acd16cb1a34e74a5d6012891c9a5c637f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a <a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444" title="Dynamic array of variants. ">Variant::Array</a> is convertible to a <code>std::tuple</code>. <br /></td></tr>
-<tr class="separator:acd16cb1a34e74a5d6012891c9a5c637f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a505f8ee4da79e0b5247449a7ce53a07f"><td class="memTemplParams" colspan="2"><a class="anchor" id="a505f8ee4da79e0b5247449a7ce53a07f"></a>
-template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:a505f8ee4da79e0b5247449a7ce53a07f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a505f8ee4da79e0b5247449a7ce53a07f">operator==</a> (const <a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444">Array</a> &amp;<a class="el" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbaf1f713c9e000f5d3f280adbd124df4f5">array</a>, const std::tuple&lt; Ts...&gt; &amp;tuple)</td></tr>
-<tr class="memdesc:a505f8ee4da79e0b5247449a7ce53a07f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a <a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444" title="Dynamic array of variants. ">Variant::Array</a> and a std::tuple for equality. <br /></td></tr>
-<tr class="separator:a505f8ee4da79e0b5247449a7ce53a07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebcc8db5c8b5b972c16f1df0e33679d4"><td class="memTemplParams" colspan="2"><a class="anchor" id="aebcc8db5c8b5b972c16f1df0e33679d4"></a>
-template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:aebcc8db5c8b5b972c16f1df0e33679d4"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#aebcc8db5c8b5b972c16f1df0e33679d4">operator==</a> (const std::tuple&lt; Ts...&gt; &amp;tuple, const <a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444">Array</a> &amp;<a class="el" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbaf1f713c9e000f5d3f280adbd124df4f5">array</a>)</td></tr>
-<tr class="memdesc:aebcc8db5c8b5b972c16f1df0e33679d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a std::tuple and a <a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444" title="Dynamic array of variants. ">Variant::Array</a> for equality. <br /></td></tr>
-<tr class="separator:aebcc8db5c8b5b972c16f1df0e33679d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a230c59468ac9ec298482d6f5a9d861b0"><td class="memTemplParams" colspan="2"><a class="anchor" id="a230c59468ac9ec298482d6f5a9d861b0"></a>
-template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:a230c59468ac9ec298482d6f5a9d861b0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a230c59468ac9ec298482d6f5a9d861b0">operator!=</a> (const <a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444">Array</a> &amp;<a class="el" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbaf1f713c9e000f5d3f280adbd124df4f5">array</a>, const std::tuple&lt; Ts...&gt; &amp;tuple)</td></tr>
-<tr class="memdesc:a230c59468ac9ec298482d6f5a9d861b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a <a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444" title="Dynamic array of variants. ">Variant::Array</a> and a std::tuple for inequality. <br /></td></tr>
-<tr class="separator:a230c59468ac9ec298482d6f5a9d861b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2da87f3ff52ce148f0f1398324f6ae4"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa2da87f3ff52ce148f0f1398324f6ae4"></a>
-template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:aa2da87f3ff52ce148f0f1398324f6ae4"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#aa2da87f3ff52ce148f0f1398324f6ae4">operator!=</a> (const std::tuple&lt; Ts...&gt; &amp;tuple, const <a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444">Array</a> &amp;<a class="el" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbaf1f713c9e000f5d3f280adbd124df4f5">array</a>)</td></tr>
-<tr class="memdesc:aa2da87f3ff52ce148f0f1398324f6ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a std::tuple and a <a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444" title="Dynamic array of variants. ">Variant::Array</a> for inequality. <br /></td></tr>
-<tr class="separator:aa2da87f3ff52ce148f0f1398324f6ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb2b8cbea399296f3111f76d8bff313d"><td class="memTemplParams" colspan="2"><a class="anchor" id="acb2b8cbea399296f3111f76d8bff313d"></a>
-template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:acb2b8cbea399296f3111f76d8bff313d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#acb2b8cbea399296f3111f76d8bff313d">operator==</a> (const <a class="el" href="classwamp_1_1_variant.html">Variant</a> &amp;variant, const std::tuple&lt; Ts...&gt; &amp;tuple)</td></tr>
-<tr class="memdesc:acb2b8cbea399296f3111f76d8bff313d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a <a class="el" href="classwamp_1_1_variant.html" title="Discriminated union container that represents a JSON value. ">Variant</a> and a std::tuple for equality. <br /></td></tr>
-<tr class="separator:acb2b8cbea399296f3111f76d8bff313d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af286940be7c893f2db44ce7de36dcf3d"><td class="memTemplParams" colspan="2"><a class="anchor" id="af286940be7c893f2db44ce7de36dcf3d"></a>
-template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:af286940be7c893f2db44ce7de36dcf3d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#af286940be7c893f2db44ce7de36dcf3d">operator==</a> (const std::tuple&lt; Ts...&gt; &amp;tuple, const <a class="el" href="classwamp_1_1_variant.html">Variant</a> &amp;variant)</td></tr>
-<tr class="memdesc:af286940be7c893f2db44ce7de36dcf3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a std::tuple and a <a class="el" href="classwamp_1_1_variant.html" title="Discriminated union container that represents a JSON value. ">Variant</a> for equality. <br /></td></tr>
-<tr class="separator:af286940be7c893f2db44ce7de36dcf3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7794ac17eb4c8b362ce3cc682e565ede"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7794ac17eb4c8b362ce3cc682e565ede"></a>
-template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:a7794ac17eb4c8b362ce3cc682e565ede"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a7794ac17eb4c8b362ce3cc682e565ede">operator!=</a> (const <a class="el" href="classwamp_1_1_variant.html">Variant</a> &amp;variant, const std::tuple&lt; Ts...&gt; &amp;tuple)</td></tr>
-<tr class="memdesc:a7794ac17eb4c8b362ce3cc682e565ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a <a class="el" href="classwamp_1_1_variant.html" title="Discriminated union container that represents a JSON value. ">Variant</a> and a std::tuple for inequality. <br /></td></tr>
-<tr class="separator:a7794ac17eb4c8b362ce3cc682e565ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3aeceb8d87cd6dfcbabeff2b7e913ef7"><td class="memTemplParams" colspan="2"><a class="anchor" id="a3aeceb8d87cd6dfcbabeff2b7e913ef7"></a>
-template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:a3aeceb8d87cd6dfcbabeff2b7e913ef7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a3aeceb8d87cd6dfcbabeff2b7e913ef7">operator!=</a> (const std::tuple&lt; Ts...&gt; &amp;tuple, const <a class="el" href="classwamp_1_1_variant.html">Variant</a> &amp;variant)</td></tr>
-<tr class="memdesc:a3aeceb8d87cd6dfcbabeff2b7e913ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a std::tuple and a <a class="el" href="classwamp_1_1_variant.html" title="Discriminated union container that represents a JSON value. ">Variant</a> for inequality. <br /></td></tr>
-<tr class="separator:a3aeceb8d87cd6dfcbabeff2b7e913ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Non-member Visitation Functions (in visitor.hpp)</div></td></tr>
 <tr class="memitem:aa5b539601da58fe7e097b17df770b8b7"><td class="memTemplParams" colspan="2">template&lt;typename V , typename T &gt; </td></tr>
 <tr class="memitem:aa5b539601da58fe7e097b17df770b8b7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacewamp.html#a54e57e1339f1a4493a723b743ba428df">ResultTypeOf</a>&lt; V &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#aa5b539601da58fe7e097b17df770b8b7">apply</a> (V &amp;&amp;visitor, T &amp;&amp;variant)</td></tr>
@@ -449,6 +360,43 @@ template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:aa25cc3d8fa578809777d6789cc234e02"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacewamp.html#a54e57e1339f1a4493a723b743ba428df">ResultTypeOf</a>&lt; V &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#aa25cc3d8fa578809777d6789cc234e02">applyWithOperand</a> (V &amp;&amp;visitor, T &amp;&amp;variant, O &amp;&amp;operand)</td></tr>
 <tr class="memdesc:aa25cc3d8fa578809777d6789cc234e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given <em>static visitor</em> functor, with an operand value, to the given variant.  <a href="#aa25cc3d8fa578809777d6789cc234e02">More...</a><br /></td></tr>
 <tr class="separator:aa25cc3d8fa578809777d6789cc234e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Construction</h2></td></tr>
+<tr class="memitem:aefe87e6ea0e056086ac71938907d58e4"><td class="memTemplParams" colspan="2">template&lt;typename TValue &gt; </td></tr>
+<tr class="memitem:aefe87e6ea0e056086ac71938907d58e4"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classwamp_1_1_variant.html">Variant</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#aefe87e6ea0e056086ac71938907d58e4">from</a> (TValue &amp;&amp;value)</td></tr>
+<tr class="memdesc:aefe87e6ea0e056086ac71938907d58e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a variant from a custom type.  <a href="#aefe87e6ea0e056086ac71938907d58e4">More...</a><br /></td></tr>
+<tr class="separator:aefe87e6ea0e056086ac71938907d58e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6d459c867eaeb07b6b63874dfeef99b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#ac6d459c867eaeb07b6b63874dfeef99b">Variant</a> () noexcept</td></tr>
+<tr class="memdesc:ac6d459c867eaeb07b6b63874dfeef99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a null variant.  <a href="#ac6d459c867eaeb07b6b63874dfeef99b">More...</a><br /></td></tr>
+<tr class="separator:ac6d459c867eaeb07b6b63874dfeef99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac01fe48476ed444088cf606d3507d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#adac01fe48476ed444088cf606d3507d4">Variant</a> (const <a class="el" href="classwamp_1_1_variant.html">Variant</a> &amp;other)</td></tr>
+<tr class="memdesc:adac01fe48476ed444088cf606d3507d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#adac01fe48476ed444088cf606d3507d4">More...</a><br /></td></tr>
+<tr class="separator:adac01fe48476ed444088cf606d3507d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc80d1ded9191ee1322d837b6648776"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a0cc80d1ded9191ee1322d837b6648776">Variant</a> (<a class="el" href="classwamp_1_1_variant.html">Variant</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:a0cc80d1ded9191ee1322d837b6648776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="#a0cc80d1ded9191ee1322d837b6648776">More...</a><br /></td></tr>
+<tr class="separator:a0cc80d1ded9191ee1322d837b6648776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a9c3c13e72f39c6147e00511021ff21"><td class="memTemplParams" colspan="2">template&lt;typename T , EnableIfValidArg&lt; T &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a0a9c3c13e72f39c6147e00511021ff21"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a0a9c3c13e72f39c6147e00511021ff21">Variant</a> (T value)</td></tr>
+<tr class="memdesc:a0a9c3c13e72f39c6147e00511021ff21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting constructor taking an initial value.  <a href="#a0a9c3c13e72f39c6147e00511021ff21">More...</a><br /></td></tr>
+<tr class="separator:a0a9c3c13e72f39c6147e00511021ff21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8abe6b3d330343bf91bd0165889eed70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a8abe6b3d330343bf91bd0165889eed70">Variant</a> (<a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444">Array</a> <a class="el" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbaf1f713c9e000f5d3f280adbd124df4f5">array</a>)</td></tr>
+<tr class="memdesc:a8abe6b3d330343bf91bd0165889eed70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting constructor taking an initial Array value.  <a href="#a8abe6b3d330343bf91bd0165889eed70">More...</a><br /></td></tr>
+<tr class="separator:a8abe6b3d330343bf91bd0165889eed70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc13d445671e8d578c04b57bf689af60"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:acc13d445671e8d578c04b57bf689af60"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#acc13d445671e8d578c04b57bf689af60">Variant</a> (std::vector&lt; T &gt; vec)</td></tr>
+<tr class="memdesc:acc13d445671e8d578c04b57bf689af60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting constructor taking a <code>std::vector</code> of initial Array values.  <a href="#acc13d445671e8d578c04b57bf689af60">More...</a><br /></td></tr>
+<tr class="separator:acc13d445671e8d578c04b57bf689af60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f73821196c5b15eedd6c604a0d889f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a7f73821196c5b15eedd6c604a0d889f1">Variant</a> (<a class="el" href="classwamp_1_1_variant.html#aa9f3c1cf3c181d2db4b772e2b5e4db9d">Object</a> <a class="el" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbaa8cfde6331bd59eb2ac96f8911c4b666">object</a>)</td></tr>
+<tr class="memdesc:a7f73821196c5b15eedd6c604a0d889f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting constructor taking an initial Object value.  <a href="#a7f73821196c5b15eedd6c604a0d889f1">More...</a><br /></td></tr>
+<tr class="separator:a7f73821196c5b15eedd6c604a0d889f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6267a7d8bfa97c8e63e7219d2f9eab08"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6267a7d8bfa97c8e63e7219d2f9eab08"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a6267a7d8bfa97c8e63e7219d2f9eab08">Variant</a> (std::map&lt; <a class="el" href="classwamp_1_1_variant.html#aa1deb141006ecd77a8983a82f8aae7cb">String</a>, T &gt; map)</td></tr>
+<tr class="memdesc:a6267a7d8bfa97c8e63e7219d2f9eab08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting constructor taking a <code>std::map</code> of key-value pairs.  <a href="#a6267a7d8bfa97c8e63e7219d2f9eab08">More...</a><br /></td></tr>
+<tr class="separator:a6267a7d8bfa97c8e63e7219d2f9eab08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4125c1842f8b88e0df2e06f6663f041d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a4125c1842f8b88e0df2e06f6663f041d">~Variant</a> ()</td></tr>
+<tr class="memdesc:a4125c1842f8b88e0df2e06f6663f041d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a4125c1842f8b88e0df2e06f6663f041d">More...</a><br /></td></tr>
+<tr class="separator:a4125c1842f8b88e0df2e06f6663f041d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Discriminated union container that represents a JSON value. </p>
@@ -465,22 +413,6 @@ template&lt;typename... Ts&gt; </td></tr>
 <p>The Args struct is a value type that bundles one or more variants into positional and/or keyword arguments, to be exchanged with a WAMP peer.</p>
 <dl class="section see"><dt>See also</dt><dd>Args </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a35eca45dc4120ced76645983c449bd3c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classwamp_1_1_variant.html#a35eca45dc4120ced76645983c449bd3c">wamp::Variant::EnableIfValidArg</a> =  typename std::enable_if&lt;ArgTraits&lt;T&gt;::isValid&gt;::type*</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Metafunction used for enabling overloads on valid argument types. </p>
-
-</div>
-</div>
 <a class="anchor" id="aa6575175ecc11672c02b83d1070ded64"></a>
 <div class="memitem">
 <div class="memproto">
@@ -497,19 +429,35 @@ template&lt;TypeId typeId&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4071b8481ffe76d6d11101ee2e0c72de"></a>
+<a class="anchor" id="ae568f0afe3833a473816ac0f7b05bb4a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classwamp_1_1_variant.html#a4071b8481ffe76d6d11101ee2e0c72de">wamp::Variant::ValueTypeOf</a> =  typename std::decay&lt;T&gt;::type</td>
+          <td class="memname">using <a class="el" href="classwamp_1_1_variant.html#ae568f0afe3833a473816ac0f7b05bb4a">wamp::Variant::EnableIfValidArg</a> =  <a class="el" href="namespacewamp.html#a9806878793b2cdf53fe3a516b1a5bd69">EnableIf</a>&lt;ArgTraits&lt;<a class="el" href="namespacewamp.html#ac6726b115b9d7f02ee9d31fd10ffcbb2">ValueTypeOf</a>&lt;T&gt;&gt;::isValid&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Metafunction used to obtain the plain value type of a parameter passed by universal reference. </p>
+<p>Metafunction used for enabling overloads for valid argument types. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0fe593a764c1228d73fca9de3497cc62"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classwamp_1_1_variant.html#a0fe593a764c1228d73fca9de3497cc62">wamp::Variant::DisableIfValidArg</a> =  <a class="el" href="namespacewamp.html#a3688d950a7ec8a556ba83856a000b888">DisableIf</a>&lt;ArgTraits&lt;<a class="el" href="namespacewamp.html#ac6726b115b9d7f02ee9d31fd10ffcbb2">ValueTypeOf</a>&lt;T&gt;&gt;::isValid&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metafunction used for disabling overloads for valid argument types. </p>
 
 </div>
 </div>
@@ -636,7 +584,8 @@ template&lt;typename T , Variant::EnableIfValidArg&lt; T &gt; &gt; </div>
 </div><div class="memdoc">
 
 <p>Converting constructor taking an initial value. </p>
-<p>The <a class="el" href="classwamp_1_1_variant.html#a35eca45dc4120ced76645983c449bd3c">EnableIfValidArg</a> metafunction is used to disable this function for invalid value types. The second template parameter should not specified. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>The <a class="el" href="classwamp_1_1_variant.html#ae568f0afe3833a473816ac0f7b05bb4a">EnableIfValidArg</a> metafunction is used to disable this function for invalid value types. The second template parameter should not specified. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_variant.html#aefe87e6ea0e056086ac71938907d58e4" title="Constructs a variant from a custom type. ">Variant::from</a> </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>(Deduced) Value type which must be convertible to a bound type. </td></tr>
   </table>
@@ -778,6 +727,34 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aefe87e6ea0e056086ac71938907d58e4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TValue &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwamp_1_1_variant.html">Variant</a> wamp::Variant::from </td>
+          <td>(</td>
+          <td class="paramtype">TValue &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a variant from a custom type. </p>
+
+</div>
+</div>
 <a class="anchor" id="a244f1c4a5dd8d835f3d1359f06ba154c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -866,14 +843,14 @@ template&lt;TypeId id&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af4273a4d4ab0b1aa2c21e49f91657c25"></a>
+<a class="anchor" id="a45ff15afa122815243e6802dd8053f74"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool wamp::Variant::convertsTo </td>
+          <td class="memname">T wamp::Variant::to </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -881,7 +858,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Returns <code>true</code> iff the variant is currently convertible to the given type. </p>
+<p>Converts the variant's bound value to the given type. </p>
 <p>The variant is deemed convertible to the target type according to the following table: </p><table class="doxtable">
 <tr>
 <th>Target, Variant-&gt; </th><th><a class="el" href="structwamp_1_1_null.html" title="Type used to represent a null or empty Variant value. ">Null</a> </th><th>Bool </th><th>Int </th><th>UInt </th><th>Real </th><th>String </th><th>Array </th><th>Object  </th></tr>
@@ -910,42 +887,11 @@ convertible to `T`.
 An `Object` is convertible to `std::map&lt;String,T&gt;` iff all Object values
 are convertible to `T`.
 
-@tparam T The target type to check for convertibility.
-@see Variant::to  </pre> 
-</div>
-</div>
-<a class="anchor" id="a45ff15afa122815243e6802dd8053f74"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">T wamp::Variant::to </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Converts the variant's bound value to the given type. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>The target type to convert to. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The converted value. </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><code>this-&gt;convertsTo&lt;T&gt;() == true</code> </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_conversion.html" title="Exception type thrown when converting a Variant to an invalid type. ">error::Conversion</a></td><td>if the variant is not convertible to the destination type. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_variant.html#af4273a4d4ab0b1aa2c21e49f91657c25" title="Returns true iff the variant is currently convertible to the given type. ">Variant::convertsTo</a> </dd></dl>
-
+@tparam T The target type to convert to.
+@return The converted value.
+@pre The variant is convertible to the destination type.
+@throws error::Conversion if the variant is not convertible to
+        the destination type.  </pre> 
 </div>
 </div>
 <a class="anchor" id="ac5b25ab48d6adbd7e4aea2f1cc227c4e"></a>
@@ -971,7 +917,7 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><code>this-&gt;convertsTo&lt;T&gt;() == true</code> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>The variant is convertible to the destination type. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_conversion.html" title="Exception type thrown when converting a Variant to an invalid type. ">error::Conversion</a></td><td>if the variant is not convertible to the destination type. </td></tr>
@@ -981,14 +927,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a38370cc68a9e0d7ed1c960bd0d875921"></a>
+<a class="anchor" id="a10b9139aed1fbe61ba53fa49d13f3907"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwamp_1_1_variant.html#a4071b8481ffe76d6d11101ee2e0c72de">Variant::ValueTypeOf</a>&lt; T &gt; wamp::Variant::valueOr </td>
+          <td class="memname"><a class="el" href="namespacewamp.html#ac6726b115b9d7f02ee9d31fd10ffcbb2">ValueTypeOf</a>&lt; T &gt; wamp::Variant::valueOr </td>
           <td>(</td>
           <td class="paramtype">T &amp;&amp;&#160;</td>
           <td class="paramname"><em>fallback</em></td><td>)</td>
@@ -1004,7 +950,7 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><code>this-&gt;is&lt;<a class="el" href="structwamp_1_1_null.html" title="Type used to represent a null or empty Variant value. ">Null</a>&gt;() || (this-&gt;convertsTo&lt;T&gt;() == true)</code> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>The variant is null, or is convertible to the destination type. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_conversion.html" title="Exception type thrown when converting a Variant to an invalid type. ">error::Conversion</a></td><td>if the variant is not null and is not convertible to the destination type. </td></tr>
@@ -2355,80 +2301,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a851e0865da7c3f73a534770a4972c3ef"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Ts&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444">Array</a> toArray </td>
-          <td>(</td>
-          <td class="paramtype">std::tuple&lt; Ts...&gt;&#160;</td>
-          <td class="paramname"><em>tuple</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Converts a <code>std::tuple</code> to a <a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444" title="Dynamic array of variants. ">Variant::Array</a>. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>The tuple values must be convertible to <a class="el" href="classwamp_1_1_variant.html" title="Discriminated union container that represents a JSON value. ">Variant</a>'s bound types (statically checked). </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ae1db051019da4f25e9628e9028e01a28"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Ts&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void toTuple </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444">Array</a> &amp;&#160;</td>
-          <td class="paramname"><em>array</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::tuple&lt; Ts...&gt; &amp;&#160;</td>
-          <td class="paramname"><em>tuple</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Converts a <a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444" title="Dynamic array of variants. ">Variant::Array</a> to a <code>std::tuple</code>. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>The Array's element types must be convertible to the tuple's element types. </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_conversion.html" title="Exception type thrown when converting a Variant to an invalid type. ">error::Conversion</a></td><td>if one of the Array element types is not convertible to the target type. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="aa5b539601da58fe7e097b17df770b8b7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2580,7 +2452,6 @@ template&lt;typename V , typename T , typename O &gt; </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>cppwamp/<a class="el" href="variant_8hpp_source.html">variant.hpp</a></li>
-<li>cppwamp/<a class="el" href="varianttuple_8hpp_source.html">varianttuple.hpp</a></li>
 <li>cppwamp/<a class="el" href="visitor_8hpp_source.html">visitor.hpp</a></li>
 <li>cppwamp/internal/variant.ipp</li>
 </ul>
@@ -2590,7 +2461,7 @@ template&lt;typename V , typename T , typename O &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_variant.html">Variant</a></li>
-    <li class="footer">Generated on Sun May 17 2015 16:02:35 for CppWAMP by
+    <li class="footer">Generated on Thu May 28 2015 22:54:22 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

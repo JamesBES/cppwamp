@@ -10,6 +10,7 @@ var dir_6a7aca854c9e23f638e2a4e6e00d5fbc =
     [ "config.hpp", "config_8hpp_source.html", null ],
     [ "dialogue.hpp", "dialogue_8hpp_source.html", null ],
     [ "endian.hpp", "endian_8hpp_source.html", null ],
+    [ "integersequence.hpp", "integersequence_8hpp_source.html", null ],
     [ "legacyasioendpoint.hpp", "legacyasioendpoint_8hpp_source.html", null ],
     [ "legacyasiotransport.hpp", "legacyasiotransport_8hpp_source.html", null ],
     [ "messagetraits.hpp", "messagetraits_8hpp_source.html", null ],

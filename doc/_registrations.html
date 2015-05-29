@@ -168,9 +168,9 @@ Result Outcomes</h2>
 <p>An RPC call slot can send a result back to the caller by returning a <a class="el" href="classwamp_1_1_result.html" title="Contains a remote procedure result yielded by a callee or received by a caller. ">wamp::Result</a> object:</p>
 <div class="fragment"><div class="line">Outcome add(Invocation, <span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b)</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">return</span> Result().withArgs({a + b});</div>
+<div class="line">    <span class="keywordflow">return</span> Result().withArgs(a + b);</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>If only positional arguments need to be returned, they can be returned directly via a braced initializer list:</p>
+</div><!-- fragment --><p>If only positional <code>Variant</code> arguments need to be returned, they can be returned directly via a braced initializer list:</p>
 <div class="fragment"><div class="line">Outcome add(Invocation, <span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b)</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">return</span> {a + b};</div>
@@ -208,7 +208,7 @@ Deferred Outcomes</h2>
 <div class="line">    <span class="comment">// fulfill this RPC.</span></div>
 <div class="line">    boost::asio::spawn(iosvc_, [<span class="keyword">this</span>, inv](boost::asio::yield_context yield)</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keyword">auto</span> dbResult = session_-&gt;call( Rpc(<span class="stringliteral">&quot;db.add&quot;</span>).withArgs({person}),</div>
+<div class="line">        <span class="keyword">auto</span> dbResult = session_-&gt;call( Rpc(<span class="stringliteral">&quot;db.add&quot;</span>).withArgs(person),</div>
 <div class="line">                                        yield );</div>
 <div class="line">        <span class="comment">// Manually send the result back to the caller</span></div>
 <div class="line">        <span class="keyword">auto</span> personId = dbResult[0].to&lt;<span class="keywordtype">int</span>&gt;();</div>
@@ -260,7 +260,7 @@ Scoped Registrations</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 17 2015 16:02:35 for CppWAMP by
+    <li class="footer">Generated on Thu May 28 2015 22:54:21 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

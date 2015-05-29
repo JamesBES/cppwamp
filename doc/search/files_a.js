@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['session_2ehpp',['session.hpp',['../session_8hpp.html',1,'']]],
-  ['sessiondata_2ehpp',['sessiondata.hpp',['../sessiondata_8hpp.html',1,'']]],
-  ['subscription_2ehpp',['subscription.hpp',['../subscription_8hpp.html',1,'']]]
+  ['rawsockoptions_2ehpp',['rawsockoptions.hpp',['../rawsockoptions_8hpp.html',1,'']]],
+  ['registration_2ehpp',['registration.hpp',['../registration_8hpp.html',1,'']]]
 ];

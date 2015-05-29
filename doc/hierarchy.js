@@ -2,6 +2,7 @@ var hierarchy =
 [
     [ "wamp::AsyncResult< T >", "classwamp_1_1_async_result.html", null ],
     [ "wamp::Connector", "classwamp_1_1_connector.html", null ],
+    [ "wamp::ConversionAccess", "classwamp_1_1_conversion_access.html", null ],
     [ "std::error_category", null, [
       [ "wamp::ProtocolCategory", "classwamp_1_1_protocol_category.html", null ],
       [ "wamp::RawsockCategory", "classwamp_1_1_rawsock_category.html", null ],
@@ -19,6 +20,7 @@ var hierarchy =
         [ "wamp::error::Decode", "structwamp_1_1error_1_1_decode.html", null ]
       ] ]
     ] ],
+    [ "wamp::FromVariantConverter", "classwamp_1_1_from_variant_converter.html", null ],
     [ "wamp::InvocationUnpacker< TSlot, TArgs >", "classwamp_1_1_invocation_unpacker.html", null ],
     [ "wamp::Json", "classwamp_1_1_json.html", null ],
     [ "wamp::Msgpack", "classwamp_1_1_msgpack.html", null ],
@@ -100,6 +102,7 @@ var hierarchy =
     [ "std::system_error", null, [
       [ "wamp::error::Failure", "classwamp_1_1error_1_1_failure.html", null ]
     ] ],
+    [ "wamp::ToVariantConverter", "classwamp_1_1_to_variant_converter.html", null ],
     [ "wamp::Variant", "classwamp_1_1_variant.html", null ],
     [ "wamp::Version", "structwamp_1_1_version.html", null ],
     [ "wamp::Visitor< TResult >", "namespacewamp.html#classwamp_1_1_visitor", null ],
