@@ -8,5 +8,6 @@ var classwamp_1_1_from_variant_converter =
     [ "operator()", "classwamp_1_1_from_variant_converter.html#a7a45fbe4899b2a7cfc6e26cf44f99fba", null ],
     [ "operator[]", "classwamp_1_1_from_variant_converter.html#a8293636b884f14d6810cb60bee2b2922", null ],
     [ "operator()", "classwamp_1_1_from_variant_converter.html#ae10b0deb6fb08885129bd7d975ceb9a3", null ],
+    [ "operator()", "classwamp_1_1_from_variant_converter.html#abfa9bd75fa634d4cdca5b8f2fcfd9a45", null ],
     [ "variant", "classwamp_1_1_from_variant_converter.html#a11288d58443855998785c1b512b51de2", null ]
 ];

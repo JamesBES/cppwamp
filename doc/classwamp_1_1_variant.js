@@ -2,7 +2,8 @@ var classwamp_1_1_variant =
 [
     [ "BoundTypeForId", "classwamp_1_1_variant.html#aa6575175ecc11672c02b83d1070ded64", null ],
     [ "EnableIfValidArg", "classwamp_1_1_variant.html#ae568f0afe3833a473816ac0f7b05bb4a", null ],
-    [ "DisableIfValidArg", "classwamp_1_1_variant.html#a0fe593a764c1228d73fca9de3497cc62", null ],
+    [ "DisableIfValidArg", "classwamp_1_1_variant.html#ad88dbe1ceb4fda9dae1fe6e19c9c7967", null ],
+    [ "EnableIfVariantArg", "classwamp_1_1_variant.html#ae739720b3f2488c378b9a49765be0037", null ],
     [ "Null", "classwamp_1_1_variant.html#acd0066bf3596791c15fee54d00ab5cf7", null ],
     [ "Bool", "classwamp_1_1_variant.html#ac118672044461eefb7b39bb783a588c7", null ],
     [ "Int", "classwamp_1_1_variant.html#a2f0c81147a31b8b7de22c3701691818b", null ],

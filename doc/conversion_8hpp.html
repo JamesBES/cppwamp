@@ -172,16 +172,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code" href="namespacewamp.html#adc9fd4b24c79d11047260b426c56cdbd">convert</a>(FromVariantConverter&amp; c, Type&amp; obj)    \</div>
-<div class="line">{                                                   \</div>
-<div class="line">    convertFrom(c, obj);                            \</div>
-<div class="line">}                                                   \</div>
-<div class="line">                                                    \</div>
-<div class="line">void <a class="code" href="namespacewamp.html#adc9fd4b24c79d11047260b426c56cdbd">convert</a>(ToVariantConverter&amp; c, Type&amp; obj)      \</div>
-<div class="line">{                                                   \</div>
-<div class="line">    convertTo(c, const_cast&lt;const Type&amp;&gt;(obj));     \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacewamp.html#adc9fd4b24c79d11047260b426c56cdbd">convert</a>(::<a class="code" href="classwamp_1_1_from_variant_converter.html">wamp::FromVariantConverter</a>&amp; c, Type&amp; obj) \</div>
+<div class="line">{                                                               \</div>
+<div class="line">    convertFrom(c, obj);                                        \</div>
+<div class="line">}                                                               \</div>
+<div class="line">                                                                \</div>
+<div class="line">inline <span class="keywordtype">void</span> <a class="code" href="namespacewamp.html#adc9fd4b24c79d11047260b426c56cdbd">convert</a>(::<a class="code" href="classwamp_1_1_to_variant_converter.html">wamp::ToVariantConverter</a>&amp; c, Type&amp; obj)   \</div>
+<div class="line">{                                                               \</div>
+<div class="line">    convertTo(c, const_cast&lt;const Type&amp;&gt;(obj));                 \</div>
 <div class="line">}</div>
-<div class="ttc" id="namespacewamp_html_adc9fd4b24c79d11047260b426c56cdbd"><div class="ttname"><a href="namespacewamp.html#adc9fd4b24c79d11047260b426c56cdbd">wamp::convert</a></div><div class="ttdeci">void convert(TConverter &amp;c, TValue &amp;val)</div><div class="ttdoc">General function for converting custom types to/from Variant. </div><div class="ttdef"><b>Definition:</b> conversion.ipp:178</div></div>
+<div class="ttc" id="classwamp_1_1_to_variant_converter_html"><div class="ttname"><a href="classwamp_1_1_to_variant_converter.html">wamp::ToVariantConverter</a></div><div class="ttdoc">Wrapper around a destination Variant, used for conversions. </div><div class="ttdef"><b>Definition:</b> conversion.hpp:88</div></div>
+<div class="ttc" id="namespacewamp_html_adc9fd4b24c79d11047260b426c56cdbd"><div class="ttname"><a href="namespacewamp.html#adc9fd4b24c79d11047260b426c56cdbd">wamp::convert</a></div><div class="ttdeci">void convert(TConverter &amp;c, TValue &amp;val)</div><div class="ttdoc">General function for converting custom types to/from Variant. </div><div class="ttdef"><b>Definition:</b> conversion.ipp:201</div></div>
+<div class="ttc" id="classwamp_1_1_from_variant_converter_html"><div class="ttname"><a href="classwamp_1_1_from_variant_converter.html">wamp::FromVariantConverter</a></div><div class="ttdoc">Wrapper around a source Variant, used for conversions. </div><div class="ttdef"><b>Definition:</b> conversion.hpp:134</div></div>
 </div><!-- fragment -->
 <p>Splits the <code>convert</code> free function for the given custom type. </p>
 <p>When split, the user must provide overloads for the <code>covertFrom</code> and <code>convertTo</code> functions. This can be useful when different behavior is required when converting to/from custom types.</p>
@@ -203,17 +205,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code" href="namespacewamp.html#adc9fd4b24c79d11047260b426c56cdbd">convert</a>(FromVariantConverter&amp; c, Type&amp; obj)    \</div>
-<div class="line">{                                                   \</div>
-<div class="line">    ConversionAccess::convertFrom(c, obj);          \</div>
-<div class="line">}                                                   \</div>
-<div class="line">                                                    \</div>
-<div class="line">void <a class="code" href="namespacewamp.html#adc9fd4b24c79d11047260b426c56cdbd">convert</a>(ToVariantConverter&amp; c, Type&amp; obj)      \</div>
-<div class="line">{                                                   \</div>
-<div class="line">    const <span class="keyword">auto</span>&amp; constObj = obj;                     \</div>
-<div class="line">    ConversionAccess::convertTo(c, constObj);       \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacewamp.html#adc9fd4b24c79d11047260b426c56cdbd">convert</a>(::<a class="code" href="classwamp_1_1_from_variant_converter.html">wamp::FromVariantConverter</a>&amp; c, Type&amp; obj) \</div>
+<div class="line">{                                                               \</div>
+<div class="line">    wamp::ConversionAccess::convertFrom(c, obj);                \</div>
+<div class="line">}                                                               \</div>
+<div class="line">                                                                \</div>
+<div class="line">inline <span class="keywordtype">void</span> <a class="code" href="namespacewamp.html#adc9fd4b24c79d11047260b426c56cdbd">convert</a>(::<a class="code" href="classwamp_1_1_to_variant_converter.html">wamp::ToVariantConverter</a>&amp; c, Type&amp; obj)   \</div>
+<div class="line">{                                                               \</div>
+<div class="line">    const <span class="keyword">auto</span>&amp; constObj = obj;                                 \</div>
+<div class="line">    wamp::ConversionAccess::convertTo(c, constObj);             \</div>
 <div class="line">}</div>
-<div class="ttc" id="namespacewamp_html_adc9fd4b24c79d11047260b426c56cdbd"><div class="ttname"><a href="namespacewamp.html#adc9fd4b24c79d11047260b426c56cdbd">wamp::convert</a></div><div class="ttdeci">void convert(TConverter &amp;c, TValue &amp;val)</div><div class="ttdoc">General function for converting custom types to/from Variant. </div><div class="ttdef"><b>Definition:</b> conversion.ipp:178</div></div>
+<div class="ttc" id="classwamp_1_1_to_variant_converter_html"><div class="ttname"><a href="classwamp_1_1_to_variant_converter.html">wamp::ToVariantConverter</a></div><div class="ttdoc">Wrapper around a destination Variant, used for conversions. </div><div class="ttdef"><b>Definition:</b> conversion.hpp:88</div></div>
+<div class="ttc" id="namespacewamp_html_adc9fd4b24c79d11047260b426c56cdbd"><div class="ttname"><a href="namespacewamp.html#adc9fd4b24c79d11047260b426c56cdbd">wamp::convert</a></div><div class="ttdeci">void convert(TConverter &amp;c, TValue &amp;val)</div><div class="ttdoc">General function for converting custom types to/from Variant. </div><div class="ttdef"><b>Definition:</b> conversion.ipp:201</div></div>
+<div class="ttc" id="classwamp_1_1_from_variant_converter_html"><div class="ttname"><a href="classwamp_1_1_from_variant_converter.html">wamp::FromVariantConverter</a></div><div class="ttdoc">Wrapper around a source Variant, used for conversions. </div><div class="ttdef"><b>Definition:</b> conversion.hpp:134</div></div>
 </div><!-- fragment -->
 <p>Splits the <code>convert</code> member function for the given custom type. </p>
 <p>When split, the user must provide the <code>covertFrom</code> and <code>convertTo</code> member functions. This can be useful when different behavior is required when converting to/from custom types.</p>
@@ -228,7 +232,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb7245a6f5714b15c73ba62cf32a25df.html">cppwamp</a></li><li class="navelem"><a class="el" href="conversion_8hpp.html">conversion.hpp</a></li>
-    <li class="footer">Generated on Thu May 28 2015 22:54:21 for CppWAMP by
+    <li class="footer">Generated on Thu Jun 18 2015 18:35:10 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

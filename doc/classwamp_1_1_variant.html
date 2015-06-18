@@ -137,10 +137,14 @@ Public Types</h2></td></tr>
 <tr class="memitem:ae568f0afe3833a473816ac0f7b05bb4a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#ae568f0afe3833a473816ac0f7b05bb4a">EnableIfValidArg</a> = <a class="el" href="namespacewamp.html#a9806878793b2cdf53fe3a516b1a5bd69">EnableIf</a>&lt; ArgTraits&lt; <a class="el" href="namespacewamp.html#ac6726b115b9d7f02ee9d31fd10ffcbb2">ValueTypeOf</a>&lt; T &gt;&gt;::isValid &gt;</td></tr>
 <tr class="memdesc:ae568f0afe3833a473816ac0f7b05bb4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metafunction used for enabling overloads for valid argument types.  <a href="#ae568f0afe3833a473816ac0f7b05bb4a">More...</a><br /></td></tr>
 <tr class="separator:ae568f0afe3833a473816ac0f7b05bb4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fe593a764c1228d73fca9de3497cc62"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a0fe593a764c1228d73fca9de3497cc62"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a0fe593a764c1228d73fca9de3497cc62">DisableIfValidArg</a> = <a class="el" href="namespacewamp.html#a3688d950a7ec8a556ba83856a000b888">DisableIf</a>&lt; ArgTraits&lt; <a class="el" href="namespacewamp.html#ac6726b115b9d7f02ee9d31fd10ffcbb2">ValueTypeOf</a>&lt; T &gt;&gt;::isValid &gt;</td></tr>
-<tr class="memdesc:a0fe593a764c1228d73fca9de3497cc62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metafunction used for disabling overloads for valid argument types.  <a href="#a0fe593a764c1228d73fca9de3497cc62">More...</a><br /></td></tr>
-<tr class="separator:a0fe593a764c1228d73fca9de3497cc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88dbe1ceb4fda9dae1fe6e19c9c7967"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad88dbe1ceb4fda9dae1fe6e19c9c7967"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#ad88dbe1ceb4fda9dae1fe6e19c9c7967">DisableIfValidArg</a> = <a class="el" href="namespacewamp.html#a3688d950a7ec8a556ba83856a000b888">DisableIf</a>&lt; ArgTraits&lt; <a class="el" href="namespacewamp.html#ac6726b115b9d7f02ee9d31fd10ffcbb2">ValueTypeOf</a>&lt; T &gt;&gt;::isValid||<a class="el" href="namespacewamp.html#a26df4a87f37269f63b6e8ccd15e13937">isSameType</a>&lt; T, <a class="el" href="classwamp_1_1_variant.html">Variant</a> &gt;()&gt;</td></tr>
+<tr class="memdesc:ad88dbe1ceb4fda9dae1fe6e19c9c7967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metafunction used for disabling overloads for valid argument types.  <a href="#ad88dbe1ceb4fda9dae1fe6e19c9c7967">More...</a><br /></td></tr>
+<tr class="separator:ad88dbe1ceb4fda9dae1fe6e19c9c7967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae739720b3f2488c378b9a49765be0037"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae739720b3f2488c378b9a49765be0037"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#ae739720b3f2488c378b9a49765be0037">EnableIfVariantArg</a> = <a class="el" href="namespacewamp.html#a9806878793b2cdf53fe3a516b1a5bd69">EnableIf</a>&lt; <a class="el" href="namespacewamp.html#a26df4a87f37269f63b6e8ccd15e13937">isSameType</a>&lt; T, <a class="el" href="classwamp_1_1_variant.html">Variant</a> &gt;()&gt;</td></tr>
+<tr class="memdesc:ae739720b3f2488c378b9a49765be0037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metafunction used for enabling overloads for <a class="el" href="classwamp_1_1_variant.html" title="Discriminated union container that represents a JSON value. ">Variant</a> arguments.  <a href="#ae739720b3f2488c378b9a49765be0037">More...</a><br /></td></tr>
+<tr class="separator:ae739720b3f2488c378b9a49765be0037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Bound Types</div></td></tr>
 <tr class="memitem:acd0066bf3596791c15fee54d00ab5cf7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd0066bf3596791c15fee54d00ab5cf7"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#acd0066bf3596791c15fee54d00ab5cf7">Null</a> = ::<a class="el" href="structwamp_1_1_null.html">wamp::Null</a></td></tr>
@@ -252,7 +256,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a58c5568733922883d592a5472fa79d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a672cd220b48c9296f2328c6822aa57b3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a672cd220b48c9296f2328c6822aa57b3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a672cd220b48c9296f2328c6822aa57b3">operator=</a> (T value)</td></tr>
-<tr class="memdesc:a672cd220b48c9296f2328c6822aa57b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a value to variant.  <a href="#a672cd220b48c9296f2328c6822aa57b3">More...</a><br /></td></tr>
+<tr class="memdesc:a672cd220b48c9296f2328c6822aa57b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a value to a variant.  <a href="#a672cd220b48c9296f2328c6822aa57b3">More...</a><br /></td></tr>
 <tr class="separator:a672cd220b48c9296f2328c6822aa57b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb20fb8eba84b99d1e12df144e345dcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#abb20fb8eba84b99d1e12df144e345dcc">operator=</a> (<a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444">Array</a> <a class="el" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbaf1f713c9e000f5d3f280adbd124df4f5">array</a>)</td></tr>
 <tr class="memdesc:abb20fb8eba84b99d1e12df144e345dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns an array variant to a variant.  <a href="#abb20fb8eba84b99d1e12df144e345dcc">More...</a><br /></td></tr>
@@ -445,19 +449,35 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0fe593a764c1228d73fca9de3497cc62"></a>
+<a class="anchor" id="ad88dbe1ceb4fda9dae1fe6e19c9c7967"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classwamp_1_1_variant.html#a0fe593a764c1228d73fca9de3497cc62">wamp::Variant::DisableIfValidArg</a> =  <a class="el" href="namespacewamp.html#a3688d950a7ec8a556ba83856a000b888">DisableIf</a>&lt;ArgTraits&lt;<a class="el" href="namespacewamp.html#ac6726b115b9d7f02ee9d31fd10ffcbb2">ValueTypeOf</a>&lt;T&gt;&gt;::isValid&gt;</td>
+          <td class="memname">using <a class="el" href="classwamp_1_1_variant.html#ad88dbe1ceb4fda9dae1fe6e19c9c7967">wamp::Variant::DisableIfValidArg</a> =  <a class="el" href="namespacewamp.html#a3688d950a7ec8a556ba83856a000b888">DisableIf</a>&lt;ArgTraits&lt;<a class="el" href="namespacewamp.html#ac6726b115b9d7f02ee9d31fd10ffcbb2">ValueTypeOf</a>&lt;T&gt;&gt;::isValid || <a class="el" href="namespacewamp.html#a26df4a87f37269f63b6e8ccd15e13937">isSameType</a>&lt;T, <a class="el" href="classwamp_1_1_variant.html">Variant</a>&gt;()&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Metafunction used for disabling overloads for valid argument types. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae739720b3f2488c378b9a49765be0037"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classwamp_1_1_variant.html#ae739720b3f2488c378b9a49765be0037">wamp::Variant::EnableIfVariantArg</a> =  <a class="el" href="namespacewamp.html#a9806878793b2cdf53fe3a516b1a5bd69">EnableIf</a>&lt;<a class="el" href="namespacewamp.html#a26df4a87f37269f63b6e8ccd15e13937">isSameType</a>&lt;T, <a class="el" href="classwamp_1_1_variant.html">Variant</a>&gt;()&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metafunction used for enabling overloads for <a class="el" href="classwamp_1_1_variant.html" title="Discriminated union container that represents a JSON value. ">Variant</a> arguments. </p>
 
 </div>
 </div>
@@ -1419,7 +1439,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Assigns a value to variant. </p>
+<p>Assigns a value to a variant. </p>
 <p>The variant's dynamic type will change to accomodate the assigned value. </p><dl class="section pre"><dt>Precondition</dt><dd>The value must be convertible to a bound type (checked at compile time). </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><code>*this == value</code> </dd></dl>
 
@@ -2461,7 +2481,7 @@ template&lt;typename V , typename T , typename O &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_variant.html">Variant</a></li>
-    <li class="footer">Generated on Thu May 28 2015 22:54:22 for CppWAMP by
+    <li class="footer">Generated on Thu Jun 18 2015 18:35:11 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

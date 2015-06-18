@@ -4,7 +4,7 @@ var searchData=
   ['encodebuffer',['encodeBuffer',['../classwamp_1_1_json.html#a5b24788e0d450d9da5a401753a2dac5b',1,'wamp::Json::encodeBuffer()'],['../classwamp_1_1_msgpack.html#ac62b79f603a0bbbade5b6958af59f404',1,'wamp::Msgpack::encodeBuffer()']]],
   ['enroll',['enroll',['../classwamp_1_1_coro_session.html#a6081368ea20971cd258ece70f3ca6b28',1,'wamp::CoroSession::enroll()'],['../classwamp_1_1_session.html#a04846bb5a40a74a0fe8cd37e3d0102c0',1,'wamp::Session::enroll()']]],
   ['equivalent',['equivalent',['../classwamp_1_1_session_category.html#af7f8bfcc45a6889b2f9baef38fb0f1fb',1,'wamp::SessionCategory::equivalent()'],['../classwamp_1_1_protocol_category.html#ad0a053bff935d859d511de20f12e5296',1,'wamp::ProtocolCategory::equivalent()'],['../classwamp_1_1_transport_category.html#a65b0c789f029e8094595a59f42388907',1,'wamp::TransportCategory::equivalent()'],['../classwamp_1_1_rawsock_category.html#a1241dfc9795337e998fc1620ac3231d8',1,'wamp::RawsockCategory::equivalent()']]],
-  ['error',['Error',['../classwamp_1_1_error.html#ac09fafea3f6a4fe1acccee3c1698f5af',1,'wamp::Error']]],
+  ['error',['Error',['../classwamp_1_1_error.html#a5f8a2d846c5e3e2ca8b52440642591ea',1,'wamp::Error::Error()'],['../classwamp_1_1_error.html#ac09fafea3f6a4fe1acccee3c1698f5af',1,'wamp::Error::Error(String reason)']]],
   ['errorcode',['errorCode',['../classwamp_1_1_async_result.html#a391c086c51f4c174c33f907d3ac50713',1,'wamp::AsyncResult']]],
   ['errorinfo',['errorInfo',['../classwamp_1_1_async_result.html#aa6637cfac0db5a91c46854c8a6d2cfb7',1,'wamp::AsyncResult']]],
   ['establish',['establish',['../classwamp_1_1_connector.html#afad9b108d3e7f58fef4e0492ff96e964',1,'wamp::Connector']]],

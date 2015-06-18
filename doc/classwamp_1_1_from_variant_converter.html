@@ -155,6 +155,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae10b0deb6fb08885129bd7d975ceb9a3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_from_variant_converter.html">FromVariantConverter</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_from_variant_converter.html#ae10b0deb6fb08885129bd7d975ceb9a3">operator()</a> (const <a class="el" href="classwamp_1_1_from_variant_converter.html#a81cacecb676c7f2666a41a88f2d0d04c">String</a> &amp;key, T &amp;value)</td></tr>
 <tr class="memdesc:ae10b0deb6fb08885129bd7d975ceb9a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a member from an Object variant.  <a href="#ae10b0deb6fb08885129bd7d975ceb9a3">More...</a><br /></td></tr>
 <tr class="separator:ae10b0deb6fb08885129bd7d975ceb9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa9bd75fa634d4cdca5b8f2fcfd9a45"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:abfa9bd75fa634d4cdca5b8f2fcfd9a45"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_from_variant_converter.html">FromVariantConverter</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_from_variant_converter.html#abfa9bd75fa634d4cdca5b8f2fcfd9a45">operator()</a> (const <a class="el" href="classwamp_1_1_from_variant_converter.html#a81cacecb676c7f2666a41a88f2d0d04c">String</a> &amp;key, T &amp;value, U &amp;&amp;fallback)</td></tr>
+<tr class="memdesc:abfa9bd75fa634d4cdca5b8f2fcfd9a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a member from an Object variant, with a fallback value if the member is not found.  <a href="#abfa9bd75fa634d4cdca5b8f2fcfd9a45">More...</a><br /></td></tr>
+<tr class="separator:abfa9bd75fa634d4cdca5b8f2fcfd9a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11288d58443855998785c1b512b51de2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classwamp_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_from_variant_converter.html#a11288d58443855998785c1b512b51de2">variant</a> () const </td></tr>
 <tr class="memdesc:a11288d58443855998785c1b512b51de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a constant reference to the wrapped variant.  <a href="#a11288d58443855998785c1b512b51de2">More...</a><br /></td></tr>
 <tr class="separator:a11288d58443855998785c1b512b51de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -352,6 +356,42 @@ The member is convertible to the destination type. </dd></dl>
 
 </div>
 </div>
+<a class="anchor" id="abfa9bd75fa634d4cdca5b8f2fcfd9a45"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwamp_1_1_from_variant_converter.html">FromVariantConverter</a> &amp; wamp::FromVariantConverter::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwamp_1_1_from_variant_converter.html#a81cacecb676c7f2666a41a88f2d0d04c">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U &amp;&amp;&#160;</td>
+          <td class="paramname"><em>fallback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves a member from an Object variant, with a fallback value if the member is not found. </p>
+
+</div>
+</div>
 <a class="anchor" id="a11288d58443855998785c1b512b51de2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -410,7 +450,7 @@ The member is convertible to the destination type. </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_from_variant_converter.html">FromVariantConverter</a></li>
-    <li class="footer">Generated on Thu May 28 2015 22:54:22 for CppWAMP by
+    <li class="footer">Generated on Thu Jun 18 2015 18:35:10 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

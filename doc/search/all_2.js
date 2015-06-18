@@ -6,6 +6,7 @@ var searchData=
   ['callerror',['callError',['../namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46aef60a5ac24513b778c5cbf1c19849ade',1,'wamp']]],
   ['callslot',['CallSlot',['../classwamp_1_1_coro_session.html#a7a4a90d9dd691e93d2e952d608b87f94',1,'wamp::CoroSession::CallSlot()'],['../classwamp_1_1_session.html#a30a80c4099f013b1eca280b2a9d476dc',1,'wamp::Session::CallSlot()']]],
   ['cancel',['cancel',['../classwamp_1_1_connector.html#a335a3e568dad14cea05b450a96cc1280',1,'wamp::Connector']]],
+  ['captureerror',['captureError',['../classwamp_1_1_rpc.html#a0fefbcb96fc3825fefb4d947701d93ab',1,'wamp::Rpc']]],
   ['chartype',['CharType',['../classwamp_1_1_variant.html#a00d5b88d0391e06cb2c7e2d659f38edf',1,'wamp::Variant']]],
   ['check',['check',['../structwamp_1_1error_1_1_logic.html#accfc647c216a85bca8c4977434e2982e',1,'wamp::error::Logic']]],
   ['clone',['clone',['../classwamp_1_1_connector.html#acc35aad205cb89550959af4f52056c63',1,'wamp::Connector']]],

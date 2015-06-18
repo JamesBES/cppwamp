@@ -4,6 +4,7 @@ var searchData=
   ['calleehasexpired',['calleeHasExpired',['../classwamp_1_1_invocation.html#ae7a07a0c044ced14174ce64e57950df7',1,'wamp::Invocation']]],
   ['caller',['caller',['../classwamp_1_1_invocation.html#a748bbba1670cb739f1a88c6fda685083',1,'wamp::Invocation']]],
   ['cancel',['cancel',['../classwamp_1_1_connector.html#a335a3e568dad14cea05b450a96cc1280',1,'wamp::Connector']]],
+  ['captureerror',['captureError',['../classwamp_1_1_rpc.html#a0fefbcb96fc3825fefb4d947701d93ab',1,'wamp::Rpc']]],
   ['check',['check',['../structwamp_1_1error_1_1_logic.html#accfc647c216a85bca8c4977434e2982e',1,'wamp::error::Logic']]],
   ['clone',['clone',['../classwamp_1_1_connector.html#acc35aad205cb89550959af4f52056c63',1,'wamp::Connector']]],
   ['connect',['connect',['../classwamp_1_1_coro_session.html#a990f68df80c36d848879b63a3d86b39d',1,'wamp::CoroSession::connect()'],['../classwamp_1_1_session.html#afe59c413ba03dcb6734c01f7d669b0d9',1,'wamp::Session::connect()']]],
