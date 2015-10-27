@@ -219,8 +219,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a published event. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2chat_2main_8cpp-example.html#_a10">examples/chat/main.cpp</a>, and <a class="el" href="examples_2timeclient_2main_8cpp-example.html#_a1">examples/timeclient/main.cpp</a>.</dd>
-</dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5f9899105672da449507ce5ef92d7c52"></a>
 <div class="memitem">
 <div class="memproto">
@@ -287,7 +286,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Obtains an optional publisher ID integer. </p>
-<p>This function checks the value of the <code>EVENT.Details.publisher|integer</code> detail. See <a href="https://github.com/tavendo/WAMP/blob/master/spec/advanced.md#publisher-identification">Publisher Identification</a> in the advanced WAMP spec.</p>
+<p>This function checks the value of the <code>EVENT.Details.publisher|integer</code> detail. See <a href="https://tools.ietf.org/html/draft-oberstet-hybi-tavendo-wamp-02#section-13.6.1">Publisher Identification</a> in the advanced WAMP spec.</p>
 <dl class="section return"><dt>Returns</dt><dd>An integer variant if the publisher ID is available. Otherwise, a null variant is returned. </dd></dl>
 
 </div>
@@ -306,7 +305,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Obtains an optional trust level integer. </p>
-<p>This function checks the value of the <code>EVENT.Details.trustlevel|integer</code> detail. See <a href="https://github.com/tavendo/WAMP/blob/master/spec/advanced.md#publication-trust-levels">Publication Trust Levels</a> in the advanced WAMP spec.</p>
+<p>This function checks the value of the <code>EVENT.Details.trustlevel|integer</code> detail. See <a href="https://tools.ietf.org/html/draft-oberstet-hybi-tavendo-wamp-02#section-13.6.2">Publication Trust Levels</a> in the advanced WAMP spec.</p>
 <dl class="section return"><dt>Returns</dt><dd>An integer variant if the trust level is available. Otherwise, a null variant is returned. </dd></dl>
 
 </div>
@@ -325,7 +324,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Obtains an optional string of the original topic URI used to make the publication. </p>
-<p>This function checks the value of the <code>EVENT.Details.topic|uri</code> detail. See <a href="https://github.com/tavendo/WAMP/blob/master/spec/advanced.md#pattern-based-subscriptions">Pattern-based Subscriptions</a> in the advanced WAMP spec.</p>
+<p>This function checks the value of the <code>EVENT.Details.topic|uri</code> detail. See <a href="https://tools.ietf.org/html/draft-oberstet-hybi-tavendo-wamp-02#section-13.6.4">Pattern-based Subscriptions</a> in the advanced WAMP spec.</p>
 <dl class="section return"><dt>Returns</dt><dd>A string variant if the topic URI is available. Otherwise, a null variant is returned. </dd></dl>
 
 </div>
@@ -340,7 +339,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_event.html">Event</a></li>
-    <li class="footer">Generated on Thu Jun 18 2015 18:35:10 for CppWAMP by
+    <li class="footer">Generated on Tue Oct 27 2015 13:33:26 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

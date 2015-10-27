@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['null',['Null',['../structwamp_1_1_null.html',1,'wamp']]]
+  ['msgpack',['Msgpack',['../classwamp_1_1_msgpack.html',1,'wamp']]]
 ];

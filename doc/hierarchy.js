@@ -1,6 +1,9 @@
 var hierarchy =
 [
     [ "wamp::AsyncResult< T >", "classwamp_1_1_async_result.html", null ],
+    [ "wamp::BasicEventUnpacker< TSlot, TArgs >", "classwamp_1_1_basic_event_unpacker.html", null ],
+    [ "wamp::BasicInvocationUnpacker< TSlot, TResult, TArgs >", "classwamp_1_1_basic_invocation_unpacker.html", null ],
+    [ "wamp::Blob", "classwamp_1_1_blob.html", null ],
     [ "wamp::Connector", "classwamp_1_1_connector.html", null ],
     [ "wamp::ConversionAccess", "classwamp_1_1_conversion_access.html", null ],
     [ "std::error_category", null, [

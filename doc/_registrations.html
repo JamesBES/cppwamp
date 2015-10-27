@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('_registrations.html','');});
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#CallSlots">Call Slots</a></li>
+<li class="level1"><a href="#BasicCallSlots">Basic Call Slots</a></li>
 <li class="level1"><a href="#UnpackedCallSlots">Unpacked Call Slots</a></li>
 <li class="level1"><a href="#RpcOutcomes">RPC Outcomes</a><ul><li class="level2"><a href="#ResultOutcomes">Result Outcomes</a></li>
 <li class="level2"><a href="#ErrorOutcomes">Error Outcomes</a></li>
@@ -129,17 +130,48 @@ Call Slots</h1>
 <li><a class="el" href="classwamp_1_1_outcome.html" title="Contains the outcome of an RPC invocation. ">wamp::Outcome</a> contains a <a class="el" href="classwamp_1_1_result.html" title="Contains a remote procedure result yielded by a callee or received by a caller. ">wamp::Result</a> or a <a class="el" href="classwamp_1_1_error.html" title="Provides the reason URI, options, and payload arguments contained within WAMP ERROR messages...">wamp::Error</a> object to be sent back to the caller, and,</li>
 <li><a class="el" href="classwamp_1_1_invocation.html" title="Contains payload arguments and other details related to a remote procedure call invocation. ">wamp::Invocation</a> is an object containing information and payload arguments related to the RPC invocation.</li>
 </ul>
+<h1><a class="anchor" id="BasicCallSlots"></a>
+Basic Call Slots</h1>
+<p>A <em>basic call slot</em> represents an RPC handler that expects one or more payload arguments having specific, static types. The <a class="el" href="classwamp_1_1_basic_invocation_unpacker.html#a8f16c142e25ba052d930d360756c9263">wamp::basicRpc</a> function can be used when registering such call slots. It takes a basic call slot, and converts it into a regular call slot that can be passed to <a class="el" href="classwamp_1_1_session.html#a04846bb5a40a74a0fe8cd37e3d0102c0" title="Registers a WAMP remote procedure call. ">wamp::Session::enroll</a>.</p>
+<p><code>wamp::basicRpc</code> expects a call slot with the following signature:</p>
+<div class="fragment"><div class="line">TResult <span class="keyword">function</span>(TArgs...)</div>
+</div><!-- fragment --><p> where</p><ul>
+<li><code>TResult</code> is a static return type that will be automatically converted to a single <a class="el" href="classwamp_1_1_result.html" title="Contains a remote procedure result yielded by a callee or received by a caller. ">wamp::Result</a> payload argument and then returned as a <a class="el" href="classwamp_1_1_outcome.html" title="Contains the outcome of an RPC invocation. ">wamp::Outcome</a>. This return type may be <code>void</code> if the RPC is not expected to return a value.</li>
+<li><code>TArgs...</code> matches the template parameter pack that was passed to <code>wamp::basicRpc</code>.</li>
+</ul>
+<p>Examples of basic call slots are: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> setSpeed(<span class="keywordtype">float</span> speed) { ... }</div>
+<div class="line"><span class="comment">// ^            ^</span></div>
+<div class="line"><span class="comment">// TResult    TArgs</span></div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> purchase(std::string item, <span class="keywordtype">int</span> cost, <span class="keywordtype">int</span> qty) { ... }</div>
+<div class="line"><span class="comment">//^                  ^          ^         ^</span></div>
+<div class="line"><span class="comment">// \                 \----------|---------/</span></div>
+<div class="line"><span class="comment">// TResult                    TArgs</span></div>
+</div><!-- fragment --><p>The above slots can be registered as follows: </p><div class="fragment"><div class="line">session-&gt;enroll(Procedure(<span class="stringliteral">&quot;setSpeed&quot;</span>),</div>
+<div class="line">                basicRpc&lt;void, float&gt;(&amp;setSpeed),</div>
+<div class="line">                handler);</div>
+<div class="line"></div>
+<div class="line">session-&gt;enroll(Procedure(<span class="stringliteral">&quot;purchase&quot;</span>),</div>
+<div class="line">                basicRpc&lt;int, std::string, int, int&gt;(&amp;purchase),</div>
+<div class="line">                handler);</div>
+</div><!-- fragment --><p>where <code>handler</code> is the asynchronous handler (or coroutine yield context) for the <b>enroll operation itself</b>.</p>
+<p>Whenever a <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">wamp::Session</a> dispatches an RPC invocation to the above slots, it automatically unpacks the invocation payload positional arguments, and passes them to the slot's argument list. If <code>Session</code> cannot convert the invocation payload arguments to their target types, it automatically sends an <code>ERROR</code> reply back to the router.</p>
 <h1><a class="anchor" id="UnpackedCallSlots"></a>
 Unpacked Call Slots</h1>
-<p>An <em>unpacked call slot</em> represents an RPC handler that expects one or more payload arguments having specific, static types. The <a class="el" href="classwamp_1_1_invocation_unpacker.html#a3fae9c987f4fcc7bbd277f7f1fea3f26">wamp::unpackedRpc</a> function can be used when registering such call slots. It takes an unpacked call slot, and converts it into a regular event slot that can be passed to <a class="el" href="classwamp_1_1_session.html#a04846bb5a40a74a0fe8cd37e3d0102c0" title="Registers a WAMP remote procedure call. ">wamp::Session::enroll</a>.</p>
+<p>An <em>unpacked call slot</em> represents an RPC handler that expects one or more payload arguments having specific, static types. The <a class="el" href="classwamp_1_1_invocation_unpacker.html#a3fae9c987f4fcc7bbd277f7f1fea3f26">wamp::unpackedRpc</a> function can be used when registering such call slots. It takes an unpacked call slot, and converts it into a regular call slot that can be passed to <a class="el" href="classwamp_1_1_session.html#a04846bb5a40a74a0fe8cd37e3d0102c0" title="Registers a WAMP remote procedure call. ">wamp::Session::enroll</a>.</p>
 <p><code>wamp::unpackedRpc</code> expects a call slot with the following signature:</p>
 <div class="fragment"><div class="line"><a class="code" href="classwamp_1_1_outcome.html">wamp::Outcome</a> <span class="keyword">function</span>(<a class="code" href="classwamp_1_1_invocation.html">wamp::Invocation</a>, TArgs...)</div>
 </div><!-- fragment --><p> where</p><ul>
-<li><a class="el" href="classwamp_1_1_outcome.html" title="Contains the outcome of an RPC invocation. ">wamp::Outcome</a> contains a <a class="el" href="classwamp_1_1_result.html" title="Contains a remote procedure result yielded by a callee or received by a caller. ">wamp::Result</a> or a <a class="el" href="classwamp_1_1_error.html" title="Provides the reason URI, options, and payload arguments contained within WAMP ERROR messages...">wamp::Error</a> object to be sent back to the caller, and,</li>
-<li><a class="el" href="classwamp_1_1_invocation.html" title="Contains payload arguments and other details related to a remote procedure call invocation. ">wamp::Invocation</a> is an object containing information and payload arguments related to the RPC invocation,</li>
+<li><a class="el" href="classwamp_1_1_outcome.html" title="Contains the outcome of an RPC invocation. ">wamp::Outcome</a> contains a <a class="el" href="classwamp_1_1_result.html" title="Contains a remote procedure result yielded by a callee or received by a caller. ">wamp::Result</a> or a <a class="el" href="classwamp_1_1_error.html" title="Provides the reason URI, options, and payload arguments contained within WAMP ERROR messages...">wamp::Error</a> object to be sent back to the caller,</li>
+<li><a class="el" href="classwamp_1_1_invocation.html" title="Contains payload arguments and other details related to a remote procedure call invocation. ">wamp::Invocation</a> is an object containing information and payload arguments related to the RPC invocation, and,</li>
 <li><code>TArgs...</code> matches the template parameter pack that was passed to <code>wamp::unpackedRpc</code>.</li>
 </ul>
-<p>Examples of static call slots are: </p><div class="fragment"><div class="line">Outcome setSpeed(Invocation inv, <span class="keywordtype">float</span> speed) { ... }</div>
+<dl class="section note"><dt>Note</dt><dd>Unpacked call slots differ from basic call slots in the following ways:<ul>
+<li>Unpacked call slots are passed a <a class="el" href="classwamp_1_1_invocation.html" title="Contains payload arguments and other details related to a remote procedure call invocation. ">wamp::Invocation</a> object, which contains metadata on the call invocation itself. It also allows the slot to manually send a <code>YIELD</code> message back to the caller in a separate asynchronous task.</li>
+<li>Unpacked call slots are expected to return a <a class="el" href="classwamp_1_1_outcome.html" title="Contains the outcome of an RPC invocation. ">wamp::Outcome</a> object. This allows such slots to return Outcome::deferred(), which indicates to the library that the callee will manually send a <code>YIELD</code> message back to the caller.</li>
+</ul>
+</dd></dl>
+<p>Examples of unpacked call slots are: </p><div class="fragment"><div class="line">Outcome setSpeed(Invocation inv, <span class="keywordtype">float</span> speed) { ... }</div>
 <div class="line"><span class="comment">//                                 ^</span></div>
 <div class="line"><span class="comment">//                               TArgs</span></div>
 <div class="line"></div>
@@ -260,7 +292,7 @@ Scoped Registrations</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 18 2015 18:35:10 for CppWAMP by
+    <li class="footer">Generated on Tue Oct 27 2015 13:33:26 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

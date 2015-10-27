@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classwamp_1_1_payload.html" title="Contains a payload of positional and keyword arguments exchanged with a WAMP peer. " alt="" coords="5,5,195,32"/>
+<area shape="rect" id="node1" href="$classwamp_1_1_options.html" title="wamp::Options\&lt; Pub \&gt;" alt="" coords="7,5,164,32"/>
+<area shape="rect" id="node2" href="$classwamp_1_1_pub.html" title="Contains the topic URI, options, and payload passed to Session::publish. " alt="" coords="213,31,301,57"/>
+<area shape="rect" id="node3" href="$classwamp_1_1_payload.html" title="wamp::Payload\&lt; Pub \&gt;" alt="" coords="6,56,165,83"/>
 </map>

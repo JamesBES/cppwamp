@@ -2,6 +2,9 @@ var namespacewamp =
 [
     [ "error", "namespacewamp_1_1error.html", "namespacewamp_1_1error" ],
     [ "AsyncResult", "classwamp_1_1_async_result.html", "classwamp_1_1_async_result" ],
+    [ "BasicEventUnpacker", "classwamp_1_1_basic_event_unpacker.html", "classwamp_1_1_basic_event_unpacker" ],
+    [ "BasicInvocationUnpacker", "classwamp_1_1_basic_invocation_unpacker.html", "classwamp_1_1_basic_invocation_unpacker" ],
+    [ "Blob", "classwamp_1_1_blob.html", "classwamp_1_1_blob" ],
     [ "Connector", "classwamp_1_1_connector.html", "classwamp_1_1_connector" ],
     [ "ConversionAccess", "classwamp_1_1_conversion_access.html", null ],
     [ "CoroSession", "classwamp_1_1_coro_session.html", "classwamp_1_1_coro_session" ],

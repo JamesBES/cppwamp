@@ -32,7 +32,12 @@ var error_8hpp =
       [ "notAuthorized", "error_8hpp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46afd6ddc515a5476fed223435c88a937b1", null ],
       [ "authorizationFailed", "error_8hpp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a23326a67dfb49576ae6d7f0ed9d124eb", null ],
       [ "noSuchRealm", "error_8hpp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a1f7f92026f85b91bf2c50b57390b12a6", null ],
-      [ "noSuchRole", "error_8hpp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ae36499a907b854bc2d653d1a28d48490", null ]
+      [ "noSuchRole", "error_8hpp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ae36499a907b854bc2d653d1a28d48490", null ],
+      [ "cancelled", "error_8hpp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a38881e0a24039dc2621e1d6f86cb71f7", null ],
+      [ "optionNotAllowed", "error_8hpp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a1de736abaefb5aee04f3c4e04a6fa221", null ],
+      [ "noEligibleCallee", "error_8hpp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ae8dbf1dde2318304f49bb205815f7fcd", null ],
+      [ "discloseMeDisallowed", "error_8hpp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46afcceb3a3542cd0fdf32c652a1ea05395", null ],
+      [ "networkFailure", "error_8hpp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46af77654d8b67758cba023bfc9de1464b4", null ]
     ] ],
     [ "ProtocolErrc", "error_8hpp.html#a19ce4bc9c1e5512cec6ba323c4d324d0", [
       [ "success", "error_8hpp.html#a19ce4bc9c1e5512cec6ba323c4d324d0a260ca9dd8a4577fc00b7bd5810298076", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['registrations',['Registrations',['../_registrations.html',1,'']]]
+  ['establisher',['Establisher',['../_establisher.html',1,'Concepts']]]
 ];

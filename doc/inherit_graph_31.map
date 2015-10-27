@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classwamp_1_1_subscription.html" title="Represents a pub/sub event subscription. " alt="" coords="6,5,143,32"/>
-<area shape="rect" id="node2" href="$classwamp_1_1_scoped_subscription.html" title="Limits a Subscription&#39;s lifetime to a particular scope. " alt="" coords="192,5,373,32"/>
+<area shape="rect" id="node1" href="$classwamp_1_1_rawsock_options.html" title="wamp::RawsockOptions\l\&lt; UdsPath, boost::asio\l::local::stream_protocol \&gt;" alt="" coords="5,4,176,60"/>
+<area shape="rect" id="node2" href="$classwamp_1_1_uds_path.html" title="Contains a Unix domain socket path, as well as other socket options. " alt="" coords="225,19,341,45"/>
 </map>

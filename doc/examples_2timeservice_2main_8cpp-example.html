@@ -122,6 +122,7 @@ $(document).ready(function(){initNavTree('examples_2timeservice_2main_8cpp-examp
 <div class="line"><span class="keyword">const</span> std::string udsPath1 = <span class="stringliteral">&quot;./.crossbar/uds-examples&quot;</span>;</div>
 <div class="line"><span class="keyword">const</span> std::string udsPath2 = <span class="stringliteral">&quot;../.crossbar/uds-examples&quot;</span>;</div>
 <div class="line"></div>
+<div class="line"><span class="comment">//------------------------------------------------------------------------------</span></div>
 <div class="line"><span class="keyword">namespace </span>wamp</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Convert a std::tm to/from an object variant.</span></div>
@@ -141,11 +142,10 @@ $(document).ready(function(){initNavTree('examples_2timeservice_2main_8cpp-examp
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="_a1"></a><a class="code" href="classwamp_1_1_outcome.html">wamp::Outcome</a> getTime(<a name="_a2"></a><a class="code" href="classwamp_1_1_invocation.html">wamp::Invocation</a>)</div>
+<div class="line">std::tm getTime()</div>
 <div class="line">{</div>
 <div class="line">    <span class="keyword">auto</span> t = std::time(<span class="keyword">nullptr</span>);</div>
-<div class="line">    <span class="keyword">const</span> std::tm* local = std::localtime(&amp;t);</div>
-<div class="line">    <span class="keywordflow">return</span> <a name="_a3"></a><a class="code" href="classwamp_1_1_result.html">wamp::Result</a>().<a name="a4"></a><a class="code" href="classwamp_1_1_payload.html#a2a00c72eb6b2625055b9817bd760a053">withArgs</a>(*local);</div>
+<div class="line">    <span class="keywordflow">return</span> *std::localtime(&amp;t);</div>
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"><span class="comment">//------------------------------------------------------------------------------</span></div>
@@ -155,22 +155,23 @@ $(document).ready(function(){initNavTree('examples_2timeservice_2main_8cpp-examp
 <div class="line"></div>
 <div class="line"><span class="preprocessor">#ifdef CPPWAMP_USE_LEGACY_CONNECTORS</span></div>
 <div class="line">    <span class="keyword">auto</span> uds = wamp::legacyConnector&lt;wamp::Msgpack&gt;(iosvc,</div>
-<div class="line">                                                    <a name="_a5"></a><a class="code" href="classwamp_1_1_uds_path.html">wamp::UdsPath</a>(udsPath));</div>
+<div class="line">                                                    <a name="_a1"></a><a class="code" href="classwamp_1_1_uds_path.html">wamp::UdsPath</a>(udsPath));</div>
 <div class="line"><span class="preprocessor">#else</span></div>
 <div class="line">    <span class="keyword">auto</span> uds1 = wamp::connector&lt;wamp::Msgpack&gt;(iosvc, <a class="code" href="classwamp_1_1_uds_path.html">wamp::UdsPath</a>(udsPath1));</div>
 <div class="line">    <span class="keyword">auto</span> uds2 = wamp::connector&lt;wamp::Msgpack&gt;(iosvc, <a class="code" href="classwamp_1_1_uds_path.html">wamp::UdsPath</a>(udsPath2));</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">using namespace </span>wamp;</div>
-<div class="line">    <span class="keyword">auto</span> session = <a name="a6"></a><a class="code" href="classwamp_1_1_coro_session.html#aca47333aa30e3c5ce5c448b1ff4012b4">CoroSession&lt;&gt;::create</a>({uds1, uds2});</div>
+<div class="line">    <span class="keyword">auto</span> session = <a name="a2"></a><a class="code" href="classwamp_1_1_coro_session.html#aca47333aa30e3c5ce5c448b1ff4012b4">CoroSession&lt;&gt;::create</a>({uds1, uds2});</div>
 <div class="line"></div>
 <div class="line">    boost::asio::steady_timer timer(iosvc);</div>
 <div class="line"></div>
 <div class="line">    boost::asio::spawn(iosvc, [&amp;](boost::asio::yield_context yield)</div>
 <div class="line">    {</div>
 <div class="line">        session-&gt;connect(yield);</div>
-<div class="line">        session-&gt;join(<a name="_a7"></a><a class="code" href="classwamp_1_1_realm.html">Realm</a>(realm), yield);</div>
-<div class="line">        session-&gt;enroll(<a name="_a8"></a><a class="code" href="classwamp_1_1_procedure.html">Procedure</a>(<span class="stringliteral">&quot;get_time&quot;</span>), &amp;getTime, yield);</div>
+<div class="line">        session-&gt;join(<a name="_a3"></a><a class="code" href="classwamp_1_1_realm.html">Realm</a>(realm), yield);</div>
+<div class="line">        session-&gt;enroll(<a name="_a4"></a><a class="code" href="classwamp_1_1_procedure.html">Procedure</a>(<span class="stringliteral">&quot;get_time&quot;</span>), basicRpc&lt;std::tm&gt;(&amp;getTime),</div>
+<div class="line">                        yield);</div>
 <div class="line"></div>
 <div class="line">        <span class="keyword">auto</span> deadline = std::chrono::steady_clock::now();</div>
 <div class="line">        <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
@@ -181,7 +182,7 @@ $(document).ready(function(){initNavTree('examples_2timeservice_2main_8cpp-examp
 <div class="line"></div>
 <div class="line">            <span class="keyword">auto</span> t = std::time(<span class="keyword">nullptr</span>);</div>
 <div class="line">            <span class="keyword">const</span> std::tm* local = std::localtime(&amp;t);</div>
-<div class="line">            session-&gt;publish(<a name="_a9"></a><a class="code" href="classwamp_1_1_pub.html">Pub</a>(<span class="stringliteral">&quot;time_tick&quot;</span>).withArgs(*local), yield);</div>
+<div class="line">            session-&gt;publish(<a name="_a5"></a><a class="code" href="classwamp_1_1_pub.html">Pub</a>(<span class="stringliteral">&quot;time_tick&quot;</span>).withArgs(*local), yield);</div>
 <div class="line">            std::cout &lt;&lt; <span class="stringliteral">&quot;Tick\n&quot;</span>;</div>
 <div class="line">        }</div>
 <div class="line">    });</div>
@@ -195,7 +196,7 @@ $(document).ready(function(){initNavTree('examples_2timeservice_2main_8cpp-examp
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 18 2015 18:35:10 for CppWAMP by
+    <li class="footer">Generated on Tue Oct 27 2015 13:33:26 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

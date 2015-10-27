@@ -17,6 +17,7 @@ var variant_8hpp =
       [ "uint", "variant_8hpp.html#a4d04d75506649324abb78e785749ccdba1277b8d5127d0eced2e9d3b99a3a7079", null ],
       [ "real", "variant_8hpp.html#a4d04d75506649324abb78e785749ccdba4bca24304861acde5770fdbe3cc2503b", null ],
       [ "string", "variant_8hpp.html#a4d04d75506649324abb78e785749ccdbab45cffe084dd3d20d928bee85e7b0f21", null ],
+      [ "blob", "variant_8hpp.html#a4d04d75506649324abb78e785749ccdbaee26908bf9629eeb4b37dac350f4754a", null ],
       [ "array", "variant_8hpp.html#a4d04d75506649324abb78e785749ccdbaf1f713c9e000f5d3f280adbd124df4f5", null ],
       [ "object", "variant_8hpp.html#a4d04d75506649324abb78e785749ccdbaa8cfde6331bd59eb2ac96f8911c4b666", null ]
     ] ]

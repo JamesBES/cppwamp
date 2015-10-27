@@ -12,6 +12,7 @@ var NAVTREE =
     ] ],
     [ "Registrations", "_registrations.html", [
       [ "Call Slots", "_registrations.html#CallSlots", null ],
+      [ "Basic Call Slots", "_registrations.html#BasicCallSlots", null ],
       [ "Unpacked Call Slots", "_registrations.html#UnpackedCallSlots", null ],
       [ "RPC Outcomes", "_registrations.html#RpcOutcomes", [
         [ "Result Outcomes", "_registrations.html#ResultOutcomes", null ],
@@ -22,9 +23,11 @@ var NAVTREE =
     ] ],
     [ "Subscriptions", "_subscriptions.html", [
       [ "Event Slots", "_subscriptions.html#EventSlots", null ],
+      [ "Basic Event Slots", "_subscriptions.html#BasicEventSlots", null ],
       [ "Unpacked Event Slots", "_subscriptions.html#UnpackedEventSlots", null ],
       [ "Scoped Subscriptions", "_subscriptions.html#ScopedSubscriptions", null ]
     ] ],
+    [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -64,8 +67,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_architecture.html",
-"classwamp_1_1_scoped_subscription.html#a205cf2f086f53351f9b72c1ad9901a75",
-"functions_enum.html"
+"classwamp_1_1_realm.html#a53f0c8599441d93b4b7fac485ab91573",
+"error_8hpp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a0af961c159db3c2e12ecefdcdd067f5d",
+"version_8hpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

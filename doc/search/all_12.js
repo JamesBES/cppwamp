@@ -18,6 +18,7 @@ var searchData=
   ['transportcategory',['TransportCategory',['../classwamp_1_1_transport_category.html',1,'wamp']]],
   ['transportcategory',['transportCategory',['../classwamp_1_1_transport_category.html#a29c137d9301ef5b16089fc95fd2dd316',1,'wamp::TransportCategory']]],
   ['transporterrc',['TransportErrc',['../namespacewamp.html#a7a09562b29d4b6e42e37be77ec31829a',1,'wamp']]],
+  ['truetype',['TrueType',['../namespacewamp.html#af79912569893dfb927f34a7796080f25',1,'wamp']]],
   ['trustlevel',['trustLevel',['../classwamp_1_1_event.html#a6f792581783fef9f0e377768c04de685',1,'wamp::Event::trustLevel()'],['../classwamp_1_1_invocation.html#a7ae3ae1f39529a94400a8323595eec80',1,'wamp::Invocation::trustLevel()']]],
   ['tuple_2ehpp',['tuple.hpp',['../tuple_8hpp.html',1,'']]],
   ['type',['type',['../classwamp_1_1_outcome.html#a67a97711abebf4d30c5a51d0a7f5ea7a',1,'wamp::Outcome::type() const '],['../classwamp_1_1_outcome.html#a6b129de54b7dd359b9d37dccdd2705be',1,'wamp::Outcome::Type()']]],

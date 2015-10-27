@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kwargs',['kwargs',['../classwamp_1_1_payload.html#a042a7127142904afe8356b7983ed3ba6',1,'wamp::Payload::kwargs() const &amp;'],['../classwamp_1_1_payload.html#ae8088e81ae02babaed8ce1c672cd931e',1,'wamp::Payload::kwargs()&amp;&amp;']]]
+  ['join',['join',['../classwamp_1_1_coro_session.html#aa2fe628c3bbe0fda04f6994939da94fe',1,'wamp::CoroSession::join()'],['../classwamp_1_1_session.html#a3119d4f363c42b72f4198db8298112ca',1,'wamp::Session::join()']]]
 ];

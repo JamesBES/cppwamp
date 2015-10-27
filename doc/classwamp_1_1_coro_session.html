@@ -303,7 +303,7 @@ class wamp::CoroSession&lt; TBase &gt;</h3>
 <p>Coroutine API used by a <em>client</em> peer in WAMP applications. </p>
 <p>This mixin class adds a <em>coroutine</em> API on top of the asynchronous one provided by <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a>. Coroutines enable client programs to implement asynchronous logic in a synchronous manner. This class is based on the <a href="http://www.boost.org/doc/libs/release/doc/html/boost_asio/overview/core/spawn.html">stackful coroutines</a> implementation used by Boost.Asio.</p>
 <p>The asynchronous operations in <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a> are mapped to coroutine operations as follows:</p><ul>
-<li>A <a href="http://www.boost.org/doc/libs/1_57_0/doc/html/boost_asio/reference/yield_context.html">boost::asio::yield_context</a> is passed in place of the asynchronous completion handler.</li>
+<li>A <a href="http://www.boost.org/doc/libs/release/doc/html/boost_asio/reference/yield_context.html">boost::asio::yield_context</a> is passed in place of the asynchronous completion handler.</li>
 <li>The result is returned directly by the function, instead of via an <a class="el" href="classwamp_1_1_async_result.html" title="Value type that combines an asynchronous result with an error code. ">AsyncResult</a> object passed to the completion handler.</li>
 <li>Runtime errors are thrown as <a class="el" href="classwamp_1_1error_1_1_failure.html" title="General purpose runtime exception that wraps a std::error_code. ">error::Failure</a> exceptions. When caught, the error code can be retrieved via <code>error::Failure::code</code>.</li>
 <li>An optional pointer to a <code>std::error_code</code> can be passed to coroutine operations. If a runtime error occurs, it will set the pointed-to error code instead of throwing an <a class="el" href="classwamp_1_1error_1_1_failure.html" title="General purpose runtime exception that wraps a std::error_code. ">error::Failure</a> exception.</li>
@@ -467,7 +467,7 @@ template&lt;typename B &gt; </div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2timeclient_2main_8cpp-example.html#a3">examples/timeclient/main.cpp</a>, and <a class="el" href="examples_2timeservice_2main_8cpp-example.html#a6">examples/timeservice/main.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2timeclient_2main_8cpp-example.html#a2">examples/timeclient/main.cpp</a>, and <a class="el" href="examples_2timeservice_2main_8cpp-example.html#a2">examples/timeservice/main.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1151,7 +1151,7 @@ template&lt;typename TBase = Session&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_coro_session.html">CoroSession</a></li>
-    <li class="footer">Generated on Thu Jun 18 2015 18:35:10 for CppWAMP by
+    <li class="footer">Generated on Tue Oct 27 2015 13:33:26 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

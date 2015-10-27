@@ -10,6 +10,7 @@ var classwamp_1_1_variant =
     [ "UInt", "classwamp_1_1_variant.html#ad26ea60ba0c4928876fbceee817db58e", null ],
     [ "Real", "classwamp_1_1_variant.html#abc9ecd6b5a19982f7a59d7614e63e746", null ],
     [ "String", "classwamp_1_1_variant.html#aa1deb141006ecd77a8983a82f8aae7cb", null ],
+    [ "Blob", "classwamp_1_1_variant.html#a64cfaff2b583e1d96dd6417712abe554", null ],
     [ "Array", "classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444", null ],
     [ "Object", "classwamp_1_1_variant.html#aa9f3c1cf3c181d2db4b772e2b5e4db9d", null ],
     [ "SizeType", "classwamp_1_1_variant.html#a7ce1c7dfb499f9b69ce1e4d39283c6c8", null ],

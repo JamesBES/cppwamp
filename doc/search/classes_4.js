@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['failure',['Failure',['../classwamp_1_1error_1_1_failure.html',1,'wamp::error']]],
-  ['fromvariantconverter',['FromVariantConverter',['../classwamp_1_1_from_variant_converter.html',1,'wamp']]]
+  ['error',['Error',['../classwamp_1_1_error.html',1,'wamp']]],
+  ['event',['Event',['../classwamp_1_1_event.html',1,'wamp']]],
+  ['eventunpacker',['EventUnpacker',['../classwamp_1_1_event_unpacker.html',1,'wamp']]]
 ];

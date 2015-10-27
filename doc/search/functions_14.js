@@ -1,30 +1,5 @@
 var searchData=
 [
-  ['wampcategory',['wampCategory',['../classwamp_1_1_session_category.html#afca25a6fc2b208ae54056ab5c1283ee3',1,'wamp::SessionCategory']]],
-  ['witharglist',['withArgList',['../classwamp_1_1_payload.html#aae4784ea88442c2d8bda098e593bb739',1,'wamp::Payload']]],
-  ['withargs',['withArgs',['../classwamp_1_1_payload.html#a2a00c72eb6b2625055b9817bd760a053',1,'wamp::Payload::withArgs(Ts &amp;&amp;...args)'],['../classwamp_1_1_payload.html#a67355659df65da7a186c76813b58e83e',1,'wamp::Payload::withArgs(Ts &amp;&amp;...args)']]],
-  ['withblacklist',['withBlacklist',['../classwamp_1_1_pub.html#a5cf04d567e2cfc242c0a398458faf9f3',1,'wamp::Pub::withBlacklist()'],['../classwamp_1_1_rpc.html#a69ae015394cacf568fbc5292bb466cf6',1,'wamp::Rpc::withBlacklist()']]],
-  ['withbroadcast',['withBroadcast',['../classwamp_1_1_rawsock_options.html#a5b81decf4e4d586ef1714f6f1040913e',1,'wamp::RawsockOptions']]],
-  ['withdealertimeout',['withDealerTimeout',['../classwamp_1_1_rpc.html#ace35d8ae752df9788efb28ddec82c9ad',1,'wamp::Rpc']]],
-  ['withdebug',['withDebug',['../classwamp_1_1_rawsock_options.html#ac3d0eeca4045b001a68260beee811fe5',1,'wamp::RawsockOptions']]],
-  ['withdisclosecaller',['withDiscloseCaller',['../classwamp_1_1_procedure.html#acd943e4a971c40729081d99cffdb06b5',1,'wamp::Procedure']]],
-  ['withdiscloseme',['withDiscloseMe',['../classwamp_1_1_pub.html#a6342015bccb8bf6c44567886fc6be675',1,'wamp::Pub::withDiscloseMe()'],['../classwamp_1_1_rpc.html#ac3c2b78ae38395c1975fa732e9bd02b7',1,'wamp::Rpc::withDiscloseMe()']]],
-  ['withdonotroute',['withDoNotRoute',['../classwamp_1_1_rawsock_options.html#a134b9d626938b65985b9cef8cbb70f75',1,'wamp::RawsockOptions']]],
-  ['withexcludeme',['withExcludeMe',['../classwamp_1_1_pub.html#a4944e35b4a6e9bf33281ece3b5d31137',1,'wamp::Pub::withExcludeMe()'],['../classwamp_1_1_rpc.html#ada4b6ea874064e294229b0d4b82578eb',1,'wamp::Rpc::withExcludeMe()']]],
-  ['withipv6only',['withIpV6Only',['../classwamp_1_1_ip_options.html#ad1652243ba97c5d2041bf2b2bc026653',1,'wamp::IpOptions']]],
-  ['withkeepalive',['withKeepAlive',['../classwamp_1_1_rawsock_options.html#a79aec70499fb5ba1e401b77ea437b3a5',1,'wamp::RawsockOptions']]],
-  ['withkwargs',['withKwargs',['../classwamp_1_1_payload.html#a618e21d31d35af1c5a973ee6bdb79af9',1,'wamp::Payload']]],
-  ['withlinger',['withLinger',['../classwamp_1_1_rawsock_options.html#ad6f05464952e5dcb5eadf1a8a34c68ba',1,'wamp::RawsockOptions']]],
-  ['withmaxrxlength',['withMaxRxLength',['../classwamp_1_1_rawsock_options.html#ae4f90ba6c7734f7b975c7e9d9e7f080c',1,'wamp::RawsockOptions']]],
-  ['withnodelay',['withNoDelay',['../classwamp_1_1_tcp_host.html#a9140896773ef87e65acd39ae466faefc',1,'wamp::TcpHost']]],
-  ['withoption',['withOption',['../classwamp_1_1_options.html#a0452bdcaef84bdc2e180fb91abea872a',1,'wamp::Options']]],
-  ['withoptions',['withOptions',['../classwamp_1_1_options.html#afede2cca494fa991d8911a70f7fe1092',1,'wamp::Options']]],
-  ['withprogress',['withProgress',['../classwamp_1_1_result.html#a54c7ba56259c367e0f2b7e4d6df4a6d6',1,'wamp::Result']]],
-  ['withreceivebuffersize',['withReceiveBufferSize',['../classwamp_1_1_rawsock_options.html#a85396e00cace0b320744bee13f422e8e',1,'wamp::RawsockOptions']]],
-  ['withreceivelowwatermark',['withReceiveLowWatermark',['../classwamp_1_1_rawsock_options.html#af50b34bd8adf134cdebce49936bf3e11',1,'wamp::RawsockOptions']]],
-  ['withreuseaddress',['withReuseAddress',['../classwamp_1_1_rawsock_options.html#a9ccbb215cb42496a571aa425da7a9ceb',1,'wamp::RawsockOptions']]],
-  ['withsendbuffersize',['withSendBufferSize',['../classwamp_1_1_rawsock_options.html#af18453c321c0154a901d46465828786c',1,'wamp::RawsockOptions']]],
-  ['withsendlowwatermark',['withSendLowWatermark',['../classwamp_1_1_rawsock_options.html#a614909cb5b5cae01f807b06963cf8c89',1,'wamp::RawsockOptions']]],
-  ['withunicasthops',['withUnicastHops',['../classwamp_1_1_ip_options.html#a9dd95d4fe29464004580eca1287b44c4',1,'wamp::IpOptions']]],
-  ['withwhitelist',['withWhitelist',['../classwamp_1_1_pub.html#a009e57e71736b0fc6bff5d8e73c58562',1,'wamp::Pub::withWhitelist()'],['../classwamp_1_1_rpc.html#a3f3d8e6a72b3217ada303bb889b1bc5e',1,'wamp::Rpc::withWhitelist()']]]
+  ['valueor',['valueOr',['../classwamp_1_1_variant.html#a10b9139aed1fbe61ba53fa49d13f3907',1,'wamp::Variant']]],
+  ['variant',['Variant',['../classwamp_1_1_variant.html#ac6d459c867eaeb07b6b63874dfeef99b',1,'wamp::Variant::Variant() noexcept'],['../classwamp_1_1_variant.html#adac01fe48476ed444088cf606d3507d4',1,'wamp::Variant::Variant(const Variant &amp;other)'],['../classwamp_1_1_variant.html#a0cc80d1ded9191ee1322d837b6648776',1,'wamp::Variant::Variant(Variant &amp;&amp;other) noexcept'],['../classwamp_1_1_variant.html#a0a9c3c13e72f39c6147e00511021ff21',1,'wamp::Variant::Variant(T value)'],['../classwamp_1_1_variant.html#a8abe6b3d330343bf91bd0165889eed70',1,'wamp::Variant::Variant(Array array)'],['../classwamp_1_1_variant.html#acc13d445671e8d578c04b57bf689af60',1,'wamp::Variant::Variant(std::vector&lt; T &gt; vec)'],['../classwamp_1_1_variant.html#a7f73821196c5b15eedd6c604a0d889f1',1,'wamp::Variant::Variant(Object object)'],['../classwamp_1_1_variant.html#a6267a7d8bfa97c8e63e7219d2f9eab08',1,'wamp::Variant::Variant(std::map&lt; String, T &gt; map)'],['../classwamp_1_1_to_variant_converter.html#a4e6d20a90039f1e43fa5a7101ff117d3',1,'wamp::ToVariantConverter::variant()'],['../classwamp_1_1_from_variant_converter.html#a11288d58443855998785c1b512b51de2',1,'wamp::FromVariantConverter::variant()']]]
 ];

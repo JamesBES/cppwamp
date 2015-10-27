@@ -222,7 +222,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains the procedure URI, options, and payload passed to <a class="el" href="classwamp_1_1_session.html#a2a20e24d47e9f5426d0aba152a7c1f09" title="Calls a remote procedure. ">Session::call</a>. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2chat_2main_8cpp-example.html#_a9">examples/chat/main.cpp</a>, and <a class="el" href="examples_2timeclient_2main_8cpp-example.html#_a5">examples/timeclient/main.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2chat_2main_8cpp-example.html#_a7">examples/chat/main.cpp</a>, and <a class="el" href="examples_2timeclient_2main_8cpp-example.html#_a4">examples/timeclient/main.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a12e3fe28afcae3bfb1f79852d6e5b439"></a>
 <div class="memitem">
@@ -294,7 +294,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Specifies the list of (potential) <em>Callee</em> session IDs that a call won't be forwarded to. </p>
-<p>This sets the <code>CALL.Options.exclude|list</code> option. See <a href="https://github.com/tavendo/WAMP/blob/master/spec/advanced.md#callee-black--and-whitelisting">Callee Black- and Whitelisting</a> in the advanced WAMP spec. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>This feature has been removed from the WAMP spec. </dd></dl>
+<p>This sets the depricated <code>CALL.Options.exclude|list</code> option. </p>
 
 </div>
 </div>
@@ -313,7 +314,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Specifies the list of (potential) <em>Callee</em> session IDs that are issued the call. </p>
-<p>This sets the <code>CALL.Options.eligible|list</code> option. See <a href="https://github.com/tavendo/WAMP/blob/master/spec/advanced.md#callee-black--and-whitelisting">Callee Black- and Whitelisting</a> in the advanced WAMP spec. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>This feature has been removed from the WAMP spec. </dd></dl>
+<p>This sets the depricated <code>CALL.Options.eligible|list</code> option. </p>
 
 </div>
 </div>
@@ -332,7 +334,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Specifies if this session should be excluded from receiving the call invocation. </p>
-<p>This sets the <code>CALL.Options.exclude_me|bool</code> option. See <a href="https://github.com/tavendo/WAMP/blob/master/spec/advanced.md#caller-exclusion">Caller Exclusion</a> in the advanced WAMP spec. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>This feature has been removed from the WAMP spec. </dd></dl>
+<p>This sets the depricated <code>CALL.Options.exclude_me|bool</code> option. </p>
 
 </div>
 </div>
@@ -351,7 +354,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Requests that the identity (session ID) of this session be disclosed in the call invocation. </p>
-<p>This sets the <code>CALL.Options.disclose_me|bool</code> option. See <a href="https://github.com/tavendo/WAMP/blob/master/spec/advanced.md#caller-identification">Caller Identification</a> in the advanced WAMP spec. </p>
+<p>This sets the <code>CALL.Options.disclose_me|bool</code> option. See <a href="https://tools.ietf.org/html/draft-oberstet-hybi-tavendo-wamp-02#section-13.3.5">Caller Identification</a> in the advanced WAMP spec. </p>
 
 </div>
 </div>
@@ -365,7 +368,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_rpc.html">Rpc</a></li>
-    <li class="footer">Generated on Thu Jun 18 2015 18:35:10 for CppWAMP by
+    <li class="footer">Generated on Tue Oct 27 2015 13:33:26 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

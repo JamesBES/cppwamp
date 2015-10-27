@@ -1,15 +1,8 @@
 var searchData=
 [
-  ['call',['call',['../classwamp_1_1_coro_session.html#a27e1d340844ae71b9ffa0fb51591317a',1,'wamp::CoroSession::call()'],['../classwamp_1_1_session.html#a2a20e24d47e9f5426d0aba152a7c1f09',1,'wamp::Session::call()']]],
-  ['calleehasexpired',['calleeHasExpired',['../classwamp_1_1_invocation.html#ae7a07a0c044ced14174ce64e57950df7',1,'wamp::Invocation']]],
-  ['caller',['caller',['../classwamp_1_1_invocation.html#a748bbba1670cb739f1a88c6fda685083',1,'wamp::Invocation']]],
-  ['cancel',['cancel',['../classwamp_1_1_connector.html#a335a3e568dad14cea05b450a96cc1280',1,'wamp::Connector']]],
-  ['captureerror',['captureError',['../classwamp_1_1_rpc.html#a0fefbcb96fc3825fefb4d947701d93ab',1,'wamp::Rpc']]],
-  ['check',['check',['../structwamp_1_1error_1_1_logic.html#accfc647c216a85bca8c4977434e2982e',1,'wamp::error::Logic']]],
-  ['clone',['clone',['../classwamp_1_1_connector.html#acc35aad205cb89550959af4f52056c63',1,'wamp::Connector']]],
-  ['connect',['connect',['../classwamp_1_1_coro_session.html#a990f68df80c36d848879b63a3d86b39d',1,'wamp::CoroSession::connect()'],['../classwamp_1_1_session.html#afe59c413ba03dcb6734c01f7d669b0d9',1,'wamp::Session::connect()']]],
-  ['connector',['connector',['../classwamp_1_1_tcp_host.html#aa8551957c5944e4fd7e54d02939e1c76',1,'wamp::TcpHost::connector()'],['../classwamp_1_1_uds_path.html#a22c28ba1b0e4d90d2785e0bd15eaa655',1,'wamp::UdsPath::connector()']]],
-  ['convert',['convert',['../namespacewamp.html#adc9fd4b24c79d11047260b426c56cdbd',1,'wamp::convert(TConverter &amp;c, TValue &amp;val)'],['../namespacewamp.html#a4d10382ab0957a5457c4e48dfad3ee58',1,'wamp::convert(FromVariantConverter &amp;conv, boost::optional&lt; T &gt; &amp;opt)'],['../namespacewamp.html#ad99c56e5890f2b65b900921126dfba32',1,'wamp::convert(ToVariantConverter &amp;conv, boost::optional&lt; T &gt; &amp;opt)'],['../namespacewamp.html#a9bb25768fe7b5ebeb03f7794d5f3ce87',1,'wamp::convert(FromVariantConverter &amp;conv, std::tuple&lt; Ts...&gt; &amp;tuple)'],['../namespacewamp.html#a1a10d73f5e08efb0260ca5bb878f53c1',1,'wamp::convert(ToVariantConverter &amp;conv, std::tuple&lt; Ts...&gt; &amp;tuple)'],['../namespacewamp.html#a3de3a8ab4349a5856300872d3e9e8761',1,'wamp::convert(FromVariantConverter &amp;conv, std::unordered_map&lt; String, T &gt; &amp;map)'],['../namespacewamp.html#adfc3e63b825b5f6c3fbe497b76d8ef71',1,'wamp::convert(ToVariantConverter &amp;conv, std::unordered_map&lt; String, T &gt; &amp;map)']]],
-  ['convertto',['convertTo',['../classwamp_1_1_payload.html#a537796f95a35da8c1b0e356c34275d38',1,'wamp::Payload']]],
-  ['create',['create',['../classwamp_1_1_coro_session.html#aca47333aa30e3c5ce5c448b1ff4012b4',1,'wamp::CoroSession::create(const Connector::Ptr &amp;connector)'],['../classwamp_1_1_coro_session.html#a7c48ffc9e539c8e9bd9d248c8afda98d',1,'wamp::CoroSession::create(const ConnectorList &amp;connectors)'],['../classwamp_1_1_session.html#ac3ef1fa183b05eeb5988f9c1f1a556fe',1,'wamp::Session::create(const Connector::Ptr &amp;connector)'],['../classwamp_1_1_session.html#a6192ca68b5face2427df094f879afe21',1,'wamp::Session::create(const ConnectorList &amp;connectors)']]]
+  ['basicevent',['basicEvent',['../classwamp_1_1_basic_event_unpacker.html#ade5b8fba219aa39780f143feeb088114',1,'wamp::BasicEventUnpacker']]],
+  ['basiceventunpacker',['BasicEventUnpacker',['../classwamp_1_1_basic_event_unpacker.html#a9a07632b753577926c946e0335d9ac89',1,'wamp::BasicEventUnpacker']]],
+  ['basicinvocationunpacker',['BasicInvocationUnpacker',['../classwamp_1_1_basic_invocation_unpacker.html#a15beb9434d66c1b016f34ee301db8347',1,'wamp::BasicInvocationUnpacker']]],
+  ['basicrpc',['basicRpc',['../classwamp_1_1_basic_invocation_unpacker.html#a8f16c142e25ba052d930d360756c9263',1,'wamp::BasicInvocationUnpacker']]],
+  ['blob',['Blob',['../classwamp_1_1_blob.html#ac3e518632a1f5a5b40f14760aa360557',1,'wamp::Blob::Blob()'],['../classwamp_1_1_blob.html#a4129c709b82c7e76c044df17efa588cf',1,'wamp::Blob::Blob(Data data)'],['../classwamp_1_1_blob.html#a9e6d8e8d69f2836b6b645185daeed6b1',1,'wamp::Blob::Blob(std::initializer_list&lt; uint8_t &gt; list)']]]
 ];

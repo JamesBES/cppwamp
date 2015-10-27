@@ -9,5 +9,6 @@ var searchData=
   ['badschema',['badSchema',['../namespacewamp.html#a19ce4bc9c1e5512cec6ba323c4d324d0a3b2142dd13569c21d672bb57b522b590',1,'wamp']]],
   ['badserializer',['badSerializer',['../namespacewamp.html#aa0bf722cbe7ad04d49ad94b6ec440541aa5e02f2492945f6f4616d60c7bf0f441',1,'wamp']]],
   ['badtxlength',['badTxLength',['../namespacewamp.html#a7a09562b29d4b6e42e37be77ec31829aab9c1fb72d859b4927608fb262096783a',1,'wamp']]],
+  ['blob',['blob',['../namespacewamp.html#a4d04d75506649324abb78e785749ccdbaee26908bf9629eeb4b37dac350f4754a',1,'wamp']]],
   ['boolean',['boolean',['../namespacewamp.html#a4d04d75506649324abb78e785749ccdba84e2c64f38f78ba3ea5c905ab5a2da27',1,'wamp']]]
 ];

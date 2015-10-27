@@ -4,6 +4,7 @@ var dir_6a7aca854c9e23f638e2a4e6e00d5fbc =
     [ "asioendpoint.hpp", "asioendpoint_8hpp_source.html", null ],
     [ "asiolistener.hpp", "asiolistener_8hpp_source.html", null ],
     [ "asiotransport.hpp", "asiotransport_8hpp_source.html", null ],
+    [ "base64.hpp", "base64_8hpp_source.html", null ],
     [ "callee.hpp", "callee_8hpp_source.html", null ],
     [ "client.hpp", "client_8hpp_source.html", null ],
     [ "clientinterface.hpp", "clientinterface_8hpp_source.html", null ],

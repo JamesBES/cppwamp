@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classwamp_1_1_options.html" title="wamp::Options\&lt; SessionInfo \&gt;" alt="" coords="5,5,208,32"/>
-<area shape="rect" id="node2" href="$classwamp_1_1_session_info.html" title="Session information returned by Session::join. " alt="" coords="257,5,391,32"/>
+<area shape="rect" id="node1" href="$classwamp_1_1_options.html" title="wamp::Options\&lt; Procedure \&gt;" alt="" coords="6,5,199,32"/>
+<area shape="rect" id="node2" href="$classwamp_1_1_procedure.html" title="Procedure URI and other options passed to Session::enroll. " alt="" coords="249,5,373,32"/>
 </map>

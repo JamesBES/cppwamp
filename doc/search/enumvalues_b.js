@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['networkfailure',['networkFailure',['../namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46af77654d8b67758cba023bfc9de1464b4',1,'wamp']]],
+  ['noeligiblecallee',['noEligibleCallee',['../namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ae8dbf1dde2318304f49bb205815f7fcd',1,'wamp']]],
   ['nosuchprocedure',['noSuchProcedure',['../namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a2be9ffd8006ede69e1a0d3e504095d14',1,'wamp']]],
   ['nosuchrealm',['noSuchRealm',['../namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a1f7f92026f85b91bf2c50b57390b12a6',1,'wamp']]],
   ['nosuchregistration',['noSuchRegistration',['../namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46ac76490ae5599680eded015233639c5d2',1,'wamp']]],

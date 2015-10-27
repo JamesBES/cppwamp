@@ -116,8 +116,9 @@ $(document).ready(function(){initNavTree('traits_8hpp.html','');});
 
 <p>Contains general-purpose type traits.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &lt;tuple&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="traits_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -147,6 +148,20 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ac6726b115b9d7f02ee9d31fd10ffcbb2"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewamp.html#ac6726b115b9d7f02ee9d31fd10ffcbb2">wamp::ValueTypeOf</a> = typename std::decay&lt; T &gt;::type</td></tr>
 <tr class="memdesc:ac6726b115b9d7f02ee9d31fd10ffcbb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metafunction used to obtain the plain value type of a parameter passed by universal reference.  <a href="#ac6726b115b9d7f02ee9d31fd10ffcbb2">More...</a><br /></td></tr>
 <tr class="separator:ac6726b115b9d7f02ee9d31fd10ffcbb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ea1b60cd858045649e3f6a58f6913a"><td class="memTemplParams" colspan="2">template&lt;int N, typename... Ts&gt; </td></tr>
+<tr class="memitem:a68ea1b60cd858045649e3f6a58f6913a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a68ea1b60cd858045649e3f6a58f6913a">wamp::NthTypeOf</a> = typename std::tuple_element&lt; N, std::tuple&lt; Ts...&gt;&gt;::type</td></tr>
+<tr class="memdesc:a68ea1b60cd858045649e3f6a58f6913a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metafunction that obtains the Nth type of a parameter pack.  <a href="#a68ea1b60cd858045649e3f6a58f6913a">More...</a><br /></td></tr>
+<tr class="separator:a68ea1b60cd858045649e3f6a58f6913a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b8480b59e7afcb4b544ade9f3361c5c"><td class="memTemplParams" colspan="2">template&lt;bool B&gt; </td></tr>
+<tr class="memitem:a7b8480b59e7afcb4b544ade9f3361c5c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewamp.html#a7b8480b59e7afcb4b544ade9f3361c5c">wamp::BoolConstant</a> = std::integral_constant&lt; bool, B &gt;</td></tr>
+<tr class="memdesc:a7b8480b59e7afcb4b544ade9f3361c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to std::bool_constant provided in C++17.  <a href="#a7b8480b59e7afcb4b544ade9f3361c5c">More...</a><br /></td></tr>
+<tr class="separator:a7b8480b59e7afcb4b544ade9f3361c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79912569893dfb927f34a7796080f25"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#af79912569893dfb927f34a7796080f25">wamp::TrueType</a> = BoolConstant&lt; true &gt;</td></tr>
+<tr class="memdesc:af79912569893dfb927f34a7796080f25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to std::true_type provided in C++17.  <a href="#af79912569893dfb927f34a7796080f25">More...</a><br /></td></tr>
+<tr class="separator:af79912569893dfb927f34a7796080f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4120fd9401fc349960e8ff7f72fb14"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#adb4120fd9401fc349960e8ff7f72fb14">wamp::FalseType</a> = BoolConstant&lt; false &gt;</td></tr>
+<tr class="memdesc:adb4120fd9401fc349960e8ff7f72fb14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to std::false_type provided in C++17.  <a href="#adb4120fd9401fc349960e8ff7f72fb14">More...</a><br /></td></tr>
+<tr class="separator:adb4120fd9401fc349960e8ff7f72fb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -222,7 +237,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb7245a6f5714b15c73ba62cf32a25df.html">cppwamp</a></li><li class="navelem"><a class="el" href="traits_8hpp.html">traits.hpp</a></li>
-    <li class="footer">Generated on Thu Jun 18 2015 18:35:10 for CppWAMP by
+    <li class="footer">Generated on Tue Oct 27 2015 13:33:26 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

@@ -1,12 +1,13 @@
 var searchData=
 [
-  ['rawsockcategory',['RawsockCategory',['../classwamp_1_1_rawsock_category.html',1,'wamp']]],
-  ['rawsockoptions',['RawsockOptions',['../classwamp_1_1_rawsock_options.html',1,'wamp']]],
-  ['rawsockoptions_3c_20tcphost_2c_20boost_3a_3aasio_3a_3aip_3a_3atcp_20_3e',['RawsockOptions&lt; TcpHost, boost::asio::ip::tcp &gt;',['../classwamp_1_1_rawsock_options.html',1,'wamp']]],
-  ['rawsockoptions_3c_20udspath_2c_20boost_3a_3aasio_3a_3alocal_3a_3astream_5fprotocol_20_3e',['RawsockOptions&lt; UdsPath, boost::asio::local::stream_protocol &gt;',['../classwamp_1_1_rawsock_options.html',1,'wamp']]],
-  ['realm',['Realm',['../classwamp_1_1_realm.html',1,'wamp']]],
-  ['reason',['Reason',['../classwamp_1_1_reason.html',1,'wamp']]],
-  ['registration',['Registration',['../classwamp_1_1_registration.html',1,'wamp']]],
-  ['result',['Result',['../classwamp_1_1_result.html',1,'wamp']]],
-  ['rpc',['Rpc',['../classwamp_1_1_rpc.html',1,'wamp']]]
+  ['payload',['Payload',['../classwamp_1_1_payload.html',1,'wamp']]],
+  ['payload_3c_20error_20_3e',['Payload&lt; Error &gt;',['../classwamp_1_1_payload.html',1,'wamp']]],
+  ['payload_3c_20event_20_3e',['Payload&lt; Event &gt;',['../classwamp_1_1_payload.html',1,'wamp']]],
+  ['payload_3c_20invocation_20_3e',['Payload&lt; Invocation &gt;',['../classwamp_1_1_payload.html',1,'wamp']]],
+  ['payload_3c_20pub_20_3e',['Payload&lt; Pub &gt;',['../classwamp_1_1_payload.html',1,'wamp']]],
+  ['payload_3c_20result_20_3e',['Payload&lt; Result &gt;',['../classwamp_1_1_payload.html',1,'wamp']]],
+  ['payload_3c_20rpc_20_3e',['Payload&lt; Rpc &gt;',['../classwamp_1_1_payload.html',1,'wamp']]],
+  ['procedure',['Procedure',['../classwamp_1_1_procedure.html',1,'wamp']]],
+  ['protocolcategory',['ProtocolCategory',['../classwamp_1_1_protocol_category.html',1,'wamp']]],
+  ['pub',['Pub',['../classwamp_1_1_pub.html',1,'wamp']]]
 ];

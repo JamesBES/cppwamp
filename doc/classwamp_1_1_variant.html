@@ -170,6 +170,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#aa1deb141006ecd77a8983a82f8aae7cb">String</a> = <a class="el" href="namespacewamp.html#a4d04d75506649324abb78e785749ccdbab45cffe084dd3d20d928bee85e7b0f21">std::string</a></td></tr>
 <tr class="memdesc:aa1deb141006ecd77a8983a82f8aae7cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">String type. <br /></td></tr>
 <tr class="separator:aa1deb141006ecd77a8983a82f8aae7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64cfaff2b583e1d96dd6417712abe554"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64cfaff2b583e1d96dd6417712abe554"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a64cfaff2b583e1d96dd6417712abe554">Blob</a> = <a class="el" href="classwamp_1_1_blob.html">wamp::Blob</a></td></tr>
+<tr class="memdesc:a64cfaff2b583e1d96dd6417712abe554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary data as an array of bytes. <br /></td></tr>
+<tr class="separator:a64cfaff2b583e1d96dd6417712abe554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44fdc811e9c90e35ef25976b7f3e1444"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44fdc811e9c90e35ef25976b7f3e1444"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444">Array</a> = std::vector&lt; <a class="el" href="classwamp_1_1_variant.html">Variant</a> &gt;</td></tr>
 <tr class="memdesc:a44fdc811e9c90e35ef25976b7f3e1444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamic array of variants. <br /></td></tr>
@@ -410,6 +414,7 @@ Construction</h2></td></tr>
 <li><a class="el" href="classwamp_1_1_variant.html#ac118672044461eefb7b39bb783a588c7">Bool</a> : true or false</li>
 <li><b>Numbers</b>: as integer (<a class="el" href="classwamp_1_1_variant.html#a2f0c81147a31b8b7de22c3701691818b">Int</a>, <a class="el" href="classwamp_1_1_variant.html#ad26ea60ba0c4928876fbceee817db58e">UInt</a>), or floating point (<a class="el" href="classwamp_1_1_variant.html#abc9ecd6b5a19982f7a59d7614e63e746">Real</a>)</li>
 <li><a class="el" href="classwamp_1_1_variant.html#aa1deb141006ecd77a8983a82f8aae7cb">String</a> : only UTF-8 encoded strings are currently supported</li>
+<li><a class="el" href="classwamp_1_1_blob.html">Blob</a> : binary data as an array of bytes</li>
 <li><a class="el" href="classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444">Array</a> : dynamically-sized lists of variants</li>
 <li><a class="el" href="classwamp_1_1_variant.html#aa9f3c1cf3c181d2db4b772e2b5e4db9d">Object</a> : dictionaries having string keys and variant values</li>
 </ul>
@@ -1885,25 +1890,27 @@ template&lt;typename T &gt; </div>
 <p>Compares a variant with a non-variant value for equality. </p>
 <p>The comparison is performed according to the following matrix: </p><table class="doxtable">
 <tr>
-<th>Value, Variant-&gt; </th><th><a class="el" href="structwamp_1_1_null.html" title="Type used to represent a null or empty Variant value. ">Null</a> </th><th>Bool </th><th>Int </th><th>UInt </th><th>Real </th><th>String </th><th>Array </th><th>Object  </th></tr>
+<th>Value, Variant-&gt; </th><th><a class="el" href="structwamp_1_1_null.html" title="Type used to represent a null or empty Variant value. ">Null</a> </th><th>Bool </th><th>Int </th><th>UInt </th><th>Real </th><th>String </th><th><a class="el" href="classwamp_1_1_blob.html" title="Contains binary data as an array of bytes. ">Blob</a> </th><th>Array </th><th>Object  </th></tr>
 <tr>
-<td><a class="el" href="structwamp_1_1_null.html" title="Type used to represent a null or empty Variant value. ">Null</a> </td><td>true </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td></tr>
+<td><a class="el" href="structwamp_1_1_null.html" title="Type used to represent a null or empty Variant value. ">Null</a> </td><td>true </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td></tr>
 <tr>
-<td>Bool </td><td>false </td><td>L==R </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td></tr>
+<td>Bool </td><td>false </td><td>L==R </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td></tr>
 <tr>
-<td><em>integer type</em> </td><td>false </td><td>false </td><td>L==R </td><td>L==R </td><td>L==R </td><td>false </td><td>false </td><td>false </td></tr>
+<td><em>integer type</em> </td><td>false </td><td>false </td><td>L==R </td><td>L==R </td><td>L==R </td><td>false </td><td>false </td><td>false </td><td>false </td></tr>
 <tr>
-<td><em>floating point type</em> </td><td>false </td><td>false </td><td>L==R </td><td>L==R </td><td>L==R </td><td>false </td><td>false </td><td>false </td></tr>
+<td><em>floating point type</em> </td><td>false </td><td>false </td><td>L==R </td><td>L==R </td><td>L==R </td><td>false </td><td>false </td><td>false </td><td>false </td></tr>
 <tr>
-<td>String </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>L==R </td><td>false </td><td>false </td></tr>
+<td>String </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>L==R </td><td>false </td><td>false </td><td>false </td></tr>
 <tr>
-<td>Array </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>L==R </td><td>false </td></tr>
+<td><a class="el" href="classwamp_1_1_blob.html" title="Contains binary data as an array of bytes. ">Blob</a> </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>L==R </td><td>false </td><td>false </td></tr>
 <tr>
-<td>std::vector&lt;T&gt; </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>L==R </td><td>false </td></tr>
+<td>Array </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>L==R </td><td>false </td></tr>
 <tr>
-<td>Object </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>L==R </td></tr>
+<td>std::vector&lt;T&gt; </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>L==R </td><td>false </td></tr>
 <tr>
-<td>std::map&lt;String,T&gt; </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>L==R </td></tr>
+<td>Object </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>L==R </td></tr>
+<tr>
+<td>std::map&lt;String,T&gt; </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>false </td><td>L==R </td></tr>
 </table>
 
 </div>
@@ -2481,7 +2488,7 @@ template&lt;typename V , typename T , typename O &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_variant.html">Variant</a></li>
-    <li class="footer">Generated on Thu Jun 18 2015 18:35:11 for CppWAMP by
+    <li class="footer">Generated on Tue Oct 27 2015 13:33:26 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

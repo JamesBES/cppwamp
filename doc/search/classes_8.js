@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['msgpack',['Msgpack',['../classwamp_1_1_msgpack.html',1,'wamp']]]
+  ['logic',['Logic',['../structwamp_1_1error_1_1_logic.html',1,'wamp::error']]]
 ];

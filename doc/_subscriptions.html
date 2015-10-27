@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('_subscriptions.html','');});
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#EventSlots">Event Slots</a></li>
+<li class="level1"><a href="#BasicEventSlots">Basic Event Slots</a></li>
 <li class="level1"><a href="#UnpackedEventSlots">Unpacked Event Slots</a></li>
 <li class="level1"><a href="#ScopedSubscriptions">Scoped Subscriptions</a></li>
 </ul>
@@ -121,16 +122,40 @@ Event Slots</h1>
 <p><a class="el" href="classwamp_1_1_session.html#a93b8686842db786a7d065c601f75cb5a" title="Subscribes to WAMP pub/sub events having the given topic. ">wamp::Session::subscribe</a> expects an event slot with the following signature:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>(<a class="code" href="classwamp_1_1_event.html">wamp::Event</a>)</div>
 </div><!-- fragment --><p>where <a class="el" href="classwamp_1_1_event.html" title="Represents a published event. ">wamp::Event</a> is an object containing information and payload arguments related to the publication.</p>
+<h1><a class="anchor" id="BasicEventSlots"></a>
+Basic Event Slots</h1>
+<p>An <em>basic event slot</em> represents an event handler that expects one or more payload arguments having specific, static types. The <a class="el" href="classwamp_1_1_basic_event_unpacker.html#ade5b8fba219aa39780f143feeb088114">wamp::basicEvent</a> function can be used when registering such event slots. It takes a basic event slot, and converts it into a regular event slot that can be passed to <a class="el" href="classwamp_1_1_session.html#a93b8686842db786a7d065c601f75cb5a" title="Subscribes to WAMP pub/sub events having the given topic. ">wamp::Session::subscribe</a>.</p>
+<p><code>wamp::basicEvent</code> expects an event slot with the following signature:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>(TArgs...)</div>
+</div><!-- fragment --><p> where <code>TArgs...</code> matches the template parameter pack that was passed to <code>wamp::basicEvent</code>.</p>
+<p>Examples of basic event slots are: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> onSensorSampled(<span class="keywordtype">float</span> value) { ... }</div>
+<div class="line"><span class="comment">//                     ^</span></div>
+<div class="line"><span class="comment">//                    TArgs</span></div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> onPurchase(std::string item, <span class="keywordtype">int</span> cost, <span class="keywordtype">int</span> qty) { ... }</div>
+<div class="line"><span class="comment">//                      ^          ^          ^</span></div>
+<div class="line"><span class="comment">//                      \----------|----------/</span></div>
+<div class="line"><span class="comment">//                               TArgs</span></div>
+</div><!-- fragment --><p>The above slots can be registered as follows: </p><div class="fragment"><div class="line">session-&gt;subscribe(Topic(<span class="stringliteral">&quot;sensorSampled&quot;</span>),</div>
+<div class="line">                   basicEvent&lt;float&gt;(&amp;onSensorSampled),</div>
+<div class="line">                   handler);</div>
+<div class="line"></div>
+<div class="line">session-&gt;subscribe(Topic(<span class="stringliteral">&quot;itemPurchased&quot;</span>),</div>
+<div class="line">                   basicEvent&lt;std::string, int, int&gt;(&amp;onPurchase),</div>
+<div class="line">                   handler);</div>
+</div><!-- fragment --><p>where <code>handler</code> is the asynchronous handler (or coroutine yield context) for the <b>subscribe operation itself</b>.</p>
+<p>Whenever a <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">wamp::Session</a> dispatches an event to the above slots, it automatically unpacks the event payload positional arguments, and passes them to the slot's argument list. If <code>Session</code> cannot convert the event payload arguments to their target types, it issues a warning that can be captured via <a class="el" href="classwamp_1_1_session.html#a3af4c171dc1d0cb7b412adbd702528db" title="Sets the log handler for warnings. ">wamp::Session::setWarningHandler</a>.</p>
 <h1><a class="anchor" id="UnpackedEventSlots"></a>
 Unpacked Event Slots</h1>
 <p>An <em>unpacked event slot</em> represents an event handler that expects one or more payload arguments having specific, static types. The <a class="el" href="classwamp_1_1_event_unpacker.html#acd803b2f9e7799a3c4279fe37c2ada5b">wamp::unpackedEvent</a> function can be used when registering such event slots. It takes an unpacked event slot, and converts it into a regular event slot that can be passed to <a class="el" href="classwamp_1_1_session.html#a93b8686842db786a7d065c601f75cb5a" title="Subscribes to WAMP pub/sub events having the given topic. ">wamp::Session::subscribe</a>.</p>
 <p><code>wamp::unpackedEvent</code> expects an event slot with the following signature:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>(<a class="code" href="classwamp_1_1_event.html">wamp::Event</a>, TArgs...)</div>
 </div><!-- fragment --><p> where</p><ul>
-<li><a class="el" href="classwamp_1_1_event.html" title="Represents a published event. ">wamp::Event</a> is an object containing information and payload arguments related to the publication,</li>
+<li><a class="el" href="classwamp_1_1_event.html" title="Represents a published event. ">wamp::Event</a> is an object containing information and payload arguments related to the publication, and,</li>
 <li><code>TArgs...</code> matches the template parameter pack that was passed to <code>wamp::unpackedEvent</code>.</li>
 </ul>
-<p>Examples of static event slots are: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> onSensorSampled(Event event, <span class="keywordtype">float</span> value) { ... }</div>
+<dl class="section note"><dt>Note</dt><dd>Unpacked event slots differ from basic event slots in the following way: Unpacked event slots are passed a <a class="el" href="classwamp_1_1_event.html" title="Represents a published event. ">wamp::Event</a> object, which contains metadata on the event itself.</dd></dl>
+<p>Examples of unpacked event slots are: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> onSensorSampled(Event event, <span class="keywordtype">float</span> value) { ... }</div>
 <div class="line"><span class="comment">//                                  ^</span></div>
 <div class="line"><span class="comment">//                                TArgs</span></div>
 <div class="line"></div>
@@ -187,7 +212,7 @@ Scoped Subscriptions</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 18 2015 18:35:10 for CppWAMP by
+    <li class="footer">Generated on Tue Oct 27 2015 13:33:26 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

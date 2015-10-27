@@ -4,6 +4,9 @@ var dir_bb7245a6f5714b15c73ba62cf32a25df =
     [ "types", "dir_9d6f098ba1bc107aa9f1128656357da4.html", "dir_9d6f098ba1bc107aa9f1128656357da4" ],
     [ "asiodefs.hpp", "asiodefs_8hpp.html", "asiodefs_8hpp" ],
     [ "asyncresult.hpp", "asyncresult_8hpp.html", "asyncresult_8hpp" ],
+    [ "blob.hpp", "blob_8hpp.html", [
+      [ "Blob", "classwamp_1_1_blob.html", "classwamp_1_1_blob" ]
+    ] ],
     [ "codec.hpp", "codec_8hpp.html", [
       [ "Decode", "structwamp_1_1error_1_1_decode.html", null ]
     ] ],
