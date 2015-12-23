@@ -2,8 +2,8 @@ var searchData=
 [
   ['raise',['raise',['../structwamp_1_1error_1_1_logic.html#aa5a9827d96ee0fbad6e2ca37a7c9c2c5',1,'wamp::error::Logic']]],
   ['rawsockcategory',['rawsockCategory',['../classwamp_1_1_rawsock_category.html#acb688588ef774edf4166c2cbbdab900d',1,'wamp::RawsockCategory']]],
-  ['realm',['realm',['../classwamp_1_1_session_info.html#a4cc1eeba2b811883b14212a3c3ea9221',1,'wamp::SessionInfo::realm()'],['../classwamp_1_1_realm.html#ae783d284d4b49a24c6c7a66fd93f6841',1,'wamp::Realm::Realm()']]],
-  ['reason',['Reason',['../classwamp_1_1_reason.html#a50f1208e1ac2e22fa796181df1bd72e9',1,'wamp::Reason::Reason()'],['../classwamp_1_1_error.html#a4b1fa7a46c28e8236bf203c452190a8a',1,'wamp::Error::reason()']]],
+  ['realm',['Realm',['../classwamp_1_1_realm.html#ae783d284d4b49a24c6c7a66fd93f6841',1,'wamp::Realm::Realm()'],['../classwamp_1_1_session_info.html#a4cc1eeba2b811883b14212a3c3ea9221',1,'wamp::SessionInfo::realm()']]],
+  ['reason',['reason',['../classwamp_1_1_error.html#a4b1fa7a46c28e8236bf203c452190a8a',1,'wamp::Error::reason()'],['../classwamp_1_1_reason.html#a50f1208e1ac2e22fa796181df1bd72e9',1,'wamp::Reason::Reason()']]],
   ['registration',['Registration',['../classwamp_1_1_registration.html#ae4ab8fcfdede8796bda00da601f03f5d',1,'wamp::Registration::Registration()'],['../classwamp_1_1_registration.html#a2a3edbdbe9f5f9747c36bd39e71999cd',1,'wamp::Registration::Registration(const Registration &amp;other)'],['../classwamp_1_1_registration.html#a213b6f1673fbfb0c82f326287c070677',1,'wamp::Registration::Registration(Registration &amp;&amp;other) noexcept']]],
   ['release',['release',['../classwamp_1_1_scoped_registration.html#a9acfe839a97aa0f0044297bb7dffda42',1,'wamp::ScopedRegistration::release()'],['../classwamp_1_1_scoped_subscription.html#a5d484bd0a4a79e5b5649f8b3de367638',1,'wamp::ScopedSubscription::release()']]],
   ['requestid',['requestId',['../classwamp_1_1_result.html#aad0ab9837ecf66255d3518d88d849ea5',1,'wamp::Result::requestId()'],['../classwamp_1_1_invocation.html#a85efbc1438b871c9aef8f9bf163fa6cf',1,'wamp::Invocation::requestId()']]],

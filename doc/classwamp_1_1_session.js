@@ -6,6 +6,7 @@ var classwamp_1_1_session =
     [ "EventSlot", "classwamp_1_1_session.html#adf30356c95f167648645c3c9f1b637af", null ],
     [ "CallSlot", "classwamp_1_1_session.html#a30a80c4099f013b1eca280b2a9d476dc", null ],
     [ "~Session", "classwamp_1_1_session.html#a094eecddbbd6a3b926dc4393352807d2", null ],
+    [ "userIosvc", "classwamp_1_1_session.html#a8a228862fc9d8d299a484642a4c57137", null ],
     [ "state", "classwamp_1_1_session.html#a515b1113c1f91c2e98a8eba4dd64cafd", null ],
     [ "setWarningHandler", "classwamp_1_1_session.html#a3af4c171dc1d0cb7b412adbd702528db", null ],
     [ "setTraceHandler", "classwamp_1_1_session.html#a8ecf51b461ff093aedc9ed32c9adfc6a", null ],

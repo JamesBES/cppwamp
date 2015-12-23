@@ -197,10 +197,6 @@ Related Functions</h2></td></tr>
 <tr class="memitem:aa8551957c5944e4fd7e54d02939e1c76"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_connector.html#a71ed161f97ca2300f2e97e8ce9ab211b">Connector::Ptr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_tcp_host.html#aa8551957c5944e4fd7e54d02939e1c76">connector</a> (<a class="el" href="namespacewamp.html#a3126cf65d90c21604e550580ee984cfb">AsioService</a> &amp;iosvc, <a class="el" href="classwamp_1_1_tcp_host.html">TcpHost</a> host)</td></tr>
 <tr class="memdesc:aa8551957c5944e4fd7e54d02939e1c76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classwamp_1_1_connector.html" title="Abstract base class for establishing client transport endpoints. ">Connector</a> that can establish a TCP raw socket transport.  <a href="#aa8551957c5944e4fd7e54d02939e1c76">More...</a><br /></td></tr>
 <tr class="separator:aa8551957c5944e4fd7e54d02939e1c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeefe1c0d392b6e501ed1b2c5976c4dcb"><td class="memTemplParams" colspan="2">template&lt;typename TCodec &gt; </td></tr>
-<tr class="memitem:aeefe1c0d392b6e501ed1b2c5976c4dcb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_connector.html#a71ed161f97ca2300f2e97e8ce9ab211b">Connector::Ptr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_tcp_host.html#aeefe1c0d392b6e501ed1b2c5976c4dcb">legacyConnector</a> (<a class="el" href="namespacewamp.html#a3126cf65d90c21604e550580ee984cfb">AsioService</a> &amp;iosvc, <a class="el" href="classwamp_1_1_tcp_host.html">TcpHost</a> host)</td></tr>
-<tr class="memdesc:aeefe1c0d392b6e501ed1b2c5976c4dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classwamp_1_1_connector.html" title="Abstract base class for establishing client transport endpoints. ">Connector</a> that can establish a TCP raw socket transport on non-conformant routers.  <a href="#aeefe1c0d392b6e501ed1b2c5976c4dcb">More...</a><br /></td></tr>
-<tr class="separator:aeefe1c0d392b6e501ed1b2c5976c4dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -212,7 +208,7 @@ static constexpr <a class="el" href="namespacewamp.html#a1750e952cec62e645c6b1c9
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains TCP host address information, as well as other socket options. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_ip_options.html" title="Base class containing options for IP-based raw socket connections. ">IpOptions</a>, <a class="el" href="classwamp_1_1_rawsock_options.html" title="Base class containing general options for raw socket connections. ">RawsockOptions</a>, <a class="el" href="classwamp_1_1_tcp_host.html#aa8551957c5944e4fd7e54d02939e1c76" title="Creates a Connector that can establish a TCP raw socket transport. ">connector</a>, <a class="el" href="classwamp_1_1_tcp_host.html#aeefe1c0d392b6e501ed1b2c5976c4dcb" title="Creates a Connector that can establish a TCP raw socket transport on non-conformant routers...">legacyConnector</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_ip_options.html" title="Base class containing options for IP-based raw socket connections. ">IpOptions</a>, <a class="el" href="classwamp_1_1_rawsock_options.html" title="Base class containing general options for raw socket connections. ">RawsockOptions</a>, <a class="el" href="classwamp_1_1_tcp_host.html#aa8551957c5944e4fd7e54d02939e1c76" title="Creates a Connector that can establish a TCP raw socket transport. ">connector</a> </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2chat_2main_8cpp-example.html#_a9">examples/chat/main.cpp</a>, and <a class="el" href="examples_2timeclient_2main_8cpp-example.html#_a1">examples/timeclient/main.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1399166bfc10a6dc43e49b37181fdde2"></a>
@@ -393,60 +389,6 @@ template&lt;typename TCodec &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aeefe1c0d392b6e501ed1b2c5976c4dcb"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TCodec &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classwamp_1_1_connector.html#a71ed161f97ca2300f2e97e8ce9ab211b">Connector::Ptr</a> legacyConnector </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacewamp.html#a3126cf65d90c21604e550580ee984cfb">AsioService</a> &amp;&#160;</td>
-          <td class="paramname"><em>iosvc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classwamp_1_1_tcp_host.html">TcpHost</a>&#160;</td>
-          <td class="paramname"><em>host</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a <a class="el" href="classwamp_1_1_connector.html" title="Abstract base class for establishing client transport endpoints. ">Connector</a> that can establish a TCP raw socket transport on non-conformant routers. </p>
-<p>This is an interim <a class="el" href="classwamp_1_1_connector.html" title="Abstract base class for establishing client transport endpoints. ">Connector</a> for connecting to routers that do not yet support handshaking on their raw socket transports. Handshaking was introduced in <a href="https://github.com/tavendo/WAMP/commit/e2c4e5775d89fa6d991eb2e138e2f42ca2469fa8">version e2c4e57</a> of the advanced WAMP specification.</p>
-<dl class="section return"><dt>Returns</dt><dd>a <code>std::shared_ptr</code> to a <a class="el" href="classwamp_1_1_connector.html" title="Abstract base class for establishing client transport endpoints. ">Connector</a> </dd></dl>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">TCodec</td><td>The serialization to use over this transport. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_connector.html" title="Abstract base class for establishing client transport endpoints. ">Connector</a>, <a class="el" href="classwamp_1_1_json.html" title="JSON codec. ">Json</a>, <a class="el" href="classwamp_1_1_msgpack.html" title="Msgpack codec. ">Msgpack</a>, makeUds, makeLegacyTcp </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">iosvc</td><td>The I/O service to be used by the transport. </td></tr>
-    <tr><td class="paramname">host</td><td>TCP host address and other socket options. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>cppwamp/<a class="el" href="tcphost_8hpp_source.html">tcphost.hpp</a></li>
 <li>cppwamp/<a class="el" href="tcp_8hpp_source.html">tcp.hpp</a></li>
@@ -458,7 +400,7 @@ template&lt;typename TCodec &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_tcp_host.html">TcpHost</a></li>
-    <li class="footer">Generated on Tue Oct 27 2015 13:33:26 for CppWAMP by
+    <li class="footer">Generated on Wed Dec 23 2015 14:08:52 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

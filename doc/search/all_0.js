@@ -10,12 +10,14 @@ var searchData=
   ['args',['args',['../classwamp_1_1_payload.html#a1c78f36073dc6476b2b31d0c80d80d4e',1,'wamp::Payload::args() const &amp;'],['../classwamp_1_1_payload.html#a65e3276c565a44d3c0e585ea0b4a66c3',1,'wamp::Payload::args()&amp;&amp;']]],
   ['array',['Array',['../classwamp_1_1_variant.html#a44fdc811e9c90e35ef25976b7f3e1444',1,'wamp::Variant::Array()'],['../namespacewamp.html#a4d04d75506649324abb78e785749ccdbaf1f713c9e000f5d3f280adbd124df4f5',1,'wamp::array()'],['../namespacewamp.html#a355f6175e9ae713577192bf2665bc030',1,'wamp::Array()']]],
   ['as',['as',['../classwamp_1_1_variant.html#a1315ba0cee052b30fdb6fd81aba431d9',1,'wamp::Variant::as()'],['../classwamp_1_1_variant.html#ac2b212d89307ebfb78f526d29902b7eb',1,'wamp::Variant::as() const '],['../classwamp_1_1_variant.html#a42f0b800e10d50229909e18e06ce47eb',1,'wamp::Variant::as()'],['../classwamp_1_1_variant.html#aff253e21944e70046bf55da3e8457caa',1,'wamp::Variant::as() const ']]],
+  ['aserror',['asError',['../classwamp_1_1_outcome.html#a6899f03884628ce3eac70ccedaca1054',1,'wamp::Outcome::asError() const &amp;'],['../classwamp_1_1_outcome.html#a8508f4325b2949738a4838aa4ea9fe8b',1,'wamp::Outcome::asError()&amp;&amp;']]],
   ['asiodefs_2ehpp',['asiodefs.hpp',['../asiodefs_8hpp.html',1,'']]],
   ['asioerrorcode',['AsioErrorCode',['../namespacewamp.html#adeb149f6fd1f5f5508fcf1f90f01381b',1,'wamp']]],
   ['asioservice',['AsioService',['../namespacewamp.html#a3126cf65d90c21604e550580ee984cfb',1,'wamp']]],
+  ['asresult',['asResult',['../classwamp_1_1_outcome.html#a476c5afc9dba01264d6d5d3e037af326',1,'wamp::Outcome::asResult() const &amp;'],['../classwamp_1_1_outcome.html#a221120bb5c5fa11fed8960144e8f3456',1,'wamp::Outcome::asResult()&amp;&amp;']]],
   ['asynchandler',['AsyncHandler',['../namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019',1,'wamp']]],
-  ['asyncresult',['AsyncResult',['../classwamp_1_1_async_result.html',1,'wamp']]],
   ['asyncresult',['AsyncResult',['../classwamp_1_1_async_result.html#ad1dadd60aeccb0f64cd298a413921278',1,'wamp::AsyncResult::AsyncResult(T value=T())'],['../classwamp_1_1_async_result.html#ac54cd7f4c0edf83a9c29cf8f58395ee0',1,'wamp::AsyncResult::AsyncResult(std::error_code ec)'],['../classwamp_1_1_async_result.html#a7206d7816a2757f6a4d4fd30f539a057',1,'wamp::AsyncResult::AsyncResult(std::error_code ec, std::string info)']]],
+  ['asyncresult',['AsyncResult',['../classwamp_1_1_async_result.html',1,'wamp']]],
   ['asyncresult_2ehpp',['asyncresult.hpp',['../asyncresult_8hpp.html',1,'']]],
   ['authorizationfailed',['authorizationFailed',['../namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a23326a67dfb49576ae6d7f0ed9d124eb',1,'wamp']]]
 ];

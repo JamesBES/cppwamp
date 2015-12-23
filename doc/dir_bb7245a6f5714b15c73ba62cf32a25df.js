@@ -15,9 +15,11 @@ var dir_bb7245a6f5714b15c73ba62cf32a25df =
     [ "corosession.hpp", "corosession_8hpp.html", [
       [ "CoroSession", "classwamp_1_1_coro_session.html", "classwamp_1_1_coro_session" ]
     ] ],
-    [ "dialoguedata.hpp", "dialoguedata_8hpp.html", [
-      [ "Reason", "classwamp_1_1_reason.html", "classwamp_1_1_reason" ],
-      [ "Error", "classwamp_1_1_error.html", "classwamp_1_1_error" ]
+    [ "corounpacker.hpp", "corounpacker_8hpp.html", [
+      [ "CoroEventUnpacker", "classwamp_1_1_coro_event_unpacker.html", "classwamp_1_1_coro_event_unpacker" ],
+      [ "BasicCoroEventUnpacker", "classwamp_1_1_basic_coro_event_unpacker.html", "classwamp_1_1_basic_coro_event_unpacker" ],
+      [ "CoroInvocationUnpacker", "classwamp_1_1_coro_invocation_unpacker.html", "classwamp_1_1_coro_invocation_unpacker" ],
+      [ "BasicCoroInvocationUnpacker", "classwamp_1_1_basic_coro_invocation_unpacker.html", "classwamp_1_1_basic_coro_invocation_unpacker" ]
     ] ],
     [ "error.hpp", "error_8hpp.html", "error_8hpp" ],
     [ "json.hpp", "json_8hpp.html", [
@@ -32,6 +34,10 @@ var dir_bb7245a6f5714b15c73ba62cf32a25df =
     ] ],
     [ "payload.hpp", "payload_8hpp.html", [
       [ "Payload", "classwamp_1_1_payload.html", "classwamp_1_1_payload" ]
+    ] ],
+    [ "peerdata.hpp", "peerdata_8hpp.html", [
+      [ "Reason", "classwamp_1_1_reason.html", "classwamp_1_1_reason" ],
+      [ "Error", "classwamp_1_1_error.html", "classwamp_1_1_error" ]
     ] ],
     [ "rawsockoptions.hpp", "rawsockoptions_8hpp.html", "rawsockoptions_8hpp" ],
     [ "registration.hpp", "registration_8hpp.html", [

@@ -181,10 +181,6 @@ Related Functions</h2></td></tr>
 <tr class="memitem:a22c28ba1b0e4d90d2785e0bd15eaa655"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_connector.html#a71ed161f97ca2300f2e97e8ce9ab211b">Connector::Ptr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_uds_path.html#a22c28ba1b0e4d90d2785e0bd15eaa655">connector</a> (<a class="el" href="namespacewamp.html#a3126cf65d90c21604e550580ee984cfb">AsioService</a> &amp;iosvc, <a class="el" href="classwamp_1_1_uds_path.html">UdsPath</a> host)</td></tr>
 <tr class="memdesc:a22c28ba1b0e4d90d2785e0bd15eaa655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classwamp_1_1_connector.html" title="Abstract base class for establishing client transport endpoints. ">Connector</a> that can establish a Unix domain socket transport.  <a href="#a22c28ba1b0e4d90d2785e0bd15eaa655">More...</a><br /></td></tr>
 <tr class="separator:a22c28ba1b0e4d90d2785e0bd15eaa655"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ca665f39096cff726638666b8f724de"><td class="memTemplParams" colspan="2">template&lt;typename TCodec &gt; </td></tr>
-<tr class="memitem:a0ca665f39096cff726638666b8f724de"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_connector.html#a71ed161f97ca2300f2e97e8ce9ab211b">Connector::Ptr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwamp_1_1_uds_path.html#a0ca665f39096cff726638666b8f724de">legacyConnector</a> (<a class="el" href="namespacewamp.html#a3126cf65d90c21604e550580ee984cfb">AsioService</a> &amp;iosvc, <a class="el" href="classwamp_1_1_uds_path.html">UdsPath</a> host)</td></tr>
-<tr class="memdesc:a0ca665f39096cff726638666b8f724de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classwamp_1_1_connector.html" title="Abstract base class for establishing client transport endpoints. ">Connector</a> that can establish a Unix domain socket transport on non-conformant routers.  <a href="#a0ca665f39096cff726638666b8f724de">More...</a><br /></td></tr>
-<tr class="separator:a0ca665f39096cff726638666b8f724de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -196,7 +192,7 @@ static constexpr <a class="el" href="namespacewamp.html#a1750e952cec62e645c6b1c9
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains a Unix domain socket path, as well as other socket options. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_rawsock_options.html" title="Base class containing general options for raw socket connections. ">RawsockOptions</a>, <a class="el" href="classwamp_1_1_uds_path.html#a22c28ba1b0e4d90d2785e0bd15eaa655" title="Creates a Connector that can establish a Unix domain socket transport. ">connector</a>, <a class="el" href="classwamp_1_1_uds_path.html#a0ca665f39096cff726638666b8f724de" title="Creates a Connector that can establish a Unix domain socket transport on non-conformant routers...">legacyConnector</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_rawsock_options.html" title="Base class containing general options for raw socket connections. ">RawsockOptions</a>, <a class="el" href="classwamp_1_1_uds_path.html#a22c28ba1b0e4d90d2785e0bd15eaa655" title="Creates a Connector that can establish a Unix domain socket transport. ">connector</a> </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2timeservice_2main_8cpp-example.html#_a1">examples/timeservice/main.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a79e9ea0e5c6001f3848b224493bbe802"></a>
@@ -295,60 +291,6 @@ template&lt;typename TCodec &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0ca665f39096cff726638666b8f724de"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TCodec &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classwamp_1_1_connector.html#a71ed161f97ca2300f2e97e8ce9ab211b">Connector::Ptr</a> legacyConnector </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacewamp.html#a3126cf65d90c21604e550580ee984cfb">AsioService</a> &amp;&#160;</td>
-          <td class="paramname"><em>iosvc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classwamp_1_1_uds_path.html">UdsPath</a>&#160;</td>
-          <td class="paramname"><em>host</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a <a class="el" href="classwamp_1_1_connector.html" title="Abstract base class for establishing client transport endpoints. ">Connector</a> that can establish a Unix domain socket transport on non-conformant routers. </p>
-<p>This is an interim <a class="el" href="classwamp_1_1_connector.html" title="Abstract base class for establishing client transport endpoints. ">Connector</a> for connecting to routers that do not yet support handshaking on their raw socket transports. Handshaking was introduced in <a href="https://github.com/tavendo/WAMP/commit/e2c4e5775d89fa6d991eb2e138e2f42ca2469fa8">version e2c4e57</a> of the advanced WAMP specification.</p>
-<dl class="section return"><dt>Returns</dt><dd>a <code>std::shared_ptr</code> to a <a class="el" href="classwamp_1_1_connector.html" title="Abstract base class for establishing client transport endpoints. ">Connector</a> </dd></dl>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">TCodec</td><td>The serialization to use over this transport. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwamp_1_1_connector.html" title="Abstract base class for establishing client transport endpoints. ">Connector</a>, <a class="el" href="classwamp_1_1_json.html" title="JSON codec. ">Json</a>, <a class="el" href="classwamp_1_1_msgpack.html" title="Msgpack codec. ">Msgpack</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">iosvc</td><td>The I/O service to be used by the transport. </td></tr>
-    <tr><td class="paramname">host</td><td>Unix domain socket path and other socket options. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>cppwamp/<a class="el" href="udspath_8hpp_source.html">udspath.hpp</a></li>
 <li>cppwamp/<a class="el" href="uds_8hpp_source.html">uds.hpp</a></li>
@@ -360,7 +302,7 @@ template&lt;typename TCodec &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_uds_path.html">UdsPath</a></li>
-    <li class="footer">Generated on Tue Oct 27 2015 13:33:26 for CppWAMP by
+    <li class="footer">Generated on Wed Dec 23 2015 14:08:52 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

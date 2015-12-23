@@ -1,11 +1,15 @@
 var hierarchy =
 [
     [ "wamp::AsyncResult< T >", "classwamp_1_1_async_result.html", null ],
+    [ "wamp::BasicCoroEventUnpacker< TSlot, TArgs >", "classwamp_1_1_basic_coro_event_unpacker.html", null ],
+    [ "wamp::BasicCoroInvocationUnpacker< TSlot, TResult, TArgs >", "classwamp_1_1_basic_coro_invocation_unpacker.html", null ],
     [ "wamp::BasicEventUnpacker< TSlot, TArgs >", "classwamp_1_1_basic_event_unpacker.html", null ],
     [ "wamp::BasicInvocationUnpacker< TSlot, TResult, TArgs >", "classwamp_1_1_basic_invocation_unpacker.html", null ],
     [ "wamp::Blob", "classwamp_1_1_blob.html", null ],
     [ "wamp::Connector", "classwamp_1_1_connector.html", null ],
     [ "wamp::ConversionAccess", "classwamp_1_1_conversion_access.html", null ],
+    [ "wamp::CoroEventUnpacker< TSlot, TArgs >", "classwamp_1_1_coro_event_unpacker.html", null ],
+    [ "wamp::CoroInvocationUnpacker< TSlot, TArgs >", "classwamp_1_1_coro_invocation_unpacker.html", null ],
     [ "std::error_category", null, [
       [ "wamp::ProtocolCategory", "classwamp_1_1_protocol_category.html", null ],
       [ "wamp::RawsockCategory", "classwamp_1_1_rawsock_category.html", null ],
@@ -96,6 +100,9 @@ var hierarchy =
     [ "wamp::Registration", "classwamp_1_1_registration.html", [
       [ "wamp::ScopedRegistration", "classwamp_1_1_scoped_registration.html", null ]
     ] ],
+    [ "wamp::ResultTypeOfHandler< THandler >", "namespacewamp.html#structwamp_1_1_result_type_of_handler", null ],
+    [ "wamp::ResultTypeOfHandler< AsyncHandler< T > >", "namespacewamp.html#structwamp_1_1_result_type_of_handler_3_01_async_handler_3_01_t_01_4_01_4", null ],
+    [ "wamp::ResultTypeOfHandler< AsyncTask< T > >", "namespacewamp.html#structwamp_1_1_result_type_of_handler_3_01_async_task_3_01_t_01_4_01_4", null ],
     [ "wamp::Session", "classwamp_1_1_session.html", [
       [ "wamp::CoroSession< TBase >", "classwamp_1_1_coro_session.html", null ]
     ] ],

@@ -125,10 +125,14 @@ $(document).ready(function(){initNavTree('examples_2chat_2main_8cpp-example.html
 <div class="line"><span class="keyword">public</span>:</div>
 <div class="line">    <span class="keyword">using</span> Yield = boost::asio::yield_context;</div>
 <div class="line"></div>
+<div class="line">    <span class="keyword">explicit</span> ChatService(<a class="code" href="namespacewamp.html#a3126cf65d90c21604e550580ee984cfb">wamp::AsioService</a>&amp; iosvc)</div>
+<div class="line">        : iosvc_(iosvc)</div>
+<div class="line">    {}</div>
+<div class="line"></div>
 <div class="line">    <span class="keywordtype">void</span> start(<a class="code" href="namespacewamp.html#af5e518db13376e7a5f5cf73a3c5d2414">wamp::ConnectorList</a> connectors, Yield yield)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keyword">using namespace </span>wamp;</div>
-<div class="line">        session_ = <a name="_a0"></a><a class="code" href="classwamp_1_1_coro_session.html">CoroSession&lt;&gt;::create</a>(connectors);</div>
+<div class="line">        session_ = <a name="_a0"></a><a class="code" href="classwamp_1_1_coro_session.html">CoroSession&lt;&gt;::create</a>(iosvc_, connectors);</div>
 <div class="line"></div>
 <div class="line">        <span class="keyword">auto</span> index = session_-&gt;connect(yield);</div>
 <div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;Chat service connected on transport #&quot;</span></div>
@@ -161,6 +165,7 @@ $(document).ready(function(){initNavTree('examples_2chat_2main_8cpp-example.html
 <div class="line">        session_-&gt;publish( <a name="_a4"></a><a class="code" href="classwamp_1_1_pub.html">wamp::Pub</a>(<span class="stringliteral">&quot;said&quot;</span>).withArgs(user, message) );</div>
 <div class="line">    }</div>
 <div class="line"></div>
+<div class="line">    <a class="code" href="namespacewamp.html#a3126cf65d90c21604e550580ee984cfb">wamp::AsioService</a>&amp; iosvc_;</div>
 <div class="line">    <a class="code" href="classwamp_1_1_coro_session.html#a8b91b9a8096b99f2a95a2815d66b5ee5">wamp::CoroSession&lt;&gt;::Ptr</a> session_;</div>
 <div class="line">    <a name="_a5"></a><a class="code" href="classwamp_1_1_scoped_registration.html">wamp::ScopedRegistration</a> registration_;</div>
 <div class="line">};</div>
@@ -172,12 +177,15 @@ $(document).ready(function(){initNavTree('examples_2chat_2main_8cpp-example.html
 <div class="line"><span class="keyword">public</span>:</div>
 <div class="line">    <span class="keyword">using</span> Yield = boost::asio::yield_context;</div>
 <div class="line"></div>
-<div class="line">    <span class="keyword">explicit</span> ChatClient(std::string user) : user_(std::move(user)) {}</div>
+<div class="line">    ChatClient(<a class="code" href="namespacewamp.html#a3126cf65d90c21604e550580ee984cfb">wamp::AsioService</a>&amp; iosvc, std::string user)</div>
+<div class="line">        : iosvc_(iosvc),</div>
+<div class="line">          user_(std::move(user))</div>
+<div class="line">    {}</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordtype">void</span> join(<a class="code" href="namespacewamp.html#af5e518db13376e7a5f5cf73a3c5d2414">wamp::ConnectorList</a> connectors, Yield yield)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keyword">using namespace </span>wamp;</div>
-<div class="line">        session_ = <a class="code" href="classwamp_1_1_coro_session.html">CoroSession&lt;&gt;::create</a>(connectors);</div>
+<div class="line">        session_ = <a class="code" href="classwamp_1_1_coro_session.html">CoroSession&lt;&gt;::create</a>(iosvc_, connectors);</div>
 <div class="line"></div>
 <div class="line">        <span class="keyword">auto</span> index = session_-&gt;connect(yield);</div>
 <div class="line">        std::cout &lt;&lt; user_ &lt;&lt; <span class="stringliteral">&quot; connected on transport #&quot;</span> &lt;&lt; index &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
@@ -213,6 +221,7 @@ $(document).ready(function(){initNavTree('examples_2chat_2main_8cpp-example.html
 <div class="line">                  &lt;&lt; message &lt;&lt; <span class="stringliteral">&quot;\&quot;\n&quot;</span>;</div>
 <div class="line">    }</div>
 <div class="line"></div>
+<div class="line">    <a class="code" href="namespacewamp.html#a3126cf65d90c21604e550580ee984cfb">wamp::AsioService</a>&amp; iosvc_;</div>
 <div class="line">    std::string user_;</div>
 <div class="line">    <a class="code" href="classwamp_1_1_coro_session.html#a8b91b9a8096b99f2a95a2815d66b5ee5">wamp::CoroSession&lt;&gt;::Ptr</a> session_;</div>
 <div class="line">    <a name="_a8"></a><a class="code" href="classwamp_1_1_scoped_subscription.html">wamp::ScopedSubscription</a> subscription_;</div>
@@ -224,19 +233,14 @@ $(document).ready(function(){initNavTree('examples_2chat_2main_8cpp-example.html
 <div class="line">{</div>
 <div class="line">    <a class="code" href="namespacewamp.html#a3126cf65d90c21604e550580ee984cfb">wamp::AsioService</a> iosvc;</div>
 <div class="line"></div>
-<div class="line"><span class="preprocessor">#ifdef CPPWAMP_USE_LEGACY_CONNECTORS</span></div>
-<div class="line">    <span class="keyword">auto</span> tcp = wamp::legacyConnector&lt;wamp::Json&gt;( iosvc,</div>
-<div class="line">            <a name="_a9"></a><a class="code" href="classwamp_1_1_tcp_host.html">wamp::TcpHost</a>(<span class="stringliteral">&quot;localhost&quot;</span>, 12345) );</div>
-<div class="line"><span class="preprocessor">#else</span></div>
 <div class="line">    <span class="keyword">auto</span> tcp = wamp::connector&lt;wamp::Json&gt;( iosvc,</div>
-<div class="line">                                            <a class="code" href="classwamp_1_1_tcp_host.html">wamp::TcpHost</a>(<span class="stringliteral">&quot;localhost&quot;</span>, 12345) );</div>
-<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line">                                            <a name="_a9"></a><a class="code" href="classwamp_1_1_tcp_host.html">wamp::TcpHost</a>(<span class="stringliteral">&quot;localhost&quot;</span>, 12345) );</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Normally, the service and client instances would be in separate programs.</span></div>
 <div class="line">    <span class="comment">// We run them all here in the same coroutine for demonstration purposes.</span></div>
-<div class="line">    ChatService chat;</div>
-<div class="line">    ChatClient alice(<span class="stringliteral">&quot;Alice&quot;</span>);</div>
-<div class="line">    ChatClient bob(<span class="stringliteral">&quot;Bob&quot;</span>);</div>
+<div class="line">    ChatService chat(iosvc);</div>
+<div class="line">    ChatClient alice(iosvc, <span class="stringliteral">&quot;Alice&quot;</span>);</div>
+<div class="line">    ChatClient bob(iosvc, <span class="stringliteral">&quot;Bob&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">    boost::asio::spawn(iosvc, [&amp;](boost::asio::yield_context yield)</div>
 <div class="line">    {</div>
@@ -265,7 +269,7 @@ $(document).ready(function(){initNavTree('examples_2chat_2main_8cpp-example.html
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Oct 27 2015 13:33:26 for CppWAMP by
+    <li class="footer">Generated on Wed Dec 23 2015 14:08:51 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

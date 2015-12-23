@@ -7,6 +7,9 @@ var searchData=
   ['uint',['UInt',['../classwamp_1_1_variant.html#ad26ea60ba0c4928876fbceee817db58e',1,'wamp::Variant::UInt()'],['../namespacewamp.html#a4d04d75506649324abb78e785749ccdba1277b8d5127d0eced2e9d3b99a3a7079',1,'wamp::uint()'],['../namespacewamp.html#a1017594b200792a23e13d8765b2a5040',1,'wamp::UInt()']]],
   ['unexpectedmsg',['unexpectedMsg',['../namespacewamp.html#a19ce4bc9c1e5512cec6ba323c4d324d0a310cdeee6d2ef9c459c211b39a06d465',1,'wamp']]],
   ['unorderedmap_2ehpp',['unorderedmap.hpp',['../unorderedmap_8hpp.html',1,'']]],
+  ['unorderedset_2ehpp',['unorderedset.hpp',['../unorderedset_8hpp.html',1,'']]],
+  ['unpackedcoroevent',['unpackedCoroEvent',['../classwamp_1_1_coro_event_unpacker.html#a92f0c8ead08af69c6bf3066d183a887f',1,'wamp::CoroEventUnpacker']]],
+  ['unpackedcororpc',['unpackedCoroRpc',['../classwamp_1_1_coro_invocation_unpacker.html#a636defc9ed2d8c279f65c25aa121c37d',1,'wamp::CoroInvocationUnpacker']]],
   ['unpackedevent',['unpackedEvent',['../classwamp_1_1_event_unpacker.html#acd803b2f9e7799a3c4279fe37c2ada5b',1,'wamp::EventUnpacker']]],
   ['unpackedrpc',['unpackedRpc',['../classwamp_1_1_invocation_unpacker.html#a3fae9c987f4fcc7bbd277f7f1fea3f26',1,'wamp::InvocationUnpacker']]],
   ['unpacker_2ehpp',['unpacker.hpp',['../unpacker_8hpp.html',1,'']]],
@@ -16,6 +19,7 @@ var searchData=
   ['unsubscribeerror',['unsubscribeError',['../namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a0af961c159db3c2e12ecefdcdd067f5d',1,'wamp']]],
   ['unsupportedmsg',['unsupportedMsg',['../namespacewamp.html#a19ce4bc9c1e5512cec6ba323c4d324d0af44cec05923311221b1a36fc299fc124',1,'wamp']]],
   ['uri',['uri',['../classwamp_1_1_reason.html#a61452fff69390ef3e3f5984ac7fa0ba1',1,'wamp::Reason::uri()'],['../classwamp_1_1_realm.html#a53f0c8599441d93b4b7fac485ab91573',1,'wamp::Realm::uri()'],['../classwamp_1_1_topic.html#a4a2f9fa3eff928bb1a930f95a970e9c4',1,'wamp::Topic::uri()'],['../classwamp_1_1_procedure.html#a381ffa8c69ae6c7385d4d3578f2c451a',1,'wamp::Procedure::uri()']]],
+  ['useriosvc',['userIosvc',['../classwamp_1_1_session.html#a8a228862fc9d8d299a484642a4c57137',1,'wamp::Session']]],
   ['usingprefixmatch',['usingPrefixMatch',['../classwamp_1_1_topic.html#abad0c9c710c90e0646af2561206c9d41',1,'wamp::Topic::usingPrefixMatch()'],['../classwamp_1_1_procedure.html#afd0ed38ec069ee3895b6a614b2483985',1,'wamp::Procedure::usingPrefixMatch()']]],
   ['usingwildcardmatch',['usingWildcardMatch',['../classwamp_1_1_topic.html#ae8507b1a124f5d170dcf9689367efaab',1,'wamp::Topic::usingWildcardMatch()'],['../classwamp_1_1_procedure.html#a028570b136e2d2d689bc8a6e810f4bf7',1,'wamp::Procedure::usingWildcardMatch()']]]
 ];

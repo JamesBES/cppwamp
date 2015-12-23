@@ -105,7 +105,9 @@ $(document).ready(function(){initNavTree('_subscriptions.html','');});
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#EventSlots">Event Slots</a></li>
 <li class="level1"><a href="#BasicEventSlots">Basic Event Slots</a></li>
+<li class="level1"><a href="#BasicCoroutineEventSlots">Basic Coroutine Event Slots</a></li>
 <li class="level1"><a href="#UnpackedEventSlots">Unpacked Event Slots</a></li>
+<li class="level1"><a href="#UnpackedCoroutineEventSlots">Unpacked Coroutine Event Slots</a></li>
 <li class="level1"><a href="#ScopedSubscriptions">Scoped Subscriptions</a></li>
 </ul>
 </div>
@@ -122,9 +124,23 @@ Event Slots</h1>
 <p><a class="el" href="classwamp_1_1_session.html#a93b8686842db786a7d065c601f75cb5a" title="Subscribes to WAMP pub/sub events having the given topic. ">wamp::Session::subscribe</a> expects an event slot with the following signature:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>(<a class="code" href="classwamp_1_1_event.html">wamp::Event</a>)</div>
 </div><!-- fragment --><p>where <a class="el" href="classwamp_1_1_event.html" title="Represents a published event. ">wamp::Event</a> is an object containing information and payload arguments related to the publication.</p>
+<p>The following table summarizes the different types of event slots that can be used with the library:</p>
+<table class="doxtable">
+<tr>
+<th>Slot Type </th><th>Wrapper Function </th><th>Slot Signature  </th></tr>
+<tr>
+<td><a class="el" href="_subscriptions.html#BasicEventSlots">Basic Event Slot</a> </td><td><code>wamp::basicEvent&lt;TArgs...&gt;</code> </td><td><code>void function(TArgs...)</code> </td></tr>
+<tr>
+<td><a class="el" href="_subscriptions.html#BasicCoroutineEventSlots">Basic Coroutine Event Slot</a> </td><td><code>wamp::basicCoroEvent&lt;TArgs...&gt;</code> </td><td><code>void function(TArgs..., Yield)</code> </td></tr>
+<tr>
+<td><a class="el" href="_subscriptions.html#UnpackedEventSlots">Unpacked Event Slot</a> </td><td><code>wamp::unpackedEvent&lt;TArgs...&gt;</code> </td><td><code>void function(Event, TArgs...)</code> </td></tr>
+<tr>
+<td><a class="el" href="_subscriptions.html#UnpackedCoroutineEventSlots">Unpacked Coroutine Event Slot</a> </td><td><code>wamp::unpackedCoroEvent&lt;TArgs...&gt;</code> </td><td><code>void function(Event, TArgs..., Yield)</code> </td></tr>
+</table>
+<p>where <code>Yield</code> represents the type <code>boost::asio::yield_context</code>.</p>
 <h1><a class="anchor" id="BasicEventSlots"></a>
 Basic Event Slots</h1>
-<p>An <em>basic event slot</em> represents an event handler that expects one or more payload arguments having specific, static types. The <a class="el" href="classwamp_1_1_basic_event_unpacker.html#ade5b8fba219aa39780f143feeb088114">wamp::basicEvent</a> function can be used when registering such event slots. It takes a basic event slot, and converts it into a regular event slot that can be passed to <a class="el" href="classwamp_1_1_session.html#a93b8686842db786a7d065c601f75cb5a" title="Subscribes to WAMP pub/sub events having the given topic. ">wamp::Session::subscribe</a>.</p>
+<p>A <em>basic event slot</em> represents an event handler that expects one or more payload arguments having specific, static types. The <a class="el" href="classwamp_1_1_basic_event_unpacker.html#ade5b8fba219aa39780f143feeb088114">wamp::basicEvent</a> function can be used when registering such event slots. It takes a basic event slot, and converts it into a regular event slot that can be passed to <a class="el" href="classwamp_1_1_session.html#a93b8686842db786a7d065c601f75cb5a" title="Subscribes to WAMP pub/sub events having the given topic. ">wamp::Session::subscribe</a>.</p>
 <p><code>wamp::basicEvent</code> expects an event slot with the following signature:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>(TArgs...)</div>
 </div><!-- fragment --><p> where <code>TArgs...</code> matches the template parameter pack that was passed to <code>wamp::basicEvent</code>.</p>
@@ -145,6 +161,34 @@ Basic Event Slots</h1>
 <div class="line">                   handler);</div>
 </div><!-- fragment --><p>where <code>handler</code> is the asynchronous handler (or coroutine yield context) for the <b>subscribe operation itself</b>.</p>
 <p>Whenever a <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">wamp::Session</a> dispatches an event to the above slots, it automatically unpacks the event payload positional arguments, and passes them to the slot's argument list. If <code>Session</code> cannot convert the event payload arguments to their target types, it issues a warning that can be captured via <a class="el" href="classwamp_1_1_session.html#a3af4c171dc1d0cb7b412adbd702528db" title="Sets the log handler for warnings. ">wamp::Session::setWarningHandler</a>.</p>
+<h1><a class="anchor" id="BasicCoroutineEventSlots"></a>
+Basic Coroutine Event Slots</h1>
+<p>A <em>basic coroutine event slot</em> is like a regular <em>basic event slot</em>, except that it is executed within the context of a coroutine. This is useful for event handlers that need to perform asynchronous operations themselves. The <a class="el" href="classwamp_1_1_basic_coro_event_unpacker.html#a7039b3ef363e79db546220348c0298ac">wamp::basicCoroEvent</a> function can be used when registering such event slots. It takes a basic coroutine event slot, and converts it into a regular event slot that can be passed to <a class="el" href="classwamp_1_1_session.html#a93b8686842db786a7d065c601f75cb5a" title="Subscribes to WAMP pub/sub events having the given topic. ">wamp::Session::subscribe</a>.</p>
+<p><code>wamp::basicCoroEvent</code> expects an event slot with the following signature:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>(TArgs..., boost::asio::yield_context)</div>
+</div><!-- fragment --><p> where</p><ul>
+<li><code>TArgs...</code> matches the template parameter pack that was passed to <code>wamp::basicEvent</code>.</li>
+<li><code>boost::asio::yield_context</code> represents the event handler's coroutine context.</li>
+</ul>
+<p>Examples of basic coroutine event slots are: </p><div class="fragment"><div class="line"><span class="keyword">using</span> Yield = boost::asio::yield_context;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> onSensorSampled(<span class="keywordtype">float</span> value, Yield yield) { ... }</div>
+<div class="line"><span class="comment">//                     ^</span></div>
+<div class="line"><span class="comment">//                    TArgs</span></div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> onPurchase(std::string item, <span class="keywordtype">int</span> cost, <span class="keywordtype">int</span> qty, Yield yield) { ... }</div>
+<div class="line"><span class="comment">//                      ^          ^          ^</span></div>
+<div class="line"><span class="comment">//                      \----------|----------/</span></div>
+<div class="line"><span class="comment">//                               TArgs</span></div>
+</div><!-- fragment --><p>The above slots can be registered as follows: </p><div class="fragment"><div class="line">session-&gt;subscribe(Topic(<span class="stringliteral">&quot;sensorSampled&quot;</span>),</div>
+<div class="line">                   basicCoroEvent&lt;float&gt;(&amp;onSensorSampled),</div>
+<div class="line">                   handler);</div>
+<div class="line"></div>
+<div class="line">session-&gt;subscribe(Topic(<span class="stringliteral">&quot;itemPurchased&quot;</span>),</div>
+<div class="line">                   basicCoroEvent&lt;std::string, int, int&gt;(&amp;onPurchase),</div>
+<div class="line">                   handler);</div>
+</div><!-- fragment --><p>where <code>handler</code> is the asynchronous handler (or coroutine yield context) for the <b>subscribe operation itself</b>.</p>
+<p>Whenever a <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">wamp::Session</a> dispatches an event to the above slots, it spawns a new coroutine to be executed on <a class="el" href="classwamp_1_1_session.html#a8a228862fc9d8d299a484642a4c57137" title="Obtains the IO service used to execute user-provided handlers. ">wamp::Session::userIosvc()</a>. It then automatically unpacks the event payload positional arguments, and passes them to the slot's argument list. If <code>Session</code> cannot convert the event payload arguments to their target types, it issues a warning that can be captured via <a class="el" href="classwamp_1_1_session.html#a3af4c171dc1d0cb7b412adbd702528db" title="Sets the log handler for warnings. ">wamp::Session::setWarningHandler</a>.</p>
 <h1><a class="anchor" id="UnpackedEventSlots"></a>
 Unpacked Event Slots</h1>
 <p>An <em>unpacked event slot</em> represents an event handler that expects one or more payload arguments having specific, static types. The <a class="el" href="classwamp_1_1_event_unpacker.html#acd803b2f9e7799a3c4279fe37c2ada5b">wamp::unpackedEvent</a> function can be used when registering such event slots. It takes an unpacked event slot, and converts it into a regular event slot that can be passed to <a class="el" href="classwamp_1_1_session.html#a93b8686842db786a7d065c601f75cb5a" title="Subscribes to WAMP pub/sub events having the given topic. ">wamp::Session::subscribe</a>.</p>
@@ -172,6 +216,16 @@ Unpacked Event Slots</h1>
 <div class="line">                   handler);</div>
 </div><!-- fragment --><p>where <code>handler</code> is the asynchronous handler (or coroutine yield context) for the <b>subscribe operation itself</b>.</p>
 <p>Whenever a <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">wamp::Session</a> dispatches an event to the above slots, it automatically unpacks the event payload positional arguments, and passes them to the slot's argument list. If <code>Session</code> cannot convert the event payload arguments to their target types, it issues a warning that can be captured via <a class="el" href="classwamp_1_1_session.html#a3af4c171dc1d0cb7b412adbd702528db" title="Sets the log handler for warnings. ">wamp::Session::setWarningHandler</a>.</p>
+<h1><a class="anchor" id="UnpackedCoroutineEventSlots"></a>
+Unpacked Coroutine Event Slots</h1>
+<p>An <em>unpacked coroutine event slot</em> is like an <a class="el" href="_subscriptions.html#UnpackedEventSlots">unpacked event slot</a>, except that the slot is executed within the context of a coroutine. The <a class="el" href="classwamp_1_1_coro_event_unpacker.html#a92f0c8ead08af69c6bf3066d183a887f">wamp::unpackedCoroEvent</a> function can be used when registering such event slots.</p>
+<p><code>wamp::unpackedCoroEvent</code> expects an event slot with the following signature:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>(wamp::Event, TArgs..., boost::asio::yield_context)</div>
+</div><!-- fragment --><p> where</p><ul>
+<li><a class="el" href="classwamp_1_1_event.html" title="Represents a published event. ">wamp::Event</a> is an object containing information and payload arguments related to the publication, and,</li>
+<li><code>TArgs...</code> matches the template parameter pack that was passed to <code>wamp::unpackedEvent</code>.</li>
+<li><code>boost::asio::yield_context</code> represents the event handler's coroutine context.</li>
+</ul>
 <h1><a class="anchor" id="ScopedSubscriptions"></a>
 Scoped Subscriptions</h1>
 <p>A <a class="el" href="classwamp_1_1_scoped_subscription.html" title="Limits a Subscription&#39;s lifetime to a particular scope. ">wamp::ScopedSubscription</a> object can be used to limit a subscription's lifetime to a particular scope. When a <code>ScopedSubscription</code> object is destroyed, it automatically unsubscribes the subscription. This helps in automating the lifetime management of topic subscriptions using RAII techniques.</p>
@@ -212,7 +266,7 @@ Scoped Subscriptions</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Oct 27 2015 13:33:26 for CppWAMP by
+    <li class="footer">Generated on Wed Dec 23 2015 14:08:52 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

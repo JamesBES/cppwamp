@@ -4,6 +4,7 @@ var searchData=
   ['integer',['integer',['../structwamp_1_1_version.html#aabe44bda57b245b6fa50182b2d1e15b7',1,'wamp::Version']]],
   ['invocation',['Invocation',['../classwamp_1_1_invocation.html#a63965846a304abcc89bcefb7cb0346b7',1,'wamp::Invocation']]],
   ['invocationunpacker',['InvocationUnpacker',['../classwamp_1_1_invocation_unpacker.html#a5e453c76f0259e836eb961b94d58bd16',1,'wamp::InvocationUnpacker']]],
+  ['iosvc',['iosvc',['../classwamp_1_1_event.html#a09e51cefb2ab5d4ea3b9c88f8a24c37b',1,'wamp::Event::iosvc()'],['../classwamp_1_1_invocation.html#a3a6faf68ed4bab2de381f40ea5c6f597',1,'wamp::Invocation::iosvc()']]],
   ['is',['is',['../classwamp_1_1_variant.html#a2bfafa83b1ed04fdaa70c14a4d3cae78',1,'wamp::Variant::is() const '],['../classwamp_1_1_variant.html#a2bfafa83b1ed04fdaa70c14a4d3cae78',1,'wamp::Variant::is() const ']]],
   ['isbool',['isBool',['../namespacewamp.html#a211d07a7169feb6b6e9cd351bf378841',1,'wamp']]],
   ['isnumber',['isNumber',['../classwamp_1_1_variant.html#a75676feccd7b98a16059410737f29fb0',1,'wamp::Variant::isNumber()'],['../namespacewamp.html#a0f60ee29904aa30973713672aa3fc37b',1,'wamp::isNumber()']]],

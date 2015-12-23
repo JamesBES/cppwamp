@@ -131,12 +131,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f9899105672da449507ce5ef92d7c52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_event.html#a5f9899105672da449507ce5ef92d7c52">Event</a> ()</td></tr>
 <tr class="memdesc:a5f9899105672da449507ce5ef92d7c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a5f9899105672da449507ce5ef92d7c52">More...</a><br /></td></tr>
 <tr class="separator:a5f9899105672da449507ce5ef92d7c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32cad502c1fd9ee35c30442fd6b628b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_event.html#ac32cad502c1fd9ee35c30442fd6b628b">empty</a> () const </td></tr>
+<tr class="memdesc:ac32cad502c1fd9ee35c30442fd6b628b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>false</code> if the <a class="el" href="classwamp_1_1_event.html" title="Represents a published event. ">Event</a> has been initialized and is ready for use.  <a href="#ac32cad502c1fd9ee35c30442fd6b628b">More...</a><br /></td></tr>
+<tr class="separator:ac32cad502c1fd9ee35c30442fd6b628b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaca8763e97de0173bc160df589b67d21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewamp.html#af1108039d1eea74def74485afcd801d5">PublicationId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_event.html#aaca8763e97de0173bc160df589b67d21">subId</a> () const </td></tr>
 <tr class="memdesc:aaca8763e97de0173bc160df589b67d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the subscription ID associated with this event.  <a href="#aaca8763e97de0173bc160df589b67d21">More...</a><br /></td></tr>
 <tr class="separator:aaca8763e97de0173bc160df589b67d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac064a5b71b077c701d481624b7c56b1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewamp.html#af1108039d1eea74def74485afcd801d5">PublicationId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_event.html#ac064a5b71b077c701d481624b7c56b1e">pubId</a> () const </td></tr>
 <tr class="memdesc:ac064a5b71b077c701d481624b7c56b1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the publication ID associated with this event.  <a href="#ac064a5b71b077c701d481624b7c56b1e">More...</a><br /></td></tr>
 <tr class="separator:ac064a5b71b077c701d481624b7c56b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09e51cefb2ab5d4ea3b9c88f8a24c37b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewamp.html#a3126cf65d90c21604e550580ee984cfb">AsioService</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_event.html#a09e51cefb2ab5d4ea3b9c88f8a24c37b">iosvc</a> () const </td></tr>
+<tr class="memdesc:a09e51cefb2ab5d4ea3b9c88f8a24c37b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the IO service used to execute user-provided handlers.  <a href="#a09e51cefb2ab5d4ea3b9c88f8a24c37b">More...</a><br /></td></tr>
+<tr class="separator:a09e51cefb2ab5d4ea3b9c88f8a24c37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19a996dac138a44bf2c0233e71cbacbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwamp_1_1_variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_event.html#a19a996dac138a44bf2c0233e71cbacbf">publisher</a> () const </td></tr>
 <tr class="memdesc:a19a996dac138a44bf2c0233e71cbacbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains an optional publisher ID integer.  <a href="#a19a996dac138a44bf2c0233e71cbacbf">More...</a><br /></td></tr>
 <tr class="separator:a19a996dac138a44bf2c0233e71cbacbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,10 +240,28 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Default constructor. </p>
+<dl class="section post"><dt>Postcondition</dt><dd><code>this-&gt;<a class="el" href="classwamp_1_1_event.html#ac32cad502c1fd9ee35c30442fd6b628b" title="Returns false if the Event has been initialized and is ready for use. ">empty()</a> == true</code> </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac32cad502c1fd9ee35c30442fd6b628b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wamp::Event::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns <code>false</code> if the <a class="el" href="classwamp_1_1_event.html" title="Represents a published event. ">Event</a> has been initialized and is ready for use. </p>
+
+</div>
+</div>
 <a class="anchor" id="aaca8763e97de0173bc160df589b67d21"></a>
 <div class="memitem">
 <div class="memproto">
@@ -269,6 +293,25 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Obtains the publication ID associated with this event. </p>
+
+</div>
+</div>
+<a class="anchor" id="a09e51cefb2ab5d4ea3b9c88f8a24c37b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacewamp.html#a3126cf65d90c21604e550580ee984cfb">AsioService</a> &amp; wamp::Event::iosvc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtains the IO service used to execute user-provided handlers. </p>
+<dl class="section return"><dt>Returns</dt><dd>the same object as <a class="el" href="classwamp_1_1_session.html#a8a228862fc9d8d299a484642a4c57137" title="Obtains the IO service used to execute user-provided handlers. ">Session::userIosvc()</a>. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><code>this-&gt;<a class="el" href="classwamp_1_1_event.html#ac32cad502c1fd9ee35c30442fd6b628b" title="Returns false if the Event has been initialized and is ready for use. ">empty()</a> == false</code> </dd></dl>
 
 </div>
 </div>
@@ -339,7 +382,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_event.html">Event</a></li>
-    <li class="footer">Generated on Tue Oct 27 2015 13:33:26 for CppWAMP by
+    <li class="footer">Generated on Wed Dec 23 2015 14:08:52 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

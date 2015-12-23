@@ -168,11 +168,22 @@ $(document).ready(function(){initNavTree('asyncresult_8hpp_source.html','');});
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">   88</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">using</span> <a class="code" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a> = std::function&lt;void (AsyncResult&lt;T&gt;)&gt;;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;} <span class="comment">// namespace wamp</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#include &quot;internal/asyncresult.ipp&quot;</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif // CPPWAMP_ASYNCRESULT_HPP</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> THandler&gt;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="namespacewamp.html">   96</a></span>&#160;<span class="keyword">struct </span><a class="code" href="namespacewamp.html#structwamp_1_1_result_type_of_handler">ResultTypeOfHandler</a> {};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"></span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="namespacewamp.html">  102</a></span>&#160;<span class="keyword">struct </span><a class="code" href="namespacewamp.html#structwamp_1_1_result_type_of_handler">ResultTypeOfHandler</a>&lt;<a class="code" href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">AsyncHandler</a>&lt;T&gt;&gt; {<span class="keyword">using</span> <a class="code" href="classwamp_1_1_async_result.html">Type</a> = <a class="code" href="classwamp_1_1_async_result.html">AsyncResult&lt;T&gt;</a>;};</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;} <span class="comment">// namespace wamp</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#include &quot;internal/asyncresult.ipp&quot;</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif // CPPWAMP_ASYNCRESULT_HPP</span></div>
 <div class="ttc" id="namespacewamp_html_a02848951b67353c0c0fb2e7fdb9a1019"><div class="ttname"><a href="namespacewamp.html#a02848951b67353c0c0fb2e7fdb9a1019">wamp::AsyncHandler</a></div><div class="ttdeci">std::function&lt; void(AsyncResult&lt; T &gt;)&gt; AsyncHandler</div><div class="ttdoc">Type alias for a handler taking an AsyncResult<T> parameter. </div><div class="ttdef"><b>Definition:</b> asyncresult.hpp:88</div></div>
 <div class="ttc" id="classwamp_1_1_async_result_html_a35781c5a640113d817f3773b83dfd6a7"><div class="ttname"><a href="classwamp_1_1_async_result.html#a35781c5a640113d817f3773b83dfd6a7">wamp::AsyncResult::ValueType</a></div><div class="ttdeci">T ValueType</div><div class="ttdoc">Value type of the asynchronous result. </div><div class="ttdef"><b>Definition:</b> asyncresult.hpp:41</div></div>
 <div class="ttc" id="classwamp_1_1_async_result_html_a5f0f0f6b8334de7a49483aff8523ef94"><div class="ttname"><a href="classwamp_1_1_async_result.html#a5f0f0f6b8334de7a49483aff8523ef94">wamp::AsyncResult::setError</a></div><div class="ttdeci">AsyncResult &amp; setError(std::error_code ec)</div><div class="ttdoc">Sets the error code. </div><div class="ttdef"><b>Definition:</b> asyncresult.ipp:97</div></div>
@@ -182,13 +193,14 @@ $(document).ready(function(){initNavTree('asyncresult_8hpp_source.html','');});
 <div class="ttc" id="classwamp_1_1_async_result_html_ad1dadd60aeccb0f64cd298a413921278"><div class="ttname"><a href="classwamp_1_1_async_result.html#ad1dadd60aeccb0f64cd298a413921278">wamp::AsyncResult::AsyncResult</a></div><div class="ttdeci">AsyncResult(T value=T())</div><div class="ttdoc">Converting constructor taking a value. </div><div class="ttdef"><b>Definition:</b> asyncresult.ipp:19</div></div>
 <div class="ttc" id="classwamp_1_1_async_result_html_aa6637cfac0db5a91c46854c8a6d2cfb7"><div class="ttname"><a href="classwamp_1_1_async_result.html#aa6637cfac0db5a91c46854c8a6d2cfb7">wamp::AsyncResult::errorInfo</a></div><div class="ttdeci">const std::string &amp; errorInfo() const </div><div class="ttdoc">Returns informational text associated with an error condition. </div><div class="ttdef"><b>Definition:</b> asyncresult.ipp:79</div></div>
 <div class="ttc" id="classwamp_1_1_async_result_html_a391c086c51f4c174c33f907d3ac50713"><div class="ttname"><a href="classwamp_1_1_async_result.html#a391c086c51f4c174c33f907d3ac50713">wamp::AsyncResult::errorCode</a></div><div class="ttdeci">std::error_code errorCode() const </div><div class="ttdoc">Returns the error code associated with this asynchronous result. </div><div class="ttdef"><b>Definition:</b> asyncresult.ipp:71</div></div>
+<div class="ttc" id="namespacewamp_html_structwamp_1_1_result_type_of_handler"><div class="ttname"><a href="namespacewamp.html#structwamp_1_1_result_type_of_handler">wamp::ResultTypeOfHandler</a></div><div class="ttdoc">Type traits template used to obtain the result type of an asynchronous handler. </div><div class="ttdef"><b>Definition:</b> asyncresult.hpp:96</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb7245a6f5714b15c73ba62cf32a25df.html">cppwamp</a></li><li class="navelem"><a class="el" href="asyncresult_8hpp.html">asyncresult.hpp</a></li>
-    <li class="footer">Generated on Tue Oct 27 2015 13:33:26 for CppWAMP by
+    <li class="footer">Generated on Wed Dec 23 2015 14:08:51 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

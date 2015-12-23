@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['empty',['empty',['../classwamp_1_1_event.html#ac32cad502c1fd9ee35c30442fd6b628b',1,'wamp::Event::empty()'],['../classwamp_1_1_invocation.html#a3db78960ac407a0b07550697fe29757a',1,'wamp::Invocation::empty()']]],
   ['enableif',['EnableIf',['../namespacewamp.html#a9806878793b2cdf53fe3a516b1a5bd69',1,'wamp']]],
   ['enableifvalidarg',['EnableIfValidArg',['../classwamp_1_1_variant.html#ae568f0afe3833a473816ac0f7b05bb4a',1,'wamp::Variant']]],
   ['enableifvariantarg',['EnableIfVariantArg',['../classwamp_1_1_variant.html#ae739720b3f2488c378b9a49765be0037',1,'wamp::Variant']]],
@@ -19,6 +20,6 @@ var searchData=
   ['event',['Event',['../classwamp_1_1_event.html',1,'wamp']]],
   ['event',['Event',['../classwamp_1_1_event.html#a5f9899105672da449507ce5ef92d7c52',1,'wamp::Event']]],
   ['eventslot',['EventSlot',['../classwamp_1_1_coro_session.html#a4d0c20f3fcd2bd98a18a0f7b0733a6ea',1,'wamp::CoroSession::EventSlot()'],['../classwamp_1_1_session.html#adf30356c95f167648645c3c9f1b637af',1,'wamp::Session::EventSlot()']]],
-  ['eventunpacker',['EventUnpacker',['../classwamp_1_1_event_unpacker.html',1,'wamp']]],
-  ['eventunpacker',['EventUnpacker',['../classwamp_1_1_event_unpacker.html#ad2ca5aeb832b1c4aba23238ef3bcc936',1,'wamp::EventUnpacker']]]
+  ['eventunpacker',['EventUnpacker',['../classwamp_1_1_event_unpacker.html#ad2ca5aeb832b1c4aba23238ef3bcc936',1,'wamp::EventUnpacker']]],
+  ['eventunpacker',['EventUnpacker',['../classwamp_1_1_event_unpacker.html',1,'wamp']]]
 ];

@@ -9,6 +9,7 @@ var searchData=
   ['invocation',['Invocation',['../classwamp_1_1_invocation.html#a63965846a304abcc89bcefb7cb0346b7',1,'wamp::Invocation']]],
   ['invocationunpacker',['InvocationUnpacker',['../classwamp_1_1_invocation_unpacker.html#a5e453c76f0259e836eb961b94d58bd16',1,'wamp::InvocationUnpacker']]],
   ['invocationunpacker',['InvocationUnpacker',['../classwamp_1_1_invocation_unpacker.html',1,'wamp']]],
+  ['iosvc',['iosvc',['../classwamp_1_1_event.html#a09e51cefb2ab5d4ea3b9c88f8a24c37b',1,'wamp::Event::iosvc()'],['../classwamp_1_1_invocation.html#a3a6faf68ed4bab2de381f40ea5c6f597',1,'wamp::Invocation::iosvc()']]],
   ['ipoptions',['IpOptions',['../classwamp_1_1_ip_options.html',1,'wamp']]],
   ['ipoptions_3c_20tcphost_2c_20boost_3a_3aasio_3a_3aip_3a_3atcp_20_3e',['IpOptions&lt; TcpHost, boost::asio::ip::tcp &gt;',['../classwamp_1_1_ip_options.html',1,'wamp']]],
   ['is',['is',['../classwamp_1_1_variant.html#a2bfafa83b1ed04fdaa70c14a4d3cae78',1,'wamp::Variant::is() const '],['../classwamp_1_1_variant.html#a2bfafa83b1ed04fdaa70c14a4d3cae78',1,'wamp::Variant::is() const ']]],

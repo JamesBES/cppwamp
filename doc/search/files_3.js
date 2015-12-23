@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dialoguedata_2ehpp',['dialoguedata.hpp',['../dialoguedata_8hpp.html',1,'']]]
+  ['error_2ehpp',['error.hpp',['../error_8hpp.html',1,'']]]
 ];

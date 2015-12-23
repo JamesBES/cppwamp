@@ -128,16 +128,21 @@ Inheritance diagram for wamp::Invocation:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a63965846a304abcc89bcefb7cb0346b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63965846a304abcc89bcefb7cb0346b7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_invocation.html#a63965846a304abcc89bcefb7cb0346b7">Invocation</a> ()</td></tr>
-<tr class="memdesc:a63965846a304abcc89bcefb7cb0346b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="memitem:a63965846a304abcc89bcefb7cb0346b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_invocation.html#a63965846a304abcc89bcefb7cb0346b7">Invocation</a> ()</td></tr>
+<tr class="memdesc:a63965846a304abcc89bcefb7cb0346b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a63965846a304abcc89bcefb7cb0346b7">More...</a><br /></td></tr>
 <tr class="separator:a63965846a304abcc89bcefb7cb0346b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db78960ac407a0b07550697fe29757a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_invocation.html#a3db78960ac407a0b07550697fe29757a">empty</a> () const </td></tr>
+<tr class="memdesc:a3db78960ac407a0b07550697fe29757a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>false</code> if the <a class="el" href="classwamp_1_1_invocation.html" title="Contains payload arguments and other details related to a remote procedure call invocation. ">Invocation</a> has been initialized and is ready for use.  <a href="#a3db78960ac407a0b07550697fe29757a">More...</a><br /></td></tr>
+<tr class="separator:a3db78960ac407a0b07550697fe29757a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7a07a0c044ced14174ce64e57950df7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_invocation.html#ae7a07a0c044ced14174ce64e57950df7">calleeHasExpired</a> () const </td></tr>
 <tr class="memdesc:ae7a07a0c044ced14174ce64e57950df7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the <a class="el" href="classwamp_1_1_session.html" title="Asynchronous session API used by a client peer in WAMP applications. ">Session</a> object that dispatched this invocation still exists or has expired.  <a href="#ae7a07a0c044ced14174ce64e57950df7">More...</a><br /></td></tr>
 <tr class="separator:ae7a07a0c044ced14174ce64e57950df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85efbc1438b871c9aef8f9bf163fa6cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewamp.html#ad69525a134cfe3de73c79af0e80f2ff2">RequestId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_invocation.html#a85efbc1438b871c9aef8f9bf163fa6cf">requestId</a> () const </td></tr>
 <tr class="memdesc:a85efbc1438b871c9aef8f9bf163fa6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the request ID associated with this RPC invocation.  <a href="#a85efbc1438b871c9aef8f9bf163fa6cf">More...</a><br /></td></tr>
 <tr class="separator:a85efbc1438b871c9aef8f9bf163fa6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a6faf68ed4bab2de381f40ea5c6f597"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewamp.html#a3126cf65d90c21604e550580ee984cfb">AsioService</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_invocation.html#a3a6faf68ed4bab2de381f40ea5c6f597">iosvc</a> () const </td></tr>
+<tr class="memdesc:a3a6faf68ed4bab2de381f40ea5c6f597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the IO service used to execute user-provided handlers.  <a href="#a3a6faf68ed4bab2de381f40ea5c6f597">More...</a><br /></td></tr>
+<tr class="separator:a3a6faf68ed4bab2de381f40ea5c6f597"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53c434ddd87bdf988f68b30f2a2d343c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_invocation.html#a53c434ddd87bdf988f68b30f2a2d343c">isProgressive</a> () const </td></tr>
 <tr class="memdesc:a53c434ddd87bdf988f68b30f2a2d343c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the caller requested progressive results.  <a href="#a53c434ddd87bdf988f68b30f2a2d343c">More...</a><br /></td></tr>
 <tr class="separator:a53c434ddd87bdf988f68b30f2a2d343c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,7 +235,43 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains payload arguments and other details related to a remote procedure call invocation. </p>
 <p>This class also provides the means for manually sending a <code>YIELD</code> or <code>ERROR</code> result back to the RPC caller. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a63965846a304abcc89bcefb7cb0346b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wamp::Invocation::Invocation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+<dl class="section post"><dt>Postcondition</dt><dd><code>this-&gt;<a class="el" href="classwamp_1_1_invocation.html#a3db78960ac407a0b07550697fe29757a" title="Returns false if the Invocation has been initialized and is ready for use. ">empty()</a> == true</code> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a3db78960ac407a0b07550697fe29757a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wamp::Invocation::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns <code>false</code> if the <a class="el" href="classwamp_1_1_invocation.html" title="Contains payload arguments and other details related to a remote procedure call invocation. ">Invocation</a> has been initialized and is ready for use. </p>
+
+</div>
+</div>
 <a class="anchor" id="ae7a07a0c044ced14174ce64e57950df7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -262,6 +303,25 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the request ID associated with this RPC invocation. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3a6faf68ed4bab2de381f40ea5c6f597"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacewamp.html#a3126cf65d90c21604e550580ee984cfb">AsioService</a> &amp; wamp::Invocation::iosvc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtains the IO service used to execute user-provided handlers. </p>
+<dl class="section return"><dt>Returns</dt><dd>the same object as <a class="el" href="classwamp_1_1_session.html#a8a228862fc9d8d299a484642a4c57137" title="Obtains the IO service used to execute user-provided handlers. ">Session::userIosvc()</a>. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><code>this-&gt;<a class="el" href="classwamp_1_1_invocation.html#a3db78960ac407a0b07550697fe29757a" title="Returns false if the Invocation has been initialized and is ready for use. ">empty()</a> == false</code> </dd></dl>
 
 </div>
 </div>
@@ -388,7 +448,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_invocation.html">Invocation</a></li>
-    <li class="footer">Generated on Tue Oct 27 2015 13:33:26 for CppWAMP by
+    <li class="footer">Generated on Wed Dec 23 2015 14:08:52 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

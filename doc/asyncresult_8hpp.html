@@ -126,6 +126,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwamp_1_1_async_result.html">wamp::AsyncResult&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value type that combines an asynchronous result with an error code.  <a href="classwamp_1_1_async_result.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structwamp_1_1_result_type_of_handler"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#structwamp_1_1_result_type_of_handler">wamp::ResultTypeOfHandler&lt; THandler &gt;</a></td></tr>
+<tr class="memdesc:structwamp_1_1_result_type_of_handler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type traits template used to obtain the result type of an asynchronous handler.  <a href="namespacewamp.html#structwamp_1_1_result_type_of_handler">More...</a><br /></td></tr>
+<tr class="separator:structwamp_1_1_result_type_of_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structwamp_1_1_result_type_of_handler_3_01_async_handler_3_01_t_01_4_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewamp.html#structwamp_1_1_result_type_of_handler_3_01_async_handler_3_01_t_01_4_01_4">wamp::ResultTypeOfHandler&lt; AsyncHandler&lt; T &gt; &gt;</a></td></tr>
+<tr class="memdesc:structwamp_1_1_result_type_of_handler_3_01_async_handler_3_01_t_01_4_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespacewamp.html#structwamp_1_1_result_type_of_handler" title="Type traits template used to obtain the result type of an asynchronous handler. ">ResultTypeOfHandler</a> specialization for AsyncHandler.  <a href="namespacewamp.html#structwamp_1_1_result_type_of_handler_3_01_async_handler_3_01_t_01_4_01_4">More...</a><br /></td></tr>
+<tr class="separator:structwamp_1_1_result_type_of_handler_3_01_async_handler_3_01_t_01_4_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -142,13 +148,46 @@ Typedefs</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains facilities for reporting results and errors back to asynchronous handlers. </p>
-</div></div><!-- contents -->
+</div><hr/><h2 class="groupheader">Class Documentation</h2>
+<a name="structwamp_1_1_result_type_of_handler" id="structwamp_1_1_result_type_of_handler"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct wamp::ResultTypeOfHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename THandler&gt;<br />
+struct wamp::ResultTypeOfHandler&lt; THandler &gt;</h3>
+
+<p>Type traits template used to obtain the result type of an asynchronous handler. </p>
+</div>
+</div>
+</div>
+<a name="structwamp_1_1_result_type_of_handler_3_01_async_handler_3_01_t_01_4_01_4" id="structwamp_1_1_result_type_of_handler_3_01_async_handler_3_01_t_01_4_01_4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct wamp::ResultTypeOfHandler&lt; AsyncHandler&lt; T &gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+struct wamp::ResultTypeOfHandler&lt; AsyncHandler&lt; T &gt; &gt;</h3>
+
+<p><a class="el" href="namespacewamp.html#structwamp_1_1_result_type_of_handler" title="Type traits template used to obtain the result type of an asynchronous handler. ">ResultTypeOfHandler</a> specialization for AsyncHandler. </p>
+</div>
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb7245a6f5714b15c73ba62cf32a25df.html">cppwamp</a></li><li class="navelem"><a class="el" href="asyncresult_8hpp.html">asyncresult.hpp</a></li>
-    <li class="footer">Generated on Tue Oct 27 2015 13:33:26 for CppWAMP by
+    <li class="footer">Generated on Wed Dec 23 2015 14:08:52 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

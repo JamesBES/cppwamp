@@ -13,7 +13,9 @@ var NAVTREE =
     [ "Registrations", "_registrations.html", [
       [ "Call Slots", "_registrations.html#CallSlots", null ],
       [ "Basic Call Slots", "_registrations.html#BasicCallSlots", null ],
+      [ "Basic Coroutine Call Slots", "_registrations.html#BasicCoroutineCallSlots", null ],
       [ "Unpacked Call Slots", "_registrations.html#UnpackedCallSlots", null ],
+      [ "Unpacked Coroutine Call Slots", "_registrations.html#UnpackedCoroutineCallSlots", null ],
       [ "RPC Outcomes", "_registrations.html#RpcOutcomes", [
         [ "Result Outcomes", "_registrations.html#ResultOutcomes", null ],
         [ "Error Outcomes", "_registrations.html#ErrorOutcomes", null ],
@@ -24,7 +26,9 @@ var NAVTREE =
     [ "Subscriptions", "_subscriptions.html", [
       [ "Event Slots", "_subscriptions.html#EventSlots", null ],
       [ "Basic Event Slots", "_subscriptions.html#BasicEventSlots", null ],
+      [ "Basic Coroutine Event Slots", "_subscriptions.html#BasicCoroutineEventSlots", null ],
       [ "Unpacked Event Slots", "_subscriptions.html#UnpackedEventSlots", null ],
+      [ "Unpacked Coroutine Event Slots", "_subscriptions.html#UnpackedCoroutineEventSlots", null ],
       [ "Scoped Subscriptions", "_subscriptions.html#ScopedSubscriptions", null ]
     ] ],
     [ "Deprecated List", "deprecated.html", null ],
@@ -67,9 +71,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_architecture.html",
-"classwamp_1_1_realm.html#a53f0c8599441d93b4b7fac485ab91573",
-"error_8hpp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a0af961c159db3c2e12ecefdcdd067f5d",
-"version_8hpp.html"
+"classwamp_1_1_protocol_category.html#ad54a562040125a4fae2eca019a17a397",
+"connector_8hpp.html#af5e518db13376e7a5f5cf73a3c5d2414",
+"tuple_8hpp.html#adeef04adee6fd77116ca1bd19cd159c6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

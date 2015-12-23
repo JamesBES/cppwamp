@@ -13,6 +13,10 @@ var classwamp_1_1_outcome =
     [ "Outcome", "classwamp_1_1_outcome.html#aac4ae64f362f1cc8e78a663ec2cab64b", null ],
     [ "~Outcome", "classwamp_1_1_outcome.html#a4c0bd6cdc81482cb666897cf12f0be1b", null ],
     [ "type", "classwamp_1_1_outcome.html#a67a97711abebf4d30c5a51d0a7f5ea7a", null ],
+    [ "asResult", "classwamp_1_1_outcome.html#a476c5afc9dba01264d6d5d3e037af326", null ],
+    [ "asResult", "classwamp_1_1_outcome.html#a221120bb5c5fa11fed8960144e8f3456", null ],
+    [ "asError", "classwamp_1_1_outcome.html#a6899f03884628ce3eac70ccedaca1054", null ],
+    [ "asError", "classwamp_1_1_outcome.html#a8508f4325b2949738a4838aa4ea9fe8b", null ],
     [ "operator=", "classwamp_1_1_outcome.html#a77c0404f4d8d524c620fcce12456bfb7", null ],
     [ "operator=", "classwamp_1_1_outcome.html#aef0f5c2b50595bee3fc628cbfa83f374", null ]
 ];
