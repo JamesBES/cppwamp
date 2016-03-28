@@ -12,7 +12,7 @@ var searchData=
   ['real',['Real',['../classwamp_1_1_variant.html#abc9ecd6b5a19982f7a59d7614e63e746',1,'wamp::Variant::Real()'],['../namespacewamp.html#a51c17993d0685236f3fc9628beabe5b5',1,'wamp::Real()'],['../namespacewamp.html#a4d04d75506649324abb78e785749ccdba4bca24304861acde5770fdbe3cc2503b',1,'wamp::real()']]],
   ['realm',['Realm',['../classwamp_1_1_realm.html#ae783d284d4b49a24c6c7a66fd93f6841',1,'wamp::Realm::Realm()'],['../classwamp_1_1_session_info.html#a4cc1eeba2b811883b14212a3c3ea9221',1,'wamp::SessionInfo::realm()']]],
   ['realm',['Realm',['../classwamp_1_1_realm.html',1,'wamp']]],
-  ['reason',['reason',['../classwamp_1_1_error.html#a4b1fa7a46c28e8236bf203c452190a8a',1,'wamp::Error::reason()'],['../classwamp_1_1_reason.html#a50f1208e1ac2e22fa796181df1bd72e9',1,'wamp::Reason::Reason()']]],
+  ['reason',['Reason',['../classwamp_1_1_reason.html#a50f1208e1ac2e22fa796181df1bd72e9',1,'wamp::Reason::Reason()'],['../classwamp_1_1_error.html#a4b1fa7a46c28e8236bf203c452190a8a',1,'wamp::Error::reason()']]],
   ['reason',['Reason',['../classwamp_1_1_reason.html',1,'wamp']]],
   ['registererror',['registerError',['../namespacewamp.html#a9ecf2a0b15a4d67bb0cd1928b4056d46a5df9f1bf5e3db9c58bf704975f5b910b',1,'wamp']]],
   ['registration',['Registration',['../classwamp_1_1_registration.html#ae4ab8fcfdede8796bda00da601f03f5d',1,'wamp::Registration::Registration()'],['../classwamp_1_1_registration.html#a2a3edbdbe9f5f9747c36bd39e71999cd',1,'wamp::Registration::Registration(const Registration &amp;other)'],['../classwamp_1_1_registration.html#a213b6f1673fbfb0c82f326287c070677',1,'wamp::Registration::Registration(Registration &amp;&amp;other) noexcept']]],

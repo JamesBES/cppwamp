@@ -72,8 +72,8 @@ var NAVTREEINDEX =
 [
 "_architecture.html",
 "classwamp_1_1_protocol_category.html#ad54a562040125a4fae2eca019a17a397",
-"connector_8hpp.html#af5e518db13376e7a5f5cf73a3c5d2414",
-"tuple_8hpp.html#adeef04adee6fd77116ca1bd19cd159c6"
+"codec_8hpp.html",
+"tuple_8hpp.html#a6e44efd7bb6aa0c5ec3a57c9a1729cce"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

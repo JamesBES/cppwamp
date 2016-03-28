@@ -304,8 +304,8 @@ There are elements left in the variant array. </dd>
 The element is convertible to the destination type. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_access.html" title="Exception type thrown when accessing a Variant as an invalid type. ">error::Access</a></td><td>if the variant is not an array. </td></tr>
-    <tr><td class="paramname">std::out_of_range</td><td>if there are no elements left in the variant array. </td></tr>
+    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_conversion.html" title="Exception type thrown when converting a Variant to an invalid type. ">error::Conversion</a></td><td>if the variant is not an array. </td></tr>
+    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_conversion.html" title="Exception type thrown when converting a Variant to an invalid type. ">error::Conversion</a></td><td>if there are no elements left in the variant array. </td></tr>
     <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_conversion.html" title="Exception type thrown when converting a Variant to an invalid type. ">error::Conversion</a></td><td>if the element is not convertible to the destination type. </td></tr>
   </table>
   </dd>
@@ -347,8 +347,8 @@ There exists a member with the given key. </dd>
 The member is convertible to the destination type. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_access.html" title="Exception type thrown when accessing a Variant as an invalid type. ">error::Access</a></td><td>if the variant is not an object. </td></tr>
-    <tr><td class="paramname">std::out_of_range</td><td>if there doesn't exist a member with the given key. </td></tr>
+    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_conversion.html" title="Exception type thrown when converting a Variant to an invalid type. ">error::Conversion</a></td><td>if the variant is not an object. </td></tr>
+    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_conversion.html" title="Exception type thrown when converting a Variant to an invalid type. ">error::Conversion</a></td><td>if there doesn't exist a member with the given key. </td></tr>
     <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_conversion.html" title="Exception type thrown when converting a Variant to an invalid type. ">error::Conversion</a></td><td>if the member is not convertible to the destination type. </td></tr>
   </table>
   </dd>
@@ -389,6 +389,16 @@ template&lt;typename T , typename U &gt; </div>
 </div><div class="memdoc">
 
 <p>Retrieves a member from an Object variant, with a fallback value if the member is not found. </p>
+<p>The member is converted to the destination type via <a class="el" href="classwamp_1_1_variant.html#a45ff15afa122815243e6802dd8053f74" title="Converts the variant&#39;s bound value to the given type. ">Variant::to</a>. </p><dl class="section pre"><dt>Precondition</dt><dd>The variant is an object. </dd>
+<dd>
+The member, if it exists, is convertible to the destination type. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_conversion.html" title="Exception type thrown when converting a Variant to an invalid type. ">error::Conversion</a></td><td>if the variant is not an object. </td></tr>
+    <tr><td class="paramname"><a class="el" href="structwamp_1_1error_1_1_conversion.html" title="Exception type thrown when converting a Variant to an invalid type. ">error::Conversion</a></td><td>if the existing member is not convertible to the destination type. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -450,7 +460,7 @@ template&lt;typename T , typename U &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewamp.html">wamp</a></li><li class="navelem"><a class="el" href="classwamp_1_1_from_variant_converter.html">FromVariantConverter</a></li>
-    <li class="footer">Generated on Wed Dec 23 2015 14:08:52 for CppWAMP by
+    <li class="footer">Generated on Mon Mar 28 2016 16:50:21 for CppWAMP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>
