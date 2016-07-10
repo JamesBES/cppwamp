@@ -166,19 +166,6 @@ public:
     template <typename T, EnableIfValidArg<T> = 0>
     Variant(T value);
 
-    /** Converting constructor taking an initial Array value. */
-    Variant(Array array);
-
-    /** Converting constructor taking a `std::vector` of initial Array
-        values. */
-    template <typename T> Variant(std::vector<T> vec);
-
-    /** Converting constructor taking an initial Object value. */
-    Variant(Object object);
-
-    /** Converting constructor taking a `std::map` of key-value pairs. */
-    template <typename T> Variant(std::map<String, T> map);
-
     /** Destructor. */
     ~Variant();
 

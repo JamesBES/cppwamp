@@ -72,57 +72,6 @@ Variant::Variant(T value)
 }
 
 //------------------------------------------------------------------------------
-/** @post `this->is<Array>() == true`
-    @post `*this == array` */
-//------------------------------------------------------------------------------
-inline Variant::Variant(Array array)
-    : typeId_(TypeId::array)
-{
-    constructAs<Array>(std::move(array));
-}
-
-//------------------------------------------------------------------------------
-/** @pre The vector elements must be convertible to a bound type
-         (checked at compile time).
-    @post `this->is<Array>() == true`
-    @post `*this == vec` */
-//------------------------------------------------------------------------------
-template <typename T> Variant::Variant(std::vector<T> vec)
-    : typeId_(TypeId::array)
-{
-    static_assert(ArgTraits<T>::isValid, "Invalid vector element type");
-    Array array;
-    array.reserve(vec.size());
-    std::move(vec.begin(), vec.end(), std::back_inserter(array));
-    constructAs<Array>(std::move(array));
-}
-
-//------------------------------------------------------------------------------
-/** @post `this->is<Object>() == true`
-    @post `*this == object` */
-//------------------------------------------------------------------------------
-inline Variant::Variant(Object object)
-    : typeId_(TypeId::object)
-{
-    constructAs<Object>(std::move(object));
-}
-
-//------------------------------------------------------------------------------
-/** @post `this->is<Object>() == true`
-    @post `*this == map`
-    @pre The map values must be convertible to bound types
-         (checked at compile time). */
-//------------------------------------------------------------------------------
-template <typename T> Variant::Variant(std::map<String, T> map)
-    : typeId_(TypeId::object)
-{
-    static_assert(ArgTraits<T>::isValid, "Invalid map value type");
-    Object object;
-    std::move(map.begin(), map.end(), std::inserter(object, object.begin()));
-    constructAs<Object>(std::move(object));
-}
-
-//------------------------------------------------------------------------------
 inline Variant::~Variant() {*this = null;}
 
 //------------------------------------------------------------------------------

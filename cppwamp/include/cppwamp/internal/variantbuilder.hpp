@@ -35,44 +35,44 @@ public:
         stack_.push(&v_);
     }
 
-    bool Null()             {return put(null);}
-    bool Bool(bool b)       {return put(b);}
+    bool Null()             {return putValue(null);}
+    bool Bool(bool b)       {return putValue(b);}
     bool Int(int n)         {return putInteger(n);}
     bool Uint(unsigned n)   {return putInteger(n);}
     bool Int64(int64_t n)   {return putInteger(n);}
-    bool Double(double x)   {return put(x);}
+    bool Double(double x)   {return putValue(x);}
 
     bool Uint64(uint64_t n)
     {
-        if (n <= std::numeric_limits<Variant::Int>::max())
+        if (n <= uint64_t(std::numeric_limits<Variant::Int>::max()))
             return putInteger(n);
         else
-            return put(n);
+            return putValue(n);
     }
 
     bool String(const char* str, SizeType length, bool /*copy*/)
-        {return put(VString(str, length));}
+        {return putValue(VString(str, length));}
 
     bool Bin(const char* data, SizeType length)
     {
         Blob::Data bytes;
         bytes.reserve(length);
         std::copy(data, data + length, std::back_inserter(bytes));
-        return put(Blob(std::move(bytes)));
+        return putValue(Blob(std::move(bytes)));
     }
 
     bool Bin(Blob::Data&& data)
     {
-        return put(Blob(std::move(data)));
+        return putValue(Blob(std::move(data)));
     }
 
     bool StartObject()
     {
         Object object;
-        auto ptr = put(std::move(object));
+        auto ptr = putComposite(std::move(object));
         if (ptr)
             stack_.push(ptr);
-        return ptr;
+        return ptr != nullptr;
     }
 
     bool Key(const char* str, SizeType length, bool /*copy*/)
@@ -93,10 +93,10 @@ public:
         Array array;
         if (elementCount != 0)
             array.reserve(elementCount);
-        auto ptr = put(std::move(array));
+        auto ptr = putComposite(std::move(array));
         if (ptr)
             stack_.push(ptr);
-        return ptr;
+        return ptr != nullptr;
     }
 
     bool EndArray(SizeType elementCount)
@@ -108,6 +108,21 @@ public:
 
 private:
     using VString = typename Variant::String;
+
+    template <typename T> bool putValue(T value)
+    {
+        return put(value) != nullptr;
+    }
+
+    template <typename T> bool putInteger(T integer)
+    {
+        return put(static_cast<Variant::Int>(integer)) != nullptr;
+    }
+
+    template <typename T> Variant* putComposite(T&& composite)
+    {
+        return put(std::forward<T>(composite));
+    }
 
     template <typename T> Variant* put(T&& value)
     {
@@ -140,11 +155,6 @@ private:
                 assert(false);
         }
         return ptr;
-    }
-
-    template <typename T> Variant* putInteger(T integer)
-    {
-        return put(static_cast<Variant::Int>(integer));
     }
 
     Variant& top() {return *stack_.top();}

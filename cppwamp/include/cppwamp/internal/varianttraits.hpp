@@ -287,6 +287,14 @@ template <> struct Access<Array>
     template <typename U> static void construct(U&& value, void* field)
         {ptr(field) = new Array(std::forward<U>(value));}
 
+    template <typename U, DisableIf<isSameType<U,Variant>()> = 0>
+    static void construct(std::vector<U>&& vec, void* field)
+    {
+        Array* array = new Array;
+        std::move(vec.begin(), vec.end(), std::back_inserter(*array));
+        ptr(field) = array;
+    }
+
     static void destruct(void* field)
     {
         Array*& a = ptr(field);
@@ -310,6 +318,15 @@ template <> struct Access<Object>
     template <typename U> static void construct(U&& value, void* field)
     {
         ptr(field) = new Object(std::forward<U>(value));
+    }
+
+    template <typename U, DisableIf<isSameType<U,Variant>()> = 0>
+    static void construct(std::map<String, U>&& map, void* field)
+    {
+        Object* object = new Object;
+        std::move(map.begin(), map.end(),
+                  std::inserter(*object, object->begin()));
+        ptr(field) = object;
     }
 
     static void destruct(void* field)
