@@ -33,7 +33,7 @@ public:
                  RawsockMaxLength maxRxLength)
         : Base(std::move(est)),
           codecIds_(std::move(codecIds)),
-          maxTxLength_(RawsockMaxLength::kB_64),
+          maxTxLength_(RawsockMaxLength::MB_16),
           maxRxLength_(maxRxLength)
     {}
 
